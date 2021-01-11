@@ -1,0 +1,594 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <FileVersion>1.0.0.0</FileVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{d6806285-a398-4a22-8d6c-5308b0d4133a}</ProjectGuid>
+    <SubObjectsSortedByName>True</SubObjectsSortedByName>
+    <DownloadApplicationInfo>true</DownloadApplicationInfo>
+    <WriteProductVersion>true</WriteProductVersion>
+    <GenerateTpy>false</GenerateTpy>
+    <Name>HMI_Library</Name>
+    <ProgramVersion>3.1.4023.0</ProgramVersion>
+    <Application>{7fcf42ad-e40f-40bf-9676-f4417915b68a}</Application>
+    <TypeSystem>{7a502c4e-575f-4dbe-9604-caa52e451ca6}</TypeSystem>
+    <Implicit_Task_Info>{006ead55-7dbf-4f24-a22b-694742627f75}</Implicit_Task_Info>
+    <Implicit_KindOfTask>{7d28ab0f-7288-4074-a986-af3d16ed4c1e}</Implicit_KindOfTask>
+    <Implicit_Jitter_Distribution>{26744ad9-ea3e-4166-b252-cf3db1a70c0d}</Implicit_Jitter_Distribution>
+    <LibraryReferences>{2fe70cec-5e04-4d31-a86c-9b82ea53e17e}</LibraryReferences>
+    <Company>AMKO-Engineering</Company>
+    <Released>false</Released>
+    <Title>HMI_Library</Title>
+    <ProjectVersion>1.0.0.6</ProjectVersion>
+    <Author>AMKO-Engineering</Author>
+    <Description>Basic HMI screens for use with Utilities and device libraries</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="BaseScreens" />
+    <Folder Include="IconsAndPictures" />
+    <Folder Include="IconsAndPictures\Backgrounds" />
+    <Folder Include="IconsAndPictures\Buttons" />
+    <Folder Include="IconsAndPictures\Buttons\Home Button" />
+    <Folder Include="IconsAndPictures\Buttons\Control Buttons" />
+    <Folder Include="IconsAndPictures\Buttons\Screen Buttons" />
+    <Folder Include="IconsAndPictures\Logos" />
+    <Folder Include="GVL" />
+    <Folder Include="Screens" />
+    <Folder Include="InputFunctions" />
+    <Folder Include="Screens\Manual\DeviceScreens" />
+    <Folder Include="Screens\EventsAndMessage" />
+    <Folder Include="Screens\Manual" />
+    <Folder Include="Screens\Backgrounds" />
+    <Folder Include="Screens\Startup Screen" />
+    <Folder Include="Screens\Parameter" />
+    <Folder Include="TextLists" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GVL\E_StartVisu.TcTLEO">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GVL\GVL_HMI.TcGVL">
+      <SubType>Code</SubType>
+      <LinkAlways>true</LinkAlways>
+    </Compile>
+    <Compile Include="IconsAndPictures\Backgrounds\BackgroundImagePool.TcIPO">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IconsAndPictures\Buttons\ButtonImagePool.TcIPO">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IconsAndPictures\Buttons\Control Buttons\ControlButtons.TcIPO">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IconsAndPictures\Logos\LogoPool.TcIPO">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="InputFunctions\FB_HMILREALInput.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="InputFunctions\FB_HMIInputBase.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screens\Backgrounds\BackgroundNoButton.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\EventsAndMessage\BasicMessageScreen.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+      <ExcludeFromBuild>false</ExcludeFromBuild>
+    </Compile>
+    <Compile Include="Screens\Manual\DeviceScreens\VisuAnalogOutControl.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Manual\DeviceScreens\VisuAnlogInputControl.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Manual\DeviceScreens\VisuAxisControl.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Manual\DeviceScreens\VisuCylinderControl.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Manual\DeviceScreens\VisuDigitalInputControl.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Manual\DeviceScreens\VisuDigitalOutControl.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Manual\DeviceScreens\VisuPushbuttonLightControl.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Manual\DeviceScreens\VisuPWMControl.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Manual\DeviceScreens\VisuDoublePWMControl.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Manual\DeviceScreens\VisuUndefinedControl.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Manual\DeviceScreens\VisuValveControl.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Manual\ManualControl.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\EventsAndMessage\BasicMessageScreen_OLD.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\EventsAndMessage\MessageScreen.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+      <ExcludeFromBuild>true</ExcludeFromBuild>
+    </Compile>
+    <Compile Include="Screens\Parameter\ParameterScreen.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Startup Screen\StartScreen.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Startup Screen\LogoScreen.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="TextLists\E_ComponentTypes.TcTLO">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextLists\E_FaultTypes.TcTLO">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextLists\E_Locations.TcTLO">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextLists\E_MessageNumbers.TcTLO">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextLists\E_ParameterNames.TcTLO">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextLists\GlobalTextList.TcGTLO">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextLists\TL_MessageDiscriptions.TcTLO">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Visualization Manager.TcVMO">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <PlaceholderReference Include="CmpBitmapPool">
+      <DefaultResolution>CmpBitmapPool, * (System)</DefaultResolution>
+      <Namespace>CmpBitmapPool</Namespace>
+    </PlaceholderReference>
+    <PlaceholderReference Include="Device_Library">
+      <DefaultResolution>Device_Library, * (AMKO-Engineering)</DefaultResolution>
+      <Namespace>Device_Library</Namespace>
+    </PlaceholderReference>
+    <PlaceholderReference Include="System_Library">
+      <DefaultResolution>System_Library, * (AMKO-Engineering)</DefaultResolution>
+      <Namespace>System_Library</Namespace>
+    </PlaceholderReference>
+    <PlaceholderReference Include="System_VisuElemMeter">
+      <DefaultResolution>VisuElemMeter, 3.5.13.0 (System)</DefaultResolution>
+      <Namespace>VisuElemMeter</Namespace>
+      <SystemLibrary>true</SystemLibrary>
+      <ResolverGuid>2717eb6a-dd07-4c66-8d8d-cacebd7b18ae</ResolverGuid>
+    </PlaceholderReference>
+    <PlaceholderReference Include="System_VisuElems">
+      <DefaultResolution>VisuElems, 3.5.13.40 (System)</DefaultResolution>
+      <Namespace>VisuElems</Namespace>
+      <SystemLibrary>true</SystemLibrary>
+      <ResolverGuid>2717eb6a-dd07-4c66-8d8d-cacebd7b18ae</ResolverGuid>
+    </PlaceholderReference>
+    <PlaceholderReference Include="System_VisuElemsSpecialControls">
+      <DefaultResolution>VisuElemsSpecialControls, 3.5.13.0 (System)</DefaultResolution>
+      <Namespace>VisuElemsSpecialControls</Namespace>
+      <SystemLibrary>true</SystemLibrary>
+      <ResolverGuid>2717eb6a-dd07-4c66-8d8d-cacebd7b18ae</ResolverGuid>
+    </PlaceholderReference>
+    <PlaceholderReference Include="System_VisuElemsWinControls">
+      <DefaultResolution>VisuElemsWinControls, 3.5.13.20 (System)</DefaultResolution>
+      <Namespace>VisuElemsWinControls</Namespace>
+      <SystemLibrary>true</SystemLibrary>
+      <ResolverGuid>2717eb6a-dd07-4c66-8d8d-cacebd7b18ae</ResolverGuid>
+    </PlaceholderReference>
+    <PlaceholderReference Include="System_VisuElemTextEditor">
+      <DefaultResolution>VisuElemTextEditor, 3.5.13.0 (System)</DefaultResolution>
+      <Namespace>VisuElemTextEditor</Namespace>
+      <SystemLibrary>true</SystemLibrary>
+      <ResolverGuid>2717eb6a-dd07-4c66-8d8d-cacebd7b18ae</ResolverGuid>
+    </PlaceholderReference>
+    <PlaceholderReference Include="system_visuinputs">
+      <DefaultResolution>visuinputs, 3.5.13.0 (system)</DefaultResolution>
+      <Namespace>visuinputs</Namespace>
+      <SystemLibrary>true</SystemLibrary>
+      <ResolverGuid>2717eb6a-dd07-4c66-8d8d-cacebd7b18ae</ResolverGuid>
+    </PlaceholderReference>
+    <PlaceholderReference Include="System_VisuNativeControl">
+      <DefaultResolution>VisuNativeControl, 3.5.13.0 (System)</DefaultResolution>
+      <Namespace>VisuNativeControl</Namespace>
+      <SystemLibrary>true</SystemLibrary>
+      <ResolverGuid>2717eb6a-dd07-4c66-8d8d-cacebd7b18ae</ResolverGuid>
+    </PlaceholderReference>
+    <PlaceholderReference Include="Utilities_Library">
+      <DefaultResolution>Utilities_Library, * (AMKO-Engineering)</DefaultResolution>
+      <Namespace>Utilities_Library</Namespace>
+    </PlaceholderReference>
+    <PlaceholderReference Include="VisuDialogs">
+      <DefaultResolution>VisuDialogs, * (System)</DefaultResolution>
+      <Namespace>VisuDialogs</Namespace>
+    </PlaceholderReference>
+    <PlaceholderReference Include="VisuUserManagement">
+      <DefaultResolution>VisuUserMgmt, * (System)</DefaultResolution>
+      <Namespace>VisuUserManagement</Namespace>
+      <SystemLibrary>true</SystemLibrary>
+    </PlaceholderReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HMI_Library.tmc">
+      <SubType>Content</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PlaceholderResolution Include="CAA Memory">
+      <Resolution>CAA Memory, 3.5.12.0 (CAA Technical Workgroup)</Resolution>
+    </PlaceholderResolution>
+    <PlaceholderResolution Include="CmpApp">
+      <Resolution>CmpApp, 3.5.13.0 (System)</Resolution>
+    </PlaceholderResolution>
+    <PlaceholderResolution Include="CmpBitmapPool">
+      <Resolution>CmpBitmapPool, 3.5.7.0 (System)</Resolution>
+    </PlaceholderResolution>
+    <PlaceholderResolution Include="CmpEventMgr">
+      <Resolution>CmpEventMgr, 3.5.12.0 (System)</Resolution>
+    </PlaceholderResolution>
+    <PlaceholderResolution Include="CmpLog">
+      <Resolution>CmpLog, 3.5.5.0 (System)</Resolution>
+    </PlaceholderResolution>
+    <PlaceholderResolution Include="Component Manager">
+      <Resolution>Component Manager, 3.5.13.0 (System)</Resolution>
+    </PlaceholderResolution>
+    <PlaceholderResolution Include="Device_Library">
+      <Resolution>Device_Library, 1.2.0.3 (AMKO-Engineering)</Resolution>
+    </PlaceholderResolution>
+    <PlaceholderResolution Include="HMI_Library">
+      <Resolution>HMI_Library, * (AMKO-Engineering)</Resolution>
+    </PlaceholderResolution>
+    <PlaceholderResolution Include="Standard">
+      <Resolution>Tc2_Standard, 3.3.3.0 (Beckhoff Automation GmbH)</Resolution>
+    </PlaceholderResolution>
+    <PlaceholderResolution Include="Standard64">
+      <Resolution>Tc2_Standard, 3.3.3.0 (Beckhoff Automation GmbH)</Resolution>
+    </PlaceholderResolution>
+    <PlaceholderResolution Include="StringUtils">
+      <Resolution>StringUtils, 3.5.13.20 (System)</Resolution>
+    </PlaceholderResolution>
+    <PlaceholderResolution Include="SysDir">
+      <Resolution>SysDir, 3.5.12.0 (System)</Resolution>
+    </PlaceholderResolution>
+    <PlaceholderResolution Include="SysFile">
+      <Resolution>SysFile, 3.5.9.0 (System)</Resolution>
+    </PlaceholderResolution>
+    <PlaceholderResolution Include="SysMem">
+      <Resolution>SysMem, 3.5.12.0 (System)</Resolution>
+    </PlaceholderResolution>
+    <PlaceholderResolution Include="SysSem">
+      <Resolution>SysSem, 3.5.5.0 (System)</Resolution>
+    </PlaceholderResolution>
+    <PlaceholderResolution Include="System_Library">
+      <Resolution>System_Library, * (AMKO-Engineering)</Resolution>
+    </PlaceholderResolution>
+    <PlaceholderResolution Include="System_VisuElemMeter">
+      <Resolution>VisuElemMeter, 3.5.13.0 (System)</Resolution>
+    </PlaceholderResolution>
+    <PlaceholderResolution Include="System_VisuElems">
+      <Resolution>VisuElems, * (System)</Resolution>
+    </PlaceholderResolution>
+    <PlaceholderResolution Include="System_VisuElemsSpecialControls">
+      <Resolution>VisuElemsSpecialControls, * (System)</Resolution>
+    </PlaceholderResolution>
+    <PlaceholderResolution Include="System_VisuElemsWinControls">
+      <Resolution>VisuElemsWinControls, * (System)</Resolution>
+    </PlaceholderResolution>
+    <PlaceholderResolution Include="System_VisuElemTextEditor">
+      <Resolution>VisuElemTextEditor, * (System)</Resolution>
+    </PlaceholderResolution>
+    <PlaceholderResolution Include="system_visuinputs">
+      <Resolution>VisuInputs, * (System)</Resolution>
+    </PlaceholderResolution>
+    <PlaceholderResolution Include="System_VisuNativeControl">
+      <Resolution>VisuNativeControl, * (System)</Resolution>
+    </PlaceholderResolution>
+    <PlaceholderResolution Include="SysTimeCore">
+      <Resolution>SysTimeCore, 3.5.5.0 (System)</Resolution>
+    </PlaceholderResolution>
+    <PlaceholderResolution Include="SysTimeRtc">
+      <Resolution>SysTimeRtc, 3.5.5.0 (System)</Resolution>
+    </PlaceholderResolution>
+    <PlaceholderResolution Include="Tc2_Drive">
+      <Resolution>Tc2_Drive, 3.3.5.0 (Beckhoff Automation GmbH)</Resolution>
+    </PlaceholderResolution>
+    <PlaceholderResolution Include="Tc2_EtherCAT">
+      <Resolution>Tc2_EtherCAT, 3.3.15.0 (Beckhoff Automation GmbH)</Resolution>
+    </PlaceholderResolution>
+    <PlaceholderResolution Include="Tc2_IoFunctions">
+      <Resolution>Tc2_IoFunctions, 3.3.13.0 (Beckhoff Automation GmbH)</Resolution>
+    </PlaceholderResolution>
+    <PlaceholderResolution Include="Tc2_Math">
+      <Resolution>Tc2_Math, 3.3.1.0 (Beckhoff Automation GmbH)</Resolution>
+    </PlaceholderResolution>
+    <PlaceholderResolution Include="Tc2_MC2">
+      <Resolution>Tc2_MC2, 3.3.41.0 (Beckhoff Automation GmbH)</Resolution>
+    </PlaceholderResolution>
+    <PlaceholderResolution Include="Tc2_MC2_Drive">
+      <Resolution>Tc2_MC2_Drive, 3.3.22.0 (Beckhoff Automation GmbH)</Resolution>
+    </PlaceholderResolution>
+    <PlaceholderResolution Include="Tc2_Standard">
+      <Resolution>Tc2_Standard, 3.3.3.0 (Beckhoff Automation GmbH)</Resolution>
+    </PlaceholderResolution>
+    <PlaceholderResolution Include="Tc2_System">
+      <Resolution>Tc2_System, 3.4.24.0 (Beckhoff Automation GmbH)</Resolution>
+    </PlaceholderResolution>
+    <PlaceholderResolution Include="Tc2_Utilities">
+      <Resolution>Tc2_Utilities, 3.3.40.0 (Beckhoff Automation GmbH)</Resolution>
+    </PlaceholderResolution>
+    <PlaceholderResolution Include="Tc3_Module">
+      <Resolution>Tc3_Module, 3.3.21.0 (Beckhoff Automation GmbH)</Resolution>
+    </PlaceholderResolution>
+    <PlaceholderResolution Include="Utilities_Library">
+      <Resolution>Utilities_Library, 1.2.0.3 (AMKO-Engineering)</Resolution>
+    </PlaceholderResolution>
+    <PlaceholderResolution Include="VisuDialogs">
+      <Resolution>VisuDialogs, 3.5.12.0 (System)</Resolution>
+    </PlaceholderResolution>
+    <PlaceholderResolution Include="VisuUserManagement">
+      <Resolution>VisuUserMgmt, 3.5.13.32 (System)</Resolution>
+    </PlaceholderResolution>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="IconsAndPictures\Backgrounds\Background.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Backgrounds\Background_Bottom.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Backgrounds\Background_Bottomzonder knop.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Backgrounds\Background_Sides.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Backgrounds\Emergency Stop Active.jpg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Backgrounds\Emergency Stop Active.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\Continue Sewing.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\Continue Sewing Pushed.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\Delete Thread Length Pushed.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\Delete Thread Length.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\Log In.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\Log Out.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\Log Pressed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\Machine Return Home Pushed.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\machine return home.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\Manual mode Idle.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\Manual Mode Pressed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\Pause Pushed.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\Pause.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\Trim by hand Idle.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\Trim By Hand Pushed.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Home Button\Home Settings switch.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Home Button\Home-Settings Switch Pushed.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Home Button\Home-Settings Switch Pushed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Home Button\Home_Settings switch.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Screen Buttons\Power Off Pressed.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Screen Buttons\Power off.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Screen Buttons\To Parameter Screen Pressed.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Screen Buttons\To Parameter Screen Pressed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Screen Buttons\To Parameter Screen.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Screen Buttons\To Parameter Screen.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Logos\Amko Basis.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Logos\Amko logo 300ppi.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Logos\Logo Dark blue.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Logos\Logo Dark blue.svg">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ProjectExtensions>
+    <PlcProjectOptions>
+      <XmlArchive>
+        <Data>
+          <o xml:space="preserve" t="OptionKey">
+      <v n="Name">"&lt;ProjectRoot&gt;"</v>
+      <d n="SubKeys" t="Hashtable" ckt="String" cvt="OptionKey">
+        <v>{192FAD59-8248-4824-A8DE-9177C94C195A}</v>
+        <o>
+          <v n="Name">"{192FAD59-8248-4824-A8DE-9177C94C195A}"</v>
+          <d n="SubKeys" t="Hashtable" />
+          <d n="Values" t="Hashtable" />
+        </o>
+        <v>{246001F4-279D-43AC-B241-948EB31120E1}</v>
+        <o>
+          <v n="Name">"{246001F4-279D-43AC-B241-948EB31120E1}"</v>
+          <d n="SubKeys" t="Hashtable" />
+          <d n="Values" t="Hashtable" ckt="String">
+            <v>GlobalVisuImageFilePath</v>
+            <v>"%APPLICATIONPATH%"</v>
+            <v>UnicodeStrings</v>
+            <v>false</v>
+          </d>
+        </o>
+        <v>{29BD8D0C-3586-4548-BB48-497B9A01693F}</v>
+        <o>
+          <v n="Name">"{29BD8D0C-3586-4548-BB48-497B9A01693F}"</v>
+          <d n="SubKeys" t="Hashtable" ckt="String" cvt="OptionKey">
+            <v>Rules</v>
+            <o>
+              <v n="Name">"Rules"</v>
+              <d n="SubKeys" t="Hashtable" ckt="String" cvt="OptionKey">
+                <v>167</v>
+                <o>
+                  <v n="Name">"167"</v>
+                  <d n="SubKeys" t="Hashtable" />
+                  <d n="Values" t="Hashtable" ckt="String" cvt="Boolean">
+                    <v>bActive</v>
+                    <v>True</v>
+                  </d>
+                </o>
+                <v>4</v>
+                <o>
+                  <v n="Name">"4"</v>
+                  <d n="SubKeys" t="Hashtable" />
+                  <d n="Values" t="Hashtable" ckt="String" cvt="Boolean">
+                    <v>bActive</v>
+                    <v>True</v>
+                  </d>
+                </o>
+                <v>33</v>
+                <o>
+                  <v n="Name">"33"</v>
+                  <d n="SubKeys" t="Hashtable" />
+                  <d n="Values" t="Hashtable" ckt="String" cvt="Boolean">
+                    <v>bActive</v>
+                    <v>False</v>
+                  </d>
+                </o>
+                <v>6</v>
+                <o>
+                  <v n="Name">"6"</v>
+                  <d n="SubKeys" t="Hashtable" />
+                  <d n="Values" t="Hashtable" ckt="String" cvt="Boolean">
+                    <v>bActive</v>
+                    <v>True</v>
+                  </d>
+                </o>
+                <v>27</v>
+                <o>
+                  <v n="Name">"27"</v>
+                  <d n="SubKeys" t="Hashtable" />
+                  <d n="Values" t="Hashtable" ckt="String" cvt="Boolean">
+                    <v>bActive</v>
+                    <v>True</v>
+                  </d>
+                </o>
+                <v>28</v>
+                <o>
+                  <v n="Name">"28"</v>
+                  <d n="SubKeys" t="Hashtable" />
+                  <d n="Values" t="Hashtable" ckt="String" cvt="Boolean">
+                    <v>bActive</v>
+                    <v>True</v>
+                  </d>
+                </o>
+              </d>
+              <d n="Values" t="Hashtable" />
+            </o>
+          </d>
+          <d n="Values" t="Hashtable" />
+        </o>
+        <v>{8F99A816-E488-41E4-9FA3-846536012284}</v>
+        <o>
+          <v n="Name">"{8F99A816-E488-41E4-9FA3-846536012284}"</v>
+          <d n="SubKeys" t="Hashtable" />
+          <d n="Values" t="Hashtable" />
+        </o>
+        <v>{40450F57-0AA3-4216-96F3-5444ECB29763}</v>
+        <o>
+          <v n="Name">"{40450F57-0AA3-4216-96F3-5444ECB29763}"</v>
+          <d n="SubKeys" t="Hashtable" />
+          <d n="Values" t="Hashtable" ckt="String">
+            <v>ActiveVisuExtensionsLength</v>
+            <v>0</v>
+            <v>ActiveVisuProfile</v>
+            <v>"IR0whWr8bwfwBwAAiD2qpQAAAABVAgAA37x72QAAAAABAAAAAAAAAAEaUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwACTHsAZgA5ADUAYgBiADQAMgA2AC0ANQA1ADIANAAtADQAYgA0ADUALQA5ADQAMAAwAC0AZgBiADAAZgAyAGUANwA3AGUANQAxAGIAfQADCE4AYQBtAGUABDBUAHcAaQBuAEMAQQBUACAAMwAuADEAIABCAHUAaQBsAGQAIAA0ADAAMgA0AC4ANwAFFlAAcgBvAGYAaQBsAGUARABhAHQAYQAGTHsAMQA2AGUANQA1AGIANgAwAC0ANwAwADQAMwAtADQAYQA2ADMALQBiADYANQBiAC0ANgAxADQANwAxADMAOAA3ADgAZAA0ADIAfQAHEkwAaQBiAHIAYQByAGkAZQBzAAhMewAzAGIAZgBkADUANAA1ADkALQBiADAANwBmAC0ANABkADYAZQAtAGEAZQAxAGEALQBhADgAMwAzADUANgBhADUANQAxADQAMgB9AAlMewA5AGMAOQA1ADgAOQA2ADgALQAyAGMAOAA1AC0ANAAxAGIAYgAtADgAOAA3ADEALQA4ADkANQBmAGYAMQBmAGUAZABlADEAYQB9AAoOVgBlAHIAcwBpAG8AbgALBmkAbgB0AAwKVQBzAGEAZwBlAA0KVABpAHQAbABlAA4aVgBpAHMAdQBFAGwAZQBtAE0AZQB0AGUAcgAPDkMAbwBtAHAAYQBuAHkAEAxTAHkAcwB0AGUAbQARElYAaQBzAHUARQBsAGUAbQBzABIwVgBpAHMAdQBFAGwAZQBtAHMAUwBwAGUAYwBpAGEAbABDAG8AbgB0AHIAbwBsAHMAEyhWAGkAcwB1AEUAbABlAG0AcwBXAGkAbgBDAG8AbgB0AHIAbwBsAHMAFCRWAGkAcwB1AEUAbABlAG0AVABlAHgAdABFAGQAaQB0AG8AcgAVIlYAaQBzAHUATgBhAHQAaQB2AGUAQwBvAG4AdAByAG8AbAAWFHYAaQBzAHUAaQBuAHAAdQB0AHMAFwxzAHkAcwB0AGUAbQAYGFYAaQBzAHUARQBsAGUAbQBCAGEAcwBlABkmRABlAHYAUABsAGEAYwBlAGgAbwBsAGQAZQByAHMAVQBzAGUAZAAaCGIAbwBvAGwAGyJQAGwAdQBnAGkAbgBDAG8AbgBzAHQAcgBhAGkAbgB0AHMAHEx7ADQAMwBkADUAMgBiAGMAZQAtADkANAAyAGMALQA0ADQAZAA3AC0AOQBlADkANAAtADEAYgBmAGQAZgAzADEAMABlADYAMwBjAH0AHRxBAHQATABlAGEAcwB0AFYAZQByAHMAaQBvAG4AHhRQAGwAdQBnAGkAbgBHAHUAaQBkAB8WUwB5AHMAdABlAG0ALgBHAHUAaQBkACBIYQBmAGMAZAA1ADQANAA2AC0ANAA5ADEANAAtADQAZgBlADcALQBiAGIANwA4AC0AOQBiAGYAZgBlAGIANwAwAGYAZAAxADcAIRRVAHAAZABhAHQAZQBJAG4AZgBvACJMewBiADAAMwAzADYANgBhADgALQBiADUAYwAwAC0ANABiADkAYQAtAGEAMAAwAGUALQBlAGIAOAA2ADAAMQAxADEAMAA0AGMAMwB9ACMOVQBwAGQAYQB0AGUAcwAkTHsAMQA4ADYAOABmAGYAYwA5AC0AZQA0AGYAYwAtADQANQAzADIALQBhAGMAMAA2AC0AMQBlADMAOQBiAGIANQA1ADcAYgA2ADkAfQAlTHsAYQA1AGIAZAA0ADgAYwAzAC0AMABkADEANwAtADQAMQBiADUALQBiADEANgA0AC0ANQBmAGMANgBhAGQAMgBiADkANgBiADcAfQAmFk8AYgBqAGUAYwB0AHMAVAB5AHAAZQAnVFUAcABkAGEAdABlAEwAYQBuAGcAdQBhAGcAZQBNAG8AZABlAGwARgBvAHIAQwBvAG4AdgBlAHIAdABpAGIAbABlAEwAaQBiAHIAYQByAGkAZQBzACgQTABpAGIAVABpAHQAbABlACkUTABpAGIAQwBvAG0AcABhAG4AeQAqHlUAcABkAGEAdABlAFAAcgBvAHYAaQBkAGUAcgBzACs4UwB5AHMAdABlAG0ALgBDAG8AbABsAGUAYwB0AGkAbwBuAHMALgBIAGEAcwBoAHQAYQBiAGwAZQAsEnYAaQBzAHUAZQBsAGUAbQBzAC1INgBjAGIAMQBjAGQAZQAxAC0AZAA1AGQAYwAtADQAYQAzAGIALQA5ADAANQA0AC0AMgAxAGYAYQA3ADUANgBhADMAZgBhADQALihJAG4AdABlAHIAZgBhAGMAZQBWAGUAcgBzAGkAbwBuAEkAbgBmAG8AL0x7AGMANgAxADEAZQA0ADAAMAAtADcAZgBiADkALQA0AGMAMwA1AC0AYgA5AGEAYwAtADQAZQAzADEANABiADUAOQA5ADYANAAzAH0AMBhNAGEAagBvAHIAVgBlAHIAcwBpAG8AbgAxGE0AaQBuAG8AcgBWAGUAcgBzAGkAbwBuADIMTABlAGcAYQBjAHkAMzBMAGEAbgBnAHUAYQBnAGUATQBvAGQAZQBsAFYAZQByAHMAaQBvAG4ASQBuAGYAbwA0MEwAbwBhAGQATABpAGIAcgBhAHIAaQBlAHMASQBuAHQAbwBQAHIAbwBqAGUAYwB0ADUaQwBvAG0AcABhAHQAaQBiAGkAbABpAHQAeQDQAAIaA9ADAS0E0AUGGgfQBwgaAUUHCQjQAAkaBEUKCwQDAAAABQAAAA0AAAAAAAAA0AwLrQIAAADQDQEtDtAPAS0Q0AAJGgRFCgsEAwAAAAUAAAANAAAAKAAAANAMC60BAAAA0A0BLRHQDwEtENAACRoERQoLBAMAAAAFAAAADQAAAAAAAADQDAutAgAAANANAS0S0A8BLRDQAAkaBEUKCwQDAAAABQAAAA0AAAAUAAAA0AwLrQIAAADQDQEtE9APAS0Q0AAJGgRFCgsEAwAAAAUAAAANAAAAAAAAANAMC60CAAAA0A0BLRTQDwEtENAACRoERQoLBAMAAAAFAAAADQAAAAAAAADQDAutAgAAANANAS0V0A8BLRDQAAkaBEUKCwQDAAAABQAAAA0AAAAAAAAA0AwLrQIAAADQDQEtFtAPAS0X0AAJGgRFCgsEAwAAAAUAAAANAAAAKAAAANAMC60EAAAA0A0BLRjQDwEtENAZGq0BRRscAdAAHBoCRR0LBAMAAAAFAAAADQAAAAAAAADQHh8tINAhIhoCRSMkAtAAJRoFRQoLBAMAAAADAAAAAAAAAAoAAADQJgutAAAAANADAS0n0CgBLRHQKQEtENAAJRoFRQoLBAMAAAADAAAAAAAAAAoAAADQJgutAQAAANADAS0n0CgBLRHQKQEtEJoqKwFFAAEC0AABLSzQAAEtF9AAHy0t0C4vGgPQMAutAQAAANAxC60XAAAA0DIarQDQMy8aA9AwC60CAAAA0DELrQMAAADQMhqtANA0Gq0A0DUarQA="</v>
+          </d>
+        </o>
+      </d>
+      <d n="Values" t="Hashtable" />
+    </o>
+        </Data>
+        <TypeList>
+          <Type n="Boolean">System.Boolean</Type>
+          <Type n="Hashtable">System.Collections.Hashtable</Type>
+          <Type n="Int32">System.Int32</Type>
+          <Type n="OptionKey">{54dd0eac-a6d8-46f2-8c27-2f43c7e49861}</Type>
+          <Type n="String">System.String</Type>
+        </TypeList>
+      </XmlArchive>
+    </PlcProjectOptions>
+  </ProjectExtensions>
+</Project>

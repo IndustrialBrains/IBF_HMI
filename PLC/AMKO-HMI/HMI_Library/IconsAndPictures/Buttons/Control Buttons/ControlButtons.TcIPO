@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.5">
+  <ImagePool Name="ControlButtons" Id="{8f93eb64-c5df-482f-a61d-097bf4b157b6}">
+    <XmlArchive>
+      <Data>
+        <o xml:space="preserve" t="ImagePoolObject">
+          <v n="UniqueIdGenerator">"36"</v>
+          <l n="BitmapPool" t="ArrayList" cet="ImagePoolItem">
+            <o>
+              <v n="BitmapID">"Log In"</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Buttons\Control Buttons\Log In.svg"</v>
+              <v n="ItemID">20</v>
+            </o>
+            <o>
+              <v n="BitmapID">"Log Out"</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Buttons\Control Buttons\Log Out.svg"</v>
+              <v n="ItemID">21</v>
+            </o>
+            <o>
+              <v n="BitmapID">"Log Pressed"</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Buttons\Control Buttons\Log Pressed.svg"</v>
+              <v n="ItemID">22</v>
+            </o>
+            <o>
+              <v n="BitmapID">"Machine Return Home Pushed"</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Buttons\Control Buttons\Machine Return Home Pushed.png"</v>
+              <v n="ItemID">23</v>
+            </o>
+            <o>
+              <v n="BitmapID">"machine return home"</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Buttons\Control Buttons\machine return home.png"</v>
+              <v n="ItemID">24</v>
+            </o>
+            <o>
+              <v n="BitmapID">"Manual mode Idle"</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Buttons\Control Buttons\Manual mode Idle.svg"</v>
+              <v n="ItemID">25</v>
+            </o>
+            <o>
+              <v n="BitmapID">"Manual Mode Pressed"</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Buttons\Control Buttons\Manual Mode Pressed.svg"</v>
+              <v n="ItemID">26</v>
+            </o>
+            <o>
+              <v n="BitmapID">"Pause Pushed"</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Buttons\Control Buttons\Pause Pushed.png"</v>
+              <v n="ItemID">27</v>
+            </o>
+            <o>
+              <v n="BitmapID">"Pause"</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Buttons\Control Buttons\Pause.png"</v>
+              <v n="ItemID">28</v>
+            </o>
+            <o>
+              <v n="BitmapID">"Trim by hand Idle"</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Buttons\Control Buttons\Trim by hand Idle.png"</v>
+              <v n="ItemID">29</v>
+            </o>
+            <o>
+              <v n="BitmapID">"Trim By Hand Pushed"</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Buttons\Control Buttons\Trim By Hand Pushed.png"</v>
+              <v n="ItemID">30</v>
+            </o>
+            <o>
+              <v n="BitmapID">"Continue Sewing "</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Buttons\Control Buttons\Continue Sewing.png"</v>
+              <v n="ItemID">31</v>
+            </o>
+            <o>
+              <v n="BitmapID">"Continue Sewing Pushed"</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Buttons\Control Buttons\Continue Sewing Pushed.png"</v>
+              <v n="ItemID">32</v>
+            </o>
+            <o>
+              <v n="BitmapID">"Delete Thread Length Pushed"</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Buttons\Control Buttons\Delete Thread Length Pushed.png"</v>
+              <v n="ItemID">33</v>
+            </o>
+            <o>
+              <v n="BitmapID">"Delete Thread Length"</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Buttons\Control Buttons\Delete Thread Length.png"</v>
+              <v n="ItemID">34</v>
+            </o>
+            <o>
+              <v n="BitmapID">""</v>
+              <v n="FileID">""</v>
+              <v n="ItemID">35</v>
+            </o>
+          </l>
+          <v n="GuidInit">{b8a8d820-014b-45e4-b294-cef65d85ecd1}</v>
+          <v n="GuidReInit">{e7f7bdca-6df1-4579-8e75-ebc4db0a0c0d}</v>
+          <v n="GuidExitX">{b51fa00d-f8ab-4c56-9164-eea3ad74fcb5}</v>
+          <v n="ValidIds">true</v>
+        </o>
+      </Data>
+      <TypeList>
+        <Type n="ArrayList">System.Collections.ArrayList</Type>
+        <Type n="Boolean">System.Boolean</Type>
+        <Type n="Guid">System.Guid</Type>
+        <Type n="ImagePoolItem">{215b2719-0347-4e4d-ba85-8bcd66946f66}</Type>
+        <Type n="ImagePoolObject">{bb0b9044-714e-4614-ad3e-33cbdf34d16b}</Type>
+        <Type n="Int32">System.Int32</Type>
+        <Type n="String">System.String</Type>
+      </TypeList>
+    </XmlArchive>
+  </ImagePool>
+</TcPlcObject>

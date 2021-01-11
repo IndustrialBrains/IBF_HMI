@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.4">
+  <POU Name="FB_HMIInputBase" Id="{9b228d30-0c34-4ec7-a1ab-f9487cc3d5ce}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK ABSTRACT FB_HMIInputBase //Base function for HMI inputs
+VAR_INPUT
+	bEnable : BOOL := TRUE ;
+END_VAR
+VAR_OUTPUT
+	bInVisible			: BOOL := TRUE ; // input is visible (standard := NOT bEnable )
+	bDeactivateInput	: BOOL := TRUE ; // input is enabled (Standard := bEnable)
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[SetHMIInstructions();]]></ST>
+    </Implementation>
+    <Method Name="SetHMIInstructions" Id="{5dde2b73-b2f9-4ff5-b140-bb01c00a0aba}">
+      <Declaration><![CDATA[METHOD INTERNAL SetHMIInstructions : BOOL
+VAR_INPUT
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[bInVisible 			:= NOT bEnable ;
+bDeactivateInput	:= NOT bEnable ;]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="SetOutputToPLC" Id="{4dfd4d0d-afb6-4187-8cbc-5a4339412b11}">
+      <Declaration><![CDATA[METHOD ABSTRACT SetOutputToPLC : BOOL
+VAR_INPUT
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[]]></ST>
+      </Implementation>
+    </Method>
+    <LineIds Name="FB_HMIInputBase">
+      <LineId Id="9" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_HMIInputBase.SetHMIInstructions">
+      <LineId Id="5" Count="1" />
+    </LineIds>
+    <LineIds Name="FB_HMIInputBase.SetOutputToPLC">
+      <LineId Id="5" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

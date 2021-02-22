@@ -21,6 +21,72 @@
     <ProjectVersion>1.3.0.2</ProjectVersion>
     <Author>AMKO-Engineering</Author>
     <Description>Basic HMI screens for use with Utilities and device libraries</Description>
+    <LibraryCategories>
+      <LibraryCategory xmlns="">
+        <Id>{589fe09e-9317-462c-ba3b-ceb72fa5d919}</Id>
+        <Version>1.0.0.0</Version>
+        <DefaultName>AMKO-Engineering</DefaultName>
+      </LibraryCategory>
+      <LibraryCategory xmlns="">
+        <Id>{9052c1da-2179-403f-9f0a-49f63df589e9}</Id>
+        <Version>1.0.0.0</Version>
+        <ParentCategory>
+          <Id>{589fe09e-9317-462c-ba3b-ceb72fa5d919}</Id>
+        </ParentCategory>
+        <DefaultName>System</DefaultName>
+      </LibraryCategory>
+      <LibraryCategory xmlns="">
+        <Id>{d69a4e54-3b9a-4ecc-8074-fff937c26a40}</Id>
+        <Version>1.0.0.0</Version>
+        <ParentCategory>
+          <Id>{589fe09e-9317-462c-ba3b-ceb72fa5d919}</Id>
+        </ParentCategory>
+        <DefaultName>Utillities</DefaultName>
+      </LibraryCategory>
+      <LibraryCategory xmlns="">
+        <Id>{eb954523-a8af-4bd0-a32c-f81936b81c6d}</Id>
+        <Version>1.0.0.0</Version>
+        <ParentCategory>
+          <Id>{589fe09e-9317-462c-ba3b-ceb72fa5d919}</Id>
+        </ParentCategory>
+        <DefaultName>HMI</DefaultName>
+      </LibraryCategory>
+      <LibraryCategory xmlns="">
+        <Id>{846be616-7077-49df-82d2-98e957c13e93}</Id>
+        <Version>1.0.0.0</Version>
+        <ParentCategory>
+          <Id>{589fe09e-9317-462c-ba3b-ceb72fa5d919}</Id>
+        </ParentCategory>
+        <DefaultName>Machines</DefaultName>
+      </LibraryCategory>
+      <LibraryCategory xmlns="">
+        <Id>{009e50f4-d2ac-459e-96fa-8b145dea1d14}</Id>
+        <Version>1.0.0.0</Version>
+        <ParentCategory>
+          <Id>{589fe09e-9317-462c-ba3b-ceb72fa5d919}</Id>
+        </ParentCategory>
+        <DefaultName>Devices</DefaultName>
+      </LibraryCategory>
+      <LibraryCategory xmlns="">
+        <Id>{3ea1b3cc-00d0-4410-912b-09df72d0dc78}</Id>
+        <Version>1.0.0.0</Version>
+        <ParentCategory>
+          <Id>{589fe09e-9317-462c-ba3b-ceb72fa5d919}</Id>
+        </ParentCategory>
+        <DefaultName>MLT</DefaultName>
+      </LibraryCategory>
+      <LibraryCategory xmlns="">
+        <Id>{7456e3ea-ab98-4ec9-850d-33c9c8b9ad33}</Id>
+        <Version>1.0.0.0</Version>
+        <ParentCategory>
+          <Id>{589fe09e-9317-462c-ba3b-ceb72fa5d919}</Id>
+        </ParentCategory>
+        <DefaultName>Sewinghead</DefaultName>
+      </LibraryCategory>
+    </LibraryCategories>
+    <SelectedLibraryCategories>
+      <Id xmlns="">{eb954523-a8af-4bd0-a32c-f81936b81c6d}</Id>
+    </SelectedLibraryCategories>
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="BaseScreens" />
@@ -104,6 +170,10 @@
       <SubType>Code</SubType>
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
       <ExcludeFromBuild>false</ExcludeFromBuild>
+    </Compile>
+    <Compile Include="Screens\EventsAndMessage\Estop.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
     </Compile>
     <Compile Include="Screens\Manual\DeviceScreens\VisuAnalogOutControl.TcVIS">
       <SubType>Code</SubType>

@@ -611,11 +611,6 @@
                 <v n="Text">"	bCmdSettings 	: BOOL ; // to settings screen command"</v>
               </o>
               <o>
-                <v n="Id">4L</v>
-                <n n="Tag" />
-                <v n="Text">"	bHideEstop		: BOOL ; // Hide Estop screen"</v>
-              </o>
-              <o>
                 <v n="Id">6L</v>
                 <n n="Tag" />
                 <v n="Text">"	bDisableSettings: BOOL ; // Disable settings button"</v>

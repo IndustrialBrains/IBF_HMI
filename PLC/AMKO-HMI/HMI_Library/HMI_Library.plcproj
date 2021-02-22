@@ -40,6 +40,7 @@
     <Folder Include="IconsAndPictures\Buttons\Screen Buttons\PNG" />
     <Folder Include="IconsAndPictures\Logos" />
     <Folder Include="GVL" />
+    <Folder Include="HMIControl" />
     <Folder Include="Screens" />
     <Folder Include="InputFunctions" />
     <Folder Include="Screens\Manual\DeviceScreens" />
@@ -53,12 +54,15 @@
     <Folder Include="TextLists" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GVL\E_StartVisu.TcTLEO">
+    <Compile Include="GVL\E_BaseVisu.TcTLEO">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="GVL\GVL_HMI.TcGVL">
       <SubType>Code</SubType>
       <LinkAlways>true</LinkAlways>
+    </Compile>
+    <Compile Include="HMIControl\FB_HMIControl.TcPOU">
+      <SubType>Code</SubType>
     </Compile>
     <Compile Include="IconsAndPictures\Backgrounds\PNG\BackgroundImagePool_PNG.TcIPO">
       <SubType>Code</SubType>
@@ -145,10 +149,6 @@
       <SubType>Code</SubType>
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
     </Compile>
-    <Compile Include="Screens\Manual\ManualControl.TcVIS">
-      <SubType>Code</SubType>
-      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
-    </Compile>
     <Compile Include="Screens\EventsAndMessage\BasicMessageScreen_OLD.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
@@ -170,7 +170,19 @@
       <SubType>Code</SubType>
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
     </Compile>
-    <Compile Include="Screens\State\Run.TcVIS">
+    <Compile Include="Screens\State\Automatic.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\State\ManualControl.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\State\ParameterScreen.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\State\SemiAuto.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
     </Compile>
@@ -261,6 +273,10 @@
       <Namespace>VisuNativeControl</Namespace>
       <SystemLibrary>true</SystemLibrary>
       <ResolverGuid>2717eb6a-dd07-4c66-8d8d-cacebd7b18ae</ResolverGuid>
+    </PlaceholderReference>
+    <PlaceholderReference Include="Tc2_Standard">
+      <DefaultResolution>Tc2_Standard, * (Beckhoff Automation GmbH)</DefaultResolution>
+      <Namespace>Tc2_Standard</Namespace>
     </PlaceholderReference>
     <PlaceholderReference Include="Utilities_Library">
       <DefaultResolution>Utilities_Library, * (AMKO-Engineering)</DefaultResolution>

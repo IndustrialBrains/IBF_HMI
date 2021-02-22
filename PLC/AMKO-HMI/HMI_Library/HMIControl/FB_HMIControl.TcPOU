@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.5">
+  <POU Name="FB_HMIControl" Id="{062d2a70-ec77-4a9b-a458-d823fff51efb}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_HMIControl
+VAR_INPUT
+	bCmdSemiAuto	: BOOL := FALSE ; // Show semi automatic screen
+	bCmdAutomatic 	: BOOL := FALSE ; // Show automatic screen
+	bEstopActive	: BOOL := TRUE 	; // emergency stop is active
+	sCmdEstopText	: STRING := 'SAFETY FAULT' ; // Emergency stop screen text 
+END_VAR
+VAR_OUTPUT
+	bHideMessage	: BOOL ;
+	bHideEStop 		: BOOL ;
+	sEstopText		: STRING ;
+	sOperatorMessage: STRING ;
+END_VAR
+VAR // HMI
+	eShownScreen 	: E_BaseVisu := E_BaseVisu.Idle ;
+	bCmdSettings	: BOOL := FALSE ; // show settings screen
+	bCmdParemeter	: BOOL := FALSE ; // Show paremeter screen
+	bCmdManual		: BOOL := FALSE ; // Show manual screen
+END_VAR
+VAR
+	bWritePar  			: BOOL ; // write paremeters 
+	bReadPar			: BOOL ; // Read paremeter file
+	feWriteParemeter 	: F_TRIG ; // Falling edge trigger on leaving paremeter or manual screen
+
+	reToSettings 		: R_TRIG ; // go to settings
+	ePreviousScreen		: E_BaseVisu ; // previous screen
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[SetScreen();]]></ST>
+    </Implementation>
+    <Method Name="SetPopups" Id="{22a8bffd-43f0-41dd-9eae-608666b34df7}">
+      <Declaration><![CDATA[METHOD PRIVATE SetPopups : BOOL
+VAR_INPUT
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[// Set popup screens 
+bHideEStop 			:= NOT bEstopActive ;
+bHideMessage 		:= GVL_Message.bHideFaults ;
+sOperatorMessage 	:= GVL_Message.sOPeratorMessage ;]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="SetScreen" Id="{f129c7c5-04de-4b71-81ed-a393e95f4aeb}">
+      <Declaration><![CDATA[METHOD INTERNAL SetScreen : BOOL
+VAR_INPUT
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[// Look for edges 
+	reToSettings		( CLK := bCmdSettings );
+	feWriteParemeter 	( CLK := bCmdParemeter OR bCmdManual );
+	
+IF reToSettings.Q  THEN 
+	ePreviousScreen := eShownScreen ;
+	eShownScreen 	:= E_BaseVisu.Settings ;
+ELSIF NOT bCmdSettings AND eShownScreen = E_BaseVisu.Settings THEN 
+	eShownScreen	:= ePreviousScreen ;
+ELSIF bCmdParemeter THEN 
+	eShownScreen := E_BaseVisu.Parameter ;
+ELSIF bCmdManual THEN 
+	eShownScreen := E_BaseVisu.Manual;
+ELSIF feWriteParemeter.Q THEN 
+	GVL_Parameters.fbParameterHandler.bCmdParFileWrite := TRUE ;
+	eShownScreen 	:= E_BaseVisu.Settings ;
+ELSIF bCmdSemiAuto THEN 
+	eShownScreen := E_BaseVisu.SemiAutomatic;
+ELSIF bCmdAutomatic THEN 
+	eShownScreen := E_BaseVisu.Automatic ;
+ELSE 
+	eShownScreen := E_BaseVisu.Idle;	
+END_IF
+
+]]></ST>
+      </Implementation>
+    </Method>
+    <LineIds Name="FB_HMIControl">
+      <LineId Id="9" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_HMIControl.SetPopups">
+      <LineId Id="7" Count="3" />
+    </LineIds>
+    <LineIds Name="FB_HMIControl.SetScreen">
+      <LineId Id="25" Count="1" />
+      <LineId Id="28" Count="0" />
+      <LineId Id="24" Count="0" />
+      <LineId Id="5" Count="0" />
+      <LineId Id="29" Count="0" />
+      <LineId Id="6" Count="0" />
+      <LineId Id="21" Count="0" />
+      <LineId Id="30" Count="0" />
+      <LineId Id="8" Count="0" />
+      <LineId Id="10" Count="0" />
+      <LineId Id="38" Count="1" />
+      <LineId Id="31" Count="1" />
+      <LineId Id="36" Count="0" />
+      <LineId Id="13" Count="0" />
+      <LineId Id="15" Count="3" />
+      <LineId Id="20" Count="0" />
+      <LineId Id="7" Count="0" />
+      <LineId Id="34" Count="0" />
+      <LineId Id="33" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

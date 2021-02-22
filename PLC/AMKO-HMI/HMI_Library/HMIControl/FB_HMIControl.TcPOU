@@ -11,6 +11,7 @@ END_VAR
 VAR_OUTPUT
 	bHideMessage	: BOOL ;
 	bHideEStop 		: BOOL ;
+	bHideBorders	: BOOL ;
 	sEstopText		: STRING ;
 	sOperatorMessage: STRING ;
 END_VAR
@@ -67,6 +68,9 @@ END_VAR
         <ST><![CDATA[// Look for edges 
 	reToSettings		( CLK := bCmdSettings );
 	feWriteParemeter 	( CLK := bCmdParemeter OR bCmdManual );
+
+// Hide border control 
+bHideBorders := FALSE ;
 	
 IF reToSettings.Q  THEN 
 	ePreviousScreen := eShownScreen ;
@@ -87,7 +91,8 @@ ELSIF bCmdAutomatic THEN
 	eShownScreen := E_BaseVisu.Automatic ;
 	bCmdSemiAuto	:= FALSE ;
 ELSE 
-	eShownScreen := E_BaseVisu.Idle;	
+	eShownScreen := E_BaseVisu.Idle;
+	bHideBorders := TRUE  ;	
 END_IF
 
 ]]></ST>
@@ -107,6 +112,7 @@ END_IF
     <LineIds Name="FB_HMIControl.SetScreen">
       <LineId Id="25" Count="1" />
       <LineId Id="28" Count="0" />
+      <LineId Id="42" Count="2" />
       <LineId Id="24" Count="0" />
       <LineId Id="5" Count="0" />
       <LineId Id="29" Count="0" />
@@ -125,6 +131,7 @@ END_IF
       <LineId Id="41" Count="0" />
       <LineId Id="18" Count="0" />
       <LineId Id="20" Count="0" />
+      <LineId Id="45" Count="0" />
       <LineId Id="7" Count="0" />
       <LineId Id="34" Count="0" />
       <LineId Id="33" Count="0" />

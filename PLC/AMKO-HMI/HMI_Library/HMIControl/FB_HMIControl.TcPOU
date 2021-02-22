@@ -2,7 +2,7 @@
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.5">
   <POU Name="FB_HMIControl" Id="{062d2a70-ec77-4a9b-a458-d823fff51efb}" SpecialFunc="None">
     <Declaration><![CDATA[FUNCTION_BLOCK FB_HMIControl
-VAR_INPUT
+VAR_IN_OUT
 	bCmdSemiAuto	: BOOL := FALSE ; // Show semi automatic screen
 	bCmdAutomatic 	: BOOL := FALSE ; // Show automatic screen
 	bEstopActive	: BOOL := TRUE 	; // emergency stop is active
@@ -27,11 +27,25 @@ VAR
 
 	reToSettings 		: R_TRIG ; // go to settings
 	ePreviousScreen		: E_BaseVisu ; // previous screen
+	
+	bDisableSettings	: BOOL ; // disable settings button
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[SetScreen();]]></ST>
+      <ST><![CDATA[SetScreen();
+SetPopups();
+ButtonEnable();]]></ST>
     </Implementation>
+    <Method Name="ButtonEnable" Id="{397e13f1-f0f5-428f-b754-eeb0f6285e52}">
+      <Declaration><![CDATA[METHOD PRIVATE ButtonEnable : BOOL
+VAR_INPUT
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[// Disable Buttons 
+	bDisableSettings := eShownScreen = E_BaseVisu.Automatic ;]]></ST>
+      </Implementation>
+    </Method>
     <Method Name="SetPopups" Id="{22a8bffd-43f0-41dd-9eae-608666b34df7}">
       <Declaration><![CDATA[METHOD PRIVATE SetPopups : BOOL
 VAR_INPUT
@@ -60,16 +74,18 @@ IF reToSettings.Q  THEN
 ELSIF NOT bCmdSettings AND eShownScreen = E_BaseVisu.Settings THEN 
 	eShownScreen	:= ePreviousScreen ;
 ELSIF bCmdParemeter THEN 
-	eShownScreen := E_BaseVisu.Parameter ;
+	eShownScreen 	:= E_BaseVisu.Parameter ;
 ELSIF bCmdManual THEN 
-	eShownScreen := E_BaseVisu.Manual;
+	eShownScreen 	:= E_BaseVisu.Manual;
 ELSIF feWriteParemeter.Q THEN 
 	GVL_Parameters.fbParameterHandler.bCmdParFileWrite := TRUE ;
 	eShownScreen 	:= E_BaseVisu.Settings ;
 ELSIF bCmdSemiAuto THEN 
-	eShownScreen := E_BaseVisu.SemiAutomatic;
+	eShownScreen 	:= E_BaseVisu.SemiAutomatic;
+	bCmdSemiAuto	:= FALSE ; 
 ELSIF bCmdAutomatic THEN 
 	eShownScreen := E_BaseVisu.Automatic ;
+	bCmdSemiAuto	:= FALSE ;
 ELSE 
 	eShownScreen := E_BaseVisu.Idle;	
 END_IF
@@ -79,6 +95,11 @@ END_IF
     </Method>
     <LineIds Name="FB_HMIControl">
       <LineId Id="9" Count="0" />
+      <LineId Id="121" Count="1" />
+    </LineIds>
+    <LineIds Name="FB_HMIControl.ButtonEnable">
+      <LineId Id="5" Count="0" />
+      <LineId Id="8" Count="0" />
     </LineIds>
     <LineIds Name="FB_HMIControl.SetPopups">
       <LineId Id="7" Count="3" />
@@ -98,7 +119,11 @@ END_IF
       <LineId Id="31" Count="1" />
       <LineId Id="36" Count="0" />
       <LineId Id="13" Count="0" />
-      <LineId Id="15" Count="3" />
+      <LineId Id="15" Count="0" />
+      <LineId Id="40" Count="0" />
+      <LineId Id="16" Count="1" />
+      <LineId Id="41" Count="0" />
+      <LineId Id="18" Count="0" />
       <LineId Id="20" Count="0" />
       <LineId Id="7" Count="0" />
       <LineId Id="34" Count="0" />

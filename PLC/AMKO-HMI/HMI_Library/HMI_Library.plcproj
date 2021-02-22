@@ -158,7 +158,11 @@
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
       <ExcludeFromBuild>true</ExcludeFromBuild>
     </Compile>
-    <Compile Include="Screens\Parameter\ParameterScreen.TcVIS">
+    <Compile Include="Screens\Manual\ManualControl.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Parameter\ParameterControl.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
     </Compile>
@@ -174,7 +178,7 @@
       <SubType>Code</SubType>
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
     </Compile>
-    <Compile Include="Screens\State\ManualControl.TcVIS">
+    <Compile Include="Screens\State\Manual.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
     </Compile>

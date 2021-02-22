@@ -21,6 +21,11 @@
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
+              <v n="TextID">"909"</v>
+              <v n="TextDefault">"%f.1"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
               <v n="TextID">"388"</v>
               <v n="TextDefault">"%i"</v>
               <l n="LanguageTexts" t="ArrayList" />
@@ -403,6 +408,11 @@
             <o>
               <v n="TextID">"576"</v>
               <v n="TextDefault">"Units produced"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"855"</v>
+              <v n="TextDefault">"Units produced:"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>

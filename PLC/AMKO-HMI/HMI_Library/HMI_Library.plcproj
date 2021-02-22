@@ -26,10 +26,18 @@
     <Folder Include="BaseScreens" />
     <Folder Include="IconsAndPictures" />
     <Folder Include="IconsAndPictures\Backgrounds" />
+    <Folder Include="IconsAndPictures\Backgrounds\SVG" />
+    <Folder Include="IconsAndPictures\Backgrounds\PNG" />
     <Folder Include="IconsAndPictures\Buttons" />
+    <Folder Include="IconsAndPictures\Buttons\Control Buttons\SVG" />
+    <Folder Include="IconsAndPictures\Buttons\Control Buttons\PNG" />
     <Folder Include="IconsAndPictures\Buttons\Home Button" />
     <Folder Include="IconsAndPictures\Buttons\Control Buttons" />
+    <Folder Include="IconsAndPictures\Buttons\Home Button\PNG" />
+    <Folder Include="IconsAndPictures\Buttons\Home Button\SVG" />
     <Folder Include="IconsAndPictures\Buttons\Screen Buttons" />
+    <Folder Include="IconsAndPictures\Buttons\Screen Buttons\SVG" />
+    <Folder Include="IconsAndPictures\Buttons\Screen Buttons\PNG" />
     <Folder Include="IconsAndPictures\Logos" />
     <Folder Include="GVL" />
     <Folder Include="Screens" />
@@ -38,6 +46,7 @@
     <Folder Include="Screens\EventsAndMessage" />
     <Folder Include="Screens\Manual" />
     <Folder Include="Screens\Backgrounds" />
+    <Folder Include="Screens\Base" />
     <Folder Include="Screens\State" />
     <Folder Include="Screens\Startup Screen" />
     <Folder Include="Screens\Parameter" />
@@ -51,16 +60,22 @@
       <SubType>Code</SubType>
       <LinkAlways>true</LinkAlways>
     </Compile>
-    <Compile Include="IconsAndPictures\Backgrounds\BackgroundImagePool.TcIPO">
+    <Compile Include="IconsAndPictures\Backgrounds\PNG\BackgroundImagePool_PNG.TcIPO">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="IconsAndPictures\Buttons\ButtonImagePool.TcIPO">
+    <Compile Include="IconsAndPictures\Backgrounds\SVG\BackGroundImagePool_SVG.TcIPO">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="IconsAndPictures\Buttons\Control Buttons\ControlButtons.TcIPO">
+    <Compile Include="IconsAndPictures\Buttons\Buttons_SVG.TcIPO">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="IconsAndPictures\Logos\LogoPool.TcIPO">
+    <Compile Include="IconsAndPictures\Buttons\Buttons_PNG.TcIPO">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IconsAndPictures\Logos\LogoPool_PNG.TcIPO">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IconsAndPictures\Logos\LogoPool_SVG.TcIPO">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="InputFunctions\FB_HMILREALInput.TcPOU">
@@ -74,6 +89,10 @@
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
     </Compile>
     <Compile Include="Screens\Backgrounds\BackgroundWithBorder.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Base\BaseScreen.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
     </Compile>
@@ -159,7 +178,7 @@
       <SubType>Code</SubType>
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
     </Compile>
-    <Compile Include="Screens\State\StartScreen.TcVIS">
+    <Compile Include="Screens\State\Idle.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
     </Compile>
@@ -379,100 +398,139 @@
     </PlaceholderResolution>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="IconsAndPictures\Backgrounds\Background.svg">
+    <Content Include="IconsAndPictures\Backgrounds\PNG\Background_Bottomzonder knop.png">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Backgrounds\Background_Bottom.svg">
+    <Content Include="IconsAndPictures\Backgrounds\PNG\Emergency Stop Active WIth Button.png">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Backgrounds\Background_Bottomzonder knop.png">
+    <Content Include="IconsAndPictures\Backgrounds\PNG\Emergency Stop Active.jpg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Backgrounds\Background_Sides.svg">
+    <Content Include="IconsAndPictures\Backgrounds\PNG\Emergency Stop Active.png">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Backgrounds\Emergency Stop Active.jpg">
+    <Content Include="IconsAndPictures\Backgrounds\SVG\Background.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Backgrounds\Emergency Stop Active.png">
+    <Content Include="IconsAndPictures\Backgrounds\SVG\Background_Bottom.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Backgrounds\Emergency Stop Active WIth Button.png">
+    <Content Include="IconsAndPictures\Backgrounds\SVG\Background_Sides.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Control Buttons\Continue Sewing.png">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\PNG\Continue Sewing Pushed.png">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Control Buttons\Continue Sewing Pushed.png">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\PNG\Continue Sewing.png">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Control Buttons\Delete Thread Length Pushed.png">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\PNG\Delete Thread Length Pushed.png">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Control Buttons\Delete Thread Length.png">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\PNG\Delete Thread Length.png">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Control Buttons\Log In.svg">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\PNG\Machine Return Home Pushed.png">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Control Buttons\Log Out.svg">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\PNG\machine return home.png">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Control Buttons\Log Pressed.svg">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\PNG\Pause Pushed.png">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Control Buttons\Machine Return Home Pushed.png">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\PNG\Pause.png">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Control Buttons\machine return home.png">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\PNG\Trim by hand Idle.png">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Control Buttons\Manual mode Idle.svg">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\PNG\Trim By Hand Pushed.png">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Control Buttons\Manual Mode Pressed.svg">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\SVG\Continue Sewing .svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Control Buttons\Pause Pushed.png">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\SVG\Continue Sewing Pushed.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Control Buttons\Pause.png">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\SVG\Gearing Off.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Control Buttons\Trim by hand Idle.png">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\SVG\Gearing on.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Control Buttons\Trim By Hand Pushed.png">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\SVG\Gearing Pushed.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Home Button\Home Settings switch.png">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\SVG\Log In.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Home Button\Home-Settings Switch Pushed.png">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\SVG\Log Out.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Home Button\Home-Settings Switch Pushed.svg">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\SVG\Log Pressed.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Home Button\Home_Settings switch.svg">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\SVG\Maintenance.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Screen Buttons\Power Off Pressed.png">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\SVG\Manual mode Idle.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Screen Buttons\Power off.png">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\SVG\Manual Mode Pressed.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Screen Buttons\To Parameter Screen Pressed.png">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\SVG\Pause Pushed.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Screen Buttons\To Parameter Screen Pressed.svg">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\SVG\Pause.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Screen Buttons\To Parameter Screen.png">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\SVG\Start Sewing .svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Screen Buttons\To Parameter Screen.svg">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\SVG\Start Sewing Pressed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Home Button\PNG\Home Settings switch.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Home Button\PNG\Home-Settings Switch Pushed.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Home Button\SVG\Home-Settings Switch Pushed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Home Button\SVG\Home_Settings switch.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Screen Buttons\PNG\Power Off Pressed.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Screen Buttons\PNG\Power off.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Screen Buttons\PNG\To Parameter Screen Pressed.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Screen Buttons\PNG\To Parameter Screen.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Screen Buttons\SVG\Home Settings switch.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Screen Buttons\SVG\Home-Settings Switch Pushed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Screen Buttons\SVG\Parameter Screen.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Screen Buttons\SVG\To Parameter Screen Pressed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Screen Buttons\SVG\To Parameter Screen.svg">
       <SubType>Content</SubType>
     </Content>
     <Content Include="IconsAndPictures\Logos\Amko Basis.svg">

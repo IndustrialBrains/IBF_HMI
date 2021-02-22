@@ -1,31 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.5">
-  <ImagePool Name="LogoPool" Id="{047f04a3-a437-4522-98b7-0befdeb6a4e0}">
+  <ImagePool Name="LogoPool_SVG" Id="{ffc9657e-6796-4a7d-b50c-c1720c5029db}">
     <XmlArchive>
       <Data>
         <o xml:space="preserve" t="ImagePoolObject">
-          <v n="UniqueIdGenerator">"10"</v>
+          <v n="UniqueIdGenerator">"4"</v>
           <l n="BitmapPool" t="ArrayList" cet="ImagePoolItem">
             <o>
               <v n="BitmapID">"Amko Basis"</v>
-              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Logos\Amko logo 300ppi.png"</v>
-              <v n="ItemID">5</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Logos\Amko Basis.svg"</v>
+              <v n="ItemID">1</v>
             </o>
             <o>
               <v n="BitmapID">"Logo Dark blue"</v>
-              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Logos\Logo Dark blue.png"</v>
-              <v n="ItemID">6</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Logos\Logo Dark blue.svg"</v>
+              <v n="ItemID">4</v>
             </o>
             <o>
               <v n="BitmapID">""</v>
               <v n="FileID">""</v>
-              <v n="ItemID">7</v>
+              <v n="ItemID">2</v>
             </o>
           </l>
-          <v n="GuidInit">{05ace917-3793-44b1-95b3-73d26ec96be2}</v>
-          <v n="GuidReInit">{8eaa44bf-b47f-495e-a827-7a72413d83d9}</v>
-          <v n="GuidExitX">{03b7b133-49d0-407f-849c-24edf4c07867}</v>
-          <v n="ValidIds">true</v>
+          <v n="GuidInit">{7582b1ad-e040-4237-aac8-8ebd64b62231}</v>
+          <v n="GuidReInit">{8f91caee-51cd-4777-9f0f-c6c9cd7eb6ec}</v>
+          <v n="GuidExitX">{d014adc2-e190-4b4a-b803-f019432945e4}</v>
+          <v n="ValidIds">false</v>
         </o>
       </Data>
       <TypeList>

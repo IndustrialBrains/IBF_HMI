@@ -194,7 +194,7 @@
             <o n="Background" t="BackgroundSettings">
               <n n="BgGradient" />
               <n n="BgNamedColor" />
-              <v n="BgBmpId">"BackgroundImagePool.Background"</v>
+              <v n="BgBmpId">"BackGroundImagePool_SVG.Background_Bottom"</v>
               <v n="BgUseBmp">true</v>
               <v n="BgColor">false</v>
               <v n="BgUseColor">16777215</v>
@@ -290,10 +290,10 @@
               <d n="FbMethods" t="CaseInsensitiveHashtable" ckt="String" cvt="Guid">
                 <v>FB_Init</v>
                 <v>e98e5dd4-aabc-4ec0-bcf1-34d9b9c52242</v>
-                <v>FB_Reinit</v>
-                <v>ac47c798-2038-40d5-9516-46bccf6de0d1</v>
                 <v>FB_Exit</v>
                 <v>0870a5a4-7465-44e8-81ed-f2ce7c9a5255</v>
+                <v>FB_Reinit</v>
+                <v>ac47c798-2038-40d5-9516-46bccf6de0d1</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{4bd64b1e-cd39-4f11-aec1-c6f0d5732fda}</v>

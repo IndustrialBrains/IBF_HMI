@@ -13,8 +13,8 @@
             <o n="Background" t="BackgroundSettings">
               <n n="BgGradient" />
               <n n="BgNamedColor" />
-              <v n="BgBmpId">""</v>
-              <v n="BgUseBmp">false</v>
+              <v n="BgBmpId">"BackGroundImagePool_SVG.Background_Sides"</v>
+              <v n="BgUseBmp">true</v>
               <v n="BgColor">false</v>
               <v n="BgUseColor">16777215</v>
               <v n="BgUseGradient">false</v>
@@ -29,8 +29,8 @@
                 <v>78bf7f90-78b2-4a40-9e75-3c3616c26039</v>
                 <v>HasInputAccess</v>
                 <v>8ad51aac-5aa6-4d2d-abb2-758fa879d05c</v>
-                <v>Update</v>
-                <v>247f9864-9911-4303-bff8-8ac23b20e5a0</v>
+                <v>HasInputAccessIntern</v>
+                <v>35f318ad-61c8-492c-98dd-3170146f7c82</v>
                 <v>GetTooltip</v>
                 <v>9aa98f64-2500-4956-a368-8930e9905a46</v>
                 <v>GetDialogInterfaceSize</v>
@@ -43,8 +43,12 @@
                 <v>4618540b-4cf5-4196-b9a7-f23175e0206b</v>
                 <v>GetTranslator</v>
                 <v>b7885347-5769-4506-9621-24578d30a644</v>
+                <v>Update</v>
+                <v>247f9864-9911-4303-bff8-8ac23b20e5a0</v>
                 <v>SetClientData</v>
                 <v>8339830b-8dc8-4cb0-bc47-215fec5d44d1</v>
+                <v>HasVisibilityAccessIntern</v>
+                <v>0dcf3ab7-1e2d-4c49-83cd-35b138dd3a35</v>
                 <v>GetInstance</v>
                 <v>f5d38ffa-7e49-45bf-97b4-a22bd28233a8</v>
                 <v>GetClientData</v>
@@ -105,10 +109,10 @@
               <d n="FbMethods" t="CaseInsensitiveHashtable" ckt="String" cvt="Guid">
                 <v>FB_Init</v>
                 <v>6bfa67ef-5100-4486-b37b-75526aa650ca</v>
-                <v>FB_Reinit</v>
-                <v>ed0b94ef-505f-486d-b818-42dcc403bd94</v>
                 <v>FB_Exit</v>
                 <v>e50fe3af-c2b7-4a3d-bcd0-5e29201dbcd2</v>
+                <v>FB_Reinit</v>
+                <v>ed0b94ef-505f-486d-b818-42dcc403bd94</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{a5fb8655-a856-44dd-a6f9-f6434f1a41d3}</v>
@@ -186,7 +190,18 @@
             <l2 n="Inputs" />
           </o>
           <o n="VisuSizeManager" t="VisualObjectSizeManager">
-            <n n="Size" />
+            <d2 n="Size" ckt="Int32" cvt="VisualObjectSize">
+              <v>0</v>
+              <o>
+                <v n="Width">0</v>
+                <v n="Height">0</v>
+              </o>
+              <v>1</v>
+              <o>
+                <v n="Width">0</v>
+                <v n="Height">0</v>
+              </o>
+            </d2>
             <v n="Version">1</v>
           </o>
         </o>
@@ -208,8 +223,31 @@
         <Type n="VisualElemCollection">{ef9d0b20-c96e-48db-b361-2ded4063150e}</Type>
         <Type n="VisualElemList">{f285c9a3-7019-446b-b98c-ccec3a0af8fa}</Type>
         <Type n="VisualObject">{f18bec89-9fef-401d-9953-2f11739a6808}</Type>
+        <Type n="VisualObjectSize">{6ad3e88f-aee2-4766-a7ea-a8790037ef51}</Type>
         <Type n="VisualObjectSizeManager">{5f612b0e-b404-455f-8177-27864e9f5332}</Type>
       </TypeList>
     </XmlArchive>
+    <ObjectProperties>
+      <XmlArchive>
+        <Data>
+          <o xml:space="preserve" t="VisualProperty">
+            <v n="VisuUsageType">0</v>
+            <v n="SizeX">1280</v>
+            <v n="SizeY">800</v>
+            <v n="IsStartVisu">false</v>
+            <v n="VisuSizeMode" t="VisualVisuSizeMode">Specified</v>
+            <v n="Internal">false</v>
+            <v n="DialogIsOpaque">false</v>
+            <v n="DialogIsOpaqueIsSet">false</v>
+          </o>
+        </Data>
+        <TypeList>
+          <Type n="Boolean">System.Boolean</Type>
+          <Type n="Int32">System.Int32</Type>
+          <Type n="VisualProperty">{477d844b-9b2a-407e-90a4-d36fd6dde2fc}</Type>
+          <Type n="VisualVisuSizeMode">{34718b76-91f6-43de-8c65-b77e0b1ee621}</Type>
+        </TypeList>
+      </XmlArchive>
+    </ObjectProperties>
   </Visu>
 </TcPlcObject>

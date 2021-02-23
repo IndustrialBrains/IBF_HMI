@@ -153,6 +153,10 @@
                       <v n="Id">1782330054L</v>
                       <v n="Value">"BS_HOLLOW"</v>
                     </o>
+                    <o>
+                      <v n="Id">2827249010L</v>
+                      <v n="Value">"PS_HOLLOW"</v>
+                    </o>
                   </l>
                 </o>
                 <v n="VisualElementName">"Rectangle"</v>
@@ -1006,18 +1010,16 @@
           <o n="GeneratedLMMDescriptions" t="GeneratedLanguageModelEntriesData">
             <o n="GeneratedVisuFbDescription" t="GenericFbDescription">
               <d n="FbMethods" t="CaseInsensitiveHashtable" ckt="String" cvt="Guid">
-                <v>HasVisibilityAccess</v>
-                <v>44fc06d2-f548-48c3-9205-c38c9e656ad3</v>
+                <v>GetUpdateRects</v>
+                <v>945bbcae-2f23-46bb-9025-95d88c42427d</v>
                 <v>ContainsPoint</v>
                 <v>3be9e808-f9d1-4037-a7f0-00206a5f5e6c</v>
-                <v>HasInputAccess</v>
-                <v>b29da3f1-0a71-4350-a8dd-05eda3b8ce9d</v>
+                <v>SetStaticState</v>
+                <v>88b5093a-c0b1-4a73-bbf0-034c422f8259</v>
                 <v>HasInputAccessIntern</v>
                 <v>b1666ada-2d5f-4d21-bfbc-0853b8598c03</v>
                 <v>GetTooltip</v>
                 <v>f9f3a974-1fe7-4738-9ea9-09d7e7bbf317</v>
-                <v>GetUpdateRects</v>
-                <v>945bbcae-2f23-46bb-9025-95d88c42427d</v>
                 <v>GetNamespace</v>
                 <v>3cf81ee5-8491-4409-975e-825c7a8f1f4d</v>
                 <v>GetTranslator</v>
@@ -1030,6 +1032,8 @@
                 <v>272fb41a-1bef-47ba-a9f9-213e7fb31640</v>
                 <v>Paint</v>
                 <v>19806e72-d08d-44fd-b9f3-7274884ca8f8</v>
+                <v>HasVisibilityAccess</v>
+                <v>44fc06d2-f548-48c3-9205-c38c9e656ad3</v>
                 <v>GetElementArray</v>
                 <v>f6e4feb1-784f-4bed-8f50-393bba35e6cf</v>
                 <v>SetVisuFlagsInternal</v>
@@ -1042,14 +1046,14 @@
                 <v>6e3b77ef-97c1-4154-b08e-f514ca473cbe</v>
                 <v>Initialize</v>
                 <v>4bffad87-804b-4cc5-b577-94327410a516</v>
+                <v>HasInputAccess</v>
+                <v>b29da3f1-0a71-4350-a8dd-05eda3b8ce9d</v>
                 <v>HasVisibilityAccessIntern</v>
                 <v>1a9eb460-8d34-4470-a487-d403aa9cdb38</v>
                 <v>GetSurroundingRect</v>
                 <v>23433914-8fcc-4608-8d06-73b2a1934b5e</v>
                 <v>ElementInfo</v>
                 <v>10992559-0d50-41dc-a5af-07bcee39db73</v>
-                <v>SetStaticState</v>
-                <v>88b5093a-c0b1-4a73-bbf0-034c422f8259</v>
                 <v>GetLocalUsergroup</v>
                 <v>4ccf48ea-08b9-42e0-8377-4dcc61876298</v>
                 <v>GetName</v>
@@ -1080,10 +1084,10 @@
               <d n="FbMethods" t="CaseInsensitiveHashtable" ckt="String" cvt="Guid">
                 <v>FB_Init</v>
                 <v>d3f1e5e8-524c-475a-b339-bf30c6cdd514</v>
-                <v>FB_Exit</v>
-                <v>32c04fa7-8e77-4512-b32b-f60c3827193a</v>
                 <v>FB_Reinit</v>
                 <v>8e82c860-f968-40ab-af21-910c5e3296ed</v>
+                <v>FB_Exit</v>
+                <v>32c04fa7-8e77-4512-b32b-f60c3827193a</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{b3a1f4ff-1d8b-4a4a-879e-bb20d83f2301}</v>

@@ -255,11 +255,11 @@
                     </o>
                     <o>
                       <v n="Id">743958181L</v>
-                      <v n="Value">"bCmdSettings"</v>
+                      <v n="Value">"GVL_HMI.bCmdSettings"</v>
                     </o>
                     <o>
                       <v n="Id">2496894244L</v>
-                      <v n="Value">"bDisableSettings"</v>
+                      <v n="Value">"GVL_HMI.fbHMIControl.bDisableSettings"</v>
                     </o>
                   </l>
                 </o>
@@ -430,7 +430,7 @@
                     </o>
                     <o>
                       <v n="Id">2880254039L</v>
-                      <v n="Value">"bHideBorder"</v>
+                      <v n="Value">"GVL_HMI.fbHMIControl.bHideBorders"</v>
                     </o>
                   </l>
                 </o>
@@ -604,21 +604,6 @@
                 <v n="Id">2L</v>
                 <n n="Tag" />
                 <v n="Text">"VAR_IN_OUT"</v>
-              </o>
-              <o>
-                <v n="Id">3L</v>
-                <n n="Tag" />
-                <v n="Text">"	bCmdSettings 	: BOOL ; // to settings screen command"</v>
-              </o>
-              <o>
-                <v n="Id">6L</v>
-                <n n="Tag" />
-                <v n="Text">"	bDisableSettings: BOOL ; // Disable settings button"</v>
-              </o>
-              <o>
-                <v n="Id">10L</v>
-                <n n="Tag" />
-                <v n="Text">"	bHideBorder		: BOOL ; // Hide borders"</v>
               </o>
               <o>
                 <v n="Id">1L</v>

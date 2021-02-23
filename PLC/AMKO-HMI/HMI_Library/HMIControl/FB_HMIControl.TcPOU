@@ -2,11 +2,7 @@
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.5">
   <POU Name="FB_HMIControl" Id="{062d2a70-ec77-4a9b-a458-d823fff51efb}" SpecialFunc="None">
     <Declaration><![CDATA[FUNCTION_BLOCK FB_HMIControl
-VAR_IN_OUT
-	bCmdSemiAuto	: BOOL := FALSE ; // Show semi automatic screen
-	bCmdAutomatic 	: BOOL := FALSE ; // Show automatic screen
-	bEstopActive	: BOOL := TRUE 	; // emergency stop is active
-	sCmdEstopText	: STRING := 'SAFETY FAULT' ; // Emergency stop screen text 
+VAR_INPUT 
 END_VAR
 VAR_OUTPUT
 	bHideMessage	: BOOL ;
@@ -16,10 +12,6 @@ VAR_OUTPUT
 	sOperatorMessage: STRING ;
 END_VAR
 VAR // HMI
-	eShownScreen 	: E_BaseVisu := E_BaseVisu.Idle ;
-	bCmdSettings	: BOOL := FALSE ; // show settings screen
-	bCmdParemeter	: BOOL := FALSE ; // Show paremeter screen
-	bCmdManual		: BOOL := FALSE ; // Show manual screen
 END_VAR
 VAR
 	bWritePar  			: BOOL ; // write paremeters 
@@ -44,7 +36,7 @@ END_VAR
 ]]></Declaration>
       <Implementation>
         <ST><![CDATA[// Disable Buttons 
-	bDisableSettings := eShownScreen = E_BaseVisu.Automatic ;]]></ST>
+	bDisableSettings := GVL_HMI.eShownScreen = E_BaseVisu.Automatic ;]]></ST>
       </Implementation>
     </Method>
     <Method Name="SetPopups" Id="{22a8bffd-43f0-41dd-9eae-608666b34df7}">
@@ -54,9 +46,11 @@ END_VAR
 ]]></Declaration>
       <Implementation>
         <ST><![CDATA[// Set popup screens 
-bHideEStop 			:= NOT bEstopActive ;
+bHideEStop 			:= NOT GVL_HMI.bEstopActive ;
 bHideMessage 		:= GVL_Message.bHideFaults ;
-sOperatorMessage 	:= GVL_Message.sOPeratorMessage ;]]></ST>
+sOperatorMessage 	:= GVL_Message.sOPeratorMessage ;
+
+GVL_HMI.bEstopActive := FALSE ;]]></ST>
       </Implementation>
     </Method>
     <Method Name="SetScreen" Id="{f129c7c5-04de-4b71-81ed-a393e95f4aeb}">
@@ -66,36 +60,39 @@ END_VAR
 ]]></Declaration>
       <Implementation>
         <ST><![CDATA[// Look for edges 
-	reToSettings		( CLK := bCmdSettings );
-	feWriteParemeter 	( CLK := bCmdParemeter OR bCmdManual );
+	reToSettings		( CLK := GVL_HMI.bCmdSettings );
+	feWriteParemeter 	( CLK := GVL_HMI.bCmdParemeter OR GVL_HMI.bCmdManual );
 
 // Hide border control 
 bHideBorders := FALSE ;
 	
 IF reToSettings.Q  THEN 
-	ePreviousScreen := eShownScreen ;
-	eShownScreen 	:= E_BaseVisu.Settings ;
-ELSIF NOT bCmdSettings AND eShownScreen = E_BaseVisu.Settings THEN 
-	eShownScreen	:= ePreviousScreen ;
-ELSIF bCmdParemeter THEN 
-	eShownScreen 	:= E_BaseVisu.Parameter ;
-ELSIF bCmdManual THEN 
-	eShownScreen 	:= E_BaseVisu.Manual;
-ELSIF feWriteParemeter.Q THEN 
-	GVL_Parameters.fbParameterHandler.bCmdParFileWrite := TRUE ;
-	eShownScreen 	:= E_BaseVisu.Settings ;
-ELSIF bCmdSemiAuto THEN 
-	eShownScreen 	:= E_BaseVisu.SemiAutomatic;
-	bCmdSemiAuto	:= FALSE ; 
-ELSIF bCmdAutomatic THEN 
-	eShownScreen := E_BaseVisu.Automatic ;
-	bCmdSemiAuto	:= FALSE ;
+	ePreviousScreen := GVL_HMI.eShownScreen ;
+	GVL_HMI.eShownScreen 	:= E_BaseVisu.Settings ;
+ELSIF NOT GVL_HMI.bCmdSettings AND GVL_HMI.eShownScreen = E_BaseVisu.Settings THEN 
+	GVL_HMI.eShownScreen	:= ePreviousScreen ;
+ELSIF GVL_HMI.bCmdParemeter THEN 
+	GVL_HMI.eShownScreen 	:= E_BaseVisu.Parameter ;
+ELSIF GVL_HMI.bCmdManual THEN 
+	GVL_HMI.eShownScreen 	:= E_BaseVisu.Manual;
+ELSIF feWriteParemeter.Q THEN
+	bWritePar := TRUE ; 
+	GVL_Parameters.fbParameterHandler.CmdSavePar();
+	GVL_HMI.eShownScreen 	:= E_BaseVisu.Settings ;
+ELSIF gvl_HMI.bCmdSemiAuto THEN 
+	GVL_HMI.eShownScreen 	:= E_BaseVisu.SemiAutomatic;
+	gvl_HMI.bCmdSemiAuto	:= FALSE ; 
+ELSIF gvl_HMI.bCmdAutomatic THEN 
+	GVL_HMI.eShownScreen := E_BaseVisu.Automatic ;
+	gvl_HMI.bCmdSemiAuto	:= FALSE ;
 ELSE 
-	eShownScreen := E_BaseVisu.Idle;
+	GVL_HMI.eShownScreen := E_BaseVisu.Idle;
 	bHideBorders := TRUE  ;	
 END_IF
 
-]]></ST>
+IF bWritePar THEN 
+	bWritePar R= GVL_Parameters.fbParameterHandler.CmdSavePar();
+END_IF]]></ST>
       </Implementation>
     </Method>
     <LineIds Name="FB_HMIControl">
@@ -108,6 +105,8 @@ END_IF
     </LineIds>
     <LineIds Name="FB_HMIControl.SetPopups">
       <LineId Id="7" Count="3" />
+      <LineId Id="12" Count="0" />
+      <LineId Id="11" Count="0" />
     </LineIds>
     <LineIds Name="FB_HMIControl.SetScreen">
       <LineId Id="25" Count="1" />
@@ -122,7 +121,9 @@ END_IF
       <LineId Id="8" Count="0" />
       <LineId Id="10" Count="0" />
       <LineId Id="38" Count="1" />
-      <LineId Id="31" Count="1" />
+      <LineId Id="31" Count="0" />
+      <LineId Id="49" Count="0" />
+      <LineId Id="32" Count="0" />
       <LineId Id="36" Count="0" />
       <LineId Id="13" Count="0" />
       <LineId Id="15" Count="0" />
@@ -135,6 +136,7 @@ END_IF
       <LineId Id="7" Count="0" />
       <LineId Id="34" Count="0" />
       <LineId Id="33" Count="0" />
+      <LineId Id="50" Count="1" />
     </LineIds>
   </POU>
 </TcPlcObject>

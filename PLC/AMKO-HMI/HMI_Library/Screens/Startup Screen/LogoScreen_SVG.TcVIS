@@ -5,7 +5,7 @@
       <Data>
         <o xml:space="preserve" t="VisualObject">
           <n n="LastVisuLanguageModelEntry" />
-          <v n="UniqueIdGenerator">"18"</v>
+          <v n="UniqueIdGenerator">"23"</v>
           <o n="VisualElemList" t="VisualElemList">
             <l n="VisualElementList" t="VisualElemCollection" cet="GenericVisualElem">
               <o>
@@ -714,12 +714,10 @@
                     </o>
                     <o>
                       <v n="Id">494569607L</v>
-                      <l n="Value" t="ArrayList" cet="NamedStyleColor">
-                        <o>
-                          <v n="Color">-2830136</v>
-                          <v n="CanonicalName">"Element-Frame-Color"</v>
-                        </o>
-                      </l>
+                      <o n="Value" t="NamedStyleColor">
+                        <v n="Color">13947080</v>
+                        <v n="CanonicalName">"Element-Frame-Color"</v>
+                      </o>
                     </o>
                     <o>
                       <v n="Id">2812299069L</v>
@@ -841,7 +839,7 @@
                     </o>
                     <o>
                       <v n="Id">2477733581L</v>
-                      <v n="Value">"GVL_Main.nTotalUnitsProduced"</v>
+                      <v n="Value">"nUnitsProduced"</v>
                     </o>
                     <o>
                       <v n="Id">823443203L</v>
@@ -1136,6 +1134,11 @@
                 <v n="Id">16L</v>
                 <n n="Tag" />
                 <v n="Text">"VAR_IN_OUT"</v>
+              </o>
+              <o>
+                <v n="Id">22L</v>
+                <n n="Tag" />
+                <v n="Text">"	nUnitsProduced : UDINT ; // Units produced in machine lifetime"</v>
               </o>
               <o>
                 <v n="Id">1L</v>

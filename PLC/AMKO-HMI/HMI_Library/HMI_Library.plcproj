@@ -18,7 +18,7 @@
     <Company>AMKO-Engineering</Company>
     <Released>false</Released>
     <Title>HMI_Library</Title>
-    <ProjectVersion>1.3.0.2</ProjectVersion>
+    <ProjectVersion>1.3.0.3</ProjectVersion>
     <Author>AMKO-Engineering</Author>
     <Description>Basic HMI screens for use with Utilities and device libraries</Description>
     <LibraryCategories>
@@ -244,19 +244,11 @@
       <SubType>Code</SubType>
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
     </Compile>
-    <Compile Include="Screens\State\Automatic.TcVIS">
-      <SubType>Code</SubType>
-      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
-    </Compile>
     <Compile Include="Screens\State\Manual.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
     </Compile>
     <Compile Include="Screens\State\ParameterScreen.TcVIS">
-      <SubType>Code</SubType>
-      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
-    </Compile>
-    <Compile Include="Screens\State\SemiAuto.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
     </Compile>
@@ -301,10 +293,6 @@
     <PlaceholderReference Include="Device_Library">
       <DefaultResolution>Device_Library, * (AMKO-Engineering)</DefaultResolution>
       <Namespace>Device_Library</Namespace>
-    </PlaceholderReference>
-    <PlaceholderReference Include="System_Library">
-      <DefaultResolution>System_Library, * (AMKO-Engineering)</DefaultResolution>
-      <Namespace>System_Library</Namespace>
     </PlaceholderReference>
     <PlaceholderReference Include="System_VisuElemMeter">
       <DefaultResolution>VisuElemMeter, 3.5.13.0 (System)</DefaultResolution>
@@ -416,9 +404,6 @@
     </PlaceholderResolution>
     <PlaceholderResolution Include="SysSem">
       <Resolution>SysSem, 3.5.5.0 (System)</Resolution>
-    </PlaceholderResolution>
-    <PlaceholderResolution Include="System_Library">
-      <Resolution>System_Library, * (AMKO-Engineering)</Resolution>
     </PlaceholderResolution>
     <PlaceholderResolution Include="System_VisuElemMeter">
       <Resolution>VisuElemMeter, 3.5.13.0 (System)</Resolution>

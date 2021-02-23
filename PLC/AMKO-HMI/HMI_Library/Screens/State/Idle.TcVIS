@@ -5,7 +5,7 @@
       <Data>
         <o xml:space="preserve" t="VisualObject">
           <n n="LastVisuLanguageModelEntry" />
-          <v n="UniqueIdGenerator">"5"</v>
+          <v n="UniqueIdGenerator">"6"</v>
           <o n="VisualElemList" t="VisualElemList">
             <l n="VisualElementList" t="VisualElemCollection" cet="GenericVisualElem">
               <o>
@@ -520,31 +520,11 @@
                     </o>
                     <o>
                       <v n="Id">2597686782L</v>
-                      <v n="Value">false</v>
+                      <v n="Value">true</v>
                     </o>
                     <o>
                       <v n="Id">1311860368L</v>
-                      <o n="Value" t="TextListEnumerationInfo">
-                        <v n="TextListEnumerationName">"GVL_HMI.nStartVisu"</v>
-                        <o n="TextListEnumerationType" t="UserdefType">
-                          <o n="TypeDef" t="VariableExpression">
-                            <n n="Type" />
-                            <v n="Length" t="Int16">11</v>
-                            <v n="VariableId">-1</v>
-                            <v n="SignatureId">-1</v>
-                            <v n="ScopeId">-1</v>
-                            <v n="PositionToSave">-1L</v>
-                            <a n="MessagesToSave" et="CompilerMessage" />
-                            <v n="Name">"E_StartVisu"</v>
-                          </o>
-                          <v n="SignatureId">16420</v>
-                          <v n="ScopeId">-1</v>
-                          <v n="Compiled">false</v>
-                        </o>
-                        <v n="TextListEnumerationUseAsEnum">false</v>
-                        <v n="TextListEnumerationForTable">false</v>
-                        <n n="TextListEnumerationTextlistName" />
-                      </o>
+                      <v n="Value">""</v>
                     </o>
                     <o>
                       <v n="Id">2473092364L</v>
@@ -552,7 +532,37 @@
                         <v n="VisuNodeReferenceGuid">{00000000-0000-0000-0000-000000000000}</v>
                         <n n="VisuNodeReference" />
                         <v n="VisNodeRefs33">"LogoScreen_SVG"</v>
-                        <l n="TypeNodeChildren" t="ArrayList" />
+                        <l n="TypeNodeChildren" t="ArrayList" cet="BasicTypeNode">
+                          <o>
+                            <v n="Flags">2L</v>
+                            <v n="BasicTypeNodeValue">"nUnitsProduced"</v>
+                            <v n="BasicTypeNodeAcceptsExpression">true</v>
+                            <n n="BasicTypeNodeFastAccess" />
+                            <a n="BasicTypeNodeEnumValues" et="String" />
+                            <n n="EnumValueDisplayTextIds" />
+                            <n n="EnumValueVisibilityAttributeValues" />
+                            <n n="EnumValueLibraryId" />
+                            <n n="DynamicEnumMemberVisibilityCheckerTypeGuid" />
+                            <l n="TypeNodeChildren" t="ArrayList" />
+                            <o n="TypeNodeType" t="TypeNodeType">
+                              <v n="TypeClass" t="TypeClass">Reference</v>
+                              <v n="QualifiedName">"UDINT"</v>
+                              <v n="Name">"UDINT"</v>
+                            </o>
+                            <v n="TypeNodeName">"nUnitsProduced"</v>
+                            <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
+                              <v n="AttrFlags">0UL</v>
+                              <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" />
+                              <v n="ConvDone">true</v>
+                            </o>
+                            <v n="TypeNodeId" t="Int16">255</v>
+                            <v n="TypeNodeIdLong">3224299091L</v>
+                            <n n="LibraryId" />
+                            <n n="DisplayTextId" />
+                            <n n="DescriptionTextID" />
+                            <v n="DescriptionUseParent">false</v>
+                          </o>
+                        </l>
                         <o n="TypeNodeType" t="TypeNodeType">
                           <v n="TypeClass" t="TypeClass">Userdef</v>
                           <v n="QualifiedName">"IVisualisation"</v>
@@ -677,6 +687,10 @@
                         <n n="DescriptionTextID" />
                         <v n="DescriptionUseParent">false</v>
                       </o>
+                    </o>
+                    <o>
+                      <v n="Id">3224299091L</v>
+                      <v n="Value">"nUnitsProduced"</v>
                     </o>
                   </l>
                 </o>
@@ -846,9 +860,9 @@
                 <v n="Text">"VAR_IN_OUT"</v>
               </o>
               <o>
-                <v n="Id">5L</v>
+                <v n="Id">6L</v>
                 <n n="Tag" />
-                <v n="Text">"	"</v>
+                <v n="Text">"	nUnitsProduced : UDINT ; // Units produced in machine lifetime"</v>
               </o>
               <o>
                 <v n="Id">1L</v>
@@ -894,7 +908,6 @@
         <Type n="Boolean">System.Boolean</Type>
         <Type n="CaseInsensitiveHashtable">{02a85e84-ef2d-46fc-93f2-acb0bbff3eda}</Type>
         <Type n="CaseInsensitiveHashtable_1">{7df88604-7ac5-4e36-91c4-55e4fdad3e68}</Type>
-        <Type n="CompilerMessage">{bc2be951-49f6-4f0f-b731-e31e36606f1e}</Type>
         <Type n="ComplexInput">{1de566f6-72a7-494c-9353-9a418172c96e}</Type>
         <Type n="Double">System.Double</Type>
         <Type n="DynamicArrayNode">{6c16f79c-dd98-4c29-b3ba-7042e3055542}</Type>
@@ -913,15 +926,12 @@
         <Type n="StructuredTypeNode">{503c5b2e-e80e-4ee7-ae00-c5b93a62b1aa}</Type>
         <Type n="TextDocument">{f3878285-8e4f-490b-bb1b-9acbb7eb04db}</Type>
         <Type n="TextLine">{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}</Type>
-        <Type n="TextListEnumerationInfo">{dac349f5-1aa4-42ed-9997-bd76e930a734}</Type>
         <Type n="TypeClass">{16f7aa24-038f-444e-9d81-b001bc091d35}</Type>
         <Type n="TypeNodeAttributes2">{c1464dbe-c10d-4717-be8f-63efe8638434}</Type>
         <Type n="TypeNodeType">{b12a9636-e818-4598-ae0d-fb6a2446102c}</Type>
         <Type n="UInt16">System.UInt16</Type>
         <Type n="UInt32">System.UInt32</Type>
         <Type n="UInt64">System.UInt64</Type>
-        <Type n="UserdefType">{8499b87a-2b75-4c62-8657-e4aa9316c18b}</Type>
-        <Type n="VariableExpression">{6708bd14-cddc-4e28-b69d-d3183b7c423e}</Type>
         <Type n="VisualElemCollection">{ef9d0b20-c96e-48db-b361-2ded4063150e}</Type>
         <Type n="VisualElemList">{f285c9a3-7019-446b-b98c-ccec3a0af8fa}</Type>
         <Type n="VisualElemMember">{c694e3a2-5c0b-4177-ab35-cb06bd5a6a02}</Type>

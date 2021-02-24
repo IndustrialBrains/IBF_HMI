@@ -174,116 +174,6 @@
                 <o n="VisualElemMemberList" t="VisualElemMemberList">
                   <l n="VisualElemMemberList" t="VisualElemMemberCollection" cet="VisualElemMember">
                     <o>
-                      <v n="Id">1931512087L</v>
-                      <v n="Value">"TOGGLE"</v>
-                    </o>
-                    <o>
-                      <v n="Id">300685745L</v>
-                      <v n="Value">false</v>
-                    </o>
-                    <o>
-                      <v n="Id">2812299069L</v>
-                      <v n="Value">4294967295U</v>
-                    </o>
-                    <o>
-                      <v n="Id">494569607L</v>
-                      <v n="Value">4278190080U</v>
-                    </o>
-                    <o>
-                      <v n="Id">3719097617L</v>
-                      <v n="Value">0</v>
-                    </o>
-                    <o>
-                      <v n="Id">1649127785L</v>
-                      <v n="Value">550</v>
-                    </o>
-                    <o>
-                      <v n="Id">357335551L</v>
-                      <v n="Value">720</v>
-                    </o>
-                    <o>
-                      <v n="Id">2422045748L</v>
-                      <v n="Value">180</v>
-                    </o>
-                    <o>
-                      <v n="Id">2134141914L</v>
-                      <v n="Value">60</v>
-                    </o>
-                    <o>
-                      <v n="Id">493260384L</v>
-                      <v n="Value">4294967295U</v>
-                    </o>
-                    <o>
-                      <v n="Id">135947015L</v>
-                      <v n="Value">4278190080U</v>
-                    </o>
-                    <o>
-                      <v n="Id">2678395525L</v>
-                      <v n="Value">1U</v>
-                    </o>
-                    <o>
-                      <v n="Id">2340015797L</v>
-                      <v n="Value">"HCENTER"</v>
-                    </o>
-                    <o>
-                      <v n="Id">2565699834L</v>
-                      <v n="Value">"VCENTER"</v>
-                    </o>
-                    <o>
-                      <v n="Id">296037572L</v>
-                      <v n="Value">"Buttons_SVG.Home-Settings Switch Pushed"</v>
-                    </o>
-                    <o>
-                      <v n="Id">390574330L</v>
-                      <v n="Value">""</v>
-                    </o>
-                    <o>
-                      <v n="Id">571893170L</v>
-                      <v n="Value">""</v>
-                    </o>
-                    <o>
-                      <v n="Id">427565733L</v>
-                      <v n="Value">"Buttons_SVG.Home Settings switch"</v>
-                    </o>
-                    <o>
-                      <v n="Id">3148411668L</v>
-                      <v n="Value">"Buttons_SVG.Home-Settings Switch Pushed"</v>
-                    </o>
-                    <o>
-                      <v n="Id">2597686782L</v>
-                      <v n="Value">false</v>
-                    </o>
-                    <o>
-                      <v n="Id">743958181L</v>
-                      <v n="Value">"GVL_HMI.bCmdSettings"</v>
-                    </o>
-                    <o>
-                      <v n="Id">2496894244L</v>
-                      <v n="Value">"GVL_HMI.fbHMIControl.bDisableSettings"</v>
-                    </o>
-                  </l>
-                </o>
-                <v n="VisualElementName">"ImageSwitcher"</v>
-                <v n="VisualElementTypeName">"VisuFbImageSwitcher"</v>
-                <v n="VisualElementIsRectangle">true</v>
-                <v n="VisualElementIdentifier">"GenElemInst_8"</v>
-                <n n="VisualElementOfflinePaintCommands" />
-                <n n="VisualElementFrameInformation" />
-                <d n="VisualElementInputActions" t="Hashtable" />
-                <v n="VisualElementIdentification">{38d20094-3a81-4460-8eb1-0035eaa56ea9}</v>
-                <v n="VisualElementOwningObjectGuid">{80a01c00-7e95-43c6-ba37-e4848c79e10a}</v>
-                <a n="LMGuids" et="Guid" />
-                <d n="SubElements" t="Hashtable" />
-                <v n="VisualElementId">8</v>
-                <l n="UserManagementAccessRights" t="ArrayList" />
-              </o>
-              <o>
-                <a n="ConfiguredComplexInputs" et="ComplexInput" />
-                <l n="Elements" t="ArrayList" />
-                <n n="VisualElementDescription" />
-                <o n="VisualElemMemberList" t="VisualElemMemberList">
-                  <l n="VisualElemMemberList" t="VisualElemMemberCollection" cet="VisualElemMember">
-                    <o>
                       <v n="Id">571893170L</v>
                       <v n="Value">""</v>
                     </o>
@@ -448,6 +338,116 @@
                 <v n="VisualElementId">15</v>
                 <l n="UserManagementAccessRights" t="ArrayList" />
               </o>
+              <o>
+                <a n="ConfiguredComplexInputs" et="ComplexInput" />
+                <l n="Elements" t="ArrayList" />
+                <n n="VisualElementDescription" />
+                <o n="VisualElemMemberList" t="VisualElemMemberList">
+                  <l n="VisualElemMemberList" t="VisualElemMemberCollection" cet="VisualElemMember">
+                    <o>
+                      <v n="Id">1931512087L</v>
+                      <v n="Value">"TOGGLE"</v>
+                    </o>
+                    <o>
+                      <v n="Id">300685745L</v>
+                      <v n="Value">false</v>
+                    </o>
+                    <o>
+                      <v n="Id">2812299069L</v>
+                      <v n="Value">4294967295U</v>
+                    </o>
+                    <o>
+                      <v n="Id">494569607L</v>
+                      <v n="Value">4278190080U</v>
+                    </o>
+                    <o>
+                      <v n="Id">3719097617L</v>
+                      <v n="Value">0</v>
+                    </o>
+                    <o>
+                      <v n="Id">1649127785L</v>
+                      <v n="Value">553</v>
+                    </o>
+                    <o>
+                      <v n="Id">357335551L</v>
+                      <v n="Value">720</v>
+                    </o>
+                    <o>
+                      <v n="Id">2422045748L</v>
+                      <v n="Value">180</v>
+                    </o>
+                    <o>
+                      <v n="Id">2134141914L</v>
+                      <v n="Value">60</v>
+                    </o>
+                    <o>
+                      <v n="Id">493260384L</v>
+                      <v n="Value">4294967295U</v>
+                    </o>
+                    <o>
+                      <v n="Id">135947015L</v>
+                      <v n="Value">4278190080U</v>
+                    </o>
+                    <o>
+                      <v n="Id">2678395525L</v>
+                      <v n="Value">1U</v>
+                    </o>
+                    <o>
+                      <v n="Id">2340015797L</v>
+                      <v n="Value">"HCENTER"</v>
+                    </o>
+                    <o>
+                      <v n="Id">2565699834L</v>
+                      <v n="Value">"VCENTER"</v>
+                    </o>
+                    <o>
+                      <v n="Id">296037572L</v>
+                      <v n="Value">"Buttons_SVG.Home-Settings Switch Pushed"</v>
+                    </o>
+                    <o>
+                      <v n="Id">390574330L</v>
+                      <v n="Value">""</v>
+                    </o>
+                    <o>
+                      <v n="Id">571893170L</v>
+                      <v n="Value">""</v>
+                    </o>
+                    <o>
+                      <v n="Id">427565733L</v>
+                      <v n="Value">"Buttons_SVG.Home Settings switch"</v>
+                    </o>
+                    <o>
+                      <v n="Id">3148411668L</v>
+                      <v n="Value">"Buttons_SVG.Home-Settings Switch Pushed"</v>
+                    </o>
+                    <o>
+                      <v n="Id">2597686782L</v>
+                      <v n="Value">false</v>
+                    </o>
+                    <o>
+                      <v n="Id">743958181L</v>
+                      <v n="Value">"GVL_HMI.bCmdSettings"</v>
+                    </o>
+                    <o>
+                      <v n="Id">2496894244L</v>
+                      <v n="Value">"GVL_HMI.fbHMIControl.bDisableSettings"</v>
+                    </o>
+                  </l>
+                </o>
+                <v n="VisualElementName">"ImageSwitcher"</v>
+                <v n="VisualElementTypeName">"VisuFbImageSwitcher"</v>
+                <v n="VisualElementIsRectangle">true</v>
+                <v n="VisualElementIdentifier">"GenElemInst_8"</v>
+                <n n="VisualElementOfflinePaintCommands" />
+                <n n="VisualElementFrameInformation" />
+                <d n="VisualElementInputActions" t="Hashtable" />
+                <v n="VisualElementIdentification">{38d20094-3a81-4460-8eb1-0035eaa56ea9}</v>
+                <v n="VisualElementOwningObjectGuid">{80a01c00-7e95-43c6-ba37-e4848c79e10a}</v>
+                <a n="LMGuids" et="Guid" />
+                <d n="SubElements" t="Hashtable" />
+                <v n="VisualElementId">8</v>
+                <l n="UserManagementAccessRights" t="ArrayList" />
+              </o>
             </l>
             <v n="BackgroundBitmapId">""</v>
             <v n="BackgroundColor">16777215</v>
@@ -550,10 +550,10 @@
               <d n="FbMethods" t="CaseInsensitiveHashtable" ckt="String" cvt="Guid">
                 <v>FB_Init</v>
                 <v>e98e5dd4-aabc-4ec0-bcf1-34d9b9c52242</v>
-                <v>FB_Exit</v>
-                <v>0870a5a4-7465-44e8-81ed-f2ce7c9a5255</v>
                 <v>FB_Reinit</v>
                 <v>ac47c798-2038-40d5-9516-46bccf6de0d1</v>
+                <v>FB_Exit</v>
+                <v>0870a5a4-7465-44e8-81ed-f2ce7c9a5255</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{4bd64b1e-cd39-4f11-aec1-c6f0d5732fda}</v>

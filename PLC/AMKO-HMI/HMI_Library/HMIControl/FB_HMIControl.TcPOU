@@ -63,22 +63,23 @@ END_VAR
 	reToSettings		( CLK := GVL_HMI.bCmdSettings );
 	feWriteParemeter 	( CLK := GVL_HMI.bCmdParemeter OR GVL_HMI.bCmdManual );
 
-// Hide border control 
-bHideBorders := FALSE ;
-	
+// save previous screen 
 IF reToSettings.Q  THEN 
 	ePreviousScreen := GVL_HMI.eShownScreen ;
-	GVL_HMI.eShownScreen 	:= E_BaseVisu.Settings ;
-ELSIF NOT GVL_HMI.bCmdSettings AND GVL_HMI.eShownScreen = E_BaseVisu.Settings THEN 
-	GVL_HMI.eShownScreen	:= ePreviousScreen ;
-ELSIF GVL_HMI.bCmdParemeter THEN 
+END_IF	
+	
+// Hide border control 
+bHideBorders := FALSE ;
+
+// Check active screen	
+IF GVL_HMI.bCmdParemeter THEN 
 	GVL_HMI.eShownScreen 	:= E_BaseVisu.Parameter ;
 ELSIF GVL_HMI.bCmdManual THEN 
 	GVL_HMI.eShownScreen 	:= E_BaseVisu.Manual;
-ELSIF feWriteParemeter.Q THEN
-	bWritePar := TRUE ; 
-	GVL_Parameters.fbParameterHandler.CmdSavePar();
+ELSIF GVL_HMI.bCmdSettings THEN 
 	GVL_HMI.eShownScreen 	:= E_BaseVisu.Settings ;
+ELSIF NOT GVL_HMI.bCmdSettings AND GVL_HMI.eShownScreen = E_BaseVisu.Settings THEN 
+	GVL_HMI.eShownScreen	:= ePreviousScreen ;
 ELSIF gvl_HMI.bCmdSemiAuto THEN 
 	GVL_HMI.eShownScreen 	:= E_BaseVisu.SemiAutomatic;
 	gvl_HMI.bCmdSemiAuto	:= FALSE ; 
@@ -90,53 +91,15 @@ ELSE
 	bHideBorders := TRUE  ;	
 END_IF
 
+// Write parameters to file
+IF feWriteParemeter.Q THEN
+	bWritePar := TRUE ;
+END_IF
+
 IF bWritePar THEN 
 	bWritePar R= GVL_Parameters.fbParameterHandler.CmdSavePar();
 END_IF]]></ST>
       </Implementation>
     </Method>
-    <LineIds Name="FB_HMIControl">
-      <LineId Id="9" Count="0" />
-      <LineId Id="121" Count="1" />
-    </LineIds>
-    <LineIds Name="FB_HMIControl.ButtonEnable">
-      <LineId Id="5" Count="0" />
-      <LineId Id="8" Count="0" />
-    </LineIds>
-    <LineIds Name="FB_HMIControl.SetPopups">
-      <LineId Id="7" Count="3" />
-      <LineId Id="12" Count="0" />
-      <LineId Id="11" Count="0" />
-    </LineIds>
-    <LineIds Name="FB_HMIControl.SetScreen">
-      <LineId Id="25" Count="1" />
-      <LineId Id="28" Count="0" />
-      <LineId Id="42" Count="2" />
-      <LineId Id="24" Count="0" />
-      <LineId Id="5" Count="0" />
-      <LineId Id="29" Count="0" />
-      <LineId Id="6" Count="0" />
-      <LineId Id="21" Count="0" />
-      <LineId Id="30" Count="0" />
-      <LineId Id="8" Count="0" />
-      <LineId Id="10" Count="0" />
-      <LineId Id="38" Count="1" />
-      <LineId Id="31" Count="0" />
-      <LineId Id="49" Count="0" />
-      <LineId Id="32" Count="0" />
-      <LineId Id="36" Count="0" />
-      <LineId Id="13" Count="0" />
-      <LineId Id="15" Count="0" />
-      <LineId Id="40" Count="0" />
-      <LineId Id="16" Count="1" />
-      <LineId Id="41" Count="0" />
-      <LineId Id="18" Count="0" />
-      <LineId Id="20" Count="0" />
-      <LineId Id="45" Count="0" />
-      <LineId Id="7" Count="0" />
-      <LineId Id="34" Count="0" />
-      <LineId Id="33" Count="0" />
-      <LineId Id="50" Count="1" />
-    </LineIds>
   </POU>
 </TcPlcObject>

@@ -361,11 +361,11 @@
                     </o>
                     <o>
                       <v n="Id">2597686782L</v>
-                      <v n="Value">true</v>
+                      <v n="Value">false</v>
                     </o>
                     <o>
                       <v n="Id">1311860368L</v>
-                      <v n="Value">""</v>
+                      <v n="Value">"0"</v>
                     </o>
                     <o>
                       <v n="Id">2473092364L</v>
@@ -533,6 +533,10 @@
                       <v n="Id">3224299091L</v>
                       <v n="Value">"nUnitsProduced"</v>
                     </o>
+                    <o>
+                      <v n="Id">2827249010L</v>
+                      <v n="Value">"PS_HOLLOW"</v>
+                    </o>
                   </l>
                 </o>
                 <v n="VisualElementName">"Frame"</v>
@@ -563,7 +567,7 @@
               <n n="BgNamedColor" />
               <v n="BgBmpId">""</v>
               <v n="BgUseBmp">false</v>
-              <v n="BgColor">true</v>
+              <v n="BgColor">false</v>
               <v n="BgUseColor">16777215</v>
               <v n="BgUseGradient">false</v>
             </o>
@@ -645,10 +649,10 @@
               <d n="FbMethods" t="CaseInsensitiveHashtable_1" ckt="String" cvt="Guid">
                 <v>FB_Init</v>
                 <v>b35d18a9-ecdf-4445-b21c-5699a0a594e0</v>
-                <v>FB_Exit</v>
-                <v>31f33244-963e-427e-b853-08a574527e29</v>
                 <v>FB_Reinit</v>
                 <v>0d667fe4-ce11-4318-add9-2e07d20f8def</v>
+                <v>FB_Exit</v>
+                <v>31f33244-963e-427e-b853-08a574527e29</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{f55acff4-a3cb-4efd-a5bd-abf9b8d765ef}</v>

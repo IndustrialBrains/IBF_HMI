@@ -20,12 +20,10 @@
                     </o>
                     <o>
                       <v n="Id">2341735680L</v>
-                      <l n="Value" t="ArrayList" cet="NamedStyleColor">
-                        <o>
-                          <v n="Color">-2830136</v>
-                          <v n="CanonicalName">"Element-Frame-Color"</v>
-                        </o>
-                      </l>
+                      <o n="Value" t="NamedStyleColor">
+                        <v n="Color">13947080</v>
+                        <v n="CanonicalName">"Element-Frame-Color"</v>
+                      </o>
                     </o>
                     <o>
                       <v n="Id">438423234L</v>
@@ -1033,6 +1031,10 @@
                         <n n="DescriptionTextID" />
                         <v n="DescriptionUseParent">false</v>
                       </o>
+                    </o>
+                    <o>
+                      <v n="Id">2827249010L</v>
+                      <v n="Value">"PS_HOLLOW"</v>
                     </o>
                   </l>
                 </o>
@@ -2295,30 +2297,30 @@
           <o n="GeneratedLMMDescriptions" t="GeneratedLanguageModelEntriesData">
             <o n="GeneratedVisuFbDescription" t="GenericFbDescription">
               <d n="FbMethods" t="CaseInsensitiveHashtable_1" ckt="String" cvt="Guid">
-                <v>HasVisibilityAccess</v>
-                <v>ccdef97e-280d-4ce9-a33f-9745cdacb083</v>
-                <v>ContainsPoint</v>
-                <v>81ceec2f-07cf-49a0-85cf-4681ae676038</v>
-                <v>HasInputAccess</v>
-                <v>8376f54a-d187-48d8-8a9c-f74d2b4663b5</v>
-                <v>Update</v>
-                <v>dd29e5ee-beff-48a1-9b50-bfa844cb5d2a</v>
-                <v>GetTooltip</v>
-                <v>fdce84d3-a0ba-4070-9c20-5c61c9e4a773</v>
                 <v>GetUpdateRects</v>
                 <v>0083fcc9-c5db-4b4b-b677-73bf2683351d</v>
+                <v>ContainsPoint</v>
+                <v>81ceec2f-07cf-49a0-85cf-4681ae676038</v>
+                <v>SetStaticState</v>
+                <v>fe4fccc1-c720-485d-88a2-bbc78c708128</v>
+                <v>HasInputAccessIntern</v>
+                <v>26b44db2-a126-40c3-908d-cf0aff927c73</v>
+                <v>GetTooltip</v>
+                <v>fdce84d3-a0ba-4070-9c20-5c61c9e4a773</v>
                 <v>GetNamespace</v>
                 <v>0481cbbc-9ca7-4018-acc6-931c6d305832</v>
                 <v>GetTranslator</v>
                 <v>54f9e665-95a0-4a3c-b6b3-dc477be5be95</v>
+                <v>Update</v>
+                <v>dd29e5ee-beff-48a1-9b50-bfa844cb5d2a</v>
                 <v>SetClientData</v>
                 <v>c1d48e28-1ff7-41df-9d88-3cd0b19c8943</v>
-                <v>HasVisibilityAccessIntern</v>
-                <v>1686cd5f-286a-406f-a10a-51b45a51fdab</v>
                 <v>GetClientData</v>
                 <v>d860831c-09c7-413b-a81b-b6d30640c78c</v>
                 <v>Paint</v>
                 <v>94d3899c-31b1-410e-a871-2b737a0a84af</v>
+                <v>HasVisibilityAccess</v>
+                <v>ccdef97e-280d-4ce9-a33f-9745cdacb083</v>
                 <v>GetElementArray</v>
                 <v>9c8a721d-e999-4b29-bd0a-b1ba0e1e21c2</v>
                 <v>SetVisuFlagsInternal</v>
@@ -2329,12 +2331,12 @@
                 <v>5d1eb11a-0d9f-4fee-8a8b-1d5e7bc8c37b</v>
                 <v>IsAntialiasingInactive</v>
                 <v>d188ca44-06e1-49ed-a6df-c2b261fbd9ef</v>
-                <v>HasInputAccessIntern</v>
-                <v>26b44db2-a126-40c3-908d-cf0aff927c73</v>
                 <v>Initialize</v>
                 <v>373e26e3-2732-4490-9147-faed8788c480</v>
-                <v>SetStaticState</v>
-                <v>fe4fccc1-c720-485d-88a2-bbc78c708128</v>
+                <v>HasInputAccess</v>
+                <v>8376f54a-d187-48d8-8a9c-f74d2b4663b5</v>
+                <v>HasVisibilityAccessIntern</v>
+                <v>1686cd5f-286a-406f-a10a-51b45a51fdab</v>
                 <v>GetSurroundingRect</v>
                 <v>1b753bc3-bcd8-4ed4-a136-f59390b23941</v>
                 <v>ElementInfo</v>
@@ -2369,10 +2371,10 @@
               <d n="FbMethods" t="CaseInsensitiveHashtable_1" ckt="String" cvt="Guid">
                 <v>FB_Init</v>
                 <v>44e0d94d-1640-464b-b5bf-91355a8dd12d</v>
-                <v>FB_Reinit</v>
-                <v>af9a7ea5-2b76-4d85-a988-c89cb46c3f13</v>
                 <v>FB_Exit</v>
                 <v>e761871c-0bef-4cfe-b278-bbacc34b8426</v>
+                <v>FB_Reinit</v>
+                <v>af9a7ea5-2b76-4d85-a988-c89cb46c3f13</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{0ad81901-2562-4dba-bcfc-ea8ec20a606b}</v>

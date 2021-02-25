@@ -18,7 +18,7 @@
     <Company>AMKO-Engineering</Company>
     <Released>false</Released>
     <Title>HMI_Library</Title>
-    <ProjectVersion>1.3.0.3</ProjectVersion>
+    <ProjectVersion>1.3.0.4</ProjectVersion>
     <Author>AMKO-Engineering</Author>
     <Description>Basic HMI screens for use with Utilities and device libraries</Description>
     <LibraryCategories>
@@ -196,6 +196,10 @@
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
     </Compile>
     <Compile Include="Screens\Manual\DeviceScreens\VisuDigitalOutControl.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Manual\DeviceScreens\VisuEncoderInput.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
     </Compile>
@@ -383,10 +387,7 @@
       <Resolution>Component Manager, 3.5.13.0 (System)</Resolution>
     </PlaceholderResolution>
     <PlaceholderResolution Include="Device_Library">
-      <Resolution>Device_Library, 1.2.0.3 (AMKO-Engineering)</Resolution>
-    </PlaceholderResolution>
-    <PlaceholderResolution Include="HMI_Library">
-      <Resolution>HMI_Library, * (AMKO-Engineering)</Resolution>
+      <Resolution>Device_Library, * (AMKO-Engineering)</Resolution>
     </PlaceholderResolution>
     <PlaceholderResolution Include="Standard">
       <Resolution>Tc2_Standard, 3.3.3.0 (Beckhoff Automation GmbH)</Resolution>

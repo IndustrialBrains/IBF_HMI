@@ -122,7 +122,7 @@
                           <o t="DynamicArrayNode">
                             <o n="DynamicArrayNodeCounterNode" t="BasicTypeNode">
                               <v n="Flags">0L</v>
-                              <v n="BasicTypeNodeValue" t="Int16">11</v>
+                              <v n="BasicTypeNodeValue" t="Int16">12</v>
                               <v n="BasicTypeNodeAcceptsExpression">false</v>
                               <n n="BasicTypeNodeFastAccess" />
                               <a n="BasicTypeNodeEnumValues" et="String" />
@@ -514,6 +514,36 @@
                                 <n n="DescriptionTextID" />
                                 <v n="DescriptionUseParent">false</v>
                               </o>
+                              <o>
+                                <v n="VisuNodeReferenceGuid">{00000000-0000-0000-0000-000000000000}</v>
+                                <n n="VisuNodeReference" />
+                                <v n="VisNodeRefs33">"VisuEncoderInput"</v>
+                                <l n="TypeNodeChildren" t="ArrayList" />
+                                <o n="TypeNodeType" t="TypeNodeType">
+                                  <v n="TypeClass" t="TypeClass">Userdef</v>
+                                  <v n="QualifiedName">"IVisualisation"</v>
+                                  <v n="Name">"IVisualisation"</v>
+                                </o>
+                                <v n="TypeNodeName">"[11]"</v>
+                                <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
+                                  <v n="AttrFlags">0UL</v>
+                                  <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" ckt="String" cvt="String">
+                                    <v>ieccodeconversion_useexistinginterface</v>
+                                    <v>_3S.CoDeSys.VisuGenerated.IVisualisationIEC</v>
+                                    <v>conditionalshow</v>
+                                    <v>visu_elemdev</v>
+                                    <v>''NORMAL__COMMENT</v>
+                                    <v> interface contains additional methods to IVisualElement</v>
+                                  </d>
+                                  <v n="ConvDone">true</v>
+                                </o>
+                                <v n="TypeNodeId" t="Int16">1</v>
+                                <v n="TypeNodeIdLong">108505110L</v>
+                                <n n="LibraryId" />
+                                <n n="DisplayTextId" />
+                                <n n="DescriptionTextID" />
+                                <v n="DescriptionUseParent">false</v>
+                              </o>
                             </l>
                             <o n="TypeNodeType" t="TypeNodeType">
                               <v n="TypeClass" t="TypeClass">Userdef</v>
@@ -526,12 +556,12 @@
                               <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" ckt="String" cvt="String">
                                 <v>Visible</v>
                                 <v>False</v>
-                                <v>ieccodeconversion_array</v>
-                                <v></v>
-                                <v>VisibleChildren</v>
-                                <v>True</v>
                                 <v>DefaultArraySize</v>
                                 <v>5</v>
+                                <v>VisibleChildren</v>
+                                <v>True</v>
+                                <v>ieccodeconversion_array</v>
+                                <v></v>
                                 <v>''NORMAL__COMMENT</v>
                                 <v> We hide this node to prevent having two References nodes
  Nevertheless we want to make sure that the children are displayed</v>
@@ -547,7 +577,7 @@
                           </o>
                           <o t="BasicTypeNode">
                             <v n="Flags">0L</v>
-                            <v n="BasicTypeNodeValue" t="Int16">11</v>
+                            <v n="BasicTypeNodeValue" t="Int16">12</v>
                             <v n="BasicTypeNodeAcceptsExpression">false</v>
                             <n n="BasicTypeNodeFastAccess" />
                             <a n="BasicTypeNodeEnumValues" et="String" />
@@ -587,8 +617,8 @@
                         <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
                           <v n="AttrFlags">81920UL</v>
                           <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" ckt="String" cvt="String">
-                            <v>conditionalshow</v>
-                            <v>visu_elemdev</v>
+                            <v>DisplayFrameReferencesConfiguration</v>
+                            <v></v>
                             <v>DescriptionTextId</v>
                             <v>TL_ElementProperties.Desc_ReferencedVisus</v>
                             <v>SortFlag</v>
@@ -599,14 +629,14 @@
                             <v>Simple|Standard</v>
                             <v>DynamicArray</v>
                             <v></v>
-                            <v>DisplayFrameReferencesConfiguration</v>
-                            <v></v>
+                            <v>conditionalshow</v>
+                            <v>visu_elemdev</v>
                             <v>FrameReferences</v>
                             <v></v>
-                            <v>Storable</v>
-                            <v>True</v>
                             <v>DisplayTextId</v>
                             <v>TL_ElementProperties.References</v>
+                            <v>Storable</v>
+                            <v>True</v>
                           </d>
                           <v n="ConvDone">true</v>
                         </o>
@@ -1036,6 +1066,39 @@
                       <v n="Id">2827249010L</v>
                       <v n="Value">"PS_HOLLOW"</v>
                     </o>
+                    <o>
+                      <v n="Id">108505110L</v>
+                      <o n="Value" t="VisualizationNode">
+                        <v n="VisuNodeReferenceGuid">{00000000-0000-0000-0000-000000000000}</v>
+                        <n n="VisuNodeReference" />
+                        <v n="VisNodeRefs33">"VisuEncoderInput"</v>
+                        <l n="TypeNodeChildren" t="ArrayList" />
+                        <o n="TypeNodeType" t="TypeNodeType">
+                          <v n="TypeClass" t="TypeClass">Userdef</v>
+                          <v n="QualifiedName">"IVisualisation"</v>
+                          <v n="Name">"IVisualisation"</v>
+                        </o>
+                        <v n="TypeNodeName">"[11]"</v>
+                        <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
+                          <v n="AttrFlags">0UL</v>
+                          <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" ckt="String" cvt="String">
+                            <v>ieccodeconversion_useexistinginterface</v>
+                            <v>_3S.CoDeSys.VisuGenerated.IVisualisationIEC</v>
+                            <v>conditionalshow</v>
+                            <v>visu_elemdev</v>
+                            <v>''NORMAL__COMMENT</v>
+                            <v> interface contains additional methods to IVisualElement</v>
+                          </d>
+                          <v n="ConvDone">true</v>
+                        </o>
+                        <v n="TypeNodeId" t="Int16">1</v>
+                        <v n="TypeNodeIdLong">108505110L</v>
+                        <n n="LibraryId" />
+                        <n n="DisplayTextId" />
+                        <n n="DescriptionTextID" />
+                        <v n="DescriptionUseParent">false</v>
+                      </o>
+                    </o>
                   </l>
                 </o>
                 <v n="VisualElementName">"Frame"</v>
@@ -1058,6 +1121,7 @@
                     <v>VisuAnalogOutControl</v>
                     <v>VisuPWMControl</v>
                     <v>VisuDoublePWMControl</v>
+                    <v>VisuEncoderInput</v>
                   </a>
                 </o>
                 <d n="VisualElementInputActions" t="Hashtable" />
@@ -2297,16 +2361,18 @@
           <o n="GeneratedLMMDescriptions" t="GeneratedLanguageModelEntriesData">
             <o n="GeneratedVisuFbDescription" t="GenericFbDescription">
               <d n="FbMethods" t="CaseInsensitiveHashtable_1" ckt="String" cvt="Guid">
-                <v>GetUpdateRects</v>
-                <v>0083fcc9-c5db-4b4b-b677-73bf2683351d</v>
+                <v>HasVisibilityAccess</v>
+                <v>ccdef97e-280d-4ce9-a33f-9745cdacb083</v>
                 <v>ContainsPoint</v>
                 <v>81ceec2f-07cf-49a0-85cf-4681ae676038</v>
-                <v>SetStaticState</v>
-                <v>fe4fccc1-c720-485d-88a2-bbc78c708128</v>
+                <v>HasInputAccess</v>
+                <v>8376f54a-d187-48d8-8a9c-f74d2b4663b5</v>
                 <v>HasInputAccessIntern</v>
                 <v>26b44db2-a126-40c3-908d-cf0aff927c73</v>
                 <v>GetTooltip</v>
                 <v>fdce84d3-a0ba-4070-9c20-5c61c9e4a773</v>
+                <v>GetUpdateRects</v>
+                <v>0083fcc9-c5db-4b4b-b677-73bf2683351d</v>
                 <v>GetNamespace</v>
                 <v>0481cbbc-9ca7-4018-acc6-931c6d305832</v>
                 <v>GetTranslator</v>
@@ -2319,8 +2385,6 @@
                 <v>d860831c-09c7-413b-a81b-b6d30640c78c</v>
                 <v>Paint</v>
                 <v>94d3899c-31b1-410e-a871-2b737a0a84af</v>
-                <v>HasVisibilityAccess</v>
-                <v>ccdef97e-280d-4ce9-a33f-9745cdacb083</v>
                 <v>GetElementArray</v>
                 <v>9c8a721d-e999-4b29-bd0a-b1ba0e1e21c2</v>
                 <v>SetVisuFlagsInternal</v>
@@ -2333,14 +2397,14 @@
                 <v>d188ca44-06e1-49ed-a6df-c2b261fbd9ef</v>
                 <v>Initialize</v>
                 <v>373e26e3-2732-4490-9147-faed8788c480</v>
-                <v>HasInputAccess</v>
-                <v>8376f54a-d187-48d8-8a9c-f74d2b4663b5</v>
                 <v>HasVisibilityAccessIntern</v>
                 <v>1686cd5f-286a-406f-a10a-51b45a51fdab</v>
                 <v>GetSurroundingRect</v>
                 <v>1b753bc3-bcd8-4ed4-a136-f59390b23941</v>
                 <v>ElementInfo</v>
                 <v>19a9c2b6-dbb2-48c0-a048-0bc8850419b0</v>
+                <v>SetStaticState</v>
+                <v>fe4fccc1-c720-485d-88a2-bbc78c708128</v>
                 <v>GetLocalUsergroup</v>
                 <v>1e809662-cd31-47c0-8c12-d0ada8262bb8</v>
                 <v>GetName</v>
@@ -2371,10 +2435,10 @@
               <d n="FbMethods" t="CaseInsensitiveHashtable_1" ckt="String" cvt="Guid">
                 <v>FB_Init</v>
                 <v>44e0d94d-1640-464b-b5bf-91355a8dd12d</v>
-                <v>FB_Exit</v>
-                <v>e761871c-0bef-4cfe-b278-bbacc34b8426</v>
                 <v>FB_Reinit</v>
                 <v>af9a7ea5-2b76-4d85-a988-c89cb46c3f13</v>
+                <v>FB_Exit</v>
+                <v>e761871c-0bef-4cfe-b278-bbacc34b8426</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{0ad81901-2562-4dba-bcfc-ea8ec20a606b}</v>

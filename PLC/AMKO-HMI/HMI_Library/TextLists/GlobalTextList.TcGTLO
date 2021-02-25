@@ -331,6 +331,21 @@
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
+              <v n="TextID">"417"</v>
+              <v n="TextDefault">"Powe:red by "</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"898"</v>
+              <v n="TextDefault">"Powered by "</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"482"</v>
+              <v n="TextDefault">"Powered by: "</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
               <v n="TextID">"704"</v>
               <v n="TextDefault">"Pulse"</v>
               <l n="LanguageTexts" t="ArrayList" />
@@ -403,6 +418,11 @@
             <o>
               <v n="TextID">"132"</v>
               <v n="TextDefault">"Type"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"389"</v>
+              <v n="TextDefault">"Under construction"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>

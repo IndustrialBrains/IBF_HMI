@@ -5,7 +5,7 @@
       <Data>
         <o xml:space="preserve" t="VisualObject">
           <n n="LastVisuLanguageModelEntry" />
-          <v n="UniqueIdGenerator">"3"</v>
+          <v n="UniqueIdGenerator">"4"</v>
           <o n="VisualElemList" t="VisualElemList">
             <l n="VisualElementList" t="VisualElemCollection" cet="GenericVisualElem">
               <o>
@@ -288,10 +288,10 @@
               <d n="FbMethods" t="CaseInsensitiveHashtable" ckt="String" cvt="Guid">
                 <v>FB_Init</v>
                 <v>543fb220-bc6d-4f16-91f6-83793a38e8f7</v>
-                <v>FB_Exit</v>
-                <v>2306ea19-3fe6-475a-9cfe-79477ffd5f54</v>
                 <v>FB_Reinit</v>
                 <v>10c9e6f4-e54e-4bf5-991e-e14f21214cf1</v>
+                <v>FB_Exit</v>
+                <v>2306ea19-3fe6-475a-9cfe-79477ffd5f54</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{43e8fba3-f58a-4e0a-950a-76d7c5cc4d8b}</v>
@@ -342,11 +342,6 @@
                 <v n="Id">2L</v>
                 <n n="Tag" />
                 <v n="Text">"VAR_IN_OUT"</v>
-              </o>
-              <o>
-                <v n="Id">3L</v>
-                <n n="Tag" />
-                <v n="Text">"	"</v>
               </o>
               <o>
                 <v n="Id">1L</v>

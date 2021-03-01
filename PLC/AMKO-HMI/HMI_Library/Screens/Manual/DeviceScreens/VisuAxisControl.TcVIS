@@ -183,9 +183,9 @@
                         </o>
                       </l>
                     </o>
-                    <v n="SignatureName">"Visu_ToggleInput"</v>
-                    <v n="Name">"Toggle"</v>
-                    <v n="Description">"Configure the toggling of a Boolean variable"</v>
+                    <v n="SignatureName">"Visu_TapInput"</v>
+                    <v n="Name">"Tap"</v>
+                    <v n="Description">"Configure the tapping of a Boolean variable"</v>
                   </o>
                 </a>
                 <l n="Elements" t="ArrayList" />
@@ -365,9 +365,9 @@
                         </o>
                       </l>
                     </o>
-                    <v n="SignatureName">"Visu_ToggleInput"</v>
-                    <v n="Name">"Toggle"</v>
-                    <v n="Description">"Configure the toggling of a Boolean variable"</v>
+                    <v n="SignatureName">"Visu_TapInput"</v>
+                    <v n="Name">"Tap"</v>
+                    <v n="Description">"Configure the tapping of a Boolean variable"</v>
                   </o>
                 </a>
                 <l n="Elements" t="ArrayList" />
@@ -2836,18 +2836,16 @@
           <o n="GeneratedLMMDescriptions" t="GeneratedLanguageModelEntriesData">
             <o n="GeneratedVisuFbDescription" t="GenericFbDescription">
               <d n="FbMethods" t="CaseInsensitiveHashtable" ckt="String" cvt="Guid">
-                <v>HasVisibilityAccess</v>
-                <v>f06c30e0-b8a9-4f26-93f5-7299241f64d9</v>
+                <v>GetUpdateRects</v>
+                <v>1d5dfe69-4332-42bc-aa12-ec9f6239c953</v>
                 <v>ContainsPoint</v>
                 <v>f628bb25-138e-4394-9e0a-dbac37479421</v>
-                <v>HasInputAccess</v>
-                <v>868dbb78-55d9-4864-a2fb-66c4b42c3836</v>
+                <v>SetStaticState</v>
+                <v>f7b52241-0eb4-4472-8bff-8574efd86a40</v>
                 <v>HasInputAccessIntern</v>
                 <v>72dcd27a-df94-4b27-b31b-a5d7afa04cb7</v>
                 <v>GetTooltip</v>
                 <v>76a1fbfb-7063-4d3f-a5d6-4e6e3c67ea2a</v>
-                <v>GetUpdateRects</v>
-                <v>1d5dfe69-4332-42bc-aa12-ec9f6239c953</v>
                 <v>GetNamespace</v>
                 <v>0322e3ac-0ba3-402e-9922-c2e16ecd8661</v>
                 <v>GetTranslator</v>
@@ -2860,6 +2858,8 @@
                 <v>8eee5ae1-700d-42cd-9621-125ef683a52b</v>
                 <v>Paint</v>
                 <v>0d33cb55-1170-49b9-b5a3-8a47802e3765</v>
+                <v>HasVisibilityAccess</v>
+                <v>f06c30e0-b8a9-4f26-93f5-7299241f64d9</v>
                 <v>GetElementArray</v>
                 <v>f832a7cc-af97-4eda-9e66-b1c3faccf0b0</v>
                 <v>SetVisuFlagsInternal</v>
@@ -2872,14 +2872,14 @@
                 <v>2736ac8b-2f1f-4a95-8e04-4bab065d5b1c</v>
                 <v>Initialize</v>
                 <v>d82dd9c7-08b7-4c53-9114-d6720c0d6d10</v>
+                <v>HasInputAccess</v>
+                <v>868dbb78-55d9-4864-a2fb-66c4b42c3836</v>
                 <v>HasVisibilityAccessIntern</v>
                 <v>2a47666c-e5e9-4f70-b1dd-695da8dfcc76</v>
                 <v>GetSurroundingRect</v>
                 <v>3b823e2e-3617-4ec9-99e3-f917fd3236d0</v>
                 <v>ElementInfo</v>
                 <v>cbfaecc7-06b3-4686-80ac-e985f0c5d188</v>
-                <v>SetStaticState</v>
-                <v>f7b52241-0eb4-4472-8bff-8574efd86a40</v>
                 <v>GetLocalUsergroup</v>
                 <v>91a78ffd-c4bb-49de-bed1-fb70afc40760</v>
                 <v>GetName</v>

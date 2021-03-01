@@ -499,6 +499,9 @@
     <Content Include="IconsAndPictures\Backgrounds\SVG\Background_Sides.svg">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="IconsAndPictures\Backgrounds\SVG\Emergency Stop Active 1280 x 800 Red.svg">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="IconsAndPictures\Buttons\Control Buttons\PNG\Continue Sewing Pushed.png">
       <SubType>Content</SubType>
     </Content>

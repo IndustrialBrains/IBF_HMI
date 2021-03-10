@@ -532,7 +532,7 @@
     <Content Include="IconsAndPictures\Buttons\Control Buttons\PNG\Trim By Hand Pushed.png">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Control Buttons\SVG\Continue Sewing .svg">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\SVG\Continue Sewing.svg">
       <SubType>Content</SubType>
     </Content>
     <Content Include="IconsAndPictures\Buttons\Control Buttons\SVG\Continue Sewing Pushed.svg">
@@ -571,7 +571,7 @@
     <Content Include="IconsAndPictures\Buttons\Control Buttons\SVG\Pause.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Control Buttons\SVG\Start Sewing .svg">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\SVG\Start Sewing.svg">
       <SubType>Content</SubType>
     </Content>
     <Content Include="IconsAndPictures\Buttons\Control Buttons\SVG\Start Sewing Pressed.svg">

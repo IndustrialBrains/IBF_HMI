@@ -85,7 +85,7 @@ ELSIF gvl_HMI.bCmdSemiAuto THEN
 	gvl_HMI.bCmdSemiAuto	:= FALSE ; 
 ELSIF gvl_HMI.bCmdAutomatic THEN 
 	GVL_HMI.eShownScreen := E_BaseVisu.Automatic ;
-	gvl_HMI.bCmdSemiAuto	:= FALSE ;
+	gvl_HMI.bCmdAutomatic	:= FALSE ;
 ELSE 
 	GVL_HMI.eShownScreen := E_BaseVisu.Idle;
 	bHideBorders := TRUE  ;	

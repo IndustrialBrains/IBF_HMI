@@ -208,8 +208,8 @@
                 <v>13829f2a-5ff5-4ada-9c6a-52833196a735</v>
                 <v>HasInputAccess</v>
                 <v>01ef2c6f-9696-4acf-9525-f24b575cfb02</v>
-                <v>Update</v>
-                <v>90e5230c-e1cd-4fbb-a127-58d8bbfce999</v>
+                <v>HasInputAccessIntern</v>
+                <v>0e33577a-5ca1-4dc1-888b-ca4a7d2193fc</v>
                 <v>GetTooltip</v>
                 <v>f5e64dcd-6a0f-4568-84bd-a2fe64e90063</v>
                 <v>GetDialogInterfaceSize</v>
@@ -222,6 +222,8 @@
                 <v>bb6cde0f-c2d0-4148-b5d5-d5fda2a91e63</v>
                 <v>GetTranslator</v>
                 <v>c9c690d9-59b5-4fc3-9eae-00fbe264f59f</v>
+                <v>Update</v>
+                <v>90e5230c-e1cd-4fbb-a127-58d8bbfce999</v>
                 <v>SetClientData</v>
                 <v>19efda07-402c-439c-8a7b-da0537242ad4</v>
                 <v>HasVisibilityAccessIntern</v>
@@ -242,8 +244,6 @@
                 <v>9e124a59-33e4-42a8-844c-edf01e879012</v>
                 <v>IsAntialiasingInactive</v>
                 <v>38b93784-a015-45f7-96a0-8957b3f378c9</v>
-                <v>HasInputAccessIntern</v>
-                <v>0e33577a-5ca1-4dc1-888b-ca4a7d2193fc</v>
                 <v>Initialize</v>
                 <v>ea9148d9-322e-4237-9e58-1b6adb06c480</v>
                 <v>Destruct</v>
@@ -288,10 +288,10 @@
               <d n="FbMethods" t="CaseInsensitiveHashtable" ckt="String" cvt="Guid">
                 <v>FB_Init</v>
                 <v>07df865e-5595-4118-b26b-8479058e0c1c</v>
-                <v>FB_Exit</v>
-                <v>c292aa8b-8cc2-465b-a237-540ecb351a92</v>
                 <v>FB_Reinit</v>
                 <v>ce9b5a32-67fb-4b05-bef2-295ce93677bf</v>
+                <v>FB_Exit</v>
+                <v>c292aa8b-8cc2-465b-a237-540ecb351a92</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{18ca101d-138e-48d7-a1e6-6f44c145b19f}</v>
@@ -346,7 +346,7 @@
               <o>
                 <v n="Id">3L</v>
                 <n n="Tag" />
-                <v n="Text">"	"</v>
+                <v n="Text">"	bCmdManual	: BOOL ; // switch to manual screen"</v>
               </o>
               <o>
                 <v n="Id">1L</v>

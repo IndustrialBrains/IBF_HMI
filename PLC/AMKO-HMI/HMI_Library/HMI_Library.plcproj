@@ -114,7 +114,8 @@
     <Folder Include="Screens\Manual" />
     <Folder Include="Screens\Backgrounds" />
     <Folder Include="Screens\Base" />
-    <Folder Include="Screens\State" />
+    <Folder Include="Screens\State_PNG" />
+    <Folder Include="Screens\State_SVG" />
     <Folder Include="Screens\Startup Screen" />
     <Folder Include="Screens\Parameter" />
     <Folder Include="TextLists" />
@@ -223,14 +224,14 @@
       <SubType>Code</SubType>
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
     </Compile>
-    <Compile Include="Screens\EventsAndMessage\BasicMessageScreen_OLD.TcVIS">
-      <SubType>Code</SubType>
-      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
-    </Compile>
     <Compile Include="Screens\EventsAndMessage\MessageScreen.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
       <ExcludeFromBuild>true</ExcludeFromBuild>
+    </Compile>
+    <Compile Include="Screens\Manual\ManualButton_PNG.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
     </Compile>
     <Compile Include="Screens\Manual\ManualControl.TcVIS">
       <SubType>Code</SubType>
@@ -244,7 +245,11 @@
       <SubType>Code</SubType>
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
     </Compile>
-    <Compile Include="Screens\Startup Screen\LogoScreen.TcVIS">
+    <Compile Include="Screens\Parameter\ParButton_PNG.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Startup Screen\LogoScreen_PNG.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
     </Compile>
@@ -252,19 +257,35 @@
       <SubType>Code</SubType>
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
     </Compile>
-    <Compile Include="Screens\State\Manual.TcVIS">
+    <Compile Include="Screens\State_PNG\Idle_PNG.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
     </Compile>
-    <Compile Include="Screens\State\ParameterScreen.TcVIS">
+    <Compile Include="Screens\State_PNG\Manual_PNG.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
     </Compile>
-    <Compile Include="Screens\State\Settings.TcVIS">
+    <Compile Include="Screens\State_PNG\Parameter_PNG.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
     </Compile>
-    <Compile Include="Screens\State\Idle.TcVIS">
+    <Compile Include="Screens\State_PNG\Settings_PNG.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\State_SVG\Manual.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\State_SVG\ParameterScreen.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\State_SVG\Settings.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\State_SVG\Idle.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
     </Compile>
@@ -581,6 +602,12 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="IconsAndPictures\Buttons\Home Button\PNG\Home-Settings Switch Pushed.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Home Button\PNG\Manual mode Idle.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Home Button\PNG\Manual Mode Pressed.png">
       <SubType>Content</SubType>
     </Content>
     <Content Include="IconsAndPictures\Buttons\Home Button\SVG\Home-Settings Switch Pushed.svg">

@@ -4,7 +4,7 @@
     <XmlArchive>
       <Data>
         <o xml:space="preserve" t="ImagePoolObject">
-          <v n="UniqueIdGenerator">"41"</v>
+          <v n="UniqueIdGenerator">"45"</v>
           <l n="BitmapPool" t="ArrayList" cet="ImagePoolItem">
             <o>
               <v n="BitmapID">"Home_Settings switch"</v>
@@ -87,9 +87,19 @@
               <v n="ItemID">41</v>
             </o>
             <o>
+              <v n="BitmapID">"Manual mode Idle"</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Buttons\Home Button\PNG\Manual mode Idle.png"</v>
+              <v n="ItemID">31</v>
+            </o>
+            <o>
+              <v n="BitmapID">"Manual Mode Pressed"</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Buttons\Home Button\PNG\Manual Mode Pressed.png"</v>
+              <v n="ItemID">42</v>
+            </o>
+            <o>
               <v n="BitmapID">""</v>
               <v n="FileID">""</v>
-              <v n="ItemID">31</v>
+              <v n="ItemID">44</v>
             </o>
           </l>
           <v n="GuidInit">{dbfde4b4-e1c0-46ea-9ac7-91b981832394}</v>

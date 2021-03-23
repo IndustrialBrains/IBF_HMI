@@ -133,11 +133,11 @@
                     </o>
                     <o>
                       <v n="Id">550940142L</v>
-                      <v n="Value">746</v>
+                      <v n="Value">850</v>
                     </o>
                     <o>
                       <v n="Id">1473355128L</v>
-                      <v n="Value">26</v>
+                      <v n="Value">130</v>
                     </o>
                     <o>
                       <v n="Id">493260384L</v>
@@ -149,7 +149,7 @@
                     </o>
                     <o>
                       <v n="Id">3332245745L</v>
-                      <v n="Value">"Buttons_SVG.Manual mode Idle"</v>
+                      <v n="Value">"Buttons_PNG.Manual mode Idle"</v>
                     </o>
                     <o>
                       <v n="Id">390574330L</v>
@@ -288,10 +288,10 @@
               <d n="FbMethods" t="CaseInsensitiveHashtable" ckt="String" cvt="Guid">
                 <v>FB_Init</v>
                 <v>07df865e-5595-4118-b26b-8479058e0c1c</v>
-                <v>FB_Reinit</v>
-                <v>ce9b5a32-67fb-4b05-bef2-295ce93677bf</v>
                 <v>FB_Exit</v>
                 <v>c292aa8b-8cc2-465b-a237-540ecb351a92</v>
+                <v>FB_Reinit</v>
+                <v>ce9b5a32-67fb-4b05-bef2-295ce93677bf</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{18ca101d-138e-48d7-a1e6-6f44c145b19f}</v>

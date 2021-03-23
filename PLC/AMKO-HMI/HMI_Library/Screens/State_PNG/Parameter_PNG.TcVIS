@@ -398,7 +398,7 @@
                         <l n="TypeNodeChildren" t="ArrayList" cet="BasicTypeNode">
                           <o>
                             <v n="Flags">2L</v>
-                            <n n="BasicTypeNodeValue" />
+                            <v n="BasicTypeNodeValue">"bCmdParameter"</v>
                             <v n="BasicTypeNodeAcceptsExpression">true</v>
                             <n n="BasicTypeNodeFastAccess" />
                             <a n="BasicTypeNodeEnumValues" et="String" />
@@ -455,6 +455,10 @@
                     <o>
                       <v n="Id">2597686782L</v>
                       <v n="Value">true</v>
+                    </o>
+                    <o>
+                      <v n="Id">2763477857L</v>
+                      <v n="Value">"bCmdParameter"</v>
                     </o>
                   </l>
                 </o>
@@ -1048,7 +1052,7 @@
               <o>
                 <v n="Id">3L</v>
                 <n n="Tag" />
-                <v n="Text">"	"</v>
+                <v n="Text">"	bCmdParameter : BOOL ; // Return from parameter screen"</v>
               </o>
               <o>
                 <v n="Id">1L</v>

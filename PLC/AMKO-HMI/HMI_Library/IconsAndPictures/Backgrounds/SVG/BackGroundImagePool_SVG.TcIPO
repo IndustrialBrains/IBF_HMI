@@ -4,7 +4,7 @@
     <XmlArchive>
       <Data>
         <o xml:space="preserve" t="ImagePoolObject">
-          <v n="UniqueIdGenerator">"11"</v>
+          <v n="UniqueIdGenerator">"17"</v>
           <l n="BitmapPool" t="ArrayList" cet="ImagePoolItem">
             <o>
               <v n="BitmapID">"Background"</v>
@@ -22,14 +22,24 @@
               <v n="ItemID">8</v>
             </o>
             <o>
-              <v n="BitmapID">"Emergency Stop Active 1280 x 800 Red"</v>
-              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Backgrounds\SVG\Emergency Stop Active 1280 x 800 Red.svg"</v>
+              <v n="BitmapID">"Emergency Stop Active 1280 x 800 Red Transparent"</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Backgrounds\SVG\Emergency Stop Active 1280 x 800 Red Transparent.svg"</v>
               <v n="ItemID">9</v>
+            </o>
+            <o>
+              <v n="BitmapID">"Center"</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Backgrounds\SVG\Center.svg"</v>
+              <v n="ItemID">10</v>
+            </o>
+            <o>
+              <v n="BitmapID">"Emergency Stop Active 1280 x 800 Red Filled"</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Backgrounds\SVG\Emergency Stop Active 1280 x 800 Red Filled.svg"</v>
+              <v n="ItemID">12</v>
             </o>
             <o>
               <v n="BitmapID">""</v>
               <v n="FileID">""</v>
-              <v n="ItemID">10</v>
+              <v n="ItemID">16</v>
             </o>
           </l>
           <v n="GuidInit">{520622fe-005d-4bac-9a01-4d187a393674}</v>

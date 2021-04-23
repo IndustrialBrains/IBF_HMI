@@ -6,6 +6,16 @@
         <o xml:space="preserve" t="GlobalTextListObject">
           <l n="TextList" t="ArrayList" cet="TextListRow">
             <o>
+              <v n="TextID">"0"</v>
+              <v n="TextDefault">" Act velocity:"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"268"</v>
+              <v n="TextDefault">"%.2f"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
               <v n="TextID">"923"</v>
               <v n="TextDefault">"%5.1f"</v>
               <l n="LanguageTexts" t="ArrayList" />
@@ -18,6 +28,11 @@
             <o>
               <v n="TextID">"222"</v>
               <v n="TextDefault">"%f"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"909"</v>
+              <v n="TextDefault">"%f.1"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
@@ -51,6 +66,11 @@
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
+              <v n="TextID">"196"</v>
+              <v n="TextDefault">"Act velocity"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
               <v n="TextID">"224"</v>
               <v n="TextDefault">"Activate manual control"</v>
               <l n="LanguageTexts" t="ArrayList" />
@@ -66,6 +86,11 @@
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
+              <v n="TextID">"505"</v>
+              <v n="TextDefault">"ActiveValue"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
               <v n="TextID">"584"</v>
               <v n="TextDefault">"Actual Position:"</v>
               <l n="LanguageTexts" t="ArrayList" />
@@ -78,6 +103,11 @@
             <o>
               <v n="TextID">"62"</v>
               <v n="TextDefault">"Administrator"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"146"</v>
+              <v n="TextDefault">"AutpotVelo:"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
@@ -326,6 +356,21 @@
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
+              <v n="TextID">"417"</v>
+              <v n="TextDefault">"Powe:red by "</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"898"</v>
+              <v n="TextDefault">"Powered by "</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"482"</v>
+              <v n="TextDefault">"Powered by: "</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
               <v n="TextID">"704"</v>
               <v n="TextDefault">"Pulse"</v>
               <l n="LanguageTexts" t="ArrayList" />
@@ -343,6 +388,26 @@
             <o>
               <v n="TextID">"458"</v>
               <v n="TextDefault">"RESET FAULTS"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"69"</v>
+              <v n="TextDefault">"Run CCw"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"559"</v>
+              <v n="TextDefault">"Run CCW"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"928"</v>
+              <v n="TextDefault">"Run CW"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"138"</v>
+              <v n="TextDefault">"Run CWW"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
@@ -376,6 +441,11 @@
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
+              <v n="TextID">"229"</v>
+              <v n="TextDefault">"Teach Value"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
               <v n="TextID">"186"</v>
               <v n="TextDefault">"Teach values"</v>
               <l n="LanguageTexts" t="ArrayList" />
@@ -401,8 +471,18 @@
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
+              <v n="TextID">"389"</v>
+              <v n="TextDefault">"Under construction"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
               <v n="TextID">"576"</v>
               <v n="TextDefault">"Units produced"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"855"</v>
+              <v n="TextDefault">"Units produced:"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>

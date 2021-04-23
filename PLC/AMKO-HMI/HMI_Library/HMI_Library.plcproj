@@ -18,48 +18,135 @@
     <Company>AMKO-Engineering</Company>
     <Released>false</Released>
     <Title>HMI_Library</Title>
-    <ProjectVersion>1.0.0.6</ProjectVersion>
+    <ProjectVersion>1.3.1.2</ProjectVersion>
     <Author>AMKO-Engineering</Author>
     <Description>Basic HMI screens for use with Utilities and device libraries</Description>
+    <LibraryCategories>
+      <LibraryCategory xmlns="">
+        <Id>{589fe09e-9317-462c-ba3b-ceb72fa5d919}</Id>
+        <Version>1.0.0.0</Version>
+        <DefaultName>AMKO-Engineering</DefaultName>
+      </LibraryCategory>
+      <LibraryCategory xmlns="">
+        <Id>{9052c1da-2179-403f-9f0a-49f63df589e9}</Id>
+        <Version>1.0.0.0</Version>
+        <ParentCategory>
+          <Id>{589fe09e-9317-462c-ba3b-ceb72fa5d919}</Id>
+        </ParentCategory>
+        <DefaultName>System</DefaultName>
+      </LibraryCategory>
+      <LibraryCategory xmlns="">
+        <Id>{d69a4e54-3b9a-4ecc-8074-fff937c26a40}</Id>
+        <Version>1.0.0.0</Version>
+        <ParentCategory>
+          <Id>{589fe09e-9317-462c-ba3b-ceb72fa5d919}</Id>
+        </ParentCategory>
+        <DefaultName>Utillities</DefaultName>
+      </LibraryCategory>
+      <LibraryCategory xmlns="">
+        <Id>{eb954523-a8af-4bd0-a32c-f81936b81c6d}</Id>
+        <Version>1.0.0.0</Version>
+        <ParentCategory>
+          <Id>{589fe09e-9317-462c-ba3b-ceb72fa5d919}</Id>
+        </ParentCategory>
+        <DefaultName>HMI</DefaultName>
+      </LibraryCategory>
+      <LibraryCategory xmlns="">
+        <Id>{846be616-7077-49df-82d2-98e957c13e93}</Id>
+        <Version>1.0.0.0</Version>
+        <ParentCategory>
+          <Id>{589fe09e-9317-462c-ba3b-ceb72fa5d919}</Id>
+        </ParentCategory>
+        <DefaultName>Machines</DefaultName>
+      </LibraryCategory>
+      <LibraryCategory xmlns="">
+        <Id>{009e50f4-d2ac-459e-96fa-8b145dea1d14}</Id>
+        <Version>1.0.0.0</Version>
+        <ParentCategory>
+          <Id>{589fe09e-9317-462c-ba3b-ceb72fa5d919}</Id>
+        </ParentCategory>
+        <DefaultName>Devices</DefaultName>
+      </LibraryCategory>
+      <LibraryCategory xmlns="">
+        <Id>{3ea1b3cc-00d0-4410-912b-09df72d0dc78}</Id>
+        <Version>1.0.0.0</Version>
+        <ParentCategory>
+          <Id>{589fe09e-9317-462c-ba3b-ceb72fa5d919}</Id>
+        </ParentCategory>
+        <DefaultName>MLT</DefaultName>
+      </LibraryCategory>
+      <LibraryCategory xmlns="">
+        <Id>{7456e3ea-ab98-4ec9-850d-33c9c8b9ad33}</Id>
+        <Version>1.0.0.0</Version>
+        <ParentCategory>
+          <Id>{589fe09e-9317-462c-ba3b-ceb72fa5d919}</Id>
+        </ParentCategory>
+        <DefaultName>Sewinghead</DefaultName>
+      </LibraryCategory>
+    </LibraryCategories>
+    <SelectedLibraryCategories>
+      <Id xmlns="">{eb954523-a8af-4bd0-a32c-f81936b81c6d}</Id>
+    </SelectedLibraryCategories>
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="BaseScreens" />
     <Folder Include="IconsAndPictures" />
     <Folder Include="IconsAndPictures\Backgrounds" />
+    <Folder Include="IconsAndPictures\Backgrounds\SVG" />
+    <Folder Include="IconsAndPictures\Backgrounds\PNG" />
     <Folder Include="IconsAndPictures\Buttons" />
+    <Folder Include="IconsAndPictures\Buttons\Control Buttons\SVG" />
+    <Folder Include="IconsAndPictures\Buttons\Control Buttons\PNG" />
     <Folder Include="IconsAndPictures\Buttons\Home Button" />
     <Folder Include="IconsAndPictures\Buttons\Control Buttons" />
+    <Folder Include="IconsAndPictures\Buttons\Home Button\PNG" />
+    <Folder Include="IconsAndPictures\Buttons\Home Button\SVG" />
     <Folder Include="IconsAndPictures\Buttons\Screen Buttons" />
+    <Folder Include="IconsAndPictures\Buttons\Screen Buttons\SVG" />
+    <Folder Include="IconsAndPictures\Buttons\Screen Buttons\PNG" />
     <Folder Include="IconsAndPictures\Logos" />
     <Folder Include="GVL" />
+    <Folder Include="HMIControl" />
     <Folder Include="Screens" />
     <Folder Include="InputFunctions" />
     <Folder Include="Screens\Manual\DeviceScreens" />
     <Folder Include="Screens\EventsAndMessage" />
     <Folder Include="Screens\Manual" />
     <Folder Include="Screens\Backgrounds" />
+    <Folder Include="Screens\Base" />
+    <Folder Include="Screens\State_PNG" />
+    <Folder Include="Screens\State_SVG" />
     <Folder Include="Screens\Startup Screen" />
     <Folder Include="Screens\Parameter" />
     <Folder Include="TextLists" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GVL\E_StartVisu.TcTLEO">
+    <Compile Include="GVL\E_BaseVisu.TcTLEO">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="GVL\GVL_HMI.TcGVL">
       <SubType>Code</SubType>
       <LinkAlways>true</LinkAlways>
     </Compile>
-    <Compile Include="IconsAndPictures\Backgrounds\BackgroundImagePool.TcIPO">
+    <Compile Include="HMIControl\FB_HMIControl.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="IconsAndPictures\Buttons\ButtonImagePool.TcIPO">
+    <Compile Include="IconsAndPictures\Backgrounds\PNG\BackgroundImagePool_PNG.TcIPO">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="IconsAndPictures\Buttons\Control Buttons\ControlButtons.TcIPO">
+    <Compile Include="IconsAndPictures\Backgrounds\SVG\BackGroundImagePool_SVG.TcIPO">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="IconsAndPictures\Logos\LogoPool.TcIPO">
+    <Compile Include="IconsAndPictures\Buttons\Buttons_SVG.TcIPO">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IconsAndPictures\Buttons\Buttons_PNG.TcIPO">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IconsAndPictures\Logos\LogoPool_PNG.TcIPO">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IconsAndPictures\Logos\LogoPool_SVG.TcIPO">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="InputFunctions\FB_HMILREALInput.TcPOU">
@@ -72,12 +159,28 @@
       <SubType>Code</SubType>
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
     </Compile>
+    <Compile Include="Screens\Backgrounds\BackgroundWithBorder.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Base\BaseScreen.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
     <Compile Include="Screens\EventsAndMessage\BasicMessageScreen.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
       <ExcludeFromBuild>false</ExcludeFromBuild>
     </Compile>
+    <Compile Include="Screens\EventsAndMessage\Estop.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
     <Compile Include="Screens\Manual\DeviceScreens\VisuAnalogOutControl.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Manual\DeviceScreens\VisuAnalogAxisControl.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
     </Compile>
@@ -101,6 +204,10 @@
       <SubType>Code</SubType>
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
     </Compile>
+    <Compile Include="Screens\Manual\DeviceScreens\VisuEncoderInput.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
     <Compile Include="Screens\Manual\DeviceScreens\VisuPushbuttonLightControl.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
@@ -121,28 +228,68 @@
       <SubType>Code</SubType>
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
     </Compile>
-    <Compile Include="Screens\Manual\ManualControl.TcVIS">
-      <SubType>Code</SubType>
-      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
-    </Compile>
-    <Compile Include="Screens\EventsAndMessage\BasicMessageScreen_OLD.TcVIS">
-      <SubType>Code</SubType>
-      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
-    </Compile>
     <Compile Include="Screens\EventsAndMessage\MessageScreen.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
       <ExcludeFromBuild>true</ExcludeFromBuild>
     </Compile>
-    <Compile Include="Screens\Parameter\ParameterScreen.TcVIS">
+    <Compile Include="Screens\Manual\ManualButton_PNG.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
     </Compile>
-    <Compile Include="Screens\Startup Screen\StartScreen.TcVIS">
+    <Compile Include="Screens\Manual\ManualControl.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
     </Compile>
-    <Compile Include="Screens\Startup Screen\LogoScreen.TcVIS">
+    <Compile Include="Screens\Manual\toManualButton.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Parameter\ParameterControl.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Parameter\ParButton_PNG.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Startup Screen\LogoScreen_PNG.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Startup Screen\LogoScreen_SVG.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\State_PNG\Idle_PNG.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\State_PNG\Manual_PNG.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\State_PNG\Parameter_PNG.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\State_PNG\Settings_PNG.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\State_SVG\Manual.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\State_SVG\ParameterScreen.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\State_SVG\Settings.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\State_SVG\Idle.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
     </Compile>
@@ -179,10 +326,6 @@
     <PlaceholderReference Include="Device_Library">
       <DefaultResolution>Device_Library, * (AMKO-Engineering)</DefaultResolution>
       <Namespace>Device_Library</Namespace>
-    </PlaceholderReference>
-    <PlaceholderReference Include="System_Library">
-      <DefaultResolution>System_Library, * (AMKO-Engineering)</DefaultResolution>
-      <Namespace>System_Library</Namespace>
     </PlaceholderReference>
     <PlaceholderReference Include="System_VisuElemMeter">
       <DefaultResolution>VisuElemMeter, 3.5.13.0 (System)</DefaultResolution>
@@ -226,6 +369,10 @@
       <SystemLibrary>true</SystemLibrary>
       <ResolverGuid>2717eb6a-dd07-4c66-8d8d-cacebd7b18ae</ResolverGuid>
     </PlaceholderReference>
+    <PlaceholderReference Include="Tc2_Standard">
+      <DefaultResolution>Tc2_Standard, * (Beckhoff Automation GmbH)</DefaultResolution>
+      <Namespace>Tc2_Standard</Namespace>
+    </PlaceholderReference>
     <PlaceholderReference Include="Utilities_Library">
       <DefaultResolution>Utilities_Library, * (AMKO-Engineering)</DefaultResolution>
       <Namespace>Utilities_Library</Namespace>
@@ -265,10 +412,7 @@
       <Resolution>Component Manager, 3.5.13.0 (System)</Resolution>
     </PlaceholderResolution>
     <PlaceholderResolution Include="Device_Library">
-      <Resolution>Device_Library, 1.2.0.3 (AMKO-Engineering)</Resolution>
-    </PlaceholderResolution>
-    <PlaceholderResolution Include="HMI_Library">
-      <Resolution>HMI_Library, * (AMKO-Engineering)</Resolution>
+      <Resolution>Device_Library, * (AMKO-Engineering)</Resolution>
     </PlaceholderResolution>
     <PlaceholderResolution Include="Standard">
       <Resolution>Tc2_Standard, 3.3.3.0 (Beckhoff Automation GmbH)</Resolution>
@@ -290,9 +434,6 @@
     </PlaceholderResolution>
     <PlaceholderResolution Include="SysSem">
       <Resolution>SysSem, 3.5.5.0 (System)</Resolution>
-    </PlaceholderResolution>
-    <PlaceholderResolution Include="System_Library">
-      <Resolution>System_Library, * (AMKO-Engineering)</Resolution>
     </PlaceholderResolution>
     <PlaceholderResolution Include="System_VisuElemMeter">
       <Resolution>VisuElemMeter, 3.5.13.0 (System)</Resolution>
@@ -352,7 +493,7 @@
       <Resolution>Tc3_Module, 3.3.21.0 (Beckhoff Automation GmbH)</Resolution>
     </PlaceholderResolution>
     <PlaceholderResolution Include="Utilities_Library">
-      <Resolution>Utilities_Library, 1.2.0.3 (AMKO-Engineering)</Resolution>
+      <Resolution>Utilities_Library, * (AMKO-Engineering)</Resolution>
     </PlaceholderResolution>
     <PlaceholderResolution Include="VisuDialogs">
       <Resolution>VisuDialogs, 3.5.12.0 (System)</Resolution>
@@ -362,97 +503,154 @@
     </PlaceholderResolution>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="IconsAndPictures\Backgrounds\Background.svg">
+    <Content Include="IconsAndPictures\Backgrounds\PNG\Background_Bottomzonder knop.png">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Backgrounds\Background_Bottom.svg">
+    <Content Include="IconsAndPictures\Backgrounds\PNG\Emergency Stop Active WIth Button.png">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Backgrounds\Background_Bottomzonder knop.png">
+    <Content Include="IconsAndPictures\Backgrounds\PNG\Emergency Stop Active.jpg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Backgrounds\Background_Sides.svg">
+    <Content Include="IconsAndPictures\Backgrounds\PNG\Emergency Stop Active.png">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Backgrounds\Emergency Stop Active.jpg">
+    <Content Include="IconsAndPictures\Backgrounds\SVG\Background.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Backgrounds\Emergency Stop Active.png">
+    <Content Include="IconsAndPictures\Backgrounds\SVG\Background_Bottom.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Control Buttons\Continue Sewing.png">
+    <Content Include="IconsAndPictures\Backgrounds\SVG\Background_Sides.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Control Buttons\Continue Sewing Pushed.png">
+    <Content Include="IconsAndPictures\Backgrounds\SVG\Center.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Control Buttons\Delete Thread Length Pushed.png">
+    <Content Include="IconsAndPictures\Backgrounds\SVG\Emergency Stop Active 1280 x 800 Red Filled.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Control Buttons\Delete Thread Length.png">
+    <Content Include="IconsAndPictures\Backgrounds\SVG\Emergency Stop Active 1280 x 800 Red Transparent.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Control Buttons\Log In.svg">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\PNG\Continue Sewing Pushed.png">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Control Buttons\Log Out.svg">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\PNG\Continue Sewing.png">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Control Buttons\Log Pressed.svg">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\PNG\Delete Thread Length Pushed.png">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Control Buttons\Machine Return Home Pushed.png">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\PNG\Delete Thread Length.png">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Control Buttons\machine return home.png">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\PNG\Machine Return Home Pushed.png">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Control Buttons\Manual mode Idle.svg">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\PNG\machine return home.png">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Control Buttons\Manual Mode Pressed.svg">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\PNG\Pause Pushed.png">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Control Buttons\Pause Pushed.png">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\PNG\Pause.png">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Control Buttons\Pause.png">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\PNG\Trim by hand Idle.png">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Control Buttons\Trim by hand Idle.png">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\PNG\Trim By Hand Pushed.png">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Control Buttons\Trim By Hand Pushed.png">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\SVG\Continue Sewing.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Home Button\Home Settings switch.png">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\SVG\Continue Sewing Pushed.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Home Button\Home-Settings Switch Pushed.png">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\SVG\Gearing Off.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Home Button\Home-Settings Switch Pushed.svg">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\SVG\Gearing on.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Home Button\Home_Settings switch.svg">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\SVG\Gearing Pushed.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Screen Buttons\Power Off Pressed.png">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\SVG\Log In.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Screen Buttons\Power off.png">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\SVG\Log Out.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Screen Buttons\To Parameter Screen Pressed.png">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\SVG\Log Pressed.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Screen Buttons\To Parameter Screen Pressed.svg">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\SVG\Maintenance.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Screen Buttons\To Parameter Screen.png">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\SVG\Manual mode Idle.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Screen Buttons\To Parameter Screen.svg">
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\SVG\Manual Mode Pressed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\SVG\Pause Pushed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\SVG\Pause.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\SVG\Start Sewing.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\SVG\Start Sewing Pressed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Home Button\PNG\Home Settings switch.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Home Button\PNG\Home-Settings Switch Pushed.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Home Button\PNG\Manual mode Idle.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Home Button\PNG\Manual Mode Pressed.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Home Button\SVG\Home-Settings Switch Pushed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Home Button\SVG\Home_Settings switch.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Screen Buttons\PNG\Power Off Pressed.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Screen Buttons\PNG\Power off.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Screen Buttons\PNG\To Parameter Screen Pressed.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Screen Buttons\PNG\To Parameter Screen.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Screen Buttons\SVG\Home Settings switch.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Screen Buttons\SVG\Home-Settings Switch Pushed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Screen Buttons\SVG\Parameter Screen.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Screen Buttons\SVG\To Parameter Screen Pressed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Screen Buttons\SVG\To Parameter Screen.svg">
       <SubType>Content</SubType>
     </Content>
     <Content Include="IconsAndPictures\Logos\Amko Basis.svg">

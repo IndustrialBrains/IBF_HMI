@@ -1,35 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.4">
-  <ImagePool Name="BackgroundImagePool" Id="{81bec4d9-4653-41a8-880f-85af569c505e}">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.5">
+  <ImagePool Name="BackgroundImagePool_PNG" Id="{81bec4d9-4653-41a8-880f-85af569c505e}">
     <XmlArchive>
       <Data>
         <o xml:space="preserve" t="ImagePoolObject">
-          <v n="UniqueIdGenerator">"12"</v>
+          <v n="UniqueIdGenerator">"19"</v>
           <l n="BitmapPool" t="ArrayList" cet="ImagePoolItem">
             <o>
-              <v n="BitmapID">"Background"</v>
-              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Backgrounds\Background.svg"</v>
-              <v n="ItemID">2</v>
+              <v n="BitmapID">"Background_Bottomzonder knop"</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Backgrounds\PNG\Background_Bottomzonder knop.png"</v>
+              <v n="ItemID">13</v>
             </o>
             <o>
-              <v n="BitmapID">"Background_Bottom"</v>
-              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Backgrounds\Background_Bottomzonder knop.png"</v>
-              <v n="ItemID">5</v>
-            </o>
-            <o>
-              <v n="BitmapID">"Background_Sides"</v>
-              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Backgrounds\Background_Sides.svg"</v>
-              <v n="ItemID">6</v>
+              <v n="BitmapID">"Emergency Stop Active WIth Button"</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Backgrounds\PNG\Emergency Stop Active WIth Button.png"</v>
+              <v n="ItemID">17</v>
             </o>
             <o>
               <v n="BitmapID">"Emergency Stop Active"</v>
-              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Backgrounds\Emergency Stop Active.png"</v>
-              <v n="ItemID">3</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Backgrounds\PNG\Emergency Stop Active.jpg"</v>
+              <v n="ItemID">18</v>
+            </o>
+            <o>
+              <v n="BitmapID">"Emergency Stop Active0"</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Backgrounds\PNG\Emergency Stop Active.png"</v>
+              <v n="ItemID">19</v>
             </o>
             <o>
               <v n="BitmapID">""</v>
               <v n="FileID">""</v>
-              <v n="ItemID">8</v>
+              <v n="ItemID">15</v>
             </o>
           </l>
           <v n="GuidInit">{7ccae784-51fa-4247-91d0-d75d69a2eb84}</v>

@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.5">
+  <POU Name="FB_HMIControl" Id="{062d2a70-ec77-4a9b-a458-d823fff51efb}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_HMIControl
+VAR_INPUT 
+END_VAR
+VAR_OUTPUT
+	bHideMessage	: BOOL ;
+	bHideEStop 		: BOOL ;
+	bHideBorders	: BOOL ;
+	sEstopText		: STRING ;
+	sOperatorMessage: STRING ;
+END_VAR
+VAR // HMI
+END_VAR
+VAR
+	bWritePar  			: BOOL ; // write paremeters 
+	bReadPar			: BOOL ; // Read paremeter file
+	feWriteParemeter 	: F_TRIG ; // Falling edge trigger on leaving paremeter or manual screen
+
+	reToSettings 		: R_TRIG ; // go to settings
+	ePreviousScreen		: E_BaseVisu ; // previous screen
+	
+	bDisableSettings	: BOOL ; // disable settings button
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[SetScreen();
+SetPopups();
+ButtonEnable();]]></ST>
+    </Implementation>
+    <Method Name="ButtonEnable" Id="{397e13f1-f0f5-428f-b754-eeb0f6285e52}">
+      <Declaration><![CDATA[METHOD PRIVATE ButtonEnable : BOOL
+VAR_INPUT
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[// Disable Buttons 
+	bDisableSettings := GVL_HMI.eShownScreen = E_BaseVisu.Automatic ;]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="SetPopups" Id="{22a8bffd-43f0-41dd-9eae-608666b34df7}">
+      <Declaration><![CDATA[METHOD PRIVATE SetPopups : BOOL
+VAR_INPUT
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[// Set popup screens 
+bHideEStop 			:= NOT GVL_HMI.bEstopActive ;
+bHideMessage 		:= GVL_Message.bHideFaults ;
+sOperatorMessage 	:= GVL_Message.sOPeratorMessage ;
+
+GVL_HMI.bEstopActive := FALSE ;]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="SetScreen" Id="{f129c7c5-04de-4b71-81ed-a393e95f4aeb}">
+      <Declaration><![CDATA[METHOD INTERNAL SetScreen : BOOL
+VAR_INPUT
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[// Look for edges 
+	reToSettings		( CLK := GVL_HMI.bCmdSettings );
+	feWriteParemeter 	( CLK := GVL_HMI.bCmdParemeter OR GVL_HMI.bCmdManual );
+
+// save previous screen 
+IF reToSettings.Q  THEN 
+	ePreviousScreen := GVL_HMI.eShownScreen ;
+END_IF	
+	
+// Hide border control 
+bHideBorders := FALSE ;
+
+// Check active screen	
+IF GVL_HMI.bCmdParemeter THEN 
+	GVL_HMI.eShownScreen 	:= E_BaseVisu.Parameter ;
+ELSIF GVL_HMI.bCmdManual THEN 
+	GVL_HMI.eShownScreen 	:= E_BaseVisu.Manual;
+ELSIF GVL_HMI.bCmdSettings THEN 
+	GVL_HMI.eShownScreen 	:= E_BaseVisu.Settings ;
+ELSIF NOT GVL_HMI.bCmdSettings AND GVL_HMI.eShownScreen = E_BaseVisu.Settings THEN 
+	GVL_HMI.eShownScreen	:= ePreviousScreen ;
+ELSIF gvl_HMI.bCmdSemiAuto THEN 
+	GVL_HMI.eShownScreen 	:= E_BaseVisu.SemiAutomatic;
+	gvl_HMI.bCmdSemiAuto	:= FALSE ; 
+ELSIF gvl_HMI.bCmdAutomatic THEN 
+	GVL_HMI.eShownScreen := E_BaseVisu.Automatic ;
+	gvl_HMI.bCmdAutomatic	:= FALSE ;
+ELSE 
+	GVL_HMI.eShownScreen := E_BaseVisu.Idle;
+	bHideBorders := TRUE  ;	
+END_IF
+
+// Write parameters to file
+IF feWriteParemeter.Q THEN
+	bWritePar := TRUE ;
+END_IF
+
+IF bWritePar THEN 
+	bWritePar R= GVL_Parameters.fbParameterHandler.CmdSavePar();
+END_IF]]></ST>
+      </Implementation>
+    </Method>
+  </POU>
+</TcPlcObject>

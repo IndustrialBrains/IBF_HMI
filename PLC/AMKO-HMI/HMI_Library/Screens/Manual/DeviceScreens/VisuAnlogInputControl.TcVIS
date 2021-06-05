@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.5">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
   <Visu Name="VisuAnlogInputControl" Id="{05161f7c-ba6d-4f2f-9bcb-245dad7521da}">
     <XmlArchive>
       <Data>
@@ -80,7 +80,7 @@
                     </o>
                     <o>
                       <v n="Id">397264524L</v>
-                      <v n="Value">"GVL_DevManual.fbManualControler.pDevAnalogInput^.fValue"</v>
+                      <v n="Value">"fbManualControler.pDevAnalogInput^.fValue"</v>
                     </o>
                     <o>
                       <v n="Id">2597686782L</v>
@@ -237,7 +237,7 @@
                     </o>
                     <o>
                       <v n="Id">2477733581L</v>
-                      <v n="Value">"GVL_DevManual.fbManualControler.pDevAnalogInput^.fValue"</v>
+                      <v n="Value">"fbManualControler.pDevAnalogInput^.fValue"</v>
                     </o>
                     <o>
                       <v n="Id">2597686782L</v>
@@ -353,10 +353,10 @@
               <d n="FbMethods" t="CaseInsensitiveHashtable" ckt="String" cvt="Guid">
                 <v>FB_Init</v>
                 <v>d6585893-f75f-474a-937f-e38561365d5b</v>
-                <v>FB_Exit</v>
-                <v>52539527-d83f-429f-b895-93a0a41f5d5c</v>
                 <v>FB_Reinit</v>
                 <v>922ba9c0-3703-48eb-9962-bb2d5e7d99d4</v>
+                <v>FB_Exit</v>
+                <v>52539527-d83f-429f-b895-93a0a41f5d5c</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{69497e73-9f2c-4275-928c-72ccffb3e82a}</v>
@@ -411,7 +411,7 @@
               <o>
                 <v n="Id">5L</v>
                 <n n="Tag" />
-                <v n="Text">"	"</v>
+                <v n="Text">"	fbManualControler	: FB_ManualController ;"</v>
               </o>
               <o>
                 <v n="Id">1L</v>

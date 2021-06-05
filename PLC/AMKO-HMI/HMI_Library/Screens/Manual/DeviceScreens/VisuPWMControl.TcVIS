@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.5">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
   <Visu Name="VisuPWMControl" Id="{34378a83-c52f-4e83-a907-461e917d0c7e}">
     <XmlArchive>
       <Data>
@@ -84,7 +84,7 @@
                     </o>
                     <o>
                       <v n="Id">743958181L</v>
-                      <v n="Value">"GVL_DevManual.fbManualControler.pDevPWMController^.qbOutput"</v>
+                      <v n="Value">"fbManualControler.pDevPWMController^.qbOutput"</v>
                     </o>
                   </l>
                 </o>
@@ -110,7 +110,7 @@
                       <l n="VisualElemMemberList" t="VisualElemMemberCollection" cet="VisualElemMember">
                         <o>
                           <v n="Id">1186196937L</v>
-                          <v n="Value">"GVL_DevManual.fbManualControler.pDevPWMController^.bCmdPWMCycle"</v>
+                          <v n="Value">"fbManualControler.pDevPWMController^.bCmdPWMCycle"</v>
                         </o>
                       </l>
                     </o>
@@ -292,7 +292,7 @@
                       <l n="VisualElemMemberList" t="VisualElemMemberCollection" cet="VisualElemMember">
                         <o>
                           <v n="Id">1186196937L</v>
-                          <v n="Value">"GVL_DevManual.fbManualControler.pDevPWMController^.bCmdOn"</v>
+                          <v n="Value">"fbManualControler.pDevPWMController^.bCmdOn"</v>
                         </o>
                       </l>
                     </o>
@@ -605,7 +605,7 @@
                     </o>
                     <o>
                       <v n="Id">2477733581L</v>
-                      <v n="Value">"GVL_DevManual.fbManualControler.pDevPWMController^.nPeriodLength"</v>
+                      <v n="Value">"fbManualControler.pDevPWMController^.nPeriodLength"</v>
                     </o>
                     <o>
                       <v n="Id">823443203L</v>
@@ -1043,7 +1043,7 @@
                     </o>
                     <o>
                       <v n="Id">2477733581L</v>
-                      <v n="Value">"GVL_DevManual.fbManualControler.pDevPWMController^.nDutyCycle"</v>
+                      <v n="Value">"fbManualControler.pDevPWMController^.nDutyCycle"</v>
                     </o>
                     <o>
                       <v n="Id">823443203L</v>
@@ -1174,10 +1174,10 @@
               <d n="FbMethods" t="CaseInsensitiveHashtable" ckt="String" cvt="Guid">
                 <v>FB_Init</v>
                 <v>ede5eeea-52b4-4a14-8e21-71cd1ecec682</v>
-                <v>FB_Reinit</v>
-                <v>1f27c96e-b984-4f49-9300-4aeffc477bd6</v>
                 <v>FB_Exit</v>
                 <v>1d972145-f89a-4a64-9458-d816d9820dd9</v>
+                <v>FB_Reinit</v>
+                <v>1f27c96e-b984-4f49-9300-4aeffc477bd6</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{adcb5a5b-d7a9-4e3b-891b-d77822f52b76}</v>
@@ -1232,7 +1232,7 @@
               <o>
                 <v n="Id">3L</v>
                 <n n="Tag" />
-                <v n="Text">"	"</v>
+                <v n="Text">"	fbManualControler	: FB_ManualController ;"</v>
               </o>
               <o>
                 <v n="Id">1L</v>

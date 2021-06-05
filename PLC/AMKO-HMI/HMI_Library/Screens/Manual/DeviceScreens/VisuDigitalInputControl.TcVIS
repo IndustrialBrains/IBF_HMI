@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.5">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
   <Visu Name="VisuDigitalInputControl" Id="{fc0d1903-02ac-4dd2-8eeb-649a8de0b789}">
     <XmlArchive>
       <Data>
@@ -84,7 +84,7 @@
                     </o>
                     <o>
                       <v n="Id">743958181L</v>
-                      <v n="Value">"GVL_DevManual.fbManualControler.pDevDigitalInput^.bFcoInputActive"</v>
+                      <v n="Value">"fbManualControler.pDevDigitalInput^.bFcoInputActive"</v>
                     </o>
                   </l>
                 </o>
@@ -118,18 +118,16 @@
           <o n="GeneratedLMMDescriptions" t="GeneratedLanguageModelEntriesData">
             <o n="GeneratedVisuFbDescription" t="GenericFbDescription">
               <d n="FbMethods" t="CaseInsensitiveHashtable" ckt="String" cvt="Guid">
-                <v>HasVisibilityAccess</v>
-                <v>35f8b3d4-54cb-4b96-8f79-f56fa61ccfd2</v>
+                <v>GetUpdateRects</v>
+                <v>09da37ef-b4bb-47f2-a1ba-a7550bbf134e</v>
                 <v>ContainsPoint</v>
                 <v>7ad88f10-49a6-4f68-8d66-e940f5fe66fc</v>
-                <v>HasInputAccess</v>
-                <v>6ca8750e-4a22-45d1-9b6a-b046ddefe668</v>
+                <v>SetStaticState</v>
+                <v>22215429-8fac-4498-8a2f-242dccaacca0</v>
                 <v>HasInputAccessIntern</v>
                 <v>51e48ef0-9e53-46a8-ad3a-16120bdba75e</v>
                 <v>GetTooltip</v>
                 <v>bbb1b0a0-c7f2-4f5a-833c-fec704c858e2</v>
-                <v>GetUpdateRects</v>
-                <v>09da37ef-b4bb-47f2-a1ba-a7550bbf134e</v>
                 <v>GetNamespace</v>
                 <v>2f3c7f7d-b3de-4c37-bccb-2f604b050ca3</v>
                 <v>GetTranslator</v>
@@ -142,6 +140,8 @@
                 <v>5edc65f6-2a6b-47bc-8d84-b86d875df7e8</v>
                 <v>Paint</v>
                 <v>c73d6ef3-8d1f-4832-b187-6be41a5f6a51</v>
+                <v>HasVisibilityAccess</v>
+                <v>35f8b3d4-54cb-4b96-8f79-f56fa61ccfd2</v>
                 <v>GetElementArray</v>
                 <v>e664e503-cef9-402a-8789-ca2f3fd8283d</v>
                 <v>SetVisuFlagsInternal</v>
@@ -154,14 +154,14 @@
                 <v>0c9700c2-b278-4b3e-8dec-5124b77afc52</v>
                 <v>Initialize</v>
                 <v>c1c34af6-393a-4788-b913-b706ef54e332</v>
+                <v>HasInputAccess</v>
+                <v>6ca8750e-4a22-45d1-9b6a-b046ddefe668</v>
                 <v>HasVisibilityAccessIntern</v>
                 <v>13c8fdc9-d3c8-4a9d-b783-53bbe5c56828</v>
                 <v>GetSurroundingRect</v>
                 <v>a6acafde-0286-433e-9df6-6028452c3f64</v>
                 <v>ElementInfo</v>
                 <v>dfc007cd-5a04-42de-b461-66a13a511179</v>
-                <v>SetStaticState</v>
-                <v>22215429-8fac-4498-8a2f-242dccaacca0</v>
                 <v>GetLocalUsergroup</v>
                 <v>f6b98949-3d03-459e-b880-488f61debd8c</v>
                 <v>GetName</v>
@@ -192,10 +192,10 @@
               <d n="FbMethods" t="CaseInsensitiveHashtable" ckt="String" cvt="Guid">
                 <v>FB_Init</v>
                 <v>25a54d0b-f67a-4157-9be8-41601036c348</v>
-                <v>FB_Exit</v>
-                <v>20078ef2-d1cf-4a0d-9fc9-de4400759818</v>
                 <v>FB_Reinit</v>
                 <v>2b60fa59-77ba-4572-a44f-5b3201088269</v>
+                <v>FB_Exit</v>
+                <v>20078ef2-d1cf-4a0d-9fc9-de4400759818</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{137af0f1-1861-477d-9fcf-18259f5ee622}</v>
@@ -250,7 +250,7 @@
               <o>
                 <v n="Id">5L</v>
                 <n n="Tag" />
-                <v n="Text">"	"</v>
+                <v n="Text">"	fbManualControler	: FB_ManualController ;"</v>
               </o>
               <o>
                 <v n="Id">1L</v>

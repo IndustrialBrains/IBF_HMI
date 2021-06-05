@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.5">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
   <Visu Name="VisuDoublePWMControl" Id="{df21c097-7ac8-46ed-8ae7-80a53f53d8c0}">
     <XmlArchive>
       <Data>
         <o xml:space="preserve" t="VisualObject">
           <n n="LastVisuLanguageModelEntry" />
-          <v n="UniqueIdGenerator">"5"</v>
+          <v n="UniqueIdGenerator">"6"</v>
           <o n="VisualElemList" t="VisualElemList">
             <l n="VisualElementList" t="VisualElemCollection" cet="GenericVisualElem">
               <o>
@@ -84,7 +84,7 @@
                     </o>
                     <o>
                       <v n="Id">743958181L</v>
-                      <v n="Value">"GVL_DevManual.fbManualControler.pDevDoublePWM^.qbOutputA"</v>
+                      <v n="Value">"fbManualControler.pDevDoublePWM^.qbOutputA"</v>
                     </o>
                   </l>
                 </o>
@@ -110,7 +110,7 @@
                       <l n="VisualElemMemberList" t="VisualElemMemberCollection" cet="VisualElemMember">
                         <o>
                           <v n="Id">1186196937L</v>
-                          <v n="Value">"GVL_DevManual.fbManualControler.pDevDoublePWM^.bCmdPWMOn"</v>
+                          <v n="Value">"fbManualControler.pDevDoublePWM^.bCmdPWMOn"</v>
                         </o>
                       </l>
                     </o>
@@ -292,7 +292,7 @@
                       <l n="VisualElemMemberList" t="VisualElemMemberCollection" cet="VisualElemMember">
                         <o>
                           <v n="Id">1186196937L</v>
-                          <v n="Value">"GVL_DevManual.fbManualControler.pDevDoublePWM^.bCmdChanelAOn"</v>
+                          <v n="Value">"fbManualControler.pDevDoublePWM^.bCmdChanelAOn"</v>
                         </o>
                       </l>
                     </o>
@@ -605,7 +605,7 @@
                     </o>
                     <o>
                       <v n="Id">2477733581L</v>
-                      <v n="Value">"GVL_DevManual.fbManualControler.pDevDoublePWM^.stParPeriodLength.fValue"</v>
+                      <v n="Value">"fbManualControler.pDevDoublePWM^.stParPeriodLength.fValue"</v>
                     </o>
                     <o>
                       <v n="Id">823443203L</v>
@@ -1043,7 +1043,7 @@
                     </o>
                     <o>
                       <v n="Id">2477733581L</v>
-                      <v n="Value">"GVL_DevManual.fbManualControler.pDevDoublePWM^.stParDutyCycle.fValue"</v>
+                      <v n="Value">"fbManualControler.pDevDoublePWM^.stParDutyCycle.fValue"</v>
                     </o>
                     <o>
                       <v n="Id">823443203L</v>
@@ -1160,7 +1160,7 @@
                     </o>
                     <o>
                       <v n="Id">743958181L</v>
-                      <v n="Value">"GVL_DevManual.fbManualControler.pDevPWMController^.qbOutput"</v>
+                      <v n="Value">"fbManualControler.pDevPWMController^.qbOutput"</v>
                     </o>
                   </l>
                 </o>
@@ -1186,7 +1186,7 @@
                       <l n="VisualElemMemberList" t="VisualElemMemberCollection" cet="VisualElemMember">
                         <o>
                           <v n="Id">1186196937L</v>
-                          <v n="Value">"GVL_DevManual.fbManualControler.pDevDoublePWM^.bCmdChanelBOn"</v>
+                          <v n="Value">"fbManualControler.pDevDoublePWM^.bCmdChanelBOn"</v>
                         </o>
                       </l>
                     </o>
@@ -1708,10 +1708,10 @@
               <d n="FbMethods" t="CaseInsensitiveHashtable" ckt="String" cvt="Guid">
                 <v>FB_Init</v>
                 <v>5c867a17-b1d7-4dfb-aaa4-28b1b2c0d598</v>
-                <v>FB_Reinit</v>
-                <v>7dcd0354-d39c-4f42-b186-71ff469bba3a</v>
                 <v>FB_Exit</v>
                 <v>a44bb22e-44cc-4b3c-b0be-3b437a035414</v>
+                <v>FB_Reinit</v>
+                <v>7dcd0354-d39c-4f42-b186-71ff469bba3a</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{8c844aa8-4843-4926-8553-fe8d3841abcb}</v>
@@ -1766,7 +1766,7 @@
               <o>
                 <v n="Id">5L</v>
                 <n n="Tag" />
-                <v n="Text">"	"</v>
+                <v n="Text">"	fbManualControler	: FB_ManualController ;"</v>
               </o>
               <o>
                 <v n="Id">1L</v>

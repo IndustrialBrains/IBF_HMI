@@ -372,7 +372,7 @@
                         <l n="TypeNodeChildren" t="ArrayList" cet="BasicTypeNode">
                           <o>
                             <v n="Flags">2L</v>
-                            <v n="BasicTypeNodeValue">"GVL_DevManual.fbManualControler"</v>
+                            <v n="BasicTypeNodeValue">"Device_Library.GVL_DevManual.fbManualControler"</v>
                             <v n="BasicTypeNodeAcceptsExpression">true</v>
                             <n n="BasicTypeNodeFastAccess" />
                             <a n="BasicTypeNodeEnumValues" et="String" />
@@ -428,7 +428,7 @@
                     </o>
                     <o>
                       <v n="Id">345443855L</v>
-                      <v n="Value">"GVL_DevManual.fbManualControler"</v>
+                      <v n="Value">"Device_Library.GVL_DevManual.fbManualControler"</v>
                     </o>
                   </l>
                 </o>
@@ -1502,10 +1502,10 @@
               <d n="FbMethods" t="CaseInsensitiveHashtable_1" ckt="String" cvt="Guid">
                 <v>FB_Init</v>
                 <v>f79e80a3-b26a-426e-b282-13fe5d2e1917</v>
-                <v>FB_Exit</v>
-                <v>b502354a-64c8-4b2c-8d96-a635d8bf21e5</v>
                 <v>FB_Reinit</v>
                 <v>0d0c4abc-061f-4b47-bf74-cfeb10c22765</v>
+                <v>FB_Exit</v>
+                <v>b502354a-64c8-4b2c-8d96-a635d8bf21e5</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{1149a9d9-0710-4284-a791-4b62318322bc}</v>

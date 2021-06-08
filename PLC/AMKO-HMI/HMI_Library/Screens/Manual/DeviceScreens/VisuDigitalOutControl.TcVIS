@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.5">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
   <Visu Name="VisuDigitalOutControl" Id="{95b8514e-4195-4ad3-a984-a4f77012140d}">
     <XmlArchive>
       <Data>
@@ -88,7 +88,7 @@
                     </o>
                     <o>
                       <v n="Id">743958181L</v>
-                      <v n="Value">"GVL_DevManual.fbManualControler.pDevDigitalOut^.bCmdOn"</v>
+                      <v n="Value">"fbManualControler.pDevDigitalOut^.bCmdOn"</v>
                     </o>
                     <o>
                       <v n="Id">2597686782L</v>
@@ -200,10 +200,10 @@
               <d n="FbMethods" t="CaseInsensitiveHashtable" ckt="String" cvt="Guid">
                 <v>FB_Init</v>
                 <v>498a62cc-6442-425a-b7b1-c4d8807038d2</v>
-                <v>FB_Exit</v>
-                <v>ebd73aef-68cf-46b5-b0b7-dc0c7ae24772</v>
                 <v>FB_Reinit</v>
                 <v>39a43c21-5903-4907-bbdb-f3411847a9e6</v>
+                <v>FB_Exit</v>
+                <v>ebd73aef-68cf-46b5-b0b7-dc0c7ae24772</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{617a8708-c7bd-4fdd-a101-fb3f41c74892}</v>
@@ -258,7 +258,7 @@
               <o>
                 <v n="Id">5L</v>
                 <n n="Tag" />
-                <v n="Text">"	"</v>
+                <v n="Text">"	fbManualControler	: FB_ManualController ;"</v>
               </o>
               <o>
                 <v n="Id">1L</v>

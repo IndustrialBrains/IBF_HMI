@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.5">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
   <Visu Name="ManualControl" Id="{47fd7eab-4722-4161-bb7e-85fd17bf2676}">
     <XmlArchive>
       <Data>
@@ -756,7 +756,37 @@
                         <v n="VisuNodeReferenceGuid">{00000000-0000-0000-0000-000000000000}</v>
                         <n n="VisuNodeReference" />
                         <v n="VisNodeRefs33">"VisuValveControl"</v>
-                        <l n="TypeNodeChildren" t="ArrayList" />
+                        <l n="TypeNodeChildren" t="ArrayList" cet="BasicTypeNode">
+                          <o>
+                            <v n="Flags">2L</v>
+                            <v n="BasicTypeNodeValue">"fbManualControler"</v>
+                            <v n="BasicTypeNodeAcceptsExpression">true</v>
+                            <n n="BasicTypeNodeFastAccess" />
+                            <a n="BasicTypeNodeEnumValues" et="String" />
+                            <n n="EnumValueDisplayTextIds" />
+                            <n n="EnumValueVisibilityAttributeValues" />
+                            <n n="EnumValueLibraryId" />
+                            <n n="DynamicEnumMemberVisibilityCheckerTypeGuid" />
+                            <l n="TypeNodeChildren" t="ArrayList" />
+                            <o n="TypeNodeType" t="TypeNodeType">
+                              <v n="TypeClass" t="TypeClass">Reference</v>
+                              <v n="QualifiedName">"FB_ManualController"</v>
+                              <v n="Name">"FB_ManualController"</v>
+                            </o>
+                            <v n="TypeNodeName">"fbManualControler"</v>
+                            <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
+                              <v n="AttrFlags">0UL</v>
+                              <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" />
+                              <v n="ConvDone">true</v>
+                            </o>
+                            <v n="TypeNodeId" t="Int16">255</v>
+                            <v n="TypeNodeIdLong">1911567689L</v>
+                            <n n="LibraryId" />
+                            <n n="DisplayTextId" />
+                            <n n="DescriptionTextID" />
+                            <v n="DescriptionUseParent">false</v>
+                          </o>
+                        </l>
                         <o n="TypeNodeType" t="TypeNodeType">
                           <v n="TypeClass" t="TypeClass">Userdef</v>
                           <v n="QualifiedName">"IVisualisation"</v>
@@ -789,7 +819,37 @@
                         <v n="VisuNodeReferenceGuid">{00000000-0000-0000-0000-000000000000}</v>
                         <n n="VisuNodeReference" />
                         <v n="VisNodeRefs33">"VisuCylinderControl"</v>
-                        <l n="TypeNodeChildren" t="ArrayList" />
+                        <l n="TypeNodeChildren" t="ArrayList" cet="BasicTypeNode">
+                          <o>
+                            <v n="Flags">2L</v>
+                            <v n="BasicTypeNodeValue">"fbManualControler"</v>
+                            <v n="BasicTypeNodeAcceptsExpression">true</v>
+                            <n n="BasicTypeNodeFastAccess" />
+                            <a n="BasicTypeNodeEnumValues" et="String" />
+                            <n n="EnumValueDisplayTextIds" />
+                            <n n="EnumValueVisibilityAttributeValues" />
+                            <n n="EnumValueLibraryId" />
+                            <n n="DynamicEnumMemberVisibilityCheckerTypeGuid" />
+                            <l n="TypeNodeChildren" t="ArrayList" />
+                            <o n="TypeNodeType" t="TypeNodeType">
+                              <v n="TypeClass" t="TypeClass">Reference</v>
+                              <v n="QualifiedName">"FB_ManualController"</v>
+                              <v n="Name">"FB_ManualController"</v>
+                            </o>
+                            <v n="TypeNodeName">"fbManualControler"</v>
+                            <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
+                              <v n="AttrFlags">0UL</v>
+                              <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" />
+                              <v n="ConvDone">true</v>
+                            </o>
+                            <v n="TypeNodeId" t="Int16">255</v>
+                            <v n="TypeNodeIdLong">3730405507L</v>
+                            <n n="LibraryId" />
+                            <n n="DisplayTextId" />
+                            <n n="DescriptionTextID" />
+                            <v n="DescriptionUseParent">false</v>
+                          </o>
+                        </l>
                         <o n="TypeNodeType" t="TypeNodeType">
                           <v n="TypeClass" t="TypeClass">Userdef</v>
                           <v n="QualifiedName">"IVisualisation"</v>
@@ -822,7 +882,37 @@
                         <v n="VisuNodeReferenceGuid">{00000000-0000-0000-0000-000000000000}</v>
                         <n n="VisuNodeReference" />
                         <v n="VisNodeRefs33">"VisuAxisControl"</v>
-                        <l n="TypeNodeChildren" t="ArrayList" />
+                        <l n="TypeNodeChildren" t="ArrayList" cet="BasicTypeNode">
+                          <o>
+                            <v n="Flags">2L</v>
+                            <v n="BasicTypeNodeValue">"fbManualControler"</v>
+                            <v n="BasicTypeNodeAcceptsExpression">true</v>
+                            <n n="BasicTypeNodeFastAccess" />
+                            <a n="BasicTypeNodeEnumValues" et="String" />
+                            <n n="EnumValueDisplayTextIds" />
+                            <n n="EnumValueVisibilityAttributeValues" />
+                            <n n="EnumValueLibraryId" />
+                            <n n="DynamicEnumMemberVisibilityCheckerTypeGuid" />
+                            <l n="TypeNodeChildren" t="ArrayList" />
+                            <o n="TypeNodeType" t="TypeNodeType">
+                              <v n="TypeClass" t="TypeClass">Reference</v>
+                              <v n="QualifiedName">"FB_ManualController"</v>
+                              <v n="Name">"FB_ManualController"</v>
+                            </o>
+                            <v n="TypeNodeName">"fbManualControler"</v>
+                            <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
+                              <v n="AttrFlags">0UL</v>
+                              <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" />
+                              <v n="ConvDone">true</v>
+                            </o>
+                            <v n="TypeNodeId" t="Int16">255</v>
+                            <v n="TypeNodeIdLong">3141419973L</v>
+                            <n n="LibraryId" />
+                            <n n="DisplayTextId" />
+                            <n n="DescriptionTextID" />
+                            <v n="DescriptionUseParent">false</v>
+                          </o>
+                        </l>
                         <o n="TypeNodeType" t="TypeNodeType">
                           <v n="TypeClass" t="TypeClass">Userdef</v>
                           <v n="QualifiedName">"IVisualisation"</v>
@@ -855,7 +945,37 @@
                         <v n="VisuNodeReferenceGuid">{00000000-0000-0000-0000-000000000000}</v>
                         <n n="VisuNodeReference" />
                         <v n="VisNodeRefs33">"VisuPushbuttonLightControl"</v>
-                        <l n="TypeNodeChildren" t="ArrayList" />
+                        <l n="TypeNodeChildren" t="ArrayList" cet="BasicTypeNode">
+                          <o>
+                            <v n="Flags">2L</v>
+                            <v n="BasicTypeNodeValue">"fbManualControler"</v>
+                            <v n="BasicTypeNodeAcceptsExpression">true</v>
+                            <n n="BasicTypeNodeFastAccess" />
+                            <a n="BasicTypeNodeEnumValues" et="String" />
+                            <n n="EnumValueDisplayTextIds" />
+                            <n n="EnumValueVisibilityAttributeValues" />
+                            <n n="EnumValueLibraryId" />
+                            <n n="DynamicEnumMemberVisibilityCheckerTypeGuid" />
+                            <l n="TypeNodeChildren" t="ArrayList" />
+                            <o n="TypeNodeType" t="TypeNodeType">
+                              <v n="TypeClass" t="TypeClass">Reference</v>
+                              <v n="QualifiedName">"FB_ManualController"</v>
+                              <v n="Name">"FB_ManualController"</v>
+                            </o>
+                            <v n="TypeNodeName">"fbManualControler"</v>
+                            <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
+                              <v n="AttrFlags">0UL</v>
+                              <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" />
+                              <v n="ConvDone">true</v>
+                            </o>
+                            <v n="TypeNodeId" t="Int16">255</v>
+                            <v n="TypeNodeIdLong">1518003542L</v>
+                            <n n="LibraryId" />
+                            <n n="DisplayTextId" />
+                            <n n="DescriptionTextID" />
+                            <v n="DescriptionUseParent">false</v>
+                          </o>
+                        </l>
                         <o n="TypeNodeType" t="TypeNodeType">
                           <v n="TypeClass" t="TypeClass">Userdef</v>
                           <v n="QualifiedName">"IVisualisation"</v>
@@ -888,7 +1008,37 @@
                         <v n="VisuNodeReferenceGuid">{00000000-0000-0000-0000-000000000000}</v>
                         <n n="VisuNodeReference" />
                         <v n="VisNodeRefs33">"VisuDigitalInputControl"</v>
-                        <l n="TypeNodeChildren" t="ArrayList" />
+                        <l n="TypeNodeChildren" t="ArrayList" cet="BasicTypeNode">
+                          <o>
+                            <v n="Flags">2L</v>
+                            <v n="BasicTypeNodeValue">"fbManualControler"</v>
+                            <v n="BasicTypeNodeAcceptsExpression">true</v>
+                            <n n="BasicTypeNodeFastAccess" />
+                            <a n="BasicTypeNodeEnumValues" et="String" />
+                            <n n="EnumValueDisplayTextIds" />
+                            <n n="EnumValueVisibilityAttributeValues" />
+                            <n n="EnumValueLibraryId" />
+                            <n n="DynamicEnumMemberVisibilityCheckerTypeGuid" />
+                            <l n="TypeNodeChildren" t="ArrayList" />
+                            <o n="TypeNodeType" t="TypeNodeType">
+                              <v n="TypeClass" t="TypeClass">Reference</v>
+                              <v n="QualifiedName">"FB_ManualController"</v>
+                              <v n="Name">"FB_ManualController"</v>
+                            </o>
+                            <v n="TypeNodeName">"fbManualControler"</v>
+                            <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
+                              <v n="AttrFlags">0UL</v>
+                              <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" />
+                              <v n="ConvDone">true</v>
+                            </o>
+                            <v n="TypeNodeId" t="Int16">255</v>
+                            <v n="TypeNodeIdLong">1058922000L</v>
+                            <n n="LibraryId" />
+                            <n n="DisplayTextId" />
+                            <n n="DescriptionTextID" />
+                            <v n="DescriptionUseParent">false</v>
+                          </o>
+                        </l>
                         <o n="TypeNodeType" t="TypeNodeType">
                           <v n="TypeClass" t="TypeClass">Userdef</v>
                           <v n="QualifiedName">"IVisualisation"</v>
@@ -921,7 +1071,37 @@
                         <v n="VisuNodeReferenceGuid">{00000000-0000-0000-0000-000000000000}</v>
                         <n n="VisuNodeReference" />
                         <v n="VisNodeRefs33">"VisuAnlogInputControl"</v>
-                        <l n="TypeNodeChildren" t="ArrayList" />
+                        <l n="TypeNodeChildren" t="ArrayList" cet="BasicTypeNode">
+                          <o>
+                            <v n="Flags">2L</v>
+                            <v n="BasicTypeNodeValue">"fbManualControler"</v>
+                            <v n="BasicTypeNodeAcceptsExpression">true</v>
+                            <n n="BasicTypeNodeFastAccess" />
+                            <a n="BasicTypeNodeEnumValues" et="String" />
+                            <n n="EnumValueDisplayTextIds" />
+                            <n n="EnumValueVisibilityAttributeValues" />
+                            <n n="EnumValueLibraryId" />
+                            <n n="DynamicEnumMemberVisibilityCheckerTypeGuid" />
+                            <l n="TypeNodeChildren" t="ArrayList" />
+                            <o n="TypeNodeType" t="TypeNodeType">
+                              <v n="TypeClass" t="TypeClass">Reference</v>
+                              <v n="QualifiedName">"FB_ManualController"</v>
+                              <v n="Name">"FB_ManualController"</v>
+                            </o>
+                            <v n="TypeNodeName">"fbManualControler"</v>
+                            <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
+                              <v n="AttrFlags">0UL</v>
+                              <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" />
+                              <v n="ConvDone">true</v>
+                            </o>
+                            <v n="TypeNodeId" t="Int16">255</v>
+                            <v n="TypeNodeIdLong">2427753434L</v>
+                            <n n="LibraryId" />
+                            <n n="DisplayTextId" />
+                            <n n="DescriptionTextID" />
+                            <v n="DescriptionUseParent">false</v>
+                          </o>
+                        </l>
                         <o n="TypeNodeType" t="TypeNodeType">
                           <v n="TypeClass" t="TypeClass">Userdef</v>
                           <v n="QualifiedName">"IVisualisation"</v>
@@ -954,7 +1134,37 @@
                         <v n="VisuNodeReferenceGuid">{00000000-0000-0000-0000-000000000000}</v>
                         <n n="VisuNodeReference" />
                         <v n="VisNodeRefs33">"VisuDigitalOutControl"</v>
-                        <l n="TypeNodeChildren" t="ArrayList" />
+                        <l n="TypeNodeChildren" t="ArrayList" cet="BasicTypeNode">
+                          <o>
+                            <v n="Flags">2L</v>
+                            <v n="BasicTypeNodeValue">"fbManualControler"</v>
+                            <v n="BasicTypeNodeAcceptsExpression">true</v>
+                            <n n="BasicTypeNodeFastAccess" />
+                            <a n="BasicTypeNodeEnumValues" et="String" />
+                            <n n="EnumValueDisplayTextIds" />
+                            <n n="EnumValueVisibilityAttributeValues" />
+                            <n n="EnumValueLibraryId" />
+                            <n n="DynamicEnumMemberVisibilityCheckerTypeGuid" />
+                            <l n="TypeNodeChildren" t="ArrayList" />
+                            <o n="TypeNodeType" t="TypeNodeType">
+                              <v n="TypeClass" t="TypeClass">Reference</v>
+                              <v n="QualifiedName">"FB_ManualController"</v>
+                              <v n="Name">"FB_ManualController"</v>
+                            </o>
+                            <v n="TypeNodeName">"fbManualControler"</v>
+                            <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
+                              <v n="AttrFlags">0UL</v>
+                              <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" />
+                              <v n="ConvDone">true</v>
+                            </o>
+                            <v n="TypeNodeId" t="Int16">255</v>
+                            <v n="TypeNodeIdLong">4124289180L</v>
+                            <n n="LibraryId" />
+                            <n n="DisplayTextId" />
+                            <n n="DescriptionTextID" />
+                            <v n="DescriptionUseParent">false</v>
+                          </o>
+                        </l>
                         <o n="TypeNodeType" t="TypeNodeType">
                           <v n="TypeClass" t="TypeClass">Userdef</v>
                           <v n="QualifiedName">"IVisualisation"</v>
@@ -987,7 +1197,37 @@
                         <v n="VisuNodeReferenceGuid">{00000000-0000-0000-0000-000000000000}</v>
                         <n n="VisuNodeReference" />
                         <v n="VisNodeRefs33">"VisuAnalogOutControl"</v>
-                        <l n="TypeNodeChildren" t="ArrayList" />
+                        <l n="TypeNodeChildren" t="ArrayList" cet="BasicTypeNode">
+                          <o>
+                            <v n="Flags">2L</v>
+                            <v n="BasicTypeNodeValue">"fbManualControler"</v>
+                            <v n="BasicTypeNodeAcceptsExpression">true</v>
+                            <n n="BasicTypeNodeFastAccess" />
+                            <a n="BasicTypeNodeEnumValues" et="String" />
+                            <n n="EnumValueDisplayTextIds" />
+                            <n n="EnumValueVisibilityAttributeValues" />
+                            <n n="EnumValueLibraryId" />
+                            <n n="DynamicEnumMemberVisibilityCheckerTypeGuid" />
+                            <l n="TypeNodeChildren" t="ArrayList" />
+                            <o n="TypeNodeType" t="TypeNodeType">
+                              <v n="TypeClass" t="TypeClass">Reference</v>
+                              <v n="QualifiedName">"FB_ManualController"</v>
+                              <v n="Name">"FB_ManualController"</v>
+                            </o>
+                            <v n="TypeNodeName">"fbManualControler"</v>
+                            <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
+                              <v n="AttrFlags">0UL</v>
+                              <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" />
+                              <v n="ConvDone">true</v>
+                            </o>
+                            <v n="TypeNodeId" t="Int16">255</v>
+                            <v n="TypeNodeIdLong">2303514813L</v>
+                            <n n="LibraryId" />
+                            <n n="DisplayTextId" />
+                            <n n="DescriptionTextID" />
+                            <v n="DescriptionUseParent">false</v>
+                          </o>
+                        </l>
                         <o n="TypeNodeType" t="TypeNodeType">
                           <v n="TypeClass" t="TypeClass">Userdef</v>
                           <v n="QualifiedName">"IVisualisation"</v>
@@ -1020,7 +1260,37 @@
                         <v n="VisuNodeReferenceGuid">{00000000-0000-0000-0000-000000000000}</v>
                         <n n="VisuNodeReference" />
                         <v n="VisNodeRefs33">"VisuPWMControl"</v>
-                        <l n="TypeNodeChildren" t="ArrayList" />
+                        <l n="TypeNodeChildren" t="ArrayList" cet="BasicTypeNode">
+                          <o>
+                            <v n="Flags">2L</v>
+                            <v n="BasicTypeNodeValue">"fbManualControler"</v>
+                            <v n="BasicTypeNodeAcceptsExpression">true</v>
+                            <n n="BasicTypeNodeFastAccess" />
+                            <a n="BasicTypeNodeEnumValues" et="String" />
+                            <n n="EnumValueDisplayTextIds" />
+                            <n n="EnumValueVisibilityAttributeValues" />
+                            <n n="EnumValueLibraryId" />
+                            <n n="DynamicEnumMemberVisibilityCheckerTypeGuid" />
+                            <l n="TypeNodeChildren" t="ArrayList" />
+                            <o n="TypeNodeType" t="TypeNodeType">
+                              <v n="TypeClass" t="TypeClass">Reference</v>
+                              <v n="QualifiedName">"FB_ManualController"</v>
+                              <v n="Name">"FB_ManualController"</v>
+                            </o>
+                            <v n="TypeNodeName">"fbManualControler"</v>
+                            <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
+                              <v n="AttrFlags">0UL</v>
+                              <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" />
+                              <v n="ConvDone">true</v>
+                            </o>
+                            <v n="TypeNodeId" t="Int16">255</v>
+                            <v n="TypeNodeIdLong">3962299387L</v>
+                            <n n="LibraryId" />
+                            <n n="DisplayTextId" />
+                            <n n="DescriptionTextID" />
+                            <v n="DescriptionUseParent">false</v>
+                          </o>
+                        </l>
                         <o n="TypeNodeType" t="TypeNodeType">
                           <v n="TypeClass" t="TypeClass">Userdef</v>
                           <v n="QualifiedName">"IVisualisation"</v>
@@ -1053,11 +1323,11 @@
                     </o>
                     <o>
                       <v n="Id">1311860368L</v>
-                      <v n="Value">"GVL_DevManual.fbManualControler.eDevType"</v>
+                      <v n="Value">"fbManualControler.eDevType"</v>
                     </o>
                     <o>
                       <v n="Id">2496894244L</v>
-                      <v n="Value">"GVL_DevManual.fbManualControler.bDisableManualInputs"</v>
+                      <v n="Value">"fbManualControler.bDisableManualInputs"</v>
                     </o>
                     <o>
                       <v n="Id">527210839L</v>
@@ -1065,7 +1335,37 @@
                         <v n="VisuNodeReferenceGuid">{00000000-0000-0000-0000-000000000000}</v>
                         <n n="VisuNodeReference" />
                         <v n="VisNodeRefs33">"VisuDoublePWMControl"</v>
-                        <l n="TypeNodeChildren" t="ArrayList" />
+                        <l n="TypeNodeChildren" t="ArrayList" cet="BasicTypeNode">
+                          <o>
+                            <v n="Flags">2L</v>
+                            <v n="BasicTypeNodeValue">"fbManualControler"</v>
+                            <v n="BasicTypeNodeAcceptsExpression">true</v>
+                            <n n="BasicTypeNodeFastAccess" />
+                            <a n="BasicTypeNodeEnumValues" et="String" />
+                            <n n="EnumValueDisplayTextIds" />
+                            <n n="EnumValueVisibilityAttributeValues" />
+                            <n n="EnumValueLibraryId" />
+                            <n n="DynamicEnumMemberVisibilityCheckerTypeGuid" />
+                            <l n="TypeNodeChildren" t="ArrayList" />
+                            <o n="TypeNodeType" t="TypeNodeType">
+                              <v n="TypeClass" t="TypeClass">Reference</v>
+                              <v n="QualifiedName">"FB_ManualController"</v>
+                              <v n="Name">"FB_ManualController"</v>
+                            </o>
+                            <v n="TypeNodeName">"fbManualControler"</v>
+                            <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
+                              <v n="AttrFlags">0UL</v>
+                              <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" />
+                              <v n="ConvDone">true</v>
+                            </o>
+                            <v n="TypeNodeId" t="Int16">255</v>
+                            <v n="TypeNodeIdLong">3909953803L</v>
+                            <n n="LibraryId" />
+                            <n n="DisplayTextId" />
+                            <n n="DescriptionTextID" />
+                            <v n="DescriptionUseParent">false</v>
+                          </o>
+                        </l>
                         <o n="TypeNodeType" t="TypeNodeType">
                           <v n="TypeClass" t="TypeClass">Userdef</v>
                           <v n="QualifiedName">"IVisualisation"</v>
@@ -1102,7 +1402,37 @@
                         <v n="VisuNodeReferenceGuid">{00000000-0000-0000-0000-000000000000}</v>
                         <n n="VisuNodeReference" />
                         <v n="VisNodeRefs33">"VisuEncoderInput"</v>
-                        <l n="TypeNodeChildren" t="ArrayList" />
+                        <l n="TypeNodeChildren" t="ArrayList" cet="BasicTypeNode">
+                          <o>
+                            <v n="Flags">2L</v>
+                            <v n="BasicTypeNodeValue">"fbManualControler"</v>
+                            <v n="BasicTypeNodeAcceptsExpression">true</v>
+                            <n n="BasicTypeNodeFastAccess" />
+                            <a n="BasicTypeNodeEnumValues" et="String" />
+                            <n n="EnumValueDisplayTextIds" />
+                            <n n="EnumValueVisibilityAttributeValues" />
+                            <n n="EnumValueLibraryId" />
+                            <n n="DynamicEnumMemberVisibilityCheckerTypeGuid" />
+                            <l n="TypeNodeChildren" t="ArrayList" />
+                            <o n="TypeNodeType" t="TypeNodeType">
+                              <v n="TypeClass" t="TypeClass">Reference</v>
+                              <v n="QualifiedName">"FB_ManualController"</v>
+                              <v n="Name">"FB_ManualController"</v>
+                            </o>
+                            <v n="TypeNodeName">"fbManualControler"</v>
+                            <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
+                              <v n="AttrFlags">0UL</v>
+                              <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" />
+                              <v n="ConvDone">true</v>
+                            </o>
+                            <v n="TypeNodeId" t="Int16">255</v>
+                            <v n="TypeNodeIdLong">2355761741L</v>
+                            <n n="LibraryId" />
+                            <n n="DisplayTextId" />
+                            <n n="DescriptionTextID" />
+                            <v n="DescriptionUseParent">false</v>
+                          </o>
+                        </l>
                         <o n="TypeNodeType" t="TypeNodeType">
                           <v n="TypeClass" t="TypeClass">Userdef</v>
                           <v n="QualifiedName">"IVisualisation"</v>
@@ -1135,7 +1465,37 @@
                         <v n="VisuNodeReferenceGuid">{00000000-0000-0000-0000-000000000000}</v>
                         <n n="VisuNodeReference" />
                         <v n="VisNodeRefs33">"VisuAnalogAxisControl"</v>
-                        <l n="TypeNodeChildren" t="ArrayList" />
+                        <l n="TypeNodeChildren" t="ArrayList" cet="BasicTypeNode">
+                          <o>
+                            <v n="Flags">2L</v>
+                            <v n="BasicTypeNodeValue">"fbManualControler"</v>
+                            <v n="BasicTypeNodeAcceptsExpression">true</v>
+                            <n n="BasicTypeNodeFastAccess" />
+                            <a n="BasicTypeNodeEnumValues" et="String" />
+                            <n n="EnumValueDisplayTextIds" />
+                            <n n="EnumValueVisibilityAttributeValues" />
+                            <n n="EnumValueLibraryId" />
+                            <n n="DynamicEnumMemberVisibilityCheckerTypeGuid" />
+                            <l n="TypeNodeChildren" t="ArrayList" />
+                            <o n="TypeNodeType" t="TypeNodeType">
+                              <v n="TypeClass" t="TypeClass">Reference</v>
+                              <v n="QualifiedName">"FB_ManualController"</v>
+                              <v n="Name">"FB_ManualController"</v>
+                            </o>
+                            <v n="TypeNodeName">"fbManualControler"</v>
+                            <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
+                              <v n="AttrFlags">0UL</v>
+                              <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" />
+                              <v n="ConvDone">true</v>
+                            </o>
+                            <v n="TypeNodeId" t="Int16">255</v>
+                            <v n="TypeNodeIdLong">600006535L</v>
+                            <n n="LibraryId" />
+                            <n n="DisplayTextId" />
+                            <n n="DescriptionTextID" />
+                            <v n="DescriptionUseParent">false</v>
+                          </o>
+                        </l>
                         <o n="TypeNodeType" t="TypeNodeType">
                           <v n="TypeClass" t="TypeClass">Userdef</v>
                           <v n="QualifiedName">"IVisualisation"</v>
@@ -1161,6 +1521,54 @@
                         <n n="DescriptionTextID" />
                         <v n="DescriptionUseParent">false</v>
                       </o>
+                    </o>
+                    <o>
+                      <v n="Id">600006535L</v>
+                      <v n="Value">"fbManualControler"</v>
+                    </o>
+                    <o>
+                      <v n="Id">2303514813L</v>
+                      <v n="Value">"fbManualControler"</v>
+                    </o>
+                    <o>
+                      <v n="Id">2427753434L</v>
+                      <v n="Value">"fbManualControler"</v>
+                    </o>
+                    <o>
+                      <v n="Id">3141419973L</v>
+                      <v n="Value">"fbManualControler"</v>
+                    </o>
+                    <o>
+                      <v n="Id">3730405507L</v>
+                      <v n="Value">"fbManualControler"</v>
+                    </o>
+                    <o>
+                      <v n="Id">1058922000L</v>
+                      <v n="Value">"fbManualControler"</v>
+                    </o>
+                    <o>
+                      <v n="Id">4124289180L</v>
+                      <v n="Value">"fbManualControler"</v>
+                    </o>
+                    <o>
+                      <v n="Id">3909953803L</v>
+                      <v n="Value">"fbManualControler"</v>
+                    </o>
+                    <o>
+                      <v n="Id">2355761741L</v>
+                      <v n="Value">"fbManualControler"</v>
+                    </o>
+                    <o>
+                      <v n="Id">1518003542L</v>
+                      <v n="Value">"fbManualControler"</v>
+                    </o>
+                    <o>
+                      <v n="Id">3962299387L</v>
+                      <v n="Value">"fbManualControler"</v>
+                    </o>
+                    <o>
+                      <v n="Id">1911567689L</v>
+                      <v n="Value">"fbManualControler"</v>
                     </o>
                   </l>
                 </o>
@@ -1204,7 +1612,7 @@
                       <l n="VisualElemMemberList" t="VisualElemMemberCollection" cet="VisualElemMember">
                         <o>
                           <v n="Id">1186196937L</v>
-                          <v n="Value">"GVL_DevManual.fbManualControler.bManualActive"</v>
+                          <v n="Value">"fbManualControler.bManualActive"</v>
                         </o>
                       </l>
                     </o>
@@ -1255,7 +1663,7 @@
                     </o>
                     <o>
                       <v n="Id">1647042231L</v>
-                      <v n="Value">"GVL_DevManual.fbManualControler.bManualActive"</v>
+                      <v n="Value">"fbManualControler.bManualActive"</v>
                     </o>
                     <o>
                       <v n="Id">2812299069L</v>
@@ -1454,7 +1862,7 @@
                     </o>
                     <o>
                       <v n="Id">743958181L</v>
-                      <v n="Value">"GVL_DevManual.fbManualControler.bErroractive"</v>
+                      <v n="Value">"fbManualControler.bErroractive"</v>
                     </o>
                     <o>
                       <v n="Id">3438453433L</v>
@@ -1552,7 +1960,7 @@
                     </o>
                     <o>
                       <v n="Id">743958181L</v>
-                      <v n="Value">"GVL_DevManual.fbManualControler.bManual"</v>
+                      <v n="Value">"fbManualControler.bManual"</v>
                     </o>
                     <o>
                       <v n="Id">3438453433L</v>
@@ -1709,7 +2117,7 @@
                     </o>
                     <o>
                       <v n="Id">2477733581L</v>
-                      <v n="Value">"GVL_DevManual.fbManualControler.sDeviceState"</v>
+                      <v n="Value">"fbManualControler.sDeviceState"</v>
                     </o>
                     <o>
                       <v n="Id">2597686782L</v>
@@ -1743,7 +2151,7 @@
                       <l n="VisualElemMemberList" t="VisualElemMemberCollection" cet="VisualElemMember">
                         <o>
                           <v n="Id">1186196937L</v>
-                          <v n="Value">"GVL_DevManual.fbManualControler.bReset"</v>
+                          <v n="Value">"fbManualControler.bReset"</v>
                         </o>
                       </l>
                     </o>
@@ -2224,11 +2632,47 @@
                     </o>
                     <o>
                       <v n="Id">397264524L</v>
-                      <v n="Value">"GVL_DevManual.fbManualControler.nCmdLookupindex"</v>
+                      <v n="Value">"fbManualControler.nCmdLookupindex"</v>
                     </o>
                     <o>
                       <v n="Id">72808681L</v>
-                      <v n="Value">"GVL_DevManual.fbManualControler.arDeviceArray"</v>
+                      <v n="Value">"fbManualControler.arDeviceArray"</v>
+                    </o>
+                    <o>
+                      <v n="Id">1636615684L</v>
+                      <v n="Value">0</v>
+                    </o>
+                    <o>
+                      <v n="Id">3234392039L</v>
+                      <o n="Value" t="DataVariableInformation">
+                        <v n="DataArrayType">"ARRAY [0..GVL_DevManual.nMAXDEVCOUNT] OF UDT_DeviceID"</v>
+                        <v n="ColumnCount">3</v>
+                        <v n="RowCount">101</v>
+                        <v n="FirstColumnIndex">0</v>
+                        <v n="FirstRowIndex">0</v>
+                        <a n="ColumnTypes" cet="TypeClass">
+                          <v>String</v>
+                          <v>String</v>
+                          <v>Pointer</v>
+                        </a>
+                        <a n="ColumnNames" cet="String">
+                          <v>fbManualControler.arDeviceArray[INDEX].sName</v>
+                          <v>fbManualControler.arDeviceArray[INDEX].sType</v>
+                          <v>fbManualControler.arDeviceArray[INDEX].pFunction^</v>
+                        </a>
+                        <v n="BaseType">false</v>
+                        <a n="Bounds" cet="ArrayBound">
+                          <o>
+                            <v n="Identifier">"GVL_DevManual.nMAXDEVCOUNT"</v>
+                            <v n="Value">100</v>
+                          </o>
+                        </a>
+                        <v n="ArrayType" t="EArrayType">Invalid</v>
+                      </o>
+                    </o>
+                    <o>
+                      <v n="Id">1128707560L</v>
+                      <v n="Value">"fbManualControler.nNumberOfDevices"</v>
                     </o>
                     <o>
                       <v n="Id">1636817830L</v>
@@ -2244,39 +2688,39 @@
                     </o>
                     <o>
                       <v n="Id">3854506369L</v>
-                      <v n="Value">"GVL_DevManual.fbManualControler.arDeviceArray[INDEX].sName"</v>
+                      <v n="Value">"fbManualControler.arDeviceArray[INDEX].sName"</v>
                     </o>
                     <o>
                       <v n="Id">1892666644L</v>
-                      <v n="Value">"GVL_DevManual.fbManualControler.arDeviceArray[INDEX].sType"</v>
+                      <v n="Value">"fbManualControler.arDeviceArray[INDEX].sType"</v>
                     </o>
                     <o>
                       <v n="Id">338671338L</v>
-                      <v n="Value">"GVL_DevManual.fbManualControler.arDeviceArray[INDEX].pFunction^"</v>
+                      <v n="Value">"fbManualControler.arDeviceArray[INDEX].pFunction^"</v>
                     </o>
                     <o>
                       <v n="Id">2232123230L</v>
-                      <v n="Value">"GVL_DevManual.fbManualControler.arDeviceArray[INDEX].sName"</v>
+                      <v n="Value">"fbManualControler.arDeviceArray[INDEX].sName"</v>
                     </o>
                     <o>
                       <v n="Id">511219082L</v>
-                      <v n="Value">"GVL_DevManual.fbManualControler.arDeviceArray[INDEX].sType"</v>
+                      <v n="Value">"fbManualControler.arDeviceArray[INDEX].sType"</v>
                     </o>
                     <o>
                       <v n="Id">1755163831L</v>
-                      <v n="Value">"GVL_DevManual.fbManualControler.arDeviceArray[INDEX].pFunction^"</v>
+                      <v n="Value">"fbManualControler.arDeviceArray[INDEX].pFunction^"</v>
                     </o>
                     <o>
                       <v n="Id">2685023577L</v>
-                      <v n="Value">"GVL_DevManual.fbManualControler.arDeviceArray[INDEX].sName"</v>
+                      <v n="Value">"fbManualControler.arDeviceArray[INDEX].sName"</v>
                     </o>
                     <o>
                       <v n="Id">3312258591L</v>
-                      <v n="Value">"GVL_DevManual.fbManualControler.arDeviceArray[INDEX].sType"</v>
+                      <v n="Value">"fbManualControler.arDeviceArray[INDEX].sType"</v>
                     </o>
                     <o>
                       <v n="Id">1791247317L</v>
-                      <v n="Value">"GVL_DevManual.fbManualControler.arDeviceArray[INDEX].pFunction^"</v>
+                      <v n="Value">"fbManualControler.arDeviceArray[INDEX].pFunction^"</v>
                     </o>
                     <o>
                       <v n="Id">4036189354L</v>
@@ -2327,10 +2771,6 @@
                       <v n="Value">2</v>
                     </o>
                     <o>
-                      <v n="Id">1636615684L</v>
-                      <v n="Value">0</v>
-                    </o>
-                    <o>
                       <v n="Id">1882453005L</v>
                       <v n="Value">true</v>
                     </o>
@@ -2340,35 +2780,7 @@
                     </o>
                     <o>
                       <v n="Id">677334476L</v>
-                      <v n="Value">false</v>
-                    </o>
-                    <o>
-                      <v n="Id">3234392039L</v>
-                      <o n="Value" t="DataVariableInformation">
-                        <v n="DataArrayType">"ARRAY [0..GVL_DevManual.nMAXDEVCOUNT] OF UDT_DeviceID"</v>
-                        <v n="ColumnCount">3</v>
-                        <v n="RowCount">101</v>
-                        <v n="FirstColumnIndex">0</v>
-                        <v n="FirstRowIndex">0</v>
-                        <a n="ColumnTypes" cet="TypeClass">
-                          <v>String</v>
-                          <v>String</v>
-                          <v>Pointer</v>
-                        </a>
-                        <a n="ColumnNames" cet="String">
-                          <v>GVL_DevManual.fbManualControler.arDeviceArray[INDEX].sName</v>
-                          <v>GVL_DevManual.fbManualControler.arDeviceArray[INDEX].sType</v>
-                          <v>GVL_DevManual.fbManualControler.arDeviceArray[INDEX].pFunction^</v>
-                        </a>
-                        <v n="BaseType">false</v>
-                        <a n="Bounds" cet="ArrayBound">
-                          <o>
-                            <v n="Identifier">"GVL_DevManual.nMAXDEVCOUNT"</v>
-                            <v n="Value">100</v>
-                          </o>
-                        </a>
-                        <v n="ArrayType" t="EArrayType">Invalid</v>
-                      </o>
+                      <v n="Value">true</v>
                     </o>
                     <o>
                       <v n="Id">175837068L</v>
@@ -2381,14 +2793,6 @@
                     <o>
                       <v n="Id">3944074017L</v>
                       <v n="Value">false</v>
-                    </o>
-                    <o>
-                      <v n="Id">3829854167L</v>
-                      <v n="Value">false</v>
-                    </o>
-                    <o>
-                      <v n="Id">1128707560L</v>
-                      <v n="Value">"GVL_DevManual.fbManualControler.nNumberOfDevices"</v>
                     </o>
                   </l>
                 </o>
@@ -2425,18 +2829,16 @@
           <o n="GeneratedLMMDescriptions" t="GeneratedLanguageModelEntriesData">
             <o n="GeneratedVisuFbDescription" t="GenericFbDescription">
               <d n="FbMethods" t="CaseInsensitiveHashtable_1" ckt="String" cvt="Guid">
-                <v>HasVisibilityAccess</v>
-                <v>ccdef97e-280d-4ce9-a33f-9745cdacb083</v>
+                <v>GetUpdateRects</v>
+                <v>0083fcc9-c5db-4b4b-b677-73bf2683351d</v>
                 <v>ContainsPoint</v>
                 <v>81ceec2f-07cf-49a0-85cf-4681ae676038</v>
-                <v>HasInputAccess</v>
-                <v>8376f54a-d187-48d8-8a9c-f74d2b4663b5</v>
+                <v>SetStaticState</v>
+                <v>fe4fccc1-c720-485d-88a2-bbc78c708128</v>
                 <v>HasInputAccessIntern</v>
                 <v>26b44db2-a126-40c3-908d-cf0aff927c73</v>
                 <v>GetTooltip</v>
                 <v>fdce84d3-a0ba-4070-9c20-5c61c9e4a773</v>
-                <v>GetUpdateRects</v>
-                <v>0083fcc9-c5db-4b4b-b677-73bf2683351d</v>
                 <v>GetNamespace</v>
                 <v>0481cbbc-9ca7-4018-acc6-931c6d305832</v>
                 <v>GetTranslator</v>
@@ -2449,6 +2851,8 @@
                 <v>d860831c-09c7-413b-a81b-b6d30640c78c</v>
                 <v>Paint</v>
                 <v>94d3899c-31b1-410e-a871-2b737a0a84af</v>
+                <v>HasVisibilityAccess</v>
+                <v>ccdef97e-280d-4ce9-a33f-9745cdacb083</v>
                 <v>GetElementArray</v>
                 <v>9c8a721d-e999-4b29-bd0a-b1ba0e1e21c2</v>
                 <v>SetVisuFlagsInternal</v>
@@ -2461,14 +2865,14 @@
                 <v>d188ca44-06e1-49ed-a6df-c2b261fbd9ef</v>
                 <v>Initialize</v>
                 <v>373e26e3-2732-4490-9147-faed8788c480</v>
+                <v>HasInputAccess</v>
+                <v>8376f54a-d187-48d8-8a9c-f74d2b4663b5</v>
                 <v>HasVisibilityAccessIntern</v>
                 <v>1686cd5f-286a-406f-a10a-51b45a51fdab</v>
                 <v>GetSurroundingRect</v>
                 <v>1b753bc3-bcd8-4ed4-a136-f59390b23941</v>
                 <v>ElementInfo</v>
                 <v>19a9c2b6-dbb2-48c0-a048-0bc8850419b0</v>
-                <v>SetStaticState</v>
-                <v>fe4fccc1-c720-485d-88a2-bbc78c708128</v>
                 <v>GetLocalUsergroup</v>
                 <v>1e809662-cd31-47c0-8c12-d0ada8262bb8</v>
                 <v>GetName</v>
@@ -2557,7 +2961,7 @@
               <o>
                 <v n="Id">4L</v>
                 <n n="Tag" />
-                <v n="Text">""</v>
+                <v n="Text">"	fbManualControler	: FB_ManualController ;"</v>
               </o>
               <o>
                 <v n="Id">3L</v>

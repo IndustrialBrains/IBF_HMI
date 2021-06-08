@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.5">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
   <Visu Name="Settings_PNG" Id="{902dec27-9ce0-460e-9363-33508825ca96}">
     <XmlArchive>
       <Data>
@@ -398,7 +398,7 @@
                         <l n="TypeNodeChildren" t="ArrayList" cet="BasicTypeNode">
                           <o>
                             <v n="Flags">2L</v>
-                            <n n="BasicTypeNodeValue" />
+                            <v n="BasicTypeNodeValue">"GVL_HMI.bCmdManual"</v>
                             <v n="BasicTypeNodeAcceptsExpression">true</v>
                             <n n="BasicTypeNodeFastAccess" />
                             <a n="BasicTypeNodeEnumValues" et="String" />
@@ -455,6 +455,10 @@
                     <o>
                       <v n="Id">2597686782L</v>
                       <v n="Value">true</v>
+                    </o>
+                    <o>
+                      <v n="Id">1688400930L</v>
+                      <v n="Value">"GVL_HMI.bCmdManual"</v>
                     </o>
                   </l>
                 </o>
@@ -868,7 +872,7 @@
                         <l n="TypeNodeChildren" t="ArrayList" cet="BasicTypeNode">
                           <o>
                             <v n="Flags">2L</v>
-                            <n n="BasicTypeNodeValue" />
+                            <v n="BasicTypeNodeValue">"GVL_HMI.bCmdParemeter"</v>
                             <v n="BasicTypeNodeAcceptsExpression">true</v>
                             <n n="BasicTypeNodeFastAccess" />
                             <a n="BasicTypeNodeEnumValues" et="String" />
@@ -925,6 +929,10 @@
                     <o>
                       <v n="Id">2597686782L</v>
                       <v n="Value">true</v>
+                    </o>
+                    <o>
+                      <v n="Id">2763477857L</v>
+                      <v n="Value">"GVL_HMI.bCmdParemeter"</v>
                     </o>
                   </l>
                 </o>
@@ -1050,10 +1058,10 @@
               <d n="FbMethods" t="CaseInsensitiveHashtable_1" ckt="String" cvt="Guid">
                 <v>FB_Init</v>
                 <v>3d73e025-279e-429e-a91d-fb35d2e41a90</v>
-                <v>FB_Exit</v>
-                <v>e2a128e0-e7d6-4699-bcf3-340108bca1a7</v>
                 <v>FB_Reinit</v>
                 <v>29841de1-8709-4091-a79e-687b918c3c8e</v>
+                <v>FB_Exit</v>
+                <v>e2a128e0-e7d6-4699-bcf3-340108bca1a7</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{43046aa2-b450-4b65-865e-316f64f4426b}</v>

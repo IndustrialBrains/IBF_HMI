@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.5">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
   <Visu Name="Manual_PNG" Id="{6ebf1ffe-3d8a-4c3c-ace5-8874cf269357}">
     <XmlArchive>
       <Data>
@@ -369,7 +369,37 @@
                         <v n="VisuNodeReferenceGuid">{00000000-0000-0000-0000-000000000000}</v>
                         <n n="VisuNodeReference" />
                         <v n="VisNodeRefs33">"ManualControl"</v>
-                        <l n="TypeNodeChildren" t="ArrayList" />
+                        <l n="TypeNodeChildren" t="ArrayList" cet="BasicTypeNode">
+                          <o>
+                            <v n="Flags">2L</v>
+                            <v n="BasicTypeNodeValue">"Device_Library.GVL_DevManual.fbManualControler"</v>
+                            <v n="BasicTypeNodeAcceptsExpression">true</v>
+                            <n n="BasicTypeNodeFastAccess" />
+                            <a n="BasicTypeNodeEnumValues" et="String" />
+                            <n n="EnumValueDisplayTextIds" />
+                            <n n="EnumValueVisibilityAttributeValues" />
+                            <n n="EnumValueLibraryId" />
+                            <n n="DynamicEnumMemberVisibilityCheckerTypeGuid" />
+                            <l n="TypeNodeChildren" t="ArrayList" />
+                            <o n="TypeNodeType" t="TypeNodeType">
+                              <v n="TypeClass" t="TypeClass">Reference</v>
+                              <v n="QualifiedName">"FB_ManualController"</v>
+                              <v n="Name">"FB_ManualController"</v>
+                            </o>
+                            <v n="TypeNodeName">"fbManualControler"</v>
+                            <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
+                              <v n="AttrFlags">0UL</v>
+                              <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" />
+                              <v n="ConvDone">true</v>
+                            </o>
+                            <v n="TypeNodeId" t="Int16">255</v>
+                            <v n="TypeNodeIdLong">345443855L</v>
+                            <n n="LibraryId" />
+                            <n n="DisplayTextId" />
+                            <n n="DescriptionTextID" />
+                            <v n="DescriptionUseParent">false</v>
+                          </o>
+                        </l>
                         <o n="TypeNodeType" t="TypeNodeType">
                           <v n="TypeClass" t="TypeClass">Userdef</v>
                           <v n="QualifiedName">"IVisualisation"</v>
@@ -395,6 +425,10 @@
                         <n n="DescriptionTextID" />
                         <v n="DescriptionUseParent">false</v>
                       </o>
+                    </o>
+                    <o>
+                      <v n="Id">345443855L</v>
+                      <v n="Value">"Device_Library.GVL_DevManual.fbManualControler"</v>
                     </o>
                   </l>
                 </o>

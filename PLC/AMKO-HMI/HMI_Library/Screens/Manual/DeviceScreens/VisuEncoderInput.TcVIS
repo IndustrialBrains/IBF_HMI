@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.5">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
   <Visu Name="VisuEncoderInput" Id="{9f88dfcc-1ec2-4c14-8b61-63c3ccc32078}">
     <XmlArchive>
       <Data>
         <o xml:space="preserve" t="VisualObject">
           <n n="LastVisuLanguageModelEntry" />
-          <v n="UniqueIdGenerator">"3"</v>
+          <v n="UniqueIdGenerator">"4"</v>
           <o n="VisualElemList" t="VisualElemList">
             <l n="VisualElementList" t="VisualElemCollection" cet="GenericVisualElem">
               <o>
@@ -147,7 +147,7 @@
                     </o>
                     <o>
                       <v n="Id">2477733581L</v>
-                      <v n="Value">"GVL_DevManual.fbManualControler.pDevEncoder^.nOutPosition"</v>
+                      <v n="Value">"fbManualControler.pDevEncoder^.nOutPosition"</v>
                     </o>
                     <o>
                       <v n="Id">823443203L</v>
@@ -271,10 +271,10 @@
               <d n="FbMethods" t="CaseInsensitiveHashtable" ckt="String" cvt="Guid">
                 <v>FB_Init</v>
                 <v>38c84dc4-8b17-4f77-9078-37c2ebdded8f</v>
-                <v>FB_Exit</v>
-                <v>5dde7d26-f1eb-4145-97c5-4d1c14b91c5b</v>
                 <v>FB_Reinit</v>
                 <v>a0e688c8-3862-482c-98ab-da9b5f969e32</v>
+                <v>FB_Exit</v>
+                <v>5dde7d26-f1eb-4145-97c5-4d1c14b91c5b</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{310ac272-669d-4bb5-86ca-5fd67ac25f8b}</v>
@@ -329,7 +329,7 @@
               <o>
                 <v n="Id">3L</v>
                 <n n="Tag" />
-                <v n="Text">"	"</v>
+                <v n="Text">"	fbManualControler	: FB_ManualController ;"</v>
               </o>
               <o>
                 <v n="Id">1L</v>

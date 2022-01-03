@@ -18,7 +18,7 @@
     <Company>AMKO-Engineering</Company>
     <Released>false</Released>
     <Title>HMI_Library</Title>
-    <ProjectVersion>1.3.1.4</ProjectVersion>
+    <ProjectVersion>1.4.0.0</ProjectVersion>
     <Author>AMKO-Engineering</Author>
     <Description>Basic HMI screens for use with Utilities and device libraries</Description>
     <LibraryCategories>
@@ -254,6 +254,10 @@
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
     </Compile>
     <Compile Include="Screens\Startup Screen\LogoScreen_PNG.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Startup Screen\LogoScreenBliss_PNG.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
     </Compile>

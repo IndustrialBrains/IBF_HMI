@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.5">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
   <Visu Name="toManualButton" Id="{e5e337c4-6df6-4290-a08c-2b3898e12bd3}">
     <XmlArchive>
       <Data>
@@ -169,11 +169,8 @@
                 <n n="VisualElementFrameInformation" />
                 <d n="VisualElementInputActions" t="Hashtable" ckt="String" cvt="IInputAction[]">
                   <v>OnMouseClick</v>
-                  <a et="IInputAction">
-                    <o t="VisuUserMgmtInputAction">
-                      <v n="Type" t="VisuUserMgmtDialogType">Login</v>
-                    </o>
-                    <o t="ToggleVarInputAction">
+                  <a cet="ToggleVarInputAction">
+                    <o>
                       <v n="ToggleVariable">"GVL_HMI.bCmdManual"</v>
                       <n n="Error" />
                     </o>
@@ -184,7 +181,28 @@
                 <a n="LMGuids" et="Guid" />
                 <d n="SubElements" t="Hashtable" />
                 <v n="VisualElementId">3</v>
-                <l n="UserManagementAccessRights" t="ArrayList" />
+                <l n="UserManagementAccessRights" t="ArrayList" cet="VisuAccessRightInfo">
+                  <o>
+                    <v n="GroupName">"None"</v>
+                    <v n="GroupId">0</v>
+                    <v n="AccessRight" t="VisuAccessRightType">OnlyVisible</v>
+                  </o>
+                  <o>
+                    <v n="GroupName">"Administrator"</v>
+                    <v n="GroupId">1</v>
+                    <v n="AccessRight" t="VisuAccessRightType">Operable</v>
+                  </o>
+                  <o>
+                    <v n="GroupName">"TD"</v>
+                    <v n="GroupId">2</v>
+                    <v n="AccessRight" t="VisuAccessRightType">Operable</v>
+                  </o>
+                  <o>
+                    <v n="GroupName">"Operator"</v>
+                    <v n="GroupId">3</v>
+                    <v n="AccessRight" t="VisuAccessRightType">OnlyVisible</v>
+                  </o>
+                </l>
               </o>
             </l>
             <v n="BackgroundBitmapId">""</v>
@@ -288,10 +306,10 @@
               <d n="FbMethods" t="CaseInsensitiveHashtable" ckt="String" cvt="Guid">
                 <v>FB_Init</v>
                 <v>543fb220-bc6d-4f16-91f6-83793a38e8f7</v>
-                <v>FB_Reinit</v>
-                <v>10c9e6f4-e54e-4bf5-991e-e14f21214cf1</v>
                 <v>FB_Exit</v>
                 <v>2306ea19-3fe6-475a-9cfe-79477ffd5f54</v>
+                <v>FB_Reinit</v>
+                <v>10c9e6f4-e54e-4bf5-991e-e14f21214cf1</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{43e8fba3-f58a-4e0a-950a-76d7c5cc4d8b}</v>
@@ -393,7 +411,6 @@
         <Type n="Guid">System.Guid</Type>
         <Type n="Hashtable">System.Collections.Hashtable</Type>
         <Type n="HotkeyConfiguration">{6b108d46-58af-4e41-a3f4-174d8f160cc4}</Type>
-        <Type n="IInputAction">{69265815-ba9d-4bec-bfcb-427fb9172844}</Type>
         <Type n="IInputAction[]">_3S.CoDeSys.VisualElem.IInputAction[], VisualElem, Version=3.5.13.0, Culture=neutral, PublicKeyToken=null</Type>
         <Type n="Int16">System.Int16</Type>
         <Type n="Int32">System.Int32</Type>
@@ -406,6 +423,8 @@
         <Type n="ToggleVarInputAction">{9dcc475d-e53e-4dd3-abd9-995bf52d466f}</Type>
         <Type n="UInt16">System.UInt16</Type>
         <Type n="UInt32">System.UInt32</Type>
+        <Type n="VisuAccessRightInfo">{dda8fb5a-e974-4696-9c31-85aed5b08e18}</Type>
+        <Type n="VisuAccessRightType">{9b75d857-9b00-480d-869d-45426a67bc56}</Type>
         <Type n="VisualElemCollection">{ef9d0b20-c96e-48db-b361-2ded4063150e}</Type>
         <Type n="VisualElemList">{f285c9a3-7019-446b-b98c-ccec3a0af8fa}</Type>
         <Type n="VisualElemMember">{c694e3a2-5c0b-4177-ab35-cb06bd5a6a02}</Type>
@@ -414,8 +433,6 @@
         <Type n="VisualObject">{f18bec89-9fef-401d-9953-2f11739a6808}</Type>
         <Type n="VisualObjectSize">{6ad3e88f-aee2-4766-a7ea-a8790037ef51}</Type>
         <Type n="VisualObjectSizeManager">{5f612b0e-b404-455f-8177-27864e9f5332}</Type>
-        <Type n="VisuUserMgmtDialogType">{736384f6-db22-43b1-93c0-d647f94c4fca}</Type>
-        <Type n="VisuUserMgmtInputAction">{90722319-5366-4489-810a-357c35644546}</Type>
       </TypeList>
     </XmlArchive>
     <ObjectProperties>

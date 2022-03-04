@@ -27,7 +27,7 @@ jobs:
       - name: Checkout repository and submodules
         uses: actions/checkout@v3
         with:
-          submodules: recursive
+          submodules: true
           token: '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'
 
       - name: Remove unversioned and ignored files

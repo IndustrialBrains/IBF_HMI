@@ -1,0 +1,6 @@
+[submodule "Libraries/AMKOLib-Utilities"]
+	path = Libraries/AMKOLib-Utilities
+	url = https://github.com/IndustrialBrains/AMKOLib-Utilities.git
+[submodule "Libraries/AMKOLib-Device"]
+	path = Libraries/AMKOLib-Device
+	url = https://github.com/IndustrialBrains/AMKOLib-Device.git

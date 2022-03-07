@@ -41,6 +41,7 @@ jobs:
           python c:/Users/Administrator/source/repos/TcCliTools/Python/main.py .
 
       - name: Restore library repository
+        if: always()
         run: |
           Remove-Item -Recurse -Force "C:\TwinCAT\3.1\Components\Plc\Managed Libraries"
           Copy-Item -Recurse -Path "C:\TwinCAT\3.1\Components\Plc\Managed Libraries - Backup" -Destination "C:\TwinCAT\3.1\Components\Plc\Managed Libraries"

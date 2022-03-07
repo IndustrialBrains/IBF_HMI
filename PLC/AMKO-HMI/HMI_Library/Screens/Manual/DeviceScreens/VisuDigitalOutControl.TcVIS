@@ -127,67 +127,63 @@
             <o n="GeneratedVisuFbDescription" t="GenericFbDescription">
               <d n="FbMethods" t="CaseInsensitiveHashtable" ckt="String" cvt="Guid">
                 <v>GetUpdateRects</v>
-                <v>e249b15e-1da8-4239-8cef-ecfdba7923a1</v>
+                <v>82bb4c88-f3aa-43ff-aee8-bfc7f1d4b88f</v>
                 <v>ContainsPoint</v>
-                <v>1a51dbcd-2421-4b8c-b296-bac9ce0eb50c</v>
-                <v>SetStaticState</v>
-                <v>c2aba6ec-3142-415b-90ea-8205204c1914</v>
-                <v>HasInputAccessIntern</v>
-                <v>7172265d-2c59-4adc-8427-44aa5bb2d3b9</v>
-                <v>GetTooltip</v>
-                <v>5ffb540c-07e9-4a0f-8582-eefd3c2cd1a4</v>
-                <v>GetNamespace</v>
-                <v>415b986c-3d2c-44cf-9c38-2a93a922b5b8</v>
-                <v>GetTranslator</v>
-                <v>65b8b3d8-59ef-4a3a-887a-1a1cdf071cab</v>
-                <v>Update</v>
-                <v>d4783b8a-143e-4702-baa5-5253b98ff2b8</v>
-                <v>SetClientData</v>
-                <v>978596ad-15a8-47b6-b9e4-2c37646d6120</v>
-                <v>GetClientData</v>
-                <v>909847b6-7c87-4bd1-a538-9da5bb81c3d0</v>
-                <v>Paint</v>
-                <v>3b6f3be7-6948-4e4e-a108-f71b2ac227ed</v>
-                <v>HasVisibilityAccess</v>
-                <v>5ab10ca1-27c3-4f63-8446-647cdc089112</v>
-                <v>GetElementArray</v>
-                <v>9ce9c929-5ae9-49b1-b79f-e187d14a740f</v>
-                <v>SetVisuFlagsInternal</v>
-                <v>c51a10bc-0d17-46aa-a672-e49ce49d3497</v>
-                <v>GetText</v>
-                <v>fa0f1f05-276e-47f9-985e-6c7db065ce04</v>
-                <v>GetTextProperties</v>
-                <v>11305573-8358-4f00-beb0-4046c92790e4</v>
-                <v>IsAntialiasingInactive</v>
-                <v>fe39e5d2-b9e0-4b96-a34f-2a54feabd747</v>
-                <v>Initialize</v>
-                <v>b93449a6-61ce-43ab-8883-fb68859265b7</v>
-                <v>HasInputAccess</v>
-                <v>10fbbada-31b5-4d34-9a26-1242794e3cea</v>
-                <v>HasVisibilityAccessIntern</v>
-                <v>dff6d1e3-2f53-4c33-bc60-126b8a210701</v>
-                <v>GetSurroundingRect</v>
-                <v>aebd1ae4-d889-46c0-8e2f-3e84366232be</v>
-                <v>ElementInfo</v>
-                <v>94eff0d2-6e8b-4030-a14d-f639bd7f755d</v>
-                <v>GetLocalUsergroup</v>
-                <v>524e30ca-71d5-4dfd-8f38-39275c90b617</v>
-                <v>GetName</v>
-                <v>d105856a-7217-4113-a7b6-64af1203de0c</v>
-                <v>GetSize</v>
-                <v>694d1872-921e-4058-8222-4536803b9033</v>
+                <v>3c2773ec-2e38-421a-b521-8fab9632e1a8</v>
                 <v>FB_Reinit</v>
-                <v>9e5cb77f-308c-4cc7-acaa-1ef661a68a6d</v>
-                <v>FB_Exit</v>
-                <v>726e440a-83b1-4670-95e8-550258d73c01</v>
-                <v>GetInitializeVersion</v>
-                <v>1d257f5a-f7a8-4d27-8405-3b10421a6aab</v>
-                <v>GetElementIdArray</v>
-                <v>1f7d54c0-8343-4eb7-a6af-1bb076f31623</v>
-                <v>HandleInput</v>
-                <v>04a0058f-5fe2-4fd3-afdb-9e6390acd18c</v>
+                <v>30c6d486-b64d-4570-8970-ea9cd5c0fe9d</v>
+                <v>SetStaticState</v>
+                <v>b5022045-01e1-4455-b90f-dba8e6837536</v>
+                <v>Update</v>
+                <v>2e1270cc-bc07-455c-b816-12ab5fd14297</v>
+                <v>GetTooltip</v>
+                <v>7fa91afb-82e5-4e2c-9a3a-8d3812b59ed2</v>
+                <v>GetNamespace</v>
+                <v>7a14cc1a-b996-4fcd-9fea-ac6f2b7edf98</v>
+                <v>GetTranslator</v>
+                <v>b5b0047d-e719-485e-a446-e5cb17c95114</v>
+                <v>SetClientData</v>
+                <v>542e6699-792d-4cc4-8f6a-23bb6c1d01a3</v>
+                <v>GetClientData</v>
+                <v>0ab6620a-a2ad-4400-81a4-23d138de950f</v>
+                <v>Paint</v>
+                <v>d33825d5-cf9b-48a9-9511-b5178b13e7ab</v>
+                <v>HasVisibilityAccess</v>
+                <v>d95b9b0a-4b78-4837-921d-18aa507abea9</v>
+                <v>GetElementArray</v>
+                <v>5b956ed0-a422-4d55-a44e-54ab59a445c5</v>
+                <v>SetVisuFlagsInternal</v>
+                <v>4cf8168d-770f-4daa-b02e-d022d40526ca</v>
+                <v>GetText</v>
+                <v>62271828-1991-4d02-bd36-2143633ddfff</v>
+                <v>GetTextProperties</v>
+                <v>82f55104-798f-45df-a493-e9d58fb58196</v>
+                <v>IsAntialiasingInactive</v>
+                <v>89746094-afa0-45d2-b088-af1d77765b86</v>
+                <v>Initialize</v>
+                <v>0a64186b-bb5a-4754-a380-7b44cb3841cb</v>
+                <v>HasInputAccess</v>
+                <v>a62438f7-61b5-4ae5-98cf-3dd9048b0359</v>
+                <v>GetSurroundingRect</v>
+                <v>98679b18-d4a1-452b-999c-a6a694527cea</v>
+                <v>GetLocalUsergroup</v>
+                <v>7e771f45-5e9b-4efb-9c7a-81e6f256cb3c</v>
+                <v>GetName</v>
+                <v>2309d127-5c1c-4a6b-8ee3-5f3f528a1487</v>
+                <v>GetSize</v>
+                <v>67b70ad6-9ab9-491b-8ea0-3cc95d90f528</v>
                 <v>Destruct</v>
-                <v>dc80e32b-7da3-4331-9497-94fa4d0d3a4b</v>
+                <v>ed8ef57d-1f32-4e76-8cc0-bb78a060e10d</v>
+                <v>FB_Exit</v>
+                <v>2a303dad-25f2-4b42-bea3-ccefab20edda</v>
+                <v>GetInitializeVersion</v>
+                <v>8f5b606c-e6d3-448f-b645-728d3f98140b</v>
+                <v>GetElementIdArray</v>
+                <v>48138818-acf0-4a46-815a-3e192aae26e3</v>
+                <v>HandleInput</v>
+                <v>6a093713-04ca-465c-ae9f-af08cbf0b0ef</v>
+                <v>ElementInfo</v>
+                <v>0f811f55-43fb-4e50-a5ca-5e62be9732f2</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{95b8514e-4195-4ad3-a984-a4f77012140d}</v>
@@ -200,10 +196,10 @@
               <d n="FbMethods" t="CaseInsensitiveHashtable" ckt="String" cvt="Guid">
                 <v>FB_Init</v>
                 <v>498a62cc-6442-425a-b7b1-c4d8807038d2</v>
-                <v>FB_Reinit</v>
-                <v>39a43c21-5903-4907-bbdb-f3411847a9e6</v>
                 <v>FB_Exit</v>
                 <v>ebd73aef-68cf-46b5-b0b7-dc0c7ae24772</v>
+                <v>FB_Reinit</v>
+                <v>39a43c21-5903-4907-bbdb-f3411847a9e6</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{617a8708-c7bd-4fdd-a101-fb3f41c74892}</v>

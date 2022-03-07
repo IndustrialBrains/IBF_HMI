@@ -87,6 +87,7 @@
     <SelectedLibraryCategories>
       <Id xmlns="">{eb954523-a8af-4bd0-a32c-f81936b81c6d}</Id>
     </SelectedLibraryCategories>
+    <AutoUpdateVisuProfile>true</AutoUpdateVisuProfile>
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="BaseScreens" />
@@ -323,10 +324,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <PlaceholderReference Include="CmpBitmapPool">
-      <DefaultResolution>CmpBitmapPool, * (System)</DefaultResolution>
-      <Namespace>CmpBitmapPool</Namespace>
-    </PlaceholderReference>
     <PlaceholderReference Include="Device_Library">
       <DefaultResolution>Device_Library, * (AMKO-Engineering)</DefaultResolution>
       <Namespace>Device_Library</Namespace>
@@ -373,22 +370,9 @@
       <SystemLibrary>true</SystemLibrary>
       <ResolverGuid>2717eb6a-dd07-4c66-8d8d-cacebd7b18ae</ResolverGuid>
     </PlaceholderReference>
-    <PlaceholderReference Include="Tc2_Standard">
-      <DefaultResolution>Tc2_Standard, * (Beckhoff Automation GmbH)</DefaultResolution>
-      <Namespace>Tc2_Standard</Namespace>
-    </PlaceholderReference>
     <PlaceholderReference Include="Utilities_Library">
       <DefaultResolution>Utilities_Library, * (AMKO-Engineering)</DefaultResolution>
       <Namespace>Utilities_Library</Namespace>
-    </PlaceholderReference>
-    <PlaceholderReference Include="VisuDialogs">
-      <DefaultResolution>VisuDialogs, * (System)</DefaultResolution>
-      <Namespace>VisuDialogs</Namespace>
-    </PlaceholderReference>
-    <PlaceholderReference Include="VisuUserManagement">
-      <DefaultResolution>VisuUserMgmt, * (System)</DefaultResolution>
-      <Namespace>VisuUserManagement</Namespace>
-      <SystemLibrary>true</SystemLibrary>
     </PlaceholderReference>
   </ItemGroup>
   <ItemGroup>
@@ -397,113 +381,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <PlaceholderResolution Include="CAA Memory">
-      <Resolution>CAA Memory, 3.5.12.0 (CAA Technical Workgroup)</Resolution>
-    </PlaceholderResolution>
-    <PlaceholderResolution Include="CmpApp">
-      <Resolution>CmpApp, 3.5.13.0 (System)</Resolution>
-    </PlaceholderResolution>
-    <PlaceholderResolution Include="CmpBitmapPool">
-      <Resolution>CmpBitmapPool, 3.5.7.0 (System)</Resolution>
-    </PlaceholderResolution>
-    <PlaceholderResolution Include="CmpEventMgr">
-      <Resolution>CmpEventMgr, 3.5.12.0 (System)</Resolution>
-    </PlaceholderResolution>
-    <PlaceholderResolution Include="CmpLog">
-      <Resolution>CmpLog, 3.5.5.0 (System)</Resolution>
-    </PlaceholderResolution>
-    <PlaceholderResolution Include="Component Manager">
-      <Resolution>Component Manager, 3.5.13.0 (System)</Resolution>
-    </PlaceholderResolution>
     <PlaceholderResolution Include="Device_Library">
       <Resolution>Device_Library, * (AMKO-Engineering)</Resolution>
     </PlaceholderResolution>
-    <PlaceholderResolution Include="Standard">
-      <Resolution>Tc2_Standard, 3.3.3.0 (Beckhoff Automation GmbH)</Resolution>
-    </PlaceholderResolution>
-    <PlaceholderResolution Include="Standard64">
-      <Resolution>Tc2_Standard, 3.3.3.0 (Beckhoff Automation GmbH)</Resolution>
-    </PlaceholderResolution>
-    <PlaceholderResolution Include="StringUtils">
-      <Resolution>StringUtils, 3.5.13.20 (System)</Resolution>
-    </PlaceholderResolution>
-    <PlaceholderResolution Include="SysDir">
-      <Resolution>SysDir, 3.5.12.0 (System)</Resolution>
-    </PlaceholderResolution>
-    <PlaceholderResolution Include="SysFile">
-      <Resolution>SysFile, 3.5.9.0 (System)</Resolution>
-    </PlaceholderResolution>
-    <PlaceholderResolution Include="SysMem">
-      <Resolution>SysMem, 3.5.12.0 (System)</Resolution>
-    </PlaceholderResolution>
-    <PlaceholderResolution Include="SysSem">
-      <Resolution>SysSem, 3.5.5.0 (System)</Resolution>
-    </PlaceholderResolution>
-    <PlaceholderResolution Include="System_VisuElemMeter">
-      <Resolution>VisuElemMeter, 3.5.13.0 (System)</Resolution>
-    </PlaceholderResolution>
-    <PlaceholderResolution Include="System_VisuElems">
-      <Resolution>VisuElems, * (System)</Resolution>
-    </PlaceholderResolution>
-    <PlaceholderResolution Include="System_VisuElemsSpecialControls">
-      <Resolution>VisuElemsSpecialControls, * (System)</Resolution>
-    </PlaceholderResolution>
-    <PlaceholderResolution Include="System_VisuElemsWinControls">
-      <Resolution>VisuElemsWinControls, * (System)</Resolution>
-    </PlaceholderResolution>
-    <PlaceholderResolution Include="System_VisuElemTextEditor">
-      <Resolution>VisuElemTextEditor, * (System)</Resolution>
-    </PlaceholderResolution>
-    <PlaceholderResolution Include="system_visuinputs">
-      <Resolution>VisuInputs, * (System)</Resolution>
-    </PlaceholderResolution>
-    <PlaceholderResolution Include="System_VisuNativeControl">
-      <Resolution>VisuNativeControl, * (System)</Resolution>
-    </PlaceholderResolution>
-    <PlaceholderResolution Include="SysTimeCore">
-      <Resolution>SysTimeCore, 3.5.5.0 (System)</Resolution>
-    </PlaceholderResolution>
-    <PlaceholderResolution Include="SysTimeRtc">
-      <Resolution>SysTimeRtc, 3.5.5.0 (System)</Resolution>
-    </PlaceholderResolution>
-    <PlaceholderResolution Include="Tc2_Drive">
-      <Resolution>Tc2_Drive, 3.3.5.0 (Beckhoff Automation GmbH)</Resolution>
-    </PlaceholderResolution>
-    <PlaceholderResolution Include="Tc2_EtherCAT">
-      <Resolution>Tc2_EtherCAT, 3.3.15.0 (Beckhoff Automation GmbH)</Resolution>
-    </PlaceholderResolution>
-    <PlaceholderResolution Include="Tc2_IoFunctions">
-      <Resolution>Tc2_IoFunctions, 3.3.13.0 (Beckhoff Automation GmbH)</Resolution>
-    </PlaceholderResolution>
-    <PlaceholderResolution Include="Tc2_Math">
-      <Resolution>Tc2_Math, 3.3.1.0 (Beckhoff Automation GmbH)</Resolution>
-    </PlaceholderResolution>
-    <PlaceholderResolution Include="Tc2_MC2">
-      <Resolution>Tc2_MC2, 3.3.41.0 (Beckhoff Automation GmbH)</Resolution>
-    </PlaceholderResolution>
-    <PlaceholderResolution Include="Tc2_MC2_Drive">
-      <Resolution>Tc2_MC2_Drive, 3.3.22.0 (Beckhoff Automation GmbH)</Resolution>
-    </PlaceholderResolution>
-    <PlaceholderResolution Include="Tc2_Standard">
-      <Resolution>Tc2_Standard, 3.3.3.0 (Beckhoff Automation GmbH)</Resolution>
-    </PlaceholderResolution>
-    <PlaceholderResolution Include="Tc2_System">
-      <Resolution>Tc2_System, 3.4.24.0 (Beckhoff Automation GmbH)</Resolution>
-    </PlaceholderResolution>
-    <PlaceholderResolution Include="Tc2_Utilities">
-      <Resolution>Tc2_Utilities, 3.3.40.0 (Beckhoff Automation GmbH)</Resolution>
-    </PlaceholderResolution>
-    <PlaceholderResolution Include="Tc3_Module">
-      <Resolution>Tc3_Module, 3.3.21.0 (Beckhoff Automation GmbH)</Resolution>
-    </PlaceholderResolution>
     <PlaceholderResolution Include="Utilities_Library">
       <Resolution>Utilities_Library, * (AMKO-Engineering)</Resolution>
-    </PlaceholderResolution>
-    <PlaceholderResolution Include="VisuDialogs">
-      <Resolution>VisuDialogs, 3.5.12.0 (System)</Resolution>
-    </PlaceholderResolution>
-    <PlaceholderResolution Include="VisuUserManagement">
-      <Resolution>VisuUserMgmt, 3.5.13.32 (System)</Resolution>
     </PlaceholderResolution>
   </ItemGroup>
   <ItemGroup>
@@ -673,26 +555,15 @@
   <ProjectExtensions>
     <PlcProjectOptions>
       <XmlArchive>
-        <Data>
-          <o xml:space="preserve" t="OptionKey">
+  <Data>
+    <o xml:space="preserve" t="OptionKey">
       <v n="Name">"&lt;ProjectRoot&gt;"</v>
       <d n="SubKeys" t="Hashtable" ckt="String" cvt="OptionKey">
-        <v>{192FAD59-8248-4824-A8DE-9177C94C195A}</v>
+        <v>{8F99A816-E488-41E4-9FA3-846536012284}</v>
         <o>
-          <v n="Name">"{192FAD59-8248-4824-A8DE-9177C94C195A}"</v>
+          <v n="Name">"{8F99A816-E488-41E4-9FA3-846536012284}"</v>
           <d n="SubKeys" t="Hashtable" />
           <d n="Values" t="Hashtable" />
-        </o>
-        <v>{246001F4-279D-43AC-B241-948EB31120E1}</v>
-        <o>
-          <v n="Name">"{246001F4-279D-43AC-B241-948EB31120E1}"</v>
-          <d n="SubKeys" t="Hashtable" />
-          <d n="Values" t="Hashtable" ckt="String">
-            <v>GlobalVisuImageFilePath</v>
-            <v>"%APPLICATIONPATH%"</v>
-            <v>UnicodeStrings</v>
-            <v>false</v>
-          </d>
         </o>
         <v>{29BD8D0C-3586-4548-BB48-497B9A01693F}</v>
         <o>
@@ -762,35 +633,54 @@
           </d>
           <d n="Values" t="Hashtable" />
         </o>
-        <v>{8F99A816-E488-41E4-9FA3-846536012284}</v>
-        <o>
-          <v n="Name">"{8F99A816-E488-41E4-9FA3-846536012284}"</v>
-          <d n="SubKeys" t="Hashtable" />
-          <d n="Values" t="Hashtable" />
-        </o>
         <v>{40450F57-0AA3-4216-96F3-5444ECB29763}</v>
         <o>
           <v n="Name">"{40450F57-0AA3-4216-96F3-5444ECB29763}"</v>
           <d n="SubKeys" t="Hashtable" />
           <d n="Values" t="Hashtable" ckt="String">
+            <v>ActiveVisuExtensions_0</v>
+            <v>"IR0whWr8bwdyBwAA2CM5uwAAAAC4AQAAabXwRAAAAAABAAAAAAAAAAEaUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwACTHsANgBkADQAMgBlADkAMQA4AC0AZQA2AGEANQAtADQAYgAyAGMALQA5ADEANwBiAC0AZQAwADcAMwAxAGIANwA2ADYAYgAxAGYAfQADDkMAbwBtAHAAYQBuAHkABDBCAGUAYwBrAGgAbwBmAGYAIABBAHUAdABvAG0AYQB0AGkAbwBuACAARwBtAGIASAAFDlYAZQByAHMAaQBvAG4ABg4xAC4AMAAuADMALgAwAAcMQQBjAHQAaQB2AGUACAhiAG8AbwBsAAkITgBhAG0AZQAKJFYAaQBzAHUARQBsAGUAbQBFAHYAZQBuAHQAVABhAGIAbABlAAsWUAByAG8AZgBpAGwAZQBEAGEAdABhAAxMewAxADYAZQA1ADUAYgA2ADAALQA3ADAANAAzAC0ANABhADYAMwAtAGIANgA1AGIALQA2ADEANAA3ADEAMwA4ADcAOABkADQAMgB9AA0STABpAGIAcgBhAHIAaQBlAHMADkx7ADMAYgBmAGQANQA0ADUAOQAtAGIAMAA3AGYALQA0AGQANgBlAC0AYQBlADEAYQAtAGEAOAAzADMANQA2AGEANQA1ADEANAAyAH0AD0x7ADkAYwA5ADUAOAA5ADYAOAAtADIAYwA4ADUALQA0ADEAYgBiAC0AOAA4ADcAMQAtADgAOQA1AGYAZgAxAGYAZQBkAGUAMQBhAH0AEAZpAG4AdAARClUAcwBhAGcAZQASClQAaQB0AGwAZQATDFMAeQBzAHQAZQBtABQSVgBpAHMAdQBFAGwAZQBtAHMAFRhWAGkAcwB1AEUAbABlAG0AQgBhAHMAZQAWFFYAaQBzAHUASQBuAHAAdQB0AHMAFyZEAGUAdgBQAGwAYQBjAGUAaABvAGwAZABlAHIAcwBVAHMAZQBkABgiUABsAHUAZwBpAG4AQwBvAG4AcwB0AHIAYQBpAG4AdABzABlMewA0ADMAZAA1ADIAYgBjAGUALQA5ADQAMgBjAC0ANAA0AGQANwAtADkAZQA5ADQALQAxAGIAZgBkAGYAMwAxADAAZQA2ADMAYwB9ABocQQB0AEwAZQBhAHMAdABWAGUAcgBzAGkAbwBuABsUUABsAHUAZwBpAG4ARwB1AGkAZAAcFlMAeQBzAHQAZQBtAC4ARwB1AGkAZAAdSGEAZgBjAGQANQA0ADQANgAtADQAOQAxADQALQA0AGYAZQA3AC0AYgBiADcAOAAtADkAYgBmAGYAZQBiADcAMABmAGQAMQA3AB4UVQBwAGQAYQB0AGUASQBuAGYAbwAfTHsAYgAwADMAMwA2ADYAYQA4AC0AYgA1AGMAMAAtADQAYgA5AGEALQBhADAAMABlAC0AZQBiADgANgAwADEAMQAxADAANABjADMAfQAgDlUAcABkAGEAdABlAHMAIUx7ADEAOAA2ADgAZgBmAGMAOQAtAGUANABmAGMALQA0ADUAMwAyAC0AYQBjADAANgAtADEAZQAzADkAYgBiADUANQA3AGIANgA5AH0AIkx7AGEANQBiAGQANAA4AGMAMwAtADAAZAAxADcALQA0ADEAYgA1AC0AYgAxADYANAAtADUAZgBjADYAYQBkADIAYgA5ADYAYgA3AH0AIxZPAGIAagBlAGMAdABzAFQAeQBwAGUAJFRVAHAAZABhAHQAZQBMAGEAbgBnAHUAYQBnAGUATQBvAGQAZQBsAEYAbwByAEMAbwBuAHYAZQByAHQAaQBiAGwAZQBMAGkAYgByAGEAcgBpAGUAcwAlEEwAaQBiAFQAaQB0AGwAZQAmFEwAaQBiAEMAbwBtAHAAYQBuAHkAJx5VAHAAZABhAHQAZQBQAHIAbwB2AGkAZABlAHIAcwAoOFMAeQBzAHQAZQBtAC4AQwBvAGwAbABlAGMAdABpAG8AbgBzAC4ASABhAHMAaAB0AGEAYgBsAGUAKRJ2AGkAcwB1AGUAbABlAG0AcwAqDHMAeQBzAHQAZQBtACtINgBjAGIAMQBjAGQAZQAxAC0AZAA1AGQAYwAtADQAYQAzAGIALQA5ADAANQA0AC0AMgAxAGYAYQA3ADUANgBhADMAZgBhADQALChJAG4AdABlAHIAZgBhAGMAZQBWAGUAcgBzAGkAbwBuAEkAbgBmAG8ALUx7AGMANgAxADEAZQA0ADAAMAAtADcAZgBiADkALQA0AGMAMwA1AC0AYgA5AGEAYwAtADQAZQAzADEANABiADUAOQA5ADYANAAzAH0ALhhNAGEAagBvAHIAVgBlAHIAcwBpAG8AbgAvGE0AaQBuAG8AcgBWAGUAcgBzAGkAbwBuADAMTABlAGcAYQBjAHkAMTBMAGEAbgBnAHUAYQBnAGUATQBvAGQAZQBsAFYAZQByAHMAaQBvAG4ASQBuAGYAbwAyMEwAbwBhAGQATABpAGIAcgBhAHIAaQBlAHMASQBuAHQAbwBQAHIAbwBqAGUAYwB0ADMaQwBvAG0AcABhAHQAaQBiAGkAbABpAHQAeQDQAAIaBtADAS0E0AUBLQbQBwitAdAJAS0K0AsMGgfQDQ4aAUUNDwTQAA8aBEUFEAQBAAAAAAAAAAMAAAAAAAAA0BEQrQIAAADQEgEtCtADAS0T0AAPGgRFBRAEAwAAAAUAAAANAAAAFAAAANAREK0BAAAA0BIBLRTQAwEtE9AADxoERQUQBAMAAAAFAAAADQAAABQAAADQERCtBAAAANASAS0V0AMBLRPQAA8aBEUFEAQDAAAABQAAAA0AAAAAAAAA0BEQrQQAAADQEgEtFtADAS0T0BcIrQFFGBkB0AAZGgJFGhAEAwAAAAUAAAANAAAAAAAAANAbHC0d0B4fGgJFICEC0AAiGgVFBRAEAwAAAAMAAAAAAAAACgAAANAjEK0AAAAA0AkBLSTQJQEtFNAmAS0T0AAiGgVFBRAEAwAAAAMAAAAAAAAACgAAANAjEK0BAAAA0AkBLSTQJQEtFNAmAS0TmicoAUUAAQLQAAEtKdAAAS0q0AAcLSvQLC0aA9AuEK0BAAAA0C8QrRcAAADQMAitANAxLRoD0C4QrQIAAADQLxCtAwAAANAwCK0A0DIIrQDQMwitAA=="</v>
             <v>ActiveVisuExtensionsLength</v>
             <v>0</v>
             <v>ActiveVisuProfile</v>
             <v>"IR0whWr8bwfwBwAAiD2qpQAAAABVAgAA37x72QAAAAABAAAAAAAAAAEaUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwACTHsAZgA5ADUAYgBiADQAMgA2AC0ANQA1ADIANAAtADQAYgA0ADUALQA5ADQAMAAwAC0AZgBiADAAZgAyAGUANwA3AGUANQAxAGIAfQADCE4AYQBtAGUABDBUAHcAaQBuAEMAQQBUACAAMwAuADEAIABCAHUAaQBsAGQAIAA0ADAAMgA0AC4ANwAFFlAAcgBvAGYAaQBsAGUARABhAHQAYQAGTHsAMQA2AGUANQA1AGIANgAwAC0ANwAwADQAMwAtADQAYQA2ADMALQBiADYANQBiAC0ANgAxADQANwAxADMAOAA3ADgAZAA0ADIAfQAHEkwAaQBiAHIAYQByAGkAZQBzAAhMewAzAGIAZgBkADUANAA1ADkALQBiADAANwBmAC0ANABkADYAZQAtAGEAZQAxAGEALQBhADgAMwAzADUANgBhADUANQAxADQAMgB9AAlMewA5AGMAOQA1ADgAOQA2ADgALQAyAGMAOAA1AC0ANAAxAGIAYgAtADgAOAA3ADEALQA4ADkANQBmAGYAMQBmAGUAZABlADEAYQB9AAoOVgBlAHIAcwBpAG8AbgALBmkAbgB0AAwKVQBzAGEAZwBlAA0KVABpAHQAbABlAA4aVgBpAHMAdQBFAGwAZQBtAE0AZQB0AGUAcgAPDkMAbwBtAHAAYQBuAHkAEAxTAHkAcwB0AGUAbQARElYAaQBzAHUARQBsAGUAbQBzABIwVgBpAHMAdQBFAGwAZQBtAHMAUwBwAGUAYwBpAGEAbABDAG8AbgB0AHIAbwBsAHMAEyhWAGkAcwB1AEUAbABlAG0AcwBXAGkAbgBDAG8AbgB0AHIAbwBsAHMAFCRWAGkAcwB1AEUAbABlAG0AVABlAHgAdABFAGQAaQB0AG8AcgAVIlYAaQBzAHUATgBhAHQAaQB2AGUAQwBvAG4AdAByAG8AbAAWFHYAaQBzAHUAaQBuAHAAdQB0AHMAFwxzAHkAcwB0AGUAbQAYGFYAaQBzAHUARQBsAGUAbQBCAGEAcwBlABkmRABlAHYAUABsAGEAYwBlAGgAbwBsAGQAZQByAHMAVQBzAGUAZAAaCGIAbwBvAGwAGyJQAGwAdQBnAGkAbgBDAG8AbgBzAHQAcgBhAGkAbgB0AHMAHEx7ADQAMwBkADUAMgBiAGMAZQAtADkANAAyAGMALQA0ADQAZAA3AC0AOQBlADkANAAtADEAYgBmAGQAZgAzADEAMABlADYAMwBjAH0AHRxBAHQATABlAGEAcwB0AFYAZQByAHMAaQBvAG4AHhRQAGwAdQBnAGkAbgBHAHUAaQBkAB8WUwB5AHMAdABlAG0ALgBHAHUAaQBkACBIYQBmAGMAZAA1ADQANAA2AC0ANAA5ADEANAAtADQAZgBlADcALQBiAGIANwA4AC0AOQBiAGYAZgBlAGIANwAwAGYAZAAxADcAIRRVAHAAZABhAHQAZQBJAG4AZgBvACJMewBiADAAMwAzADYANgBhADgALQBiADUAYwAwAC0ANABiADkAYQAtAGEAMAAwAGUALQBlAGIAOAA2ADAAMQAxADEAMAA0AGMAMwB9ACMOVQBwAGQAYQB0AGUAcwAkTHsAMQA4ADYAOABmAGYAYwA5AC0AZQA0AGYAYwAtADQANQAzADIALQBhAGMAMAA2AC0AMQBlADMAOQBiAGIANQA1ADcAYgA2ADkAfQAlTHsAYQA1AGIAZAA0ADgAYwAzAC0AMABkADEANwAtADQAMQBiADUALQBiADEANgA0AC0ANQBmAGMANgBhAGQAMgBiADkANgBiADcAfQAmFk8AYgBqAGUAYwB0AHMAVAB5AHAAZQAnVFUAcABkAGEAdABlAEwAYQBuAGcAdQBhAGcAZQBNAG8AZABlAGwARgBvAHIAQwBvAG4AdgBlAHIAdABpAGIAbABlAEwAaQBiAHIAYQByAGkAZQBzACgQTABpAGIAVABpAHQAbABlACkUTABpAGIAQwBvAG0AcABhAG4AeQAqHlUAcABkAGEAdABlAFAAcgBvAHYAaQBkAGUAcgBzACs4UwB5AHMAdABlAG0ALgBDAG8AbABsAGUAYwB0AGkAbwBuAHMALgBIAGEAcwBoAHQAYQBiAGwAZQAsEnYAaQBzAHUAZQBsAGUAbQBzAC1INgBjAGIAMQBjAGQAZQAxAC0AZAA1AGQAYwAtADQAYQAzAGIALQA5ADAANQA0AC0AMgAxAGYAYQA3ADUANgBhADMAZgBhADQALihJAG4AdABlAHIAZgBhAGMAZQBWAGUAcgBzAGkAbwBuAEkAbgBmAG8AL0x7AGMANgAxADEAZQA0ADAAMAAtADcAZgBiADkALQA0AGMAMwA1AC0AYgA5AGEAYwAtADQAZQAzADEANABiADUAOQA5ADYANAAzAH0AMBhNAGEAagBvAHIAVgBlAHIAcwBpAG8AbgAxGE0AaQBuAG8AcgBWAGUAcgBzAGkAbwBuADIMTABlAGcAYQBjAHkAMzBMAGEAbgBnAHUAYQBnAGUATQBvAGQAZQBsAFYAZQByAHMAaQBvAG4ASQBuAGYAbwA0MEwAbwBhAGQATABpAGIAcgBhAHIAaQBlAHMASQBuAHQAbwBQAHIAbwBqAGUAYwB0ADUaQwBvAG0AcABhAHQAaQBiAGkAbABpAHQAeQDQAAIaA9ADAS0E0AUGGgfQBwgaAUUHCQjQAAkaBEUKCwQDAAAABQAAAA0AAAAAAAAA0AwLrQIAAADQDQEtDtAPAS0Q0AAJGgRFCgsEAwAAAAUAAAANAAAAKAAAANAMC60BAAAA0A0BLRHQDwEtENAACRoERQoLBAMAAAAFAAAADQAAAAAAAADQDAutAgAAANANAS0S0A8BLRDQAAkaBEUKCwQDAAAABQAAAA0AAAAUAAAA0AwLrQIAAADQDQEtE9APAS0Q0AAJGgRFCgsEAwAAAAUAAAANAAAAAAAAANAMC60CAAAA0A0BLRTQDwEtENAACRoERQoLBAMAAAAFAAAADQAAAAAAAADQDAutAgAAANANAS0V0A8BLRDQAAkaBEUKCwQDAAAABQAAAA0AAAAAAAAA0AwLrQIAAADQDQEtFtAPAS0X0AAJGgRFCgsEAwAAAAUAAAANAAAAKAAAANAMC60EAAAA0A0BLRjQDwEtENAZGq0BRRscAdAAHBoCRR0LBAMAAAAFAAAADQAAAAAAAADQHh8tINAhIhoCRSMkAtAAJRoFRQoLBAMAAAADAAAAAAAAAAoAAADQJgutAAAAANADAS0n0CgBLRHQKQEtENAAJRoFRQoLBAMAAAADAAAAAAAAAAoAAADQJgutAQAAANADAS0n0CgBLRHQKQEtEJoqKwFFAAEC0AABLSzQAAEtF9AAHy0t0C4vGgPQMAutAQAAANAxC60XAAAA0DIarQDQMy8aA9AwC60CAAAA0DELrQMAAADQMhqtANA0Gq0A0DUarQA="</v>
           </d>
         </o>
+        <v>{192FAD59-8248-4824-A8DE-9177C94C195A}</v>
+        <o>
+          <v n="Name">"{192FAD59-8248-4824-A8DE-9177C94C195A}"</v>
+          <d n="SubKeys" t="Hashtable" />
+          <d n="Values" t="Hashtable" />
+        </o>
+        <v>{F66C7017-BDD8-4114-926C-81D6D687E35F}</v>
+        <o>
+          <v n="Name">"{F66C7017-BDD8-4114-926C-81D6D687E35F}"</v>
+          <d n="SubKeys" t="Hashtable" />
+          <d n="Values" t="Hashtable" />
+        </o>
+        <v>{246001F4-279D-43AC-B241-948EB31120E1}</v>
+        <o>
+          <v n="Name">"{246001F4-279D-43AC-B241-948EB31120E1}"</v>
+          <d n="SubKeys" t="Hashtable" />
+          <d n="Values" t="Hashtable" ckt="String">
+            <v>GlobalVisuImageFilePath</v>
+            <v>"%APPLICATIONPATH%"</v>
+            <v>UnicodeStrings</v>
+            <v>false</v>
+          </d>
+        </o>
       </d>
       <d n="Values" t="Hashtable" />
     </o>
-        </Data>
-        <TypeList>
-          <Type n="Boolean">System.Boolean</Type>
-          <Type n="Hashtable">System.Collections.Hashtable</Type>
-          <Type n="Int32">System.Int32</Type>
-          <Type n="OptionKey">{54dd0eac-a6d8-46f2-8c27-2f43c7e49861}</Type>
-          <Type n="String">System.String</Type>
-        </TypeList>
-      </XmlArchive>
+  </Data>
+  <TypeList>
+    <Type n="Boolean">System.Boolean</Type>
+    <Type n="Hashtable">System.Collections.Hashtable</Type>
+    <Type n="Int32">System.Int32</Type>
+    <Type n="OptionKey">{54dd0eac-a6d8-46f2-8c27-2f43c7e49861}</Type>
+    <Type n="String">System.String</Type>
+  </TypeList>
+</XmlArchive>
     </PlcProjectOptions>
   </ProjectExtensions>
 </Project>

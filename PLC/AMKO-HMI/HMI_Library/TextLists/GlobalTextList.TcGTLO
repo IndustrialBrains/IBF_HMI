@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.10">
   <GlobalTextList Name="GlobalTextList" Id="{9cfdc57f-6664-4622-a29c-4de0243673fd}">
     <XmlArchive>
       <Data>
@@ -38,6 +38,11 @@
             <o>
               <v n="TextID">"388"</v>
               <v n="TextDefault">"%i"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"568"</v>
+              <v n="TextDefault">"%n"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
@@ -111,8 +116,33 @@
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
+              <v n="TextID">"614"</v>
+              <v n="TextDefault">"CCW"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"447"</v>
+              <v n="TextDefault">"CCW Fast"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"633"</v>
+              <v n="TextDefault">"Clock Wise"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"167"</v>
+              <v n="TextDefault">"Clock wise Fast"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
               <v n="TextID">"50"</v>
               <v n="TextDefault">"Close"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"96"</v>
+              <v n="TextDefault">"Clounter clock wise Fast"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
@@ -133,6 +163,21 @@
             <o>
               <v n="TextID">"1"</v>
               <v n="TextDefault">"component fault active"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"52"</v>
+              <v n="TextDefault">"CounterClockWise"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"641"</v>
+              <v n="TextDefault">"CW"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"297"</v>
+              <v n="TextDefault">"CW Fast"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
@@ -401,8 +446,38 @@
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
+              <v n="TextID">"658"</v>
+              <v n="TextDefault">"Run CCW Fast"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"493"</v>
+              <v n="TextDefault">"Run Clockwise"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"220"</v>
+              <v n="TextDefault">"Run Clockwise Fast"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"212"</v>
+              <v n="TextDefault">"Run Counter clockwise"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"691"</v>
+              <v n="TextDefault">"Run Counter clockwise Fast"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
               <v n="TextID">"928"</v>
               <v n="TextDefault">"Run CW"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"629"</v>
+              <v n="TextDefault">"Run CW Fast"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
@@ -413,6 +488,11 @@
             <o>
               <v n="TextID">"400"</v>
               <v n="TextDefault">"Select device"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"320"</v>
+              <v n="TextDefault">"Set Value"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>

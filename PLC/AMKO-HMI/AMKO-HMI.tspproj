@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.11">
-	<Project ProjectGUID="{D98E8966-F752-425D-9179-3DFD7EC55D5C}" Target64Bit="true" ShowHideConfigurations="#x106">
+<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.25">
+	<Project ProjectGUID="{D98E8966-F752-425D-9179-3DFD7EC55D5C}" ShowHideConfigurations="#x106">
 		<Plc>
 			<Project GUID="{D6806285-A398-4A22-8D6C-5308B0D4133A}" Name="HMI_Library" PrjFilePath="HMI_Library\HMI_Library.plcproj" TmcFilePath="HMI_Library\HMI_Library.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e"/>
 		</Plc>

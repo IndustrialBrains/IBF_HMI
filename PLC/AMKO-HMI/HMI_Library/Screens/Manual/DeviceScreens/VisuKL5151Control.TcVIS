@@ -147,7 +147,7 @@
                     </o>
                     <o>
                       <v n="Id">2477733581L</v>
-                      <v n="Value">"fbManualControler.pDevKL5151^.CountValue"</v>
+                      <v n="Value">"fbManualControler.pDevKL5151^.stManualControl.nCount"</v>
                     </o>
                     <o>
                       <v n="Id">823443203L</v>
@@ -322,7 +322,7 @@
                 <v n="VisualElementIdentifier">"Set value input"</v>
                 <n n="VisualElementOfflinePaintCommands" />
                 <n n="VisualElementFrameInformation" />
-                <d n="VisualElementInputActions" t="Hashtable" ckt="String" cvt="IInputAction[]">
+                <d n="VisualElementInputActions" t="Hashtable" ckt="String" cvt="InputBoxInputAction[]">
                   <v>OnMouseClick</v>
                   <a cet="InputBoxInputAction">
                     <o>
@@ -333,7 +333,7 @@
                       <v n="InputBoxDialogTitle">""</v>
                       <v n="Password">false</v>
                       <v n="UseTextOutputVariable">true</v>
-                      <v n="TextOutputVariableInitialized">false</v>
+                      <v n="TextOutputVariableInitialized">true</v>
                       <v n="OtherVarConversion">""</v>
                       <v n="Format">""</v>
                       <v n="DialogPosition" t="DialogPositionSetting">UseGlobalSetting</v>
@@ -621,10 +621,10 @@
               <d n="FbMethods" t="CaseInsensitiveHashtable" ckt="String" cvt="Guid">
                 <v>FB_Init</v>
                 <v>28dcb118-3ddb-4ed7-93d0-d0fc0bb282e1</v>
-                <v>FB_Exit</v>
-                <v>8f5e8329-1911-4c6e-83c2-b1841ffcd0a1</v>
                 <v>FB_Reinit</v>
                 <v>63a92da8-6fe3-4730-8843-9444090ef357</v>
+                <v>FB_Exit</v>
+                <v>8f5e8329-1911-4c6e-83c2-b1841ffcd0a1</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{a6d5d4af-d4c5-4357-8597-c1e19cfbc901}</v>
@@ -732,8 +732,8 @@
         <Type n="Guid">System.Guid</Type>
         <Type n="Hashtable">System.Collections.Hashtable</Type>
         <Type n="HotkeyConfiguration">{6b108d46-58af-4e41-a3f4-174d8f160cc4}</Type>
-        <Type n="IInputAction[]">_3S.CoDeSys.VisualElem.IInputAction[], VisualElem, Version=3.5.13.0, Culture=neutral, PublicKeyToken=null</Type>
         <Type n="InputBoxInputAction">{e8e7e747-f76f-4dee-ab1c-b9637e41ac26}</Type>
+        <Type n="InputBoxInputAction[]">_3S.CoDeSys.VisualElem.InputBoxInputAction[], VisualElem.plugin, Version=3.5.13.32, Culture=neutral, PublicKeyToken=null</Type>
         <Type n="Int16">System.Int16</Type>
         <Type n="Int32">System.Int32</Type>
         <Type n="Int64">System.Int64</Type>

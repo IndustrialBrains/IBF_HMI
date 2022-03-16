@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.10">
   <Visu Name="LogoScreen_SVG" Id="{24a45172-ffd0-40b1-9dae-3417909fa2d0}">
     <XmlArchive>
       <Data>
@@ -1388,8 +1388,6 @@
                 <v>a240837b-3d2e-424c-8e3b-21eb5af28933</v>
                 <v>ContainsPoint</v>
                 <v>4137de32-8838-44b1-8cb8-7d42d10458e1</v>
-                <v>FB_Reinit</v>
-                <v>eec2d7d9-354b-4dfc-864f-95e9dcc40ea7</v>
                 <v>SetStaticState</v>
                 <v>cdc85754-26a5-4341-8d71-41ac08a2c350</v>
                 <v>Update</v>
@@ -1418,20 +1416,26 @@
                 <v>79ced368-7e78-4116-889d-d24f092e611a</v>
                 <v>IsAntialiasingInactive</v>
                 <v>b9d88978-af42-4e60-a112-063c3cd07eeb</v>
+                <v>HasInputAccessIntern</v>
+                <v>a3fd0023-1504-4d9b-be55-a65cde1a78e2</v>
                 <v>Initialize</v>
                 <v>cd622909-d612-4f62-8160-002af0a8acbd</v>
                 <v>HasInputAccess</v>
                 <v>a565df04-132e-4f2b-85af-937a9cd77020</v>
+                <v>HasVisibilityAccessIntern</v>
+                <v>e0a7eaf0-a6e3-480d-b9c6-e8ad1312cd62</v>
                 <v>GetSurroundingRect</v>
                 <v>48f0e25a-0c87-4c63-b540-955da0cc4d66</v>
+                <v>ElementInfo</v>
+                <v>510ca3a7-ae6d-43d5-a4c9-b0b17bd507f4</v>
                 <v>GetLocalUsergroup</v>
                 <v>414d8aea-3547-462d-92d2-063b8ce283f8</v>
                 <v>GetName</v>
                 <v>a36780b8-5114-4ef0-a5dd-797fb959f595</v>
                 <v>GetSize</v>
                 <v>0b4d6c80-d8b2-4e36-8bf4-9c74a0f7aab9</v>
-                <v>Destruct</v>
-                <v>39b90de7-a84a-45f8-b6b0-a3264f4c88e3</v>
+                <v>FB_Reinit</v>
+                <v>eec2d7d9-354b-4dfc-864f-95e9dcc40ea7</v>
                 <v>FB_Exit</v>
                 <v>4a627e77-c070-49d9-acee-554dfff55c68</v>
                 <v>GetInitializeVersion</v>
@@ -1440,8 +1444,8 @@
                 <v>575f7c60-9b93-47b5-97b1-1710de7f14e2</v>
                 <v>HandleInput</v>
                 <v>5a1d0397-1b49-4c4c-8376-4924f8a98fbf</v>
-                <v>ElementInfo</v>
-                <v>510ca3a7-ae6d-43d5-a4c9-b0b17bd507f4</v>
+                <v>Destruct</v>
+                <v>39b90de7-a84a-45f8-b6b0-a3264f4c88e3</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{24a45172-ffd0-40b1-9dae-3417909fa2d0}</v>
@@ -1454,10 +1458,10 @@
               <d n="FbMethods" t="CaseInsensitiveHashtable_1" ckt="String" cvt="Guid">
                 <v>FB_Init</v>
                 <v>d3f1e5e8-524c-475a-b339-bf30c6cdd514</v>
-                <v>FB_Reinit</v>
-                <v>8e82c860-f968-40ab-af21-910c5e3296ed</v>
                 <v>FB_Exit</v>
                 <v>32c04fa7-8e77-4512-b32b-f60c3827193a</v>
+                <v>FB_Reinit</v>
+                <v>8e82c860-f968-40ab-af21-910c5e3296ed</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{b3a1f4ff-1d8b-4a4a-879e-bb20d83f2301}</v>

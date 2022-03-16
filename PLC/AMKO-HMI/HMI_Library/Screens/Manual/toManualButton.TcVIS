@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.10">
   <Visu Name="toManualButton" Id="{e5e337c4-6df6-4290-a08c-2b3898e12bd3}">
     <XmlArchive>
       <Data>
@@ -224,8 +224,6 @@
                 <v>007629cd-5830-43f3-8fb1-57887843c58e</v>
                 <v>ContainsPoint</v>
                 <v>f695a575-4741-4b72-bb8f-bb087ca7da0a</v>
-                <v>FB_Reinit</v>
-                <v>bf0ebf2f-6673-43fe-8b4d-01a2d929e946</v>
                 <v>SetStaticState</v>
                 <v>2cbdaf34-7291-441d-89a1-01d9205d84a0</v>
                 <v>Update</v>
@@ -260,14 +258,16 @@
                 <v>d60e5d95-029b-4bf6-a73f-4eec9d5fce05</v>
                 <v>GetSurroundingRect</v>
                 <v>6bf6196f-d5b0-45d0-b799-172733cbdad8</v>
+                <v>ElementInfo</v>
+                <v>e14d37eb-9c33-45d4-8f4e-b30f23f090e8</v>
                 <v>GetLocalUsergroup</v>
                 <v>e9cce54e-ee1f-446c-839f-353cec7162fb</v>
                 <v>GetName</v>
                 <v>88f814ed-9c60-46b6-8313-92b8156895f0</v>
                 <v>GetSize</v>
                 <v>fe0bcc37-ec01-49bc-a415-d0811017339b</v>
-                <v>Destruct</v>
-                <v>258d68da-91f9-4992-b366-16f021ad0663</v>
+                <v>FB_Reinit</v>
+                <v>bf0ebf2f-6673-43fe-8b4d-01a2d929e946</v>
                 <v>FB_Exit</v>
                 <v>6431ac66-a375-4906-b40c-9a14a2bfa640</v>
                 <v>GetInitializeVersion</v>
@@ -276,8 +276,8 @@
                 <v>a2e12984-5e5a-4da6-a2f4-16163fd4aa60</v>
                 <v>HandleInput</v>
                 <v>f0684b79-d622-4ada-8873-1d21202f4d3a</v>
-                <v>ElementInfo</v>
-                <v>e14d37eb-9c33-45d4-8f4e-b30f23f090e8</v>
+                <v>Destruct</v>
+                <v>258d68da-91f9-4992-b366-16f021ad0663</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{e5e337c4-6df6-4290-a08c-2b3898e12bd3}</v>
@@ -290,10 +290,10 @@
               <d n="FbMethods" t="CaseInsensitiveHashtable" ckt="String" cvt="Guid">
                 <v>FB_Init</v>
                 <v>543fb220-bc6d-4f16-91f6-83793a38e8f7</v>
-                <v>FB_Reinit</v>
-                <v>10c9e6f4-e54e-4bf5-991e-e14f21214cf1</v>
                 <v>FB_Exit</v>
                 <v>2306ea19-3fe6-475a-9cfe-79477ffd5f54</v>
+                <v>FB_Reinit</v>
+                <v>10c9e6f4-e54e-4bf5-991e-e14f21214cf1</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{43e8fba3-f58a-4e0a-950a-76d7c5cc4d8b}</v>
@@ -404,7 +404,7 @@
         <Type n="TextDocument">{f3878285-8e4f-490b-bb1b-9acbb7eb04db}</Type>
         <Type n="TextLine">{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}</Type>
         <Type n="ToggleVarInputAction">{9dcc475d-e53e-4dd3-abd9-995bf52d466f}</Type>
-        <Type n="ToggleVarInputAction[]">_3S.CoDeSys.VisualElem.ToggleVarInputAction[], VisualElem.plugin, Version=3.5.13.31, Culture=neutral, PublicKeyToken=null</Type>
+        <Type n="ToggleVarInputAction[]">_3S.CoDeSys.VisualElem.ToggleVarInputAction[], VisualElem.plugin, Version=3.5.13.32, Culture=neutral, PublicKeyToken=null</Type>
         <Type n="UInt16">System.UInt16</Type>
         <Type n="UInt32">System.UInt32</Type>
         <Type n="VisuAccessRightInfo">{dda8fb5a-e974-4696-9c31-85aed5b08e18}</Type>
@@ -428,7 +428,7 @@
             <v n="SizeY">800</v>
             <v n="IsStartVisu">false</v>
             <v n="VisuSizeMode" t="VisualVisuSizeMode">Specified</v>
-            <v n="Internal">true</v>
+            <v n="Internal">false</v>
             <v n="DialogIsOpaque">false</v>
             <v n="DialogIsOpaqueIsSet">false</v>
           </o>

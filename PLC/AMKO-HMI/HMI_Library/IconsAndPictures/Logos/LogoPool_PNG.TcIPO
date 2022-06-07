@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.5">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.11">
   <ImagePool Name="LogoPool_PNG" Id="{047f04a3-a437-4522-98b7-0befdeb6a4e0}">
     <XmlArchive>
       <Data>
         <o xml:space="preserve" t="ImagePoolObject">
-          <v n="UniqueIdGenerator">"10"</v>
+          <v n="UniqueIdGenerator">"15"</v>
           <l n="BitmapPool" t="ArrayList" cet="ImagePoolItem">
             <o>
               <v n="BitmapID">"Amko Basis"</v>
@@ -17,9 +17,29 @@
               <v n="ItemID">6</v>
             </o>
             <o>
+              <v n="BitmapID">"IndustrialBrains-kleur-donker_beeldmerk"</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Logos\IndustrialBrains-kleur-donker_beeldmerk.png"</v>
+              <v n="ItemID">7</v>
+            </o>
+            <o>
+              <v n="BitmapID">"IndustrialBrains-kleur-donker_liggend"</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Logos\IndustrialBrains-kleur-donker_liggend.png"</v>
+              <v n="ItemID">13</v>
+            </o>
+            <o>
+              <v n="BitmapID">"IndustrialBrains-kleur-licht_liggend"</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Logos\IndustrialBrains-kleur-licht_liggend.png"</v>
+              <v n="ItemID">14</v>
+            </o>
+            <o>
+              <v n="BitmapID">"IndustrialBrains-kleur-licht_staand"</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Logos\IndustrialBrains-kleur-licht_staand.png"</v>
+              <v n="ItemID">15</v>
+            </o>
+            <o>
               <v n="BitmapID">""</v>
               <v n="FileID">""</v>
-              <v n="ItemID">7</v>
+              <v n="ItemID">11</v>
             </o>
           </l>
           <v n="GuidInit">{05ace917-3793-44b1-95b3-73d26ec96be2}</v>

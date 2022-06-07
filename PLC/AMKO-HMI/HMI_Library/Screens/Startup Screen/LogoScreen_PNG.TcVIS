@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.11">
   <Visu Name="LogoScreen_PNG" Id="{8e016bc8-ad21-4193-a4ea-5b7cd5d59e25}">
     <XmlArchive>
       <Data>
@@ -258,12 +258,12 @@
                               <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" ckt="String" cvt="String">
                                 <v>Visible</v>
                                 <v>False</v>
-                                <v>DefaultArraySize</v>
-                                <v>5</v>
-                                <v>VisibleChildren</v>
-                                <v>True</v>
                                 <v>ieccodeconversion_array</v>
                                 <v></v>
+                                <v>VisibleChildren</v>
+                                <v>True</v>
+                                <v>DefaultArraySize</v>
+                                <v>5</v>
                                 <v>''NORMAL__COMMENT</v>
                                 <v> We hide this node to prevent having two References nodes
  Nevertheless we want to make sure that the children are displayed</v>
@@ -319,8 +319,8 @@
                         <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
                           <v n="AttrFlags">81920UL</v>
                           <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" ckt="String" cvt="String">
-                            <v>DisplayFrameReferencesConfiguration</v>
-                            <v></v>
+                            <v>conditionalshow</v>
+                            <v>visu_elemdev</v>
                             <v>DescriptionTextId</v>
                             <v>TL_ElementProperties.Desc_ReferencedVisus</v>
                             <v>SortFlag</v>
@@ -331,14 +331,14 @@
                             <v>Simple|Standard</v>
                             <v>DynamicArray</v>
                             <v></v>
-                            <v>conditionalshow</v>
-                            <v>visu_elemdev</v>
+                            <v>DisplayFrameReferencesConfiguration</v>
+                            <v></v>
                             <v>FrameReferences</v>
                             <v></v>
-                            <v>DisplayTextId</v>
-                            <v>TL_ElementProperties.References</v>
                             <v>Storable</v>
                             <v>True</v>
+                            <v>DisplayTextId</v>
+                            <v>TL_ElementProperties.References</v>
                           </d>
                           <v n="ConvDone">true</v>
                         </o>
@@ -564,19 +564,19 @@
                     </o>
                     <o>
                       <v n="Id">1649127785L</v>
-                      <v n="Value" t="Int16">200</v>
+                      <v n="Value" t="Int16">0</v>
                     </o>
                     <o>
                       <v n="Id">357335551L</v>
-                      <v n="Value" t="Int16">165</v>
+                      <v n="Value" t="Int16">45</v>
                     </o>
                     <o>
                       <v n="Id">2422045748L</v>
-                      <v n="Value" t="Int16">400</v>
+                      <v n="Value" t="Int16">800</v>
                     </o>
                     <o>
                       <v n="Id">2134141914L</v>
-                      <v n="Value" t="Int16">150</v>
+                      <v n="Value" t="Int16">350</v>
                     </o>
                     <o>
                       <v n="Id">1651471674L</v>
@@ -607,11 +607,11 @@
                     </o>
                     <o>
                       <v n="Id">550940142L</v>
-                      <v n="Value">402</v>
+                      <v n="Value">400</v>
                     </o>
                     <o>
                       <v n="Id">1473355128L</v>
-                      <v n="Value">236</v>
+                      <v n="Value">220</v>
                     </o>
                     <o>
                       <v n="Id">493260384L</v>
@@ -623,7 +623,7 @@
                     </o>
                     <o>
                       <v n="Id">3332245745L</v>
-                      <v n="Value">"LogoPool_PNG.Amko Basis"</v>
+                      <v n="Value">"LogoPool_PNG.IndustrialBrains-kleur-licht_staand"</v>
                     </o>
                     <o>
                       <v n="Id">390574330L</v>
@@ -1141,30 +1141,30 @@
           <o n="GeneratedLMMDescriptions" t="GeneratedLanguageModelEntriesData">
             <o n="GeneratedVisuFbDescription" t="GenericFbDescription">
               <d n="FbMethods" t="CaseInsensitiveHashtable_1" ckt="String" cvt="Guid">
-                <v>GetUpdateRects</v>
-                <v>556ca1cf-b438-43ee-be72-fd1937224672</v>
+                <v>HasVisibilityAccess</v>
+                <v>0c4077af-8151-49f8-ae02-9212edc33722</v>
                 <v>ContainsPoint</v>
                 <v>11cce7a6-152e-4036-abd0-f85454e7cd4b</v>
-                <v>FB_Reinit</v>
-                <v>510417ad-34b4-4648-bd3d-600c878ecae4</v>
-                <v>SetStaticState</v>
-                <v>01f4f98f-9e94-47bb-8d46-e0d43b21b54e</v>
-                <v>Update</v>
-                <v>84ad8258-7db1-4f0e-a044-18f67b900755</v>
+                <v>HasInputAccess</v>
+                <v>cb62801f-758b-424d-8455-23261305fdbe</v>
+                <v>HasInputAccessIntern</v>
+                <v>36b047ca-6310-4026-b776-cbc13ec03ab0</v>
                 <v>GetTooltip</v>
                 <v>5b19eb16-9d8f-4fb7-8d10-b189f7938936</v>
+                <v>GetUpdateRects</v>
+                <v>556ca1cf-b438-43ee-be72-fd1937224672</v>
                 <v>GetNamespace</v>
                 <v>5584141d-3e23-4974-9d28-7095459fbb5a</v>
                 <v>GetTranslator</v>
                 <v>eca59320-0b1d-4caf-ba04-5587b9393482</v>
+                <v>Update</v>
+                <v>84ad8258-7db1-4f0e-a044-18f67b900755</v>
                 <v>SetClientData</v>
                 <v>7797d16d-07f0-4b8f-a937-d6c4133efa9a</v>
                 <v>GetClientData</v>
                 <v>2e42dc2c-6729-41c9-8c42-04ad72949609</v>
                 <v>Paint</v>
                 <v>1cc77b28-8af0-4ac0-ba93-271c36c20846</v>
-                <v>HasVisibilityAccess</v>
-                <v>0c4077af-8151-49f8-ae02-9212edc33722</v>
                 <v>GetElementArray</v>
                 <v>e0ca2174-c28e-45fa-b3b8-54f7bffcba3b</v>
                 <v>SetVisuFlagsInternal</v>
@@ -1177,18 +1177,22 @@
                 <v>8cb898bf-6549-4a6a-8a44-8476a7176c46</v>
                 <v>Initialize</v>
                 <v>766b53d9-b605-4e4e-bde1-bb8698e13958</v>
-                <v>HasInputAccess</v>
-                <v>cb62801f-758b-424d-8455-23261305fdbe</v>
+                <v>HasVisibilityAccessIntern</v>
+                <v>960eb1b6-bca0-486d-963d-b649b7f03d12</v>
                 <v>GetSurroundingRect</v>
                 <v>0687c59f-bd40-41f7-adbf-6ebe756147bd</v>
+                <v>ElementInfo</v>
+                <v>5a4570e1-c426-42c1-ace7-cb4a966bd147</v>
+                <v>SetStaticState</v>
+                <v>01f4f98f-9e94-47bb-8d46-e0d43b21b54e</v>
                 <v>GetLocalUsergroup</v>
                 <v>d68abfd2-716c-4db0-8814-ef8fb6319c39</v>
                 <v>GetName</v>
                 <v>ad500342-9090-4f7a-b440-79ef71a35f00</v>
                 <v>GetSize</v>
                 <v>2c95c8db-5859-4c76-b6d4-ad97181dffde</v>
-                <v>Destruct</v>
-                <v>deb40fc0-9768-4a63-a21f-f76a8121ba8c</v>
+                <v>FB_Reinit</v>
+                <v>510417ad-34b4-4648-bd3d-600c878ecae4</v>
                 <v>FB_Exit</v>
                 <v>9ad9f89b-7e26-4ab8-9d8a-3a8312ee0288</v>
                 <v>GetInitializeVersion</v>
@@ -1197,8 +1201,8 @@
                 <v>45f37b61-fd3a-4799-b35d-53b69ba4c50b</v>
                 <v>HandleInput</v>
                 <v>2ba4c398-545c-4bc1-a495-6e84da94221f</v>
-                <v>ElementInfo</v>
-                <v>5a4570e1-c426-42c1-ace7-cb4a966bd147</v>
+                <v>Destruct</v>
+                <v>deb40fc0-9768-4a63-a21f-f76a8121ba8c</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{8e016bc8-ad21-4193-a4ea-5b7cd5d59e25}</v>
@@ -1211,10 +1215,10 @@
               <d n="FbMethods" t="CaseInsensitiveHashtable_1" ckt="String" cvt="Guid">
                 <v>FB_Init</v>
                 <v>c02a7ded-769f-48da-a1a3-8d8508156ef3</v>
-                <v>FB_Reinit</v>
-                <v>1fa181bf-00a3-4f09-ba9e-f7bb6986b520</v>
                 <v>FB_Exit</v>
                 <v>bcd7de0e-2923-471f-a5ea-f44f85716ba7</v>
+                <v>FB_Reinit</v>
+                <v>1fa181bf-00a3-4f09-ba9e-f7bb6986b520</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{62b45ab1-d49f-45c4-93c8-674a2c192deb}</v>

@@ -18,7 +18,7 @@
     <Company>AMKO-Engineering</Company>
     <Released>false</Released>
     <Title>HMI_Library</Title>
-    <ProjectVersion>1.4.0.3</ProjectVersion>
+    <ProjectVersion>2.0.0.0</ProjectVersion>
     <Author>AMKO-Engineering</Author>
     <Description>Basic HMI screens for use with Utilities and device libraries</Description>
     <LibraryCategories>

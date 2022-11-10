@@ -1,3 +1,3 @@
-![build](https://github.com/IndustrialBrains/AMKOLib-HMI/actions/workflows/Build.yml/badge.svg)
+[![GitIgnore](../../actions/workflows/GitIgnore.yml/badge.svg)](../../actions/workflows/GitIgnore.yml)
 
-AMKOLib-HMI
+# Industrial Brainframe - HMI library

@@ -1,0 +1,45 @@
+# This workflow checks if the repo contains ignored files
+
+name: GitIgnore
+
+on:
+  push:
+    branches:
+      - "**"
+  pull_request:
+    branches:
+      - "**"
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Remove and re-add all files
+        run: |
+          git rm -r --cached . && git add .
+
+      - name: Re-add submodules
+        uses: jannekem/run-python-script-action@v1.5
+        with:
+          script: |
+            import os
+            if os.path.exists(".gitmodules"):
+              with open(".gitmodules") as f:
+                for line in f.readlines():
+                  items=[x.strip() for x in line.split("=")]
+                  if len(items)==2 and items[0]=="path":
+                    os.system(f'git restore --staged "{items[1]}"')
+
+      - name: Check for staged files
+        id: commit
+        run: |
+          echo "This step fails when ignored files are in the repo (see below for the actual files)"
+          git diff --cached --exit-code

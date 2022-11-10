@@ -290,9 +290,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <PlaceholderReference Include="IBF_Device">
-      <DefaultResolution>IBF_Device, * (Industrial Brains B.V.)</DefaultResolution>
-      <Namespace>IBF_Device</Namespace>
+    <PlaceholderReference Include="IBF_Devices">
+      <DefaultResolution>IBF_Devices, * (Industrial Brains B.V.)</DefaultResolution>
+      <Namespace>IBF_Devices</Namespace>
     </PlaceholderReference>
     <PlaceholderReference Include="IBF_Utilities">
       <DefaultResolution>IBF_Utilities, * (Industrial Brains B.V.)</DefaultResolution>

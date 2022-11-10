@@ -15,79 +15,25 @@
     <Implicit_KindOfTask>{7d28ab0f-7288-4074-a986-af3d16ed4c1e}</Implicit_KindOfTask>
     <Implicit_Jitter_Distribution>{26744ad9-ea3e-4166-b252-cf3db1a70c0d}</Implicit_Jitter_Distribution>
     <LibraryReferences>{2fe70cec-5e04-4d31-a86c-9b82ea53e17e}</LibraryReferences>
-    <Company>AMKO-Engineering</Company>
+    <Company>Industrial Brains B.V.</Company>
     <Released>false</Released>
-    <Title>HMI_Library</Title>
-    <ProjectVersion>2.0.0.0</ProjectVersion>
-    <Author>AMKO-Engineering</Author>
+    <Title>IBF_HMI</Title>
+    <ProjectVersion>0.0.0.0</ProjectVersion>
+    <Author>
+    </Author>
     <Description>Basic HMI screens for use with Utilities and device libraries</Description>
     <LibraryCategories>
-      <LibraryCategory xmlns="">
-        <Id>{589fe09e-9317-462c-ba3b-ceb72fa5d919}</Id>
+      <LibraryCategory>
+        <Id>{25052fee-a005-47ad-93b2-b0f6630efe72}</Id>
         <Version>1.0.0.0</Version>
-        <DefaultName>AMKO-Engineering</DefaultName>
-      </LibraryCategory>
-      <LibraryCategory xmlns="">
-        <Id>{9052c1da-2179-403f-9f0a-49f63df589e9}</Id>
-        <Version>1.0.0.0</Version>
-        <ParentCategory>
-          <Id>{589fe09e-9317-462c-ba3b-ceb72fa5d919}</Id>
-        </ParentCategory>
-        <DefaultName>System</DefaultName>
-      </LibraryCategory>
-      <LibraryCategory xmlns="">
-        <Id>{d69a4e54-3b9a-4ecc-8074-fff937c26a40}</Id>
-        <Version>1.0.0.0</Version>
-        <ParentCategory>
-          <Id>{589fe09e-9317-462c-ba3b-ceb72fa5d919}</Id>
-        </ParentCategory>
-        <DefaultName>Utillities</DefaultName>
-      </LibraryCategory>
-      <LibraryCategory xmlns="">
-        <Id>{eb954523-a8af-4bd0-a32c-f81936b81c6d}</Id>
-        <Version>1.0.0.0</Version>
-        <ParentCategory>
-          <Id>{589fe09e-9317-462c-ba3b-ceb72fa5d919}</Id>
-        </ParentCategory>
-        <DefaultName>HMI</DefaultName>
-      </LibraryCategory>
-      <LibraryCategory xmlns="">
-        <Id>{846be616-7077-49df-82d2-98e957c13e93}</Id>
-        <Version>1.0.0.0</Version>
-        <ParentCategory>
-          <Id>{589fe09e-9317-462c-ba3b-ceb72fa5d919}</Id>
-        </ParentCategory>
-        <DefaultName>Machines</DefaultName>
-      </LibraryCategory>
-      <LibraryCategory xmlns="">
-        <Id>{009e50f4-d2ac-459e-96fa-8b145dea1d14}</Id>
-        <Version>1.0.0.0</Version>
-        <ParentCategory>
-          <Id>{589fe09e-9317-462c-ba3b-ceb72fa5d919}</Id>
-        </ParentCategory>
-        <DefaultName>Devices</DefaultName>
-      </LibraryCategory>
-      <LibraryCategory xmlns="">
-        <Id>{3ea1b3cc-00d0-4410-912b-09df72d0dc78}</Id>
-        <Version>1.0.0.0</Version>
-        <ParentCategory>
-          <Id>{589fe09e-9317-462c-ba3b-ceb72fa5d919}</Id>
-        </ParentCategory>
-        <DefaultName>MLT</DefaultName>
-      </LibraryCategory>
-      <LibraryCategory xmlns="">
-        <Id>{7456e3ea-ab98-4ec9-850d-33c9c8b9ad33}</Id>
-        <Version>1.0.0.0</Version>
-        <ParentCategory>
-          <Id>{589fe09e-9317-462c-ba3b-ceb72fa5d919}</Id>
-        </ParentCategory>
-        <DefaultName>Sewinghead</DefaultName>
+        <DefaultName>Industrial Brains B.V.</DefaultName>
       </LibraryCategory>
     </LibraryCategories>
     <SelectedLibraryCategories>
-      <Id xmlns="">{eb954523-a8af-4bd0-a32c-f81936b81c6d}</Id>
+      <Id>{25052fee-a005-47ad-93b2-b0f6630efe72}</Id>
     </SelectedLibraryCategories>
     <AutoUpdateVisuProfile>true</AutoUpdateVisuProfile>
+    <CombineIds>true</CombineIds>
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="BaseScreens" />
@@ -344,9 +290,13 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <PlaceholderReference Include="Device_Library">
-      <DefaultResolution>Device_Library, * (AMKO-Engineering)</DefaultResolution>
-      <Namespace>Device_Library</Namespace>
+    <PlaceholderReference Include="IBF_Device">
+      <DefaultResolution>IBF_Device, * (Industrial Brains B.V.)</DefaultResolution>
+      <Namespace>IBF_Device</Namespace>
+    </PlaceholderReference>
+    <PlaceholderReference Include="IBF_Utilities">
+      <DefaultResolution>IBF_Utilities, * (Industrial Brains B.V.)</DefaultResolution>
+      <Namespace>IBF_Utilities</Namespace>
     </PlaceholderReference>
     <PlaceholderReference Include="System_VisuElemMeter">
       <DefaultResolution>VisuElemMeter, 3.5.13.0 (System)</DefaultResolution>
@@ -394,10 +344,6 @@
       <DefaultResolution>Tc2_Standard, * (Beckhoff Automation GmbH)</DefaultResolution>
       <Namespace>Tc2_Standard</Namespace>
     </PlaceholderReference>
-    <PlaceholderReference Include="Utilities_Library">
-      <DefaultResolution>Utilities_Library, * (AMKO-Engineering)</DefaultResolution>
-      <Namespace>Utilities_Library</Namespace>
-    </PlaceholderReference>
     <PlaceholderReference Include="VisuDialogs">
       <DefaultResolution>VisuDialogs, * (System)</DefaultResolution>
       <Namespace>VisuDialogs</Namespace>
@@ -411,14 +357,6 @@
     <None Include="HMI_Library.tmc">
       <SubType>Content</SubType>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <PlaceholderResolution Include="Device_Library">
-      <Resolution>Device_Library, * (AMKO-Engineering)</Resolution>
-    </PlaceholderResolution>
-    <PlaceholderResolution Include="Utilities_Library">
-      <Resolution>Utilities_Library, * (AMKO-Engineering)</Resolution>
-    </PlaceholderResolution>
   </ItemGroup>
   <ItemGroup>
     <Content Include="IconsAndPictures\Backgrounds\PNG\Background_Bottomzonder knop.png">

@@ -1,0 +1,2 @@
+# Treat .TMC files as binary files (diffs are useless)
+*.tmc binary

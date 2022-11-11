@@ -1,6 +1,6 @@
-[submodule "Libraries/AMKOLib-Utilities"]
-	path = Libraries/AMKOLib-Utilities
-	url = https://github.com/IndustrialBrains/AMKOLib-Utilities.git
-[submodule "Libraries/AMKOLib-Device"]
-	path = Libraries/AMKOLib-Device
-	url = https://github.com/IndustrialBrains/AMKOLib-Device.git
+[submodule "Libraries/IBF_Utilities"]
+	path = Libraries/IBF_Utilities
+	url = https://github.com/IndustrialBrains/IBF_Utilities.git
+[submodule "Libraries/IBF_Devices"]
+	path = Libraries/IBF_Devices
+	url = https://github.com/IndustrialBrains/IBF_Devices.git

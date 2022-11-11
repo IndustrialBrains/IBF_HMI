@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.11">
   <POU Name="PRG_TEST" Id="{b132eb66-7e41-469d-9de4-883897ec1165}" SpecialFunc="None">
-    <Declaration><![CDATA[PROGRAM PRG_TEST
+    <Declaration><![CDATA[PROGRAM INTERNAL PRG_TEST
 VAR
 END_VAR
 ]]></Declaration>

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # TcXaeShell Solution File, Format Version 11.00
 VisualStudioVersion = 15.0.28307.1300
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{B1E792BE-AA5F-4E3C-8C82-674BF9C0715B}") = "IBF_HMI", "IBF_HMI.tsproj", "{8B1E175B-6F4E-48D1-8EDF-C91C8890C0DA}"
+Project("{B1E792BE-AA5F-4E3C-8C82-674BF9C0715B}") = "IBF_HMI", "IBF_HMI\IBF_HMI.tsproj", "{8B1E175B-6F4E-48D1-8EDF-C91C8890C0DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -305,8 +305,10 @@
       <Namespace>IBF_Utilities</Namespace>
     </PlaceholderReference>
     <PlaceholderReference Include="System_VisuElemMeter">
-      <DefaultResolution>VisuElemMeter, * (System)</DefaultResolution>
+      <DefaultResolution>VisuElemMeter, 3.5.13.0 (System)</DefaultResolution>
       <Namespace>VisuElemMeter</Namespace>
+      <SystemLibrary>true</SystemLibrary>
+      <ResolverGuid>2717eb6a-dd07-4c66-8d8d-cacebd7b18ae</ResolverGuid>
     </PlaceholderReference>
     <PlaceholderReference Include="System_VisuElems">
       <DefaultResolution>VisuElems, 3.5.13.40 (System)</DefaultResolution>
@@ -355,6 +357,15 @@
     <PlaceholderReference Include="Tc3_Module">
       <DefaultResolution>Tc3_Module, * (Beckhoff Automation GmbH)</DefaultResolution>
       <Namespace>Tc3_Module</Namespace>
+    </PlaceholderReference>
+    <PlaceholderReference Include="VisuDialogs">
+      <DefaultResolution>VisuDialogs, * (System)</DefaultResolution>
+      <Namespace>VisuDialogs</Namespace>
+    </PlaceholderReference>
+    <PlaceholderReference Include="VisuUserManagement">
+      <DefaultResolution>VisuUserMgmt, * (System)</DefaultResolution>
+      <Namespace>VisuUserManagement</Namespace>
+      <SystemLibrary>true</SystemLibrary>
     </PlaceholderReference>
   </ItemGroup>
   <ItemGroup>
@@ -543,10 +554,37 @@
         <o>
           <v n="Name">"{246001F4-279D-43AC-B241-948EB31120E1}"</v>
           <d n="SubKeys" t="Hashtable" />
-          <d n="Values" t="Hashtable" ckt="String" cvt="Boolean">
+          <d n="Values" t="Hashtable" ckt="String">
             <v>UnicodeStrings</v>
-            <v>False</v>
+            <v>false</v>
+            <v>GlobalTextListFilePath</v>
+            <v>""</v>
+            <v>ExtendedSettings</v>
+            <v>false</v>
+            <v>GlobalVisuImageFilePath</v>
+            <v>"%APPLICATIONPATH%\"</v>
+            <v>GeneralPropertySupport</v>
+            <v>false</v>
           </d>
+        </o>
+        <v>{29BD8D0C-3586-4548-BB48-497B9A01693F}</v>
+        <o>
+          <v n="Name">"{29BD8D0C-3586-4548-BB48-497B9A01693F}"</v>
+          <d n="SubKeys" t="Hashtable" ckt="String" cvt="OptionKey">
+            <v>Rules</v>
+            <o>
+              <v n="Name">"Rules"</v>
+              <d n="SubKeys" t="Hashtable" />
+              <d n="Values" t="Hashtable" />
+            </o>
+          </d>
+          <d n="Values" t="Hashtable" />
+        </o>
+        <v>{8F99A816-E488-41E4-9FA3-846536012284}</v>
+        <o>
+          <v n="Name">"{8F99A816-E488-41E4-9FA3-846536012284}"</v>
+          <d n="SubKeys" t="Hashtable" />
+          <d n="Values" t="Hashtable" />
         </o>
         <v>{40450F57-0AA3-4216-96F3-5444ECB29763}</v>
         <o>

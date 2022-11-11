@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.10">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.11">
   <GlobalTextList Name="GlobalTextList" Id="{9cfdc57f-6664-4622-a29c-4de0243673fd}">
     <XmlArchive>
       <Data>
@@ -567,7 +567,7 @@
             </o>
             <o>
               <v n="TextID">"965"</v>
-              <v n="TextDefault">"Utilities_Library.GVL_Message.arActiveFaults[4].FaultType"</v>
+              <v n="TextDefault">"IBF_Utilities.GVL_Message.arActiveFaults[4].FaultType"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
@@ -597,9 +597,9 @@
             </o>
           </l>
           <l n="Languages" t="ArrayList" />
-          <v n="GuidInit">{1a084925-b8b6-447c-b09b-9ae4c272ae86}</v>
-          <v n="GuidReInit">{6853184d-1b7d-4af2-9247-dcb4807facd1}</v>
-          <v n="GuidExitX">{bc89827a-3206-40fd-9f51-ef0bed26ec21}</v>
+          <v n="GuidInit">{effaed55-68ce-4119-8cf6-b822c9ad6725}</v>
+          <v n="GuidReInit">{85ef7f05-2fe5-418b-93a8-198d1840c595}</v>
+          <v n="GuidExitX">{be116d80-b012-47be-8b85-3707689d8182}</v>
         </o>
       </Data>
       <TypeList>

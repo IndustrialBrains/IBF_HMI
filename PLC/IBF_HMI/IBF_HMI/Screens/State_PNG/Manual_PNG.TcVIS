@@ -372,7 +372,7 @@
                         <l n="TypeNodeChildren" t="ArrayList" cet="BasicTypeNode">
                           <o>
                             <v n="Flags">2L</v>
-                            <v n="BasicTypeNodeValue">"Device_Library.GVL_DevManual.fbManualControler"</v>
+                            <v n="BasicTypeNodeValue">"IBF_Devices.GVL_DevManual.fbManualControler"</v>
                             <v n="BasicTypeNodeAcceptsExpression">true</v>
                             <n n="BasicTypeNodeFastAccess" />
                             <a n="BasicTypeNodeEnumValues" et="String" />
@@ -428,7 +428,7 @@
                     </o>
                     <o>
                       <v n="Id">345443855L</v>
-                      <v n="Value">"Device_Library.GVL_DevManual.fbManualControler"</v>
+                      <v n="Value">"IBF_Devices.GVL_DevManual.fbManualControler"</v>
                     </o>
                   </l>
                 </o>

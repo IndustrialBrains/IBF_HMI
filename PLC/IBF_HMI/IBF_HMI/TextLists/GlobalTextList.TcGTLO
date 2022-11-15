@@ -197,7 +197,7 @@
             </o>
             <o>
               <v n="TextID">"364"</v>
-              <v n="TextDefault">"Discription"</v>
+              <v n="TextDefault">"Description"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>

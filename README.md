@@ -2,6 +2,10 @@
 
 # Industrial Brainframe - HMI library
 
+## General
+
+The HMI library contains a default user management. Passwords are identical to the user names.
+
 ## TODO
 
 ### Generic repo / project wide

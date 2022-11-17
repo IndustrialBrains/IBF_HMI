@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.11">
   <Visu Name="ParameterControl" Id="{19588bb2-b793-42b3-8298-3e4d21977e8c}">
     <XmlArchive>
       <Data>
@@ -2328,17 +2328,12 @@
                 <v n="VisualElementId">48</v>
                 <l n="UserManagementAccessRights" t="ArrayList" cet="VisuAccessRightInfo">
                   <o>
-                    <v n="GroupName">"None"</v>
-                    <v n="GroupId">0</v>
-                    <v n="AccessRight" t="VisuAccessRightType">OnlyVisible</v>
-                  </o>
-                  <o>
-                    <v n="GroupName">"Administrator"</v>
+                    <v n="GroupName">"Admin"</v>
                     <v n="GroupId">1</v>
                     <v n="AccessRight" t="VisuAccessRightType">Operable</v>
                   </o>
                   <o>
-                    <v n="GroupName">"TD"</v>
+                    <v n="GroupName">"Service"</v>
                     <v n="GroupId">2</v>
                     <v n="AccessRight" t="VisuAccessRightType">Operable</v>
                   </o>
@@ -2346,6 +2341,11 @@
                     <v n="GroupName">"Operator"</v>
                     <v n="GroupId">3</v>
                     <v n="AccessRight" t="VisuAccessRightType">Operable</v>
+                  </o>
+                  <o>
+                    <v n="GroupName">"None"</v>
+                    <v n="GroupId">0</v>
+                    <v n="AccessRight" t="VisuAccessRightType">OnlyVisible</v>
                   </o>
                 </l>
               </o>
@@ -3170,18 +3170,18 @@
                 <v>941c0c76-b0c0-452b-8906-351301ef245b</v>
                 <v>ContainsPoint</v>
                 <v>a676ec7b-16e6-47d2-aa52-df30020ac4fd</v>
-                <v>FB_Reinit</v>
-                <v>6c2b6030-dc73-4d91-8270-5968040940d4</v>
                 <v>SetStaticState</v>
                 <v>7cdbecfe-d974-4020-8cf1-790818dd733d</v>
-                <v>Update</v>
-                <v>b91cfc5c-b061-4f24-9114-4450a1a49a74</v>
+                <v>HasInputAccessIntern</v>
+                <v>1c3abd99-f00a-57f8-86f4-cf97912b05e7</v>
                 <v>GetTooltip</v>
                 <v>4e733097-014d-487f-a3a7-a76a1134c078</v>
                 <v>GetNamespace</v>
                 <v>7a08e4c0-1931-4301-b74c-839fde073de6</v>
                 <v>GetTranslator</v>
                 <v>ef43a1d3-51b9-4a97-9af6-97679ec51fdf</v>
+                <v>Update</v>
+                <v>b91cfc5c-b061-4f24-9114-4450a1a49a74</v>
                 <v>SetClientData</v>
                 <v>6c10708e-b692-4772-9856-7093b220b327</v>
                 <v>GetClientData</v>
@@ -3204,16 +3204,20 @@
                 <v>0239c620-7658-4cca-9acc-08f335872ba9</v>
                 <v>HasInputAccess</v>
                 <v>bac18688-f6e6-4213-b3e4-21879e6c27c9</v>
+                <v>HasVisibilityAccessIntern</v>
+                <v>3f970191-7f0d-58a2-9678-b32c91fedf13</v>
                 <v>GetSurroundingRect</v>
                 <v>77d7050e-54c3-4731-86a8-e5c57f7eaf1f</v>
+                <v>ElementInfo</v>
+                <v>e091ecce-4ec2-4f92-a7bf-b1dcbacf564a</v>
                 <v>GetLocalUsergroup</v>
                 <v>ca4f0b2a-423f-4d35-b4ae-b5e84f435285</v>
                 <v>GetName</v>
                 <v>831df641-57f5-4c70-b53d-d8b9f7805741</v>
                 <v>GetSize</v>
                 <v>5a0b8e6b-4ec1-4c5c-8c83-3887af7a4342</v>
-                <v>Destruct</v>
-                <v>515dcffe-e197-404a-8a22-21c4b8a7ec03</v>
+                <v>FB_Reinit</v>
+                <v>6c2b6030-dc73-4d91-8270-5968040940d4</v>
                 <v>FB_Exit</v>
                 <v>41340ef2-c0b3-4e48-a24f-fd6419c502c8</v>
                 <v>GetInitializeVersion</v>
@@ -3222,8 +3226,8 @@
                 <v>6d72ea2b-bc8e-4a92-91a6-e24b35416d9f</v>
                 <v>HandleInput</v>
                 <v>79c1ac71-8422-40e6-805e-a4ad70b7615f</v>
-                <v>ElementInfo</v>
-                <v>e091ecce-4ec2-4f92-a7bf-b1dcbacf564a</v>
+                <v>Destruct</v>
+                <v>515dcffe-e197-404a-8a22-21c4b8a7ec03</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{19588bb2-b793-42b3-8298-3e4d21977e8c}</v>
@@ -3236,10 +3240,10 @@
               <d n="FbMethods" t="CaseInsensitiveHashtable_1" ckt="String" cvt="Guid">
                 <v>FB_Init</v>
                 <v>e6e27050-46cf-41d7-bc54-b179ede43a31</v>
-                <v>FB_Exit</v>
-                <v>120c4832-d44f-4a06-babe-31e5d66b3b99</v>
                 <v>FB_Reinit</v>
                 <v>ca8b26e6-79f4-46c8-be55-1009b95aba70</v>
+                <v>FB_Exit</v>
+                <v>120c4832-d44f-4a06-babe-31e5d66b3b99</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{330e55e1-8a51-4964-bdc5-d40533c3ede0}</v>
@@ -3349,7 +3353,7 @@
         <Type n="Hashtable">System.Collections.Hashtable</Type>
         <Type n="HotkeyConfiguration">{6b108d46-58af-4e41-a3f4-174d8f160cc4}</Type>
         <Type n="InputBoxInputAction">{e8e7e747-f76f-4dee-ab1c-b9637e41ac26}</Type>
-        <Type n="InputBoxInputAction[]">_3S.CoDeSys.VisualElem.InputBoxInputAction[], VisualElem.plugin, Version=3.5.13.31, Culture=neutral, PublicKeyToken=null</Type>
+        <Type n="InputBoxInputAction[]">_3S.CoDeSys.VisualElem.InputBoxInputAction[], VisualElem.plugin, Version=3.5.13.32, Culture=neutral, PublicKeyToken=null</Type>
         <Type n="Int16">System.Int16</Type>
         <Type n="Int32">System.Int32</Type>
         <Type n="Int64">System.Int64</Type>

@@ -8,11 +8,15 @@
 
 1. Add build action
 1. Add automatic tests
-1. Rename project
-1. (check) force use of access specifiers
 
 ### Improvements
 
 1. Fix errors generated when static analysis rule "Unused variables" is enabled
+1. `ManualControl`: 
+	- list sometimes contains 1 empty item
+1. Remove customer logos, should reside in customer projects
+
+
+
 
 

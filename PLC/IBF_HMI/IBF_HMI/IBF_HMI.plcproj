@@ -71,6 +71,9 @@
     <Compile Include="GVL\E_BaseVisu.TcTLEO">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="PlcTask.TcTTO">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="VisualizationManager.TcVMO">
       <SubType>Code</SubType>
     </Compile>

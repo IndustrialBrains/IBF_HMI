@@ -3,10 +3,32 @@
   <POU Name="PRG_TEST" Id="{b132eb66-7e41-469d-9de4-883897ec1165}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM INTERNAL PRG_TEST
 VAR
+	bInitDone : BOOL;
+	
+	// ManualControl devices
+	fbFaultHandler 			: Fb_FaultHandler; 
+	fbDevValve 				: FB_DevValve;
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[GVL_HMI.fbHMIControl();
+      <ST><![CDATA[// ManualControl
+	IF NOT bInitDone THEN
+		bInitDone := TRUE;
+		fbDevValve.Init(
+			nId := 1,
+			nParentId := 0,
+			eResetState := E_ValveResetState.Res_Idle,
+			eSafeState := E_ValveResetState.Res_Idle
+		);
+	END_IF
+	
+	fbFaultHandler();
+	GVL_DevManual.fbManualControler();
+	GVL_HMI.fbHMIControl();
+	fbDevValve(
+		refFbFault := fbFaultHandler,
+		refFbManualCtrl	:= GVL_DevManual.fbManualControler,
+	);
 ]]></ST>
     </Implementation>
   </POU>

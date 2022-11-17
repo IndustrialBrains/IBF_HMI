@@ -4,9 +4,31 @@
 		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="IBF_HMI\IBF_HMI.tmc">
 			<Name>IBF_HMI Instance</Name>
 			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
+			<Vars VarGrpType="2" AreaNo="1">
+				<Name>PlcTask Outputs</Name>
+				<Var>
+					<Name>PRG_TEST.fbDevValve.q_Open</Name>
+					<Comment><![CDATA[ Open valve]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>PRG_TEST.fbDevValve.q_Close</Name>
+					<Comment><![CDATA[ Close valve]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+			</Vars>
 			<Contexts>
 				<Context>
 					<Id NeedCalleeCall="true">0</Id>
+					<Name>PlcTask</Name>
+					<ManualConfig>
+						<OTCID>#x02010030</OTCID>
+					</ManualConfig>
+					<Priority>6</Priority>
+					<CycleTime>10000000</CycleTime>
+				</Context>
+				<Context>
+					<Id NeedCalleeCall="true">1</Id>
 					<Name>VISU_TASK</Name>
 					<ManualConfig>
 						<OTCID>#x02010040</OTCID>
@@ -16,6 +38,7 @@
 				</Context>
 			</Contexts>
 			<TaskPouOids>
+				<TaskPouOid Prio="6" OTCID="#x08502002"/>
 				<TaskPouOid Prio="8" OTCID="#x08502001"/>
 			</TaskPouOids>
 		</Instance>

@@ -311,6 +311,11 @@
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
+              <v n="TextID">"1057"</v>
+              <v n="TextDefault">"ManualControl"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
               <v n="TextID">"278"</v>
               <v n="TextDefault">"Max : %5.1f"</v>
               <l n="LanguageTexts" t="ArrayList" />

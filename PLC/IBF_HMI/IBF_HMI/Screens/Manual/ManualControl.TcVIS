@@ -1126,12 +1126,12 @@
                               <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" ckt="String" cvt="String">
                                 <v>Visible</v>
                                 <v>False</v>
-                                <v>ieccodeconversion_array</v>
-                                <v></v>
-                                <v>VisibleChildren</v>
-                                <v>True</v>
                                 <v>DefaultArraySize</v>
                                 <v>5</v>
+                                <v>VisibleChildren</v>
+                                <v>True</v>
+                                <v>ieccodeconversion_array</v>
+                                <v></v>
                                 <v>''NORMAL__COMMENT</v>
                                 <v> We hide this node to prevent having two References nodes
  Nevertheless we want to make sure that the children are displayed</v>
@@ -1187,8 +1187,8 @@
                         <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
                           <v n="AttrFlags">81920UL</v>
                           <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" ckt="String" cvt="String">
-                            <v>conditionalshow</v>
-                            <v>visu_elemdev</v>
+                            <v>DisplayFrameReferencesConfiguration</v>
+                            <v></v>
                             <v>DescriptionTextId</v>
                             <v>TL_ElementProperties.Desc_ReferencedVisus</v>
                             <v>SortFlag</v>
@@ -1199,14 +1199,14 @@
                             <v>Simple|Standard</v>
                             <v>DynamicArray</v>
                             <v></v>
-                            <v>DisplayFrameReferencesConfiguration</v>
-                            <v></v>
+                            <v>conditionalshow</v>
+                            <v>visu_elemdev</v>
                             <v>FrameReferences</v>
                             <v></v>
-                            <v>Storable</v>
-                            <v>True</v>
                             <v>DisplayTextId</v>
                             <v>TL_ElementProperties.References</v>
+                            <v>Storable</v>
+                            <v>True</v>
                           </d>
                           <v n="ConvDone">true</v>
                         </o>
@@ -2346,7 +2346,7 @@
                 </o>
                 <d n="VisualElementInputActions" t="Hashtable" />
                 <v n="VisualElementIdentification">{e0126ba9-4216-4271-85e3-ad9273766121}</v>
-                <v n="VisualElementOwningObjectGuid">{45882836-3ade-02c2-32c2-310c613fd5a1}</v>
+                <v n="VisualElementOwningObjectGuid">{47fd7eab-4722-4161-bb7e-85fd17bf2676}</v>
                 <a n="LMGuids" et="Guid" />
                 <d n="SubElements" t="Hashtable" />
                 <v n="VisualElementId">43</v>
@@ -2523,12 +2523,12 @@
                 <v n="VisualElementName">"Button"</v>
                 <v n="VisualElementTypeName">"VisuFbElemButton"</v>
                 <v n="VisualElementIsRectangle">true</v>
-                <v n="VisualElementIdentifier">"btnActivateManualControl"</v>
+                <v n="VisualElementIdentifier">"GenElemInst_9"</v>
                 <n n="VisualElementOfflinePaintCommands" />
                 <n n="VisualElementFrameInformation" />
                 <d n="VisualElementInputActions" t="Hashtable" />
                 <v n="VisualElementIdentification">{48a8f171-17e1-4f80-a361-1e924b5570d7}</v>
-                <v n="VisualElementOwningObjectGuid">{45882836-3ade-02c2-32c2-310c613fd5a1}</v>
+                <v n="VisualElementOwningObjectGuid">{47fd7eab-4722-4161-bb7e-85fd17bf2676}</v>
                 <a n="LMGuids" et="Guid" />
                 <d n="SubElements" t="Hashtable" />
                 <v n="VisualElementId">0</v>
@@ -2642,12 +2642,12 @@
                 <v n="VisualElementName">"Lamp1"</v>
                 <v n="VisualElementTypeName">"VisuFbElemLamp"</v>
                 <v n="VisualElementIsRectangle">true</v>
-                <v n="VisualElementIdentifier">"lampReset"</v>
+                <v n="VisualElementIdentifier">"GenElemInst_13"</v>
                 <n n="VisualElementOfflinePaintCommands" />
                 <n n="VisualElementFrameInformation" />
                 <d n="VisualElementInputActions" t="Hashtable" />
                 <v n="VisualElementIdentification">{9a526fc4-3f9f-4467-8087-c171aaac4765}</v>
-                <v n="VisualElementOwningObjectGuid">{45882836-3ade-02c2-32c2-310c613fd5a1}</v>
+                <v n="VisualElementOwningObjectGuid">{47fd7eab-4722-4161-bb7e-85fd17bf2676}</v>
                 <a n="LMGuids" et="Guid" />
                 <d n="SubElements" t="Hashtable" />
                 <v n="VisualElementId">2</v>
@@ -2740,12 +2740,12 @@
                 <v n="VisualElementName">"Lamp1"</v>
                 <v n="VisualElementTypeName">"VisuFbElemLamp"</v>
                 <v n="VisualElementIsRectangle">true</v>
-                <v n="VisualElementIdentifier">"lampManualControlActive"</v>
+                <v n="VisualElementIdentifier">"GenElemInst_15"</v>
                 <n n="VisualElementOfflinePaintCommands" />
                 <n n="VisualElementFrameInformation" />
                 <d n="VisualElementInputActions" t="Hashtable" />
                 <v n="VisualElementIdentification">{a242a517-0c85-49a8-a98e-d8ef384202b1}</v>
-                <v n="VisualElementOwningObjectGuid">{45882836-3ade-02c2-32c2-310c613fd5a1}</v>
+                <v n="VisualElementOwningObjectGuid">{47fd7eab-4722-4161-bb7e-85fd17bf2676}</v>
                 <a n="LMGuids" et="Guid" />
                 <d n="SubElements" t="Hashtable" />
                 <v n="VisualElementId">10</v>
@@ -2901,12 +2901,12 @@
                 <v n="VisualElementName">"Textfield"</v>
                 <v n="VisualElementTypeName">"VisuFbElemTextfield"</v>
                 <v n="VisualElementIsRectangle">true</v>
-                <v n="VisualElementIdentifier">"txtDeviceState"</v>
+                <v n="VisualElementIdentifier">"GenElemInst_19"</v>
                 <n n="VisualElementOfflinePaintCommands" />
                 <n n="VisualElementFrameInformation" />
                 <d n="VisualElementInputActions" t="Hashtable" />
                 <v n="VisualElementIdentification">{cb052a22-912e-4828-bafb-142ce5dbd235}</v>
-                <v n="VisualElementOwningObjectGuid">{45882836-3ade-02c2-32c2-310c613fd5a1}</v>
+                <v n="VisualElementOwningObjectGuid">{47fd7eab-4722-4161-bb7e-85fd17bf2676}</v>
                 <a n="LMGuids" et="Guid" />
                 <d n="SubElements" t="Hashtable" />
                 <v n="VisualElementId">14</v>
@@ -3083,12 +3083,12 @@
                 <v n="VisualElementName">"Button"</v>
                 <v n="VisualElementTypeName">"VisuFbElemButton"</v>
                 <v n="VisualElementIsRectangle">true</v>
-                <v n="VisualElementIdentifier">"btnReset"</v>
+                <v n="VisualElementIdentifier">"GenElemInst_34"</v>
                 <n n="VisualElementOfflinePaintCommands" />
                 <n n="VisualElementFrameInformation" />
                 <d n="VisualElementInputActions" t="Hashtable" />
                 <v n="VisualElementIdentification">{9c28c969-3a97-4201-b78f-a02680066f86}</v>
-                <v n="VisualElementOwningObjectGuid">{45882836-3ade-02c2-32c2-310c613fd5a1}</v>
+                <v n="VisualElementOwningObjectGuid">{47fd7eab-4722-4161-bb7e-85fd17bf2676}</v>
                 <a n="LMGuids" et="Guid" />
                 <d n="SubElements" t="Hashtable" />
                 <v n="VisualElementId">31</v>
@@ -3589,12 +3589,12 @@
                 <v n="VisualElementName">"ComboBoxTable"</v>
                 <v n="VisualElementTypeName">"VisuFbComboBoxArray"</v>
                 <v n="VisualElementIsRectangle">true</v>
-                <v n="VisualElementIdentifier">"listDevices"</v>
+                <v n="VisualElementIdentifier">"GenElemInst_46"</v>
                 <n n="VisualElementOfflinePaintCommands" />
                 <n n="VisualElementFrameInformation" />
                 <d n="VisualElementInputActions" t="Hashtable" />
                 <v n="VisualElementIdentification">{cc4e4647-46fd-43e3-98c4-63b1663e1e36}</v>
-                <v n="VisualElementOwningObjectGuid">{45882836-3ade-02c2-32c2-310c613fd5a1}</v>
+                <v n="VisualElementOwningObjectGuid">{47fd7eab-4722-4161-bb7e-85fd17bf2676}</v>
                 <a n="LMGuids" cet="Guid">
                   <v>9a4ba642-ea1d-411a-ad2b-eee98504712b</v>
                   <v>a7c0b10d-fb14-4fcc-8093-e0b795ea4f85</v>
@@ -3683,7 +3683,7 @@
                 <v>c1cf895c-9c90-4046-9ea4-4309e3d1ea92</v>
               </d>
               <v n="FbName">"NotImportant"</v>
-              <v n="FbGuid">{45882836-3ade-02c2-32c2-310c613fd5a1}</v>
+              <v n="FbGuid">{47fd7eab-4722-4161-bb7e-85fd17bf2676}</v>
             </o>
             <v n="GeneratedGlobalVisuVarsGuid">{284e0e0f-a0a7-459d-9799-bf31e4fd8fbc}</v>
             <v n="GeneratedGlobalTheVisuVarlistGuid">{bb53c93e-a10a-4510-b4d7-cd47e8dd7b6f}</v>
@@ -3693,10 +3693,10 @@
               <d n="FbMethods" t="CaseInsensitiveHashtable_1" ckt="String" cvt="Guid">
                 <v>FB_Init</v>
                 <v>44e0d94d-1640-464b-b5bf-91355a8dd12d</v>
-                <v>FB_Exit</v>
-                <v>e761871c-0bef-4cfe-b278-bbacc34b8426</v>
                 <v>FB_Reinit</v>
                 <v>af9a7ea5-2b76-4d85-a988-c89cb46c3f13</v>
+                <v>FB_Exit</v>
+                <v>e761871c-0bef-4cfe-b278-bbacc34b8426</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{0ad81901-2562-4dba-bcfc-ea8ec20a606b}</v>
@@ -3752,6 +3752,11 @@
                 <v n="Id">4L</v>
                 <n n="Tag" />
                 <v n="Text">"	fbManualControler	: FB_ManualController ;"</v>
+              </o>
+              <o>
+                <v n="Id">3L</v>
+                <n n="Tag" />
+                <v n="Text">"	"</v>
               </o>
               <o>
                 <v n="Id">1L</v>

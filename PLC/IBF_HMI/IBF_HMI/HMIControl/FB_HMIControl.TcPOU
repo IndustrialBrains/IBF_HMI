@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.5">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.11">
   <POU Name="FB_HMIControl" Id="{062d2a70-ec77-4a9b-a458-d823fff51efb}" SpecialFunc="None">
     <Declaration><![CDATA[FUNCTION_BLOCK FB_HMIControl
 VAR_INPUT 
@@ -80,12 +80,12 @@ ELSIF GVL_HMI.bCmdSettings THEN
 	GVL_HMI.eShownScreen 	:= E_BaseVisu.Settings ;
 ELSIF NOT GVL_HMI.bCmdSettings AND GVL_HMI.eShownScreen = E_BaseVisu.Settings THEN 
 	GVL_HMI.eShownScreen	:= ePreviousScreen ;
-ELSIF gvl_HMI.bCmdSemiAuto THEN 
+ELSIF GVL_HMI.bCmdSemiAuto THEN 
 	GVL_HMI.eShownScreen 	:= E_BaseVisu.SemiAutomatic;
-	gvl_HMI.bCmdSemiAuto	:= FALSE ; 
-ELSIF gvl_HMI.bCmdAutomatic THEN 
+	GVL_HMI.bCmdSemiAuto	:= FALSE ; 
+ELSIF GVL_HMI.bCmdAutomatic THEN 
 	GVL_HMI.eShownScreen := E_BaseVisu.Automatic ;
-	gvl_HMI.bCmdAutomatic	:= FALSE ;
+	GVL_HMI.bCmdAutomatic	:= FALSE ;
 ELSE 
 	GVL_HMI.eShownScreen := E_BaseVisu.Idle;
 	bHideBorders := TRUE  ;	

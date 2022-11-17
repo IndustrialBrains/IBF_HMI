@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.11">
   <Visu Name="Idle_PNG" Id="{ceaa85bd-96f6-4a17-821b-25d21a8d47d3}">
     <XmlArchive>
       <Data>
@@ -562,18 +562,18 @@
                 <v>f3cfcb13-ee8a-4f56-ad8d-557052ab615c</v>
                 <v>ContainsPoint</v>
                 <v>1f419c89-3e92-493f-bca0-36aa34fdb2f1</v>
-                <v>FB_Reinit</v>
-                <v>02024d70-86e9-429a-be27-b4332e704e54</v>
                 <v>SetStaticState</v>
                 <v>62db88de-b950-40a5-af63-4b143b4db317</v>
-                <v>Update</v>
-                <v>eb032e55-427b-4dab-b8fa-438cdeec5855</v>
+                <v>HasInputAccessIntern</v>
+                <v>8511248a-6976-5f87-b607-86695f3438b4</v>
                 <v>GetTooltip</v>
                 <v>16c082aa-b764-418c-a4e0-8990b54f4f03</v>
                 <v>GetNamespace</v>
                 <v>941479aa-d5e6-4137-81c2-36c72823350f</v>
                 <v>GetTranslator</v>
                 <v>b44f3c22-03df-449a-998a-fad73a3ab571</v>
+                <v>Update</v>
+                <v>eb032e55-427b-4dab-b8fa-438cdeec5855</v>
                 <v>SetClientData</v>
                 <v>6c034ec8-a4e7-4fc0-b28c-acc6cbd88f76</v>
                 <v>GetClientData</v>
@@ -596,16 +596,20 @@
                 <v>6db551bc-8de8-420d-bda5-c100063de49b</v>
                 <v>HasInputAccess</v>
                 <v>fd194bde-865e-46f2-99ee-b8625498b069</v>
+                <v>HasVisibilityAccessIntern</v>
+                <v>0a2722c7-69fd-55ec-ac90-0c03717b91d0</v>
                 <v>GetSurroundingRect</v>
                 <v>a1902b00-0285-4fb3-9cef-2577e571449b</v>
+                <v>ElementInfo</v>
+                <v>b6af2126-1e60-4f61-a274-adff32deb752</v>
                 <v>GetLocalUsergroup</v>
                 <v>d8819050-9ef5-4e07-8d9c-6daffd38bdd4</v>
                 <v>GetName</v>
                 <v>be28a278-935c-491e-a90a-fe00083c0f96</v>
                 <v>GetSize</v>
                 <v>bcee1f15-1f3d-48ec-8b02-5a55da7edba0</v>
-                <v>Destruct</v>
-                <v>e85b66cb-8c8e-4f77-a9c7-a535d030b86e</v>
+                <v>FB_Reinit</v>
+                <v>02024d70-86e9-429a-be27-b4332e704e54</v>
                 <v>FB_Exit</v>
                 <v>37dd3a7c-dc0f-4738-81bf-9b4b9d421eb8</v>
                 <v>GetInitializeVersion</v>
@@ -614,8 +618,8 @@
                 <v>aae88320-0e88-4ede-bf42-3d9274e46be0</v>
                 <v>HandleInput</v>
                 <v>ad24116b-dbde-4b5b-9fbe-90e523b6682b</v>
-                <v>ElementInfo</v>
-                <v>b6af2126-1e60-4f61-a274-adff32deb752</v>
+                <v>Destruct</v>
+                <v>e85b66cb-8c8e-4f77-a9c7-a535d030b86e</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{ceaa85bd-96f6-4a17-821b-25d21a8d47d3}</v>
@@ -628,10 +632,10 @@
               <d n="FbMethods" t="CaseInsensitiveHashtable_1" ckt="String" cvt="Guid">
                 <v>FB_Init</v>
                 <v>c4fa8286-a55a-42a2-8083-96dfbfc449dc</v>
-                <v>FB_Exit</v>
-                <v>f6e8e4e4-1e51-46c3-b5f2-c29287f98727</v>
                 <v>FB_Reinit</v>
                 <v>c987afce-3367-4b98-a24e-416e2b9ff5a3</v>
+                <v>FB_Exit</v>
+                <v>f6e8e4e4-1e51-46c3-b5f2-c29287f98727</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{86cf5c49-3028-4ebf-bc07-fe7f71a23655}</v>

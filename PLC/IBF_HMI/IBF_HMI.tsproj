@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.29">
-	<Project ProjectGUID="{8B1E175B-6F4E-48D1-8EDF-C91C8890C0DA}" Target64Bit="true" AutoPrioManagement="true" ShowHideConfigurations="#x106">
+	<Project ProjectGUID="{8B1E175B-6F4E-48D1-8EDF-C91C8890C0DA}" TargetNetId="41.151.80.134.1.1" Target64Bit="true" AutoPrioManagement="true" ShowHideConfigurations="#x106">
 		<System>
 			<Settings>
 				<IoIdleTask Priority="4"/>

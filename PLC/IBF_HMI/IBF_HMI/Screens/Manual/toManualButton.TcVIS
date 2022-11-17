@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.10">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.11">
   <Visu Name="toManualButton" Id="{e5e337c4-6df6-4290-a08c-2b3898e12bd3}">
     <XmlArchive>
       <Data>
@@ -226,14 +226,16 @@
                 <v>f695a575-4741-4b72-bb8f-bb087ca7da0a</v>
                 <v>SetStaticState</v>
                 <v>2cbdaf34-7291-441d-89a1-01d9205d84a0</v>
-                <v>Update</v>
-                <v>20deb90b-7832-47dd-822e-fabadafe4136</v>
+                <v>HasInputAccessIntern</v>
+                <v>4ed08f45-0cfc-50c8-be1d-a4548cf6fa2c</v>
                 <v>GetTooltip</v>
                 <v>110f9226-ef68-41bc-9a20-68a1b47b9673</v>
                 <v>GetNamespace</v>
                 <v>f498a4f0-3437-4b71-aedf-3398837d6fec</v>
                 <v>GetTranslator</v>
                 <v>f287bdd7-9846-4c10-84e1-564fe49f6bba</v>
+                <v>Update</v>
+                <v>20deb90b-7832-47dd-822e-fabadafe4136</v>
                 <v>SetClientData</v>
                 <v>2dc01b8d-5219-4e7a-87ab-8b416c10b7cd</v>
                 <v>GetClientData</v>
@@ -256,6 +258,8 @@
                 <v>e2b2892b-be56-49a3-afa6-6f304b0bc479</v>
                 <v>HasInputAccess</v>
                 <v>d60e5d95-029b-4bf6-a73f-4eec9d5fce05</v>
+                <v>HasVisibilityAccessIntern</v>
+                <v>d2dc89b8-9fe9-532d-b969-bf67678c41ff</v>
                 <v>GetSurroundingRect</v>
                 <v>6bf6196f-d5b0-45d0-b799-172733cbdad8</v>
                 <v>ElementInfo</v>
@@ -290,10 +294,10 @@
               <d n="FbMethods" t="CaseInsensitiveHashtable" ckt="String" cvt="Guid">
                 <v>FB_Init</v>
                 <v>543fb220-bc6d-4f16-91f6-83793a38e8f7</v>
-                <v>FB_Exit</v>
-                <v>2306ea19-3fe6-475a-9cfe-79477ffd5f54</v>
                 <v>FB_Reinit</v>
                 <v>10c9e6f4-e54e-4bf5-991e-e14f21214cf1</v>
+                <v>FB_Exit</v>
+                <v>2306ea19-3fe6-475a-9cfe-79477ffd5f54</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{43e8fba3-f58a-4e0a-950a-76d7c5cc4d8b}</v>

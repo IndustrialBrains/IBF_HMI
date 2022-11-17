@@ -98,11 +98,11 @@
                     </o>
                     <o>
                       <v n="Id">2422045748L</v>
-                      <v n="Value" t="Int16">800</v>
+                      <v n="Value" t="Int16">1280</v>
                     </o>
                     <o>
                       <v n="Id">2134141914L</v>
-                      <v n="Value" t="Int16">480</v>
+                      <v n="Value" t="Int16">800</v>
                     </o>
                     <o>
                       <v n="Id">1651471674L</v>
@@ -133,11 +133,11 @@
                     </o>
                     <o>
                       <v n="Id">550940142L</v>
-                      <v n="Value" t="Int16">400</v>
+                      <v n="Value" t="Int16">640</v>
                     </o>
                     <o>
                       <v n="Id">1473355128L</v>
-                      <v n="Value" t="Int16">240</v>
+                      <v n="Value" t="Int16">400</v>
                     </o>
                     <o>
                       <v n="Id">493260384L</v>
@@ -273,11 +273,11 @@
                     </o>
                     <o>
                       <v n="Id">2422045748L</v>
-                      <v n="Value" t="Int16">800</v>
+                      <v n="Value" t="Int16">1280</v>
                     </o>
                     <o>
                       <v n="Id">2134141914L</v>
-                      <v n="Value" t="Int16">480</v>
+                      <v n="Value" t="Int16">800</v>
                     </o>
                     <o>
                       <v n="Id">1651471674L</v>
@@ -378,19 +378,19 @@
                     </o>
                     <o>
                       <v n="Id">1649127785L</v>
-                      <v n="Value">341</v>
+                      <v n="Value">553</v>
                     </o>
                     <o>
                       <v n="Id">357335551L</v>
-                      <v n="Value">430</v>
+                      <v n="Value">720</v>
                     </o>
                     <o>
                       <v n="Id">2422045748L</v>
-                      <v n="Value">120</v>
+                      <v n="Value">180</v>
                     </o>
                     <o>
                       <v n="Id">2134141914L</v>
-                      <v n="Value">45</v>
+                      <v n="Value">60</v>
                     </o>
                     <o>
                       <v n="Id">493260384L</v>
@@ -476,28 +476,30 @@
           <o n="GeneratedLMMDescriptions" t="GeneratedLanguageModelEntriesData">
             <o n="GeneratedVisuFbDescription" t="GenericFbDescription">
               <d n="FbMethods" t="CaseInsensitiveHashtable" ckt="String" cvt="Guid">
-                <v>HasVisibilityAccess</v>
-                <v>e0409fef-eef1-4e67-8309-6956237c8b76</v>
+                <v>GetUpdateRects</v>
+                <v>a5ab4a68-e3c4-40ce-b83b-f9fa708a1e4e</v>
                 <v>ContainsPoint</v>
                 <v>efc07496-5cce-4bf8-a8e1-d3f46e7b8691</v>
                 <v>SetStaticState</v>
                 <v>8af9101f-3fc0-41b0-b0f0-5070e7e3370e</v>
-                <v>Update</v>
-                <v>66794aea-0ce5-462e-a780-d128652e65ca</v>
+                <v>HasInputAccessIntern</v>
+                <v>032e1b4b-6f4c-53c1-9cb8-c43c7b98035f</v>
                 <v>GetTooltip</v>
                 <v>9a892a2e-2f57-4497-8059-eb92aaada017</v>
-                <v>GetUpdateRects</v>
-                <v>a5ab4a68-e3c4-40ce-b83b-f9fa708a1e4e</v>
                 <v>GetNamespace</v>
                 <v>c8e6195e-a7b0-4bde-9093-ed83ae75e2ee</v>
                 <v>GetTranslator</v>
                 <v>cab98d63-5d8c-46e9-979d-2c37b42c66ed</v>
+                <v>Update</v>
+                <v>66794aea-0ce5-462e-a780-d128652e65ca</v>
                 <v>SetClientData</v>
                 <v>2657ee94-2b36-49fe-b340-8087b496b5cb</v>
                 <v>GetClientData</v>
                 <v>b0738362-e524-4922-83fd-689ac00ff797</v>
                 <v>Paint</v>
                 <v>f6491f40-46a8-4f3b-82ca-9048c6836b2b</v>
+                <v>HasVisibilityAccess</v>
+                <v>e0409fef-eef1-4e67-8309-6956237c8b76</v>
                 <v>GetElementArray</v>
                 <v>ba0b87bb-ba92-49fb-b7e3-05a3a962da3d</v>
                 <v>SetVisuFlagsInternal</v>
@@ -508,8 +510,6 @@
                 <v>6e7ae413-3194-45c1-acdb-c557535c538c</v>
                 <v>IsAntialiasingInactive</v>
                 <v>99635194-f77d-4165-ba0a-f27aa9223f55</v>
-                <v>HasInputAccessIntern</v>
-                <v>032e1b4b-6f4c-53c1-9cb8-c43c7b98035f</v>
                 <v>Initialize</v>
                 <v>5ed315b9-fe26-40ff-adb3-34a5b52b3b0a</v>
                 <v>HasInputAccess</v>
@@ -540,7 +540,7 @@
                 <v>83e75616-19d8-47a4-acaa-6dffcd4d25c9</v>
               </d>
               <v n="FbName">"NotImportant"</v>
-              <v n="FbGuid">{79e61a34-fb02-0187-086b-448af0ec5df3}</v>
+              <v n="FbGuid">{7b934ca9-86fe-4224-81d7-f07b866cae24}</v>
             </o>
             <v n="GeneratedGlobalVisuVarsGuid">{681725b6-74f6-4ee7-a1aa-7a603163401f}</v>
             <v n="GeneratedGlobalTheVisuVarlistGuid">{1174879e-53e8-4191-8a34-1cb21cdbd6c8}</v>
@@ -550,10 +550,10 @@
               <d n="FbMethods" t="CaseInsensitiveHashtable" ckt="String" cvt="Guid">
                 <v>FB_Init</v>
                 <v>22793e7a-0461-468f-b3f4-ba7ebe535776</v>
-                <v>FB_Reinit</v>
-                <v>a1736f4b-176b-431b-ac29-4b001ec05f8a</v>
                 <v>FB_Exit</v>
                 <v>4a6bbe59-3d43-41b8-a924-e154b90cb75f</v>
+                <v>FB_Reinit</v>
+                <v>a1736f4b-176b-431b-ac29-4b001ec05f8a</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{6dc98411-6f0e-49c8-a70b-45ce3fc5e0cc}</v>
@@ -654,13 +654,13 @@
             <d2 n="Size" ckt="Int32" cvt="VisualObjectSize">
               <v>0</v>
               <o>
-                <v n="Width">800</v>
-                <v n="Height">480</v>
+                <v n="Width">1280</v>
+                <v n="Height">800</v>
               </o>
               <v>1</v>
               <o>
-                <v n="Width">800</v>
-                <v n="Height">480</v>
+                <v n="Width">1280</v>
+                <v n="Height">800</v>
               </o>
             </d2>
             <v n="Version">1</v>

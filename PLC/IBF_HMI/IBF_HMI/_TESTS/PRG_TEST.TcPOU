@@ -3,9 +3,8 @@
   <POU Name="PRG_TEST" Id="{b132eb66-7e41-469d-9de4-883897ec1165}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM INTERNAL PRG_TEST
 VAR
+	// ManualControl
 	bInitDone : BOOL;
-	
-	// ManualControl devices
 	fbFaultHandler 			: Fb_FaultHandler; 
 	fbDevValve 				: FB_DevValve;
 END_VAR
@@ -29,6 +28,11 @@ END_VAR
 		refFbFault := fbFaultHandler,
 		refFbManualCtrl	:= GVL_DevManual.fbManualControler,
 	);
+	
+// Parameters
+	// NOTE: fbParameterHandler should contain the parameters of fbDevValve. 
+	// Parameter values are persistent
+	GVL_Parameters.fbParameterHandler();
 ]]></ST>
     </Implementation>
   </POU>

@@ -772,7 +772,7 @@
                                       <v n="QualifiedName">"ARRAY[*] OF Udt_Parameter"</v>
                                       <v n="Name">"ARRAY[*] OF Udt_Parameter"</v>
                                     </o>
-                                    <v n="TypeNodeName">"ArParemeters"</v>
+                                    <v n="TypeNodeName">"ArParameters"</v>
                                     <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
                                       <v n="AttrFlags">0UL</v>
                                       <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" />

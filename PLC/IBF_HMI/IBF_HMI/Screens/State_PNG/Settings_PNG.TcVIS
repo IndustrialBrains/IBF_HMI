@@ -872,7 +872,7 @@
                         <l n="TypeNodeChildren" t="ArrayList" cet="BasicTypeNode">
                           <o>
                             <v n="Flags">2L</v>
-                            <v n="BasicTypeNodeValue">"GVL_HMI.bCmdParemeter"</v>
+                            <v n="BasicTypeNodeValue">"GVL_HMI.bCmdParameter"</v>
                             <v n="BasicTypeNodeAcceptsExpression">true</v>
                             <n n="BasicTypeNodeFastAccess" />
                             <a n="BasicTypeNodeEnumValues" et="String" />
@@ -932,7 +932,7 @@
                     </o>
                     <o>
                       <v n="Id">2763477857L</v>
-                      <v n="Value">"GVL_HMI.bCmdParemeter"</v>
+                      <v n="Value">"GVL_HMI.bCmdParameter"</v>
                     </o>
                     <o>
                       <v n="Id">1013868361L</v>

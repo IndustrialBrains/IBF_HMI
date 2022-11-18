@@ -1126,12 +1126,12 @@
                               <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" ckt="String" cvt="String">
                                 <v>Visible</v>
                                 <v>False</v>
-                                <v>ieccodeconversion_array</v>
-                                <v></v>
-                                <v>VisibleChildren</v>
-                                <v>True</v>
                                 <v>DefaultArraySize</v>
                                 <v>5</v>
+                                <v>VisibleChildren</v>
+                                <v>True</v>
+                                <v>ieccodeconversion_array</v>
+                                <v></v>
                                 <v>''NORMAL__COMMENT</v>
                                 <v> We hide this node to prevent having two References nodes
  Nevertheless we want to make sure that the children are displayed</v>
@@ -1187,8 +1187,8 @@
                         <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
                           <v n="AttrFlags">81920UL</v>
                           <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" ckt="String" cvt="String">
-                            <v>conditionalshow</v>
-                            <v>visu_elemdev</v>
+                            <v>DisplayFrameReferencesConfiguration</v>
+                            <v></v>
                             <v>DescriptionTextId</v>
                             <v>TL_ElementProperties.Desc_ReferencedVisus</v>
                             <v>SortFlag</v>
@@ -1199,14 +1199,14 @@
                             <v>Simple|Standard</v>
                             <v>DynamicArray</v>
                             <v></v>
-                            <v>DisplayFrameReferencesConfiguration</v>
-                            <v></v>
+                            <v>conditionalshow</v>
+                            <v>visu_elemdev</v>
                             <v>FrameReferences</v>
                             <v></v>
-                            <v>Storable</v>
-                            <v>True</v>
                             <v>DisplayTextId</v>
                             <v>TL_ElementProperties.References</v>
+                            <v>Storable</v>
+                            <v>True</v>
                           </d>
                           <v n="ConvDone">true</v>
                         </o>
@@ -2721,7 +2721,7 @@
                     </o>
                     <o>
                       <v n="Id">571893170L</v>
-                      <v n="Value">"Manual control active"</v>
+                      <v n="Value">"Selected device is in manual state"</v>
                     </o>
                     <o>
                       <v n="Id">2597686782L</v>
@@ -2733,7 +2733,7 @@
                     </o>
                     <o>
                       <v n="Id">3438453433L</v>
-                      <v n="Value">"804"</v>
+                      <v n="Value">"270"</v>
                     </o>
                   </l>
                 </o>
@@ -3619,18 +3619,16 @@
           <o n="GeneratedLMMDescriptions" t="GeneratedLanguageModelEntriesData">
             <o n="GeneratedVisuFbDescription" t="GenericFbDescription">
               <d n="FbMethods" t="CaseInsensitiveHashtable_1" ckt="String" cvt="Guid">
-                <v>HasVisibilityAccess</v>
-                <v>742bd816-ccb2-4e22-b0a4-3b7921cde8e7</v>
+                <v>GetUpdateRects</v>
+                <v>5fa99572-af1f-471a-8c07-dc05344b33b7</v>
                 <v>ContainsPoint</v>
                 <v>94f8fa9b-ae27-493c-96d2-c4a5eaaaa3d1</v>
-                <v>HasInputAccess</v>
-                <v>8bc116ac-ccf8-4fc1-8e48-40f73656cc9c</v>
+                <v>SetStaticState</v>
+                <v>ac4f8fc2-b9d6-4e22-be70-1a51bb790945</v>
                 <v>HasInputAccessIntern</v>
                 <v>17a63b1e-73ea-4b32-b343-a828fa2c5a99</v>
                 <v>GetTooltip</v>
                 <v>990b6e15-7788-4c40-922c-64301a07bc23</v>
-                <v>GetUpdateRects</v>
-                <v>5fa99572-af1f-471a-8c07-dc05344b33b7</v>
                 <v>GetNamespace</v>
                 <v>c23a0ce1-51c5-414b-9a23-ff1713bf19ad</v>
                 <v>GetTranslator</v>
@@ -3643,6 +3641,8 @@
                 <v>922c0aa2-1633-4e10-a70c-60090f26fc24</v>
                 <v>Paint</v>
                 <v>32988b3a-ba29-4d56-b5fd-825c3d8f2132</v>
+                <v>HasVisibilityAccess</v>
+                <v>742bd816-ccb2-4e22-b0a4-3b7921cde8e7</v>
                 <v>GetElementArray</v>
                 <v>7418ed7d-4839-46d7-b03d-f4afc68b4e76</v>
                 <v>SetVisuFlagsInternal</v>
@@ -3655,14 +3655,14 @@
                 <v>31567e20-6706-4a70-a81a-41b039ef4ed5</v>
                 <v>Initialize</v>
                 <v>68937b3f-0a61-48a3-9c60-835a3e40b142</v>
+                <v>HasInputAccess</v>
+                <v>8bc116ac-ccf8-4fc1-8e48-40f73656cc9c</v>
                 <v>HasVisibilityAccessIntern</v>
                 <v>628b6473-3638-46a0-9545-d9eec651ee3b</v>
                 <v>GetSurroundingRect</v>
                 <v>08149353-8483-4833-8938-a96ba10b0bf9</v>
                 <v>ElementInfo</v>
                 <v>4f3c24f2-bf92-4e44-bf2e-4fbf18ee4d3c</v>
-                <v>SetStaticState</v>
-                <v>ac4f8fc2-b9d6-4e22-be70-1a51bb790945</v>
                 <v>GetLocalUsergroup</v>
                 <v>0f0a32ce-cefd-4666-8a64-6c6f46b76aac</v>
                 <v>GetName</v>
@@ -3751,12 +3751,7 @@
               <o>
                 <v n="Id">4L</v>
                 <n n="Tag" />
-                <v n="Text">"	fbManualControler	: FB_ManualController ;"</v>
-              </o>
-              <o>
-                <v n="Id">3L</v>
-                <n n="Tag" />
-                <v n="Text">"	"</v>
+                <v n="Text">"	fbManualControler	: FB_ManualController;"</v>
               </o>
               <o>
                 <v n="Id">1L</v>

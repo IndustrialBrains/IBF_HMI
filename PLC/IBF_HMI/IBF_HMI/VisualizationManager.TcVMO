@@ -49,10 +49,10 @@
             <d n="FbMethods" t="CaseInsensitiveHashtable" ckt="String" cvt="Guid">
               <v>FB_Init</v>
               <v>aabb2559-96d5-44a6-8dbb-dbcd08ea4bf7</v>
-              <v>FB_Exit</v>
-              <v>68c9df13-da3b-49af-af2d-2ec053909520</v>
               <v>FB_Reinit</v>
               <v>6d032f03-b948-4434-8689-c2b23a3a474a</v>
+              <v>FB_Exit</v>
+              <v>68c9df13-da3b-49af-af2d-2ec053909520</v>
             </d>
             <v n="FbName">"__VisuInitInstantiation_Fb"</v>
             <v n="FbGuid">{92081282-3de8-4eb2-b55f-8a62a13ebbba}</v>
@@ -552,7 +552,7 @@
                 <o>
                   <v n="Id">1</v>
                   <v n="Name">"Admin"</v>
-                  <v n="AutoLogOff">true</v>
+                  <v n="AutoLogOff">false</v>
                   <v n="LogOffTimeValue">1</v>
                   <v n="LogOffTimeUnit" t="TimeUnit">Minute</v>
                   <v n="RightToChangeUser">true</v>

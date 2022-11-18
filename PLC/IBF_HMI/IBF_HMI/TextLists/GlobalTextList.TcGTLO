@@ -306,6 +306,11 @@
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
+              <v n="TextID">"990"</v>
+              <v n="TextDefault">"Logout"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
               <v n="TextID">"804"</v>
               <v n="TextDefault">"Manual control active"</v>
               <l n="LanguageTexts" t="ArrayList" />
@@ -501,6 +506,11 @@
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
+              <v n="TextID">"270"</v>
+              <v n="TextDefault">"Selected device is in manual state"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
               <v n="TextID">"284"</v>
               <v n="TextDefault">"Service"</v>
               <l n="LanguageTexts" t="ArrayList" />
@@ -583,6 +593,16 @@
             <o>
               <v n="TextID">"965"</v>
               <v n="TextDefault">"IBF_Utilities.GVL_Message.arActiveFaults[4].FaultType"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"1140"</v>
+              <v n="TextDefault">"User management"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"351"</v>
+              <v n="TextDefault">"User mgmt"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>

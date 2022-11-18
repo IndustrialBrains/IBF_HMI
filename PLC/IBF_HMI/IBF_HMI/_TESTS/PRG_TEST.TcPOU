@@ -10,7 +10,11 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[// ManualControl
+      <ST><![CDATA[
+// Parameters
+	// NOTE: fbParameterHandler should contain the parameters of fbDevValve. 
+	// Parameter values are persistent
+
 	IF NOT bInitDone THEN
 		bInitDone := TRUE;
 		fbDevValve.Init(
@@ -22,17 +26,14 @@ END_VAR
 	END_IF
 	
 	fbFaultHandler();
-	GVL_DevManual.fbManualControler();
-	GVL_HMI.fbHMIControl();
 	fbDevValve(
 		refFbFault := fbFaultHandler,
 		refFbManualCtrl	:= GVL_DevManual.fbManualControler,
 	);
-	
-// Parameters
-	// NOTE: fbParameterHandler should contain the parameters of fbDevValve. 
-	// Parameter values are persistent
+
 	GVL_Parameters.fbParameterHandler();
+
+GVL_HMI.fbHMIControl();
 ]]></ST>
     </Implementation>
   </POU>

@@ -59,7 +59,6 @@
     <Folder Include="Screens\Base" />
     <Folder Include="Screens\EventsAndMessage" />
     <Folder Include="Screens\Manual" />
-    <Folder Include="Screens\Manual\DeviceScreens" />
     <Folder Include="Screens\Parameter" />
     <Folder Include="Screens\Startup Screen" />
     <Folder Include="Screens\State_PNG" />
@@ -101,75 +100,7 @@
       <SubType>Code</SubType>
       <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
     </Compile>
-    <Compile Include="Screens\Manual\DeviceScreens\VisuAnalogAxisControl.TcVIS">
-      <SubType>Code</SubType>
-      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
-    </Compile>
-    <Compile Include="Screens\Manual\DeviceScreens\VisuAnalogOutControl.TcVIS">
-      <SubType>Code</SubType>
-      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
-    </Compile>
-    <Compile Include="Screens\Manual\DeviceScreens\VisuAnlogInputControl.TcVIS">
-      <SubType>Code</SubType>
-      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
-    </Compile>
-    <Compile Include="Screens\Manual\DeviceScreens\VisuAxisControl.TcVIS">
-      <SubType>Code</SubType>
-      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
-    </Compile>
-    <Compile Include="Screens\Manual\DeviceScreens\VisuCylinderControl.TcVIS">
-      <SubType>Code</SubType>
-      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
-    </Compile>
-    <Compile Include="Screens\Manual\DeviceScreens\VisuDigitalInputControl.TcVIS">
-      <SubType>Code</SubType>
-      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
-    </Compile>
-    <Compile Include="Screens\Manual\DeviceScreens\VisuDigitalOutControl.TcVIS">
-      <SubType>Code</SubType>
-      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
-    </Compile>
-    <Compile Include="Screens\Manual\DeviceScreens\VisuDoublePWMControl.TcVIS">
-      <SubType>Code</SubType>
-      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
-    </Compile>
-    <Compile Include="Screens\Manual\DeviceScreens\VisuEncoderInput.TcVIS">
-      <SubType>Code</SubType>
-      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
-    </Compile>
-    <Compile Include="Screens\Manual\DeviceScreens\VisuKL15XXControl.TcVIS">
-      <SubType>Code</SubType>
-      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
-    </Compile>
-    <Compile Include="Screens\Manual\DeviceScreens\VisuKL5151Control.TcVIS">
-      <SubType>Code</SubType>
-      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
-    </Compile>
-    <Compile Include="Screens\Manual\DeviceScreens\VisuPushbuttonLightControl.TcVIS">
-      <SubType>Code</SubType>
-      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
-    </Compile>
-    <Compile Include="Screens\Manual\DeviceScreens\VisuPWMControl.TcVIS">
-      <SubType>Code</SubType>
-      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
-    </Compile>
-    <Compile Include="Screens\Manual\DeviceScreens\VisuTwoVelocityAxisControl.TcVIS">
-      <SubType>Code</SubType>
-      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
-    </Compile>
-    <Compile Include="Screens\Manual\DeviceScreens\VisuUndefinedControl.TcVIS">
-      <SubType>Code</SubType>
-      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
-    </Compile>
-    <Compile Include="Screens\Manual\DeviceScreens\VisuValveControl.TcVIS">
-      <SubType>Code</SubType>
-      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
-    </Compile>
     <Compile Include="Screens\Manual\ManualButton_PNG.TcVIS">
-      <SubType>Code</SubType>
-      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
-    </Compile>
-    <Compile Include="Screens\Manual\ManualControl.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
     </Compile>
@@ -246,7 +177,7 @@
       <SubType>Code</SubType>
       <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
     </Compile>
-    <Compile Include="_TESTS\VISU_TEST_UserMgmt.TcVIS">
+    <Compile Include="_TESTS\VISU_TEST_LOGIN.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
     </Compile>

@@ -18,9 +18,8 @@ However, a test visualization is available (see `VISU_TEST`), with which you can
 
 1. Add Github action (build)
 1. Fix errors generated when static analysis rule "Unused variables" is enabled
-1. `ManualControl`: 
-	- list sometimes contains 1 empty item
 1. Remove customer logos, should reside in customer projects
+1. Clean up dependencies: Move screens for manual control, parameter control etc. to their respective libraries
 
 
 

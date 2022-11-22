@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.11">
   <Visu Name="Manual_PNG" Id="{6ebf1ffe-3d8a-4c3c-ace5-8874cf269357}">
     <XmlArchive>
       <Data>
@@ -189,8 +189,67 @@
                               <o>
                                 <v n="VisuNodeReferenceGuid">{00000000-0000-0000-0000-000000000000}</v>
                                 <n n="VisuNodeReference" />
-                                <v n="VisNodeRefs33">"ManualControl"</v>
-                                <l n="TypeNodeChildren" t="ArrayList" />
+                                <v n="VisNodeRefs33">"IBF_Devices.ManualControl"</v>
+                                <l n="TypeNodeChildren" t="ArrayList" cet="BasicTypeNode">
+                                  <o>
+                                    <v n="Flags">2L</v>
+                                    <n n="BasicTypeNodeValue" />
+                                    <v n="BasicTypeNodeAcceptsExpression">true</v>
+                                    <n n="BasicTypeNodeFastAccess" />
+                                    <a n="BasicTypeNodeEnumValues" et="String" />
+                                    <n n="EnumValueDisplayTextIds" />
+                                    <n n="EnumValueVisibilityAttributeValues" />
+                                    <n n="EnumValueLibraryId" />
+                                    <n n="DynamicEnumMemberVisibilityCheckerTypeGuid" />
+                                    <l n="TypeNodeChildren" t="ArrayList" />
+                                    <o n="TypeNodeType" t="TypeNodeType">
+                                      <v n="TypeClass" t="TypeClass">Reference</v>
+                                      <v n="QualifiedName">"UDT_HMI_ManualControl"</v>
+                                      <v n="Name">"UDT_HMI_ManualControl"</v>
+                                    </o>
+                                    <v n="TypeNodeName">"stHMI"</v>
+                                    <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
+                                      <v n="AttrFlags">0UL</v>
+                                      <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" />
+                                      <v n="ConvDone">true</v>
+                                    </o>
+                                    <v n="TypeNodeId" t="Int16">255</v>
+                                    <v n="TypeNodeIdLong">3317865782L</v>
+                                    <n n="LibraryId" />
+                                    <n n="DisplayTextId" />
+                                    <n n="DescriptionTextID" />
+                                    <v n="DescriptionUseParent">false</v>
+                                  </o>
+                                  <o>
+                                    <v n="Flags">2L</v>
+                                    <n n="BasicTypeNodeValue" />
+                                    <v n="BasicTypeNodeAcceptsExpression">true</v>
+                                    <n n="BasicTypeNodeFastAccess" />
+                                    <a n="BasicTypeNodeEnumValues" et="String" />
+                                    <n n="EnumValueDisplayTextIds" />
+                                    <n n="EnumValueVisibilityAttributeValues" />
+                                    <n n="EnumValueLibraryId" />
+                                    <n n="DynamicEnumMemberVisibilityCheckerTypeGuid" />
+                                    <l n="TypeNodeChildren" t="ArrayList" />
+                                    <o n="TypeNodeType" t="TypeNodeType">
+                                      <v n="TypeClass" t="TypeClass">Reference</v>
+                                      <v n="QualifiedName">"FB_ManualController"</v>
+                                      <v n="Name">"FB_ManualController"</v>
+                                    </o>
+                                    <v n="TypeNodeName">"fbManualController"</v>
+                                    <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
+                                      <v n="AttrFlags">0UL</v>
+                                      <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" />
+                                      <v n="ConvDone">true</v>
+                                    </o>
+                                    <v n="TypeNodeId" t="Int16">256</v>
+                                    <v n="TypeNodeIdLong">4142975515L</v>
+                                    <n n="LibraryId" />
+                                    <n n="DisplayTextId" />
+                                    <n n="DescriptionTextID" />
+                                    <v n="DescriptionUseParent">false</v>
+                                  </o>
+                                </l>
                                 <o n="TypeNodeType" t="TypeNodeType">
                                   <v n="TypeClass" t="TypeClass">Userdef</v>
                                   <v n="QualifiedName">"IVisualisation"</v>
@@ -228,12 +287,12 @@
                               <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" ckt="String" cvt="String">
                                 <v>Visible</v>
                                 <v>False</v>
-                                <v>ieccodeconversion_array</v>
-                                <v></v>
-                                <v>VisibleChildren</v>
-                                <v>True</v>
                                 <v>DefaultArraySize</v>
                                 <v>5</v>
+                                <v>VisibleChildren</v>
+                                <v>True</v>
+                                <v>ieccodeconversion_array</v>
+                                <v></v>
                                 <v>''NORMAL__COMMENT</v>
                                 <v> We hide this node to prevent having two References nodes
  Nevertheless we want to make sure that the children are displayed</v>
@@ -289,8 +348,8 @@
                         <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
                           <v n="AttrFlags">81920UL</v>
                           <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" ckt="String" cvt="String">
-                            <v>conditionalshow</v>
-                            <v>visu_elemdev</v>
+                            <v>DisplayFrameReferencesConfiguration</v>
+                            <v></v>
                             <v>DescriptionTextId</v>
                             <v>TL_ElementProperties.Desc_ReferencedVisus</v>
                             <v>SortFlag</v>
@@ -301,14 +360,14 @@
                             <v>Simple|Standard</v>
                             <v>DynamicArray</v>
                             <v></v>
-                            <v>DisplayFrameReferencesConfiguration</v>
-                            <v></v>
+                            <v>conditionalshow</v>
+                            <v>visu_elemdev</v>
                             <v>FrameReferences</v>
                             <v></v>
-                            <v>Storable</v>
-                            <v>True</v>
                             <v>DisplayTextId</v>
                             <v>TL_ElementProperties.References</v>
+                            <v>Storable</v>
+                            <v>True</v>
                           </d>
                           <v n="ConvDone">true</v>
                         </o>
@@ -368,8 +427,37 @@
                       <o n="Value" t="VisualizationNode">
                         <v n="VisuNodeReferenceGuid">{00000000-0000-0000-0000-000000000000}</v>
                         <n n="VisuNodeReference" />
-                        <v n="VisNodeRefs33">"ManualControl"</v>
+                        <v n="VisNodeRefs33">"IBF_Devices.ManualControl"</v>
                         <l n="TypeNodeChildren" t="ArrayList" cet="BasicTypeNode">
+                          <o>
+                            <v n="Flags">2L</v>
+                            <v n="BasicTypeNodeValue">"GVL_DevManual.fbManualControler.stHMI"</v>
+                            <v n="BasicTypeNodeAcceptsExpression">true</v>
+                            <n n="BasicTypeNodeFastAccess" />
+                            <a n="BasicTypeNodeEnumValues" et="String" />
+                            <n n="EnumValueDisplayTextIds" />
+                            <n n="EnumValueVisibilityAttributeValues" />
+                            <n n="EnumValueLibraryId" />
+                            <n n="DynamicEnumMemberVisibilityCheckerTypeGuid" />
+                            <l n="TypeNodeChildren" t="ArrayList" />
+                            <o n="TypeNodeType" t="TypeNodeType">
+                              <v n="TypeClass" t="TypeClass">Reference</v>
+                              <v n="QualifiedName">"UDT_HMI_ManualControl"</v>
+                              <v n="Name">"UDT_HMI_ManualControl"</v>
+                            </o>
+                            <v n="TypeNodeName">"stHMI"</v>
+                            <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
+                              <v n="AttrFlags">0UL</v>
+                              <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" />
+                              <v n="ConvDone">true</v>
+                            </o>
+                            <v n="TypeNodeId" t="Int16">255</v>
+                            <v n="TypeNodeIdLong">3317865782L</v>
+                            <n n="LibraryId" />
+                            <n n="DisplayTextId" />
+                            <n n="DescriptionTextID" />
+                            <v n="DescriptionUseParent">false</v>
+                          </o>
                           <o>
                             <v n="Flags">2L</v>
                             <v n="BasicTypeNodeValue">"IBF_Devices.GVL_DevManual.fbManualControler"</v>
@@ -386,14 +474,14 @@
                               <v n="QualifiedName">"FB_ManualController"</v>
                               <v n="Name">"FB_ManualController"</v>
                             </o>
-                            <v n="TypeNodeName">"fbManualControler"</v>
+                            <v n="TypeNodeName">"fbManualController"</v>
                             <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
                               <v n="AttrFlags">0UL</v>
                               <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" />
                               <v n="ConvDone">true</v>
                             </o>
-                            <v n="TypeNodeId" t="Int16">255</v>
-                            <v n="TypeNodeIdLong">345443855L</v>
+                            <v n="TypeNodeId" t="Int16">256</v>
+                            <v n="TypeNodeIdLong">4142975515L</v>
                             <n n="LibraryId" />
                             <n n="DisplayTextId" />
                             <n n="DescriptionTextID" />
@@ -427,8 +515,12 @@
                       </o>
                     </o>
                     <o>
-                      <v n="Id">345443855L</v>
+                      <v n="Id">4142975515L</v>
                       <v n="Value">"IBF_Devices.GVL_DevManual.fbManualControler"</v>
+                    </o>
+                    <o>
+                      <v n="Id">3317865782L</v>
+                      <v n="Value">"GVL_DevManual.fbManualControler.stHMI"</v>
                     </o>
                   </l>
                 </o>
@@ -441,7 +533,7 @@
                   <l n="ContainedGuids" t="ArrayList" />
                   <l n="ContainedVisualizations" t="ArrayList" />
                   <a n="ContainedVisualizations33" cet="String">
-                    <v>ManualControl</v>
+                    <v>IBF_Devices.ManualControl</v>
                   </a>
                 </o>
                 <d n="VisualElementInputActions" t="Hashtable" />
@@ -702,12 +794,12 @@
                               <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" ckt="String" cvt="String">
                                 <v>Visible</v>
                                 <v>False</v>
-                                <v>DefaultArraySize</v>
-                                <v>5</v>
-                                <v>VisibleChildren</v>
-                                <v>True</v>
                                 <v>ieccodeconversion_array</v>
                                 <v></v>
+                                <v>VisibleChildren</v>
+                                <v>True</v>
+                                <v>DefaultArraySize</v>
+                                <v>5</v>
                                 <v>''NORMAL__COMMENT</v>
                                 <v> We hide this node to prevent having two References nodes
  Nevertheless we want to make sure that the children are displayed</v>
@@ -763,8 +855,8 @@
                         <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
                           <v n="AttrFlags">81920UL</v>
                           <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" ckt="String" cvt="String">
-                            <v>DisplayFrameReferencesConfiguration</v>
-                            <v></v>
+                            <v>conditionalshow</v>
+                            <v>visu_elemdev</v>
                             <v>DescriptionTextId</v>
                             <v>TL_ElementProperties.Desc_ReferencedVisus</v>
                             <v>SortFlag</v>
@@ -775,14 +867,14 @@
                             <v>Simple|Standard</v>
                             <v>DynamicArray</v>
                             <v></v>
-                            <v>conditionalshow</v>
-                            <v>visu_elemdev</v>
+                            <v>DisplayFrameReferencesConfiguration</v>
+                            <v></v>
                             <v>FrameReferences</v>
                             <v></v>
-                            <v>DisplayTextId</v>
-                            <v>TL_ElementProperties.References</v>
                             <v>Storable</v>
                             <v>True</v>
+                            <v>DisplayTextId</v>
+                            <v>TL_ElementProperties.References</v>
                           </d>
                           <v n="ConvDone">true</v>
                         </o>
@@ -903,6 +995,10 @@
                     <o>
                       <v n="Id">1688400930L</v>
                       <v n="Value">"bCmdManual"</v>
+                    </o>
+                    <o>
+                      <v n="Id">1013868361L</v>
+                      <v n="Value">true</v>
                     </o>
                   </l>
                 </o>
@@ -1176,12 +1272,12 @@
                               <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" ckt="String" cvt="String">
                                 <v>Visible</v>
                                 <v>False</v>
-                                <v>ieccodeconversion_array</v>
-                                <v></v>
-                                <v>VisibleChildren</v>
-                                <v>True</v>
                                 <v>DefaultArraySize</v>
                                 <v>5</v>
+                                <v>VisibleChildren</v>
+                                <v>True</v>
+                                <v>ieccodeconversion_array</v>
+                                <v></v>
                                 <v>''NORMAL__COMMENT</v>
                                 <v> We hide this node to prevent having two References nodes
  Nevertheless we want to make sure that the children are displayed</v>
@@ -1237,8 +1333,8 @@
                         <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
                           <v n="AttrFlags">81920UL</v>
                           <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" ckt="String" cvt="String">
-                            <v>conditionalshow</v>
-                            <v>visu_elemdev</v>
+                            <v>DisplayFrameReferencesConfiguration</v>
+                            <v></v>
                             <v>DescriptionTextId</v>
                             <v>TL_ElementProperties.Desc_ReferencedVisus</v>
                             <v>SortFlag</v>
@@ -1249,14 +1345,14 @@
                             <v>Simple|Standard</v>
                             <v>DynamicArray</v>
                             <v></v>
-                            <v>DisplayFrameReferencesConfiguration</v>
-                            <v></v>
+                            <v>conditionalshow</v>
+                            <v>visu_elemdev</v>
                             <v>FrameReferences</v>
                             <v></v>
-                            <v>Storable</v>
-                            <v>True</v>
                             <v>DisplayTextId</v>
                             <v>TL_ElementProperties.References</v>
+                            <v>Storable</v>
+                            <v>True</v>
                           </d>
                           <v n="ConvDone">true</v>
                         </o>
@@ -1378,6 +1474,10 @@
                       <v n="Id">2763477857L</v>
                       <v n="Value">"bCmdParameter"</v>
                     </o>
+                    <o>
+                      <v n="Id">1013868361L</v>
+                      <v n="Value">true</v>
+                    </o>
                   </l>
                 </o>
                 <v n="VisualElementName">"Frame"</v>
@@ -1416,30 +1516,30 @@
           <o n="GeneratedLMMDescriptions" t="GeneratedLanguageModelEntriesData">
             <o n="GeneratedVisuFbDescription" t="GenericFbDescription">
               <d n="FbMethods" t="CaseInsensitiveHashtable_1" ckt="String" cvt="Guid">
-                <v>GetUpdateRects</v>
-                <v>bed2fa9b-d7c9-40eb-b01c-c064f3b2529e</v>
+                <v>HasVisibilityAccess</v>
+                <v>1e9aedee-b19b-448e-ac4a-f798ad956922</v>
                 <v>ContainsPoint</v>
                 <v>40a4732b-2d87-441f-b0c2-37ffb8612fa0</v>
-                <v>FB_Reinit</v>
-                <v>703d78eb-df0b-4878-a292-d4ffabe2f0bc</v>
-                <v>SetStaticState</v>
-                <v>580007f4-9694-42f8-979a-966765be3344</v>
-                <v>Update</v>
-                <v>26c02639-75aa-4874-b4dd-08660a978307</v>
+                <v>HasInputAccess</v>
+                <v>d65a69ab-c425-4cd2-8518-bfa82f230640</v>
+                <v>HasInputAccessIntern</v>
+                <v>733f798b-204d-588a-88b4-f5e313899030</v>
                 <v>GetTooltip</v>
                 <v>7ebaae17-2a84-4f58-9b64-fd356b8140c8</v>
+                <v>GetUpdateRects</v>
+                <v>bed2fa9b-d7c9-40eb-b01c-c064f3b2529e</v>
                 <v>GetNamespace</v>
                 <v>20f5c3cc-181b-4e58-844d-a403e25eb2d0</v>
                 <v>GetTranslator</v>
                 <v>a0b7a645-24ac-4eb0-ab7f-b24c4019d774</v>
+                <v>Update</v>
+                <v>26c02639-75aa-4874-b4dd-08660a978307</v>
                 <v>SetClientData</v>
                 <v>00909a0d-8f0a-44db-9244-732b4d01a826</v>
                 <v>GetClientData</v>
                 <v>19387911-7014-4917-a4b9-b1e8eabcb164</v>
                 <v>Paint</v>
                 <v>1d46f861-98f9-44ca-bfff-48d304a2ff80</v>
-                <v>HasVisibilityAccess</v>
-                <v>1e9aedee-b19b-448e-ac4a-f798ad956922</v>
                 <v>GetElementArray</v>
                 <v>50854df9-488b-412b-8c26-a6d9d78b0750</v>
                 <v>SetVisuFlagsInternal</v>
@@ -1452,18 +1552,22 @@
                 <v>0e584432-2bf3-430b-96cc-c213a0a94e5d</v>
                 <v>Initialize</v>
                 <v>8df17fc2-d67c-4b20-b926-44a30dcef8b1</v>
-                <v>HasInputAccess</v>
-                <v>d65a69ab-c425-4cd2-8518-bfa82f230640</v>
+                <v>HasVisibilityAccessIntern</v>
+                <v>c72a794c-a4e8-56d6-b9f3-6ff38235533b</v>
                 <v>GetSurroundingRect</v>
                 <v>37acab5a-a89f-40ce-a50d-27161a2b243b</v>
+                <v>ElementInfo</v>
+                <v>cfaa177a-807b-4147-88e4-41efd284535e</v>
+                <v>SetStaticState</v>
+                <v>580007f4-9694-42f8-979a-966765be3344</v>
                 <v>GetLocalUsergroup</v>
                 <v>32a53b97-54a8-4d38-b389-376863b67bfa</v>
                 <v>GetName</v>
                 <v>ce598d3e-66de-434e-8b03-d70c8f208d3a</v>
                 <v>GetSize</v>
                 <v>47abaacc-62e9-426e-b0f8-04bcfe72f3dc</v>
-                <v>Destruct</v>
-                <v>b0bf7a52-e7e0-45cf-aa67-30d6c855f231</v>
+                <v>FB_Reinit</v>
+                <v>703d78eb-df0b-4878-a292-d4ffabe2f0bc</v>
                 <v>FB_Exit</v>
                 <v>33b42455-27d8-4002-a6bd-b688697cbd89</v>
                 <v>GetInitializeVersion</v>
@@ -1472,8 +1576,8 @@
                 <v>62a67154-e70a-4358-b244-a224a782e35c</v>
                 <v>HandleInput</v>
                 <v>a3102eb3-7e11-41cd-bd6f-caccad009757</v>
-                <v>ElementInfo</v>
-                <v>cfaa177a-807b-4147-88e4-41efd284535e</v>
+                <v>Destruct</v>
+                <v>b0bf7a52-e7e0-45cf-aa67-30d6c855f231</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{6ebf1ffe-3d8a-4c3c-ace5-8874cf269357}</v>
@@ -1486,10 +1590,10 @@
               <d n="FbMethods" t="CaseInsensitiveHashtable_1" ckt="String" cvt="Guid">
                 <v>FB_Init</v>
                 <v>f79e80a3-b26a-426e-b282-13fe5d2e1917</v>
-                <v>FB_Exit</v>
-                <v>b502354a-64c8-4b2c-8d96-a635d8bf21e5</v>
                 <v>FB_Reinit</v>
                 <v>0d0c4abc-061f-4b47-bf74-cfeb10c22765</v>
+                <v>FB_Exit</v>
+                <v>b502354a-64c8-4b2c-8d96-a635d8bf21e5</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{1149a9d9-0710-4284-a791-4b62318322bc}</v>

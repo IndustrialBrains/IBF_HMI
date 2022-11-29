@@ -536,7 +536,28 @@
                 </a>
                 <d n="SubElements" t="Hashtable" />
                 <v n="VisualElementId">5</v>
-                <l n="UserManagementAccessRights" t="ArrayList" />
+                <l n="UserManagementAccessRights" t="ArrayList" cet="VisuAccessRightInfo">
+                  <o>
+                    <v n="GroupName">"Admin"</v>
+                    <v n="GroupId">1</v>
+                    <v n="AccessRight" t="VisuAccessRightType">Operable</v>
+                  </o>
+                  <o>
+                    <v n="GroupName">"Service"</v>
+                    <v n="GroupId">2</v>
+                    <v n="AccessRight" t="VisuAccessRightType">Operable</v>
+                  </o>
+                  <o>
+                    <v n="GroupName">"Operator"</v>
+                    <v n="GroupId">3</v>
+                    <v n="AccessRight" t="VisuAccessRightType">OnlyVisible</v>
+                  </o>
+                  <o>
+                    <v n="GroupName">"None"</v>
+                    <v n="GroupId">0</v>
+                    <v n="AccessRight" t="VisuAccessRightType">OnlyVisible</v>
+                  </o>
+                </l>
               </o>
               <o>
                 <a n="ConfiguredComplexInputs" et="ComplexInput" />
@@ -721,7 +742,28 @@
                     <a n="LMGuids" et="Guid" />
                     <d n="SubElements" t="Hashtable" />
                     <v n="VisualElementId">7</v>
-                    <l n="UserManagementAccessRights" t="ArrayList" />
+                    <l n="UserManagementAccessRights" t="ArrayList" cet="VisuAccessRightInfo">
+                      <o>
+                        <v n="GroupName">"Admin"</v>
+                        <v n="GroupId">1</v>
+                        <v n="AccessRight" t="VisuAccessRightType">Operable</v>
+                      </o>
+                      <o>
+                        <v n="GroupName">"Service"</v>
+                        <v n="GroupId">2</v>
+                        <v n="AccessRight" t="VisuAccessRightType">Operable</v>
+                      </o>
+                      <o>
+                        <v n="GroupName">"Operator"</v>
+                        <v n="GroupId">3</v>
+                        <v n="AccessRight" t="VisuAccessRightType">OnlyVisible</v>
+                      </o>
+                      <o>
+                        <v n="GroupName">"None"</v>
+                        <v n="GroupId">0</v>
+                        <v n="AccessRight" t="VisuAccessRightType">OnlyVisible</v>
+                      </o>
+                    </l>
                   </o>
                   <o>
                     <a n="ConfiguredComplexInputs" et="ComplexInput" />
@@ -1233,7 +1275,28 @@
                     <a n="LMGuids" et="Guid" />
                     <d n="SubElements" t="Hashtable" />
                     <v n="VisualElementId">15</v>
-                    <l n="UserManagementAccessRights" t="ArrayList" />
+                    <l n="UserManagementAccessRights" t="ArrayList" cet="VisuAccessRightInfo">
+                      <o>
+                        <v n="GroupName">"Admin"</v>
+                        <v n="GroupId">1</v>
+                        <v n="AccessRight" t="VisuAccessRightType">Operable</v>
+                      </o>
+                      <o>
+                        <v n="GroupName">"Service"</v>
+                        <v n="GroupId">2</v>
+                        <v n="AccessRight" t="VisuAccessRightType">Operable</v>
+                      </o>
+                      <o>
+                        <v n="GroupName">"Operator"</v>
+                        <v n="GroupId">3</v>
+                        <v n="AccessRight" t="VisuAccessRightType">OnlyVisible</v>
+                      </o>
+                      <o>
+                        <v n="GroupName">"None"</v>
+                        <v n="GroupId">0</v>
+                        <v n="AccessRight" t="VisuAccessRightType">OnlyVisible</v>
+                      </o>
+                    </l>
                   </o>
                   <o>
                     <a n="ConfiguredComplexInputs" et="ComplexInput" />
@@ -1362,7 +1425,7 @@
                         </o>
                         <o>
                           <v n="Id">2678395525L</v>
-                          <v n="Value">1U</v>
+                          <v n="Value" t="Int16">1</v>
                         </o>
                         <o>
                           <v n="Id">390574330L</v>
@@ -1379,6 +1442,10 @@
                         <o>
                           <v n="Id">823443203L</v>
                           <v n="Value">"923"</v>
+                        </o>
+                        <o>
+                          <v n="Id">1782330054L</v>
+                          <v n="Value">"BS_SOLID"</v>
                         </o>
                       </l>
                     </o>
@@ -2983,7 +3050,28 @@
                     <a n="LMGuids" et="Guid" />
                     <d n="SubElements" t="Hashtable" />
                     <v n="VisualElementId">73</v>
-                    <l n="UserManagementAccessRights" t="ArrayList" />
+                    <l n="UserManagementAccessRights" t="ArrayList" cet="VisuAccessRightInfo">
+                      <o>
+                        <v n="GroupName">"Admin"</v>
+                        <v n="GroupId">1</v>
+                        <v n="AccessRight" t="VisuAccessRightType">Operable</v>
+                      </o>
+                      <o>
+                        <v n="GroupName">"Service"</v>
+                        <v n="GroupId">2</v>
+                        <v n="AccessRight" t="VisuAccessRightType">Operable</v>
+                      </o>
+                      <o>
+                        <v n="GroupName">"Operator"</v>
+                        <v n="GroupId">3</v>
+                        <v n="AccessRight" t="VisuAccessRightType">OnlyVisible</v>
+                      </o>
+                      <o>
+                        <v n="GroupName">"None"</v>
+                        <v n="GroupId">0</v>
+                        <v n="AccessRight" t="VisuAccessRightType">OnlyVisible</v>
+                      </o>
+                    </l>
                   </o>
                 </l>
                 <n n="VisualElementDescription" />
@@ -3240,10 +3328,10 @@
               <d n="FbMethods" t="CaseInsensitiveHashtable_1" ckt="String" cvt="Guid">
                 <v>FB_Init</v>
                 <v>e6e27050-46cf-41d7-bc54-b179ede43a31</v>
-                <v>FB_Exit</v>
-                <v>120c4832-d44f-4a06-babe-31e5d66b3b99</v>
                 <v>FB_Reinit</v>
                 <v>ca8b26e6-79f4-46c8-be55-1009b95aba70</v>
+                <v>FB_Exit</v>
+                <v>120c4832-d44f-4a06-babe-31e5d66b3b99</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{330e55e1-8a51-4964-bdc5-d40533c3ede0}</v>

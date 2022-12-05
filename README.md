@@ -13,6 +13,13 @@ However, a test visualization is available (see `VISU_TEST`), with which you can
 
 ## TODO
 
+### Must have
+
+1. Create separate PNG based screens for Windows CE (first, check https://infosys.beckhoff.com/content/1033/tc3_plc_intro/136113291.html section about SVG files)
+
+### Should have
+
+1. Resize parameter/manual screens (make fixed size)
 
 ### Improvements
 

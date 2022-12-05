@@ -31,7 +31,7 @@ END_VAR
 		refFbManualCtrl	:= GVL_DevManual.fbManualControler,
 	);
 
-	GVL_Parameters.fbParameterHandler();
+	GVL_Parameters.fbParameterHandler(refFbFault := fbFaultHandler);
 
 GVL_HMI.fbHMIControl();
 ]]></ST>

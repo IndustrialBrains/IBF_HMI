@@ -35,7 +35,6 @@
     <AutoUpdateVisuProfile>true</AutoUpdateVisuProfile>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="BaseScreens" />
     <Folder Include="IconsAndPictures" />
     <Folder Include="IconsAndPictures\Backgrounds" />
     <Folder Include="IconsAndPictures\Backgrounds\SVG" />
@@ -58,11 +57,9 @@
     <Folder Include="Screens\Backgrounds" />
     <Folder Include="Screens\Base" />
     <Folder Include="Screens\EventsAndMessage" />
-    <Folder Include="Screens\Manual" />
+    <Folder Include="Screens\User management" />
     <Folder Include="Screens\Parameter" />
-    <Folder Include="Screens\Startup Screen" />
-    <Folder Include="Screens\State_PNG" />
-    <Folder Include="Screens\State_SVG" />
+    <Folder Include="Screens\State" />
     <Folder Include="TextLists" />
   </ItemGroup>
   <ItemGroup>
@@ -84,6 +81,10 @@
       <SubType>Code</SubType>
       <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
     </Compile>
+    <Compile Include="Screens\Backgrounds\UnitsProduced.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
+    </Compile>
     <Compile Include="Screens\Base\BaseScreen.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
@@ -96,71 +97,23 @@
       <SubType>Code</SubType>
       <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
     </Compile>
-    <Compile Include="Screens\EventsAndMessage\MessageScreen.TcVIS">
-      <SubType>Code</SubType>
-      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
-    </Compile>
-    <Compile Include="Screens\Manual\ManualButton_PNG.TcVIS">
-      <SubType>Code</SubType>
-      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
-    </Compile>
-    <Compile Include="Screens\Manual\toManualButton.TcVIS">
-      <SubType>Code</SubType>
-      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
-    </Compile>
     <Compile Include="Screens\Parameter\ParameterControl.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
     </Compile>
-    <Compile Include="Screens\Parameter\ParButton_PNG.TcVIS">
+    <Compile Include="Screens\State\Idle.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
     </Compile>
-    <Compile Include="Screens\Startup Screen\LogoScreenBlanc_SVG.TcVIS">
+    <Compile Include="Screens\State\Manual.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
     </Compile>
-    <Compile Include="Screens\Startup Screen\LogoScreenBliss_PNG.TcVIS">
+    <Compile Include="Screens\State\ParameterScreen.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
     </Compile>
-    <Compile Include="Screens\Startup Screen\LogoScreen_PNG.TcVIS">
-      <SubType>Code</SubType>
-      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
-    </Compile>
-    <Compile Include="Screens\Startup Screen\LogoScreen_SVG.TcVIS">
-      <SubType>Code</SubType>
-      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
-    </Compile>
-    <Compile Include="Screens\State_PNG\Idle_PNG.TcVIS">
-      <SubType>Code</SubType>
-      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
-    </Compile>
-    <Compile Include="Screens\State_PNG\Manual_PNG.TcVIS">
-      <SubType>Code</SubType>
-      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
-    </Compile>
-    <Compile Include="Screens\State_PNG\Parameter_PNG.TcVIS">
-      <SubType>Code</SubType>
-      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
-    </Compile>
-    <Compile Include="Screens\State_PNG\Settings_PNG.TcVIS">
-      <SubType>Code</SubType>
-      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
-    </Compile>
-    <Compile Include="Screens\State_SVG\Idle.TcVIS">
-      <SubType>Code</SubType>
-      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
-    </Compile>
-    <Compile Include="Screens\State_SVG\Manual.TcVIS">
-      <SubType>Code</SubType>
-      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
-    </Compile>
-    <Compile Include="Screens\State_SVG\ParameterScreen.TcVIS">
-      <SubType>Code</SubType>
-      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
-    </Compile>
-    <Compile Include="Screens\State_SVG\Settings.TcVIS">
+    <Compile Include="Screens\User management\LoginButton.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
     </Compile>
@@ -174,10 +127,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="_TESTS\VISU_TEST.TcVIS">
-      <SubType>Code</SubType>
-      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
-    </Compile>
-    <Compile Include="_TESTS\VISU_TEST_LOGIN.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
     </Compile>
@@ -203,10 +152,7 @@
     <Compile Include="IconsAndPictures\Buttons\Buttons_PNG.TcIPO">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="IconsAndPictures\Logos\LogoPool_PNG.TcIPO">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="IconsAndPictures\Logos\LogoPool_SVG.TcIPO">
+    <Compile Include="IconsAndPictures\Logos\LogoPool.TcIPO">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="InputFunctions\FB_HMILREALInput.TcPOU">
@@ -466,18 +412,14 @@
     <Content Include="IconsAndPictures\Buttons\Screen Buttons\SVG\To Parameter Screen.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Logos\Amko Basis.svg">
+    <Content Include="IconsAndPictures\Logos\IndustrialBrains-kleur-licht_liggend.png">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Logos\Amko logo 300ppi.png">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="IconsAndPictures\Logos\Logo Dark blue.png">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="IconsAndPictures\Logos\Logo Dark blue.svg">
-      <SubType>Content</SubType>
-    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <LibraryReference Include="VisuSymbols,3.5.10.0,System">
+      <Namespace>VisuSymbols</Namespace>
+    </LibraryReference>
   </ItemGroup>
   <ProjectExtensions>
     <PlcProjectOptions>

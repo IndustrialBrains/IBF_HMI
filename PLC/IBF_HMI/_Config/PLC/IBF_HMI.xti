@@ -34,7 +34,7 @@
 						<OTCID>#x02010040</OTCID>
 					</ManualConfig>
 					<Priority>8</Priority>
-					<CycleTime>200000000</CycleTime>
+					<CycleTime>100000000</CycleTime>
 				</Context>
 			</Contexts>
 			<TaskPouOids>

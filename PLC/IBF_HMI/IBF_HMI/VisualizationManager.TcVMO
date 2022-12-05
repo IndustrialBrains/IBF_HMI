@@ -43,7 +43,7 @@
               <n n="PositionY" />
             </o>
             <v n="ConvertImages">false</v>
-            <v n="ConversionType">""</v>
+            <v n="ConversionType">"bmp"</v>
           </o>
           <o n="RegisterDesc" t="GenericFbDescription">
             <d n="FbMethods" t="CaseInsensitiveHashtable" ckt="String" cvt="Guid">
@@ -680,7 +680,7 @@
             <o n="ViewSettings" t="TargetVisualizationViewSettings">
               <v n="StartVisu">"VISU_TEST"</v>
               <n n="HtmFileName" />
-              <v n="UpdateRate">200</v>
+              <v n="UpdateRate">100</v>
               <v n="CommBufferSize">50000</v>
               <v n="BestFit">false</v>
               <v n="ClientSizeMode" t="VisualClientSizeMode">AutoDetect</v>

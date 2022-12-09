@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.11">
+  <POU Name="FB_LogView" Id="{2102c28f-b493-401d-bc1b-a6b7383fb28c}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK INTERNAL FB_LogView
+VAR CONSTANT
+	NUMBER_OF_ITEMS_IN_TABLE : UINT := 10;
+END_VAR
+VAR_INPUT
+	bAcknowledge : BOOL; // Clear inactive items from the log
+	bReset : BOOL; // Reset faults
+END_VAR
+VAR_OUTPUT
+	arLog : ARRAY[1..NUMBER_OF_ITEMS_IN_TABLE] OF UDT_LogItem;
+END_VAR
+VAR_TEMP
+	i : UINT; // Iterator
+	stFaultLogItem : UDT_FaultLogItem;
+	stEmptyLogItem : UDT_LogItem;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[// Update array
+stFaultLogItem := GVL_Utilities.fbFaultHandler.Head;
+FOR i := 1 TO NUMBER_OF_ITEMS_IN_TABLE DO
+	IF i <= GVL_Utilities.fbFaultHandler.nFaultsInLog THEN
+		arLog[i].bAlarmState := stFaultLogItem.stFault.Active;
+		arLog[i].sID := stFaultLogItem.Id;
+		arLog[i].sDescription := stFaultLogItem.stFault.Description;
+		arLog[i].sStartTime := DT_To_Str(stFaultLogItem.StartTime);
+		arLog[i].sEndTime := DT_To_Str(stFaultLogItem.EndTime);
+		stFaultLogItem := GVL_Utilities.fbFaultHandler.Next;
+	ELSE
+		arLog[i] := stEmptyLogItem;
+	END_IF
+END_FOR
+
+IF bAcknowledge THEN
+	bAcknowledge R= GVL_Utilities.fbFaultHandler.CmdClearInactive();
+END_IF
+
+IF bReset THEN
+	bReset R= GVL_Utilities.fbFaultHandler.CmdReset();
+END_IF
+]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

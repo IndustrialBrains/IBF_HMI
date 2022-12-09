@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.11">
+  <DUT Name="UDT_LogItem" Id="{4fc01245-d77f-4454-90a8-2f14bfeac423}">
+    <Declaration><![CDATA[TYPE UDT_LogItem :
+STRUCT
+	bAlarmState : BOOL;
+	sID : STRING;
+	sDescription : STRING;
+	sStartTime : STRING[19];
+	sEndTime : STRING[19];
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

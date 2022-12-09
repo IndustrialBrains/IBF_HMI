@@ -71,6 +71,11 @@
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
+              <v n="TextID">"352"</v>
+              <v n="TextDefault">"Acknowledge"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
               <v n="TextID">"196"</v>
               <v n="TextDefault">"Act velocity"</v>
               <l n="LanguageTexts" t="ArrayList" />
@@ -128,6 +133,11 @@
             <o>
               <v n="TextID">"447"</v>
               <v n="TextDefault">"CCW Fast"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"564"</v>
+              <v n="TextDefault">"Clear"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
@@ -211,6 +221,11 @@
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
+              <v n="TextID">"456"</v>
+              <v n="TextDefault">"End"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
               <v n="TextID">"932"</v>
               <v n="TextDefault">"Fault Messages"</v>
               <l n="LanguageTexts" t="ArrayList" />
@@ -233,6 +248,11 @@
             <o>
               <v n="TextID">"274"</v>
               <v n="TextDefault">"Home"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"901"</v>
+              <v n="TextDefault">"ID"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
@@ -533,6 +553,11 @@
             <o>
               <v n="TextID">"795"</v>
               <v n="TextDefault">"SNOOZE"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"922"</v>
+              <v n="TextDefault">"Start"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>

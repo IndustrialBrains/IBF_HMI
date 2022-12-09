@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.11">
+  <POU Name="PRG_TEST_GLOBAL" Id="{b2369d3f-a6c6-470b-8f0b-26f76585cbd1}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM INTERNAL PRG_TEST_GLOBAL // A place to call global function blocks (singletons) that can be used by all tests
+
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[Sys_Variables.fbSystemVariables();
+GVL_Utilities.fbFaultHandler();
+]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

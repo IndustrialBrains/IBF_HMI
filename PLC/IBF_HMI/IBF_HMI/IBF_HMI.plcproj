@@ -89,13 +89,19 @@
       <SubType>Code</SubType>
       <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
     </Compile>
-    <Compile Include="Screens\EventsAndMessage\BasicMessageScreen.TcVIS">
-      <SubType>Code</SubType>
-      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
-    </Compile>
     <Compile Include="Screens\EventsAndMessage\Estop.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\EventsAndMessage\FB_LogView.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screens\EventsAndMessage\LogView.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\EventsAndMessage\UDT_LogItem.TcDUT">
+      <SubType>Code</SubType>
     </Compile>
     <Compile Include="Screens\Parameter\ParameterControl.TcVIS">
       <SubType>Code</SubType>
@@ -123,10 +129,23 @@
     <Compile Include="VISU_TASK.TcTTO">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="_TESTS\FB_Base_Test.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="_TESTS\PRG_TEST.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="_TESTS\PRG_TEST_GLOBAL.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="_TESTS\PRG_TEST_LOGVIEW.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="_TESTS\VISU_TEST.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="_TESTS\VISU_TEST_LOGVIEW.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
     </Compile>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.11">
+  <POU Name="FB_Base_Test" Id="{2de4065a-81b2-40da-80ee-7c5f2731ebce}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Base_Test EXTENDS FB_Base
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[SUPER^();
+]]></ST>
+    </Implementation>
+    <Method Name="Init" Id="{99c2bc24-3576-4200-a311-0977cdb2ff4a}">
+      <Declaration><![CDATA[METHOD PUBLIC Init : BOOL
+VAR_INPUT
+	nId				: UINT ; // Identification number of object
+	nParentId		: UINT ; // Id of higher level if applicable (0 = no parent)
+	eComponentType	: E_ComponentTypes ; // Component or function type
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[// Every FB_Base instance is expected to have an Init method that calls ExecIdentifyDevice. 
+// This Init method will have at least the nId and nParentId inputs.
+// The eComponentType input is optional (can be hardcoded in the Init method, for example see FB_Step).
+// It might also have additional inputs (changing the method signature) therefore it is not declared in FB_Base.
+ExecIdentifyDevice(nId,	nParentId,	eComponentType);
+]]></ST>
+      </Implementation>
+    </Method>
+  </POU>
+</TcPlcObject>

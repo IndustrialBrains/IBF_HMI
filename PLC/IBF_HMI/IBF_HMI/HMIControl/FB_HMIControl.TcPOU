@@ -5,11 +5,9 @@
 VAR_INPUT 
 END_VAR
 VAR_OUTPUT
-	bHideMessage	: BOOL ;
 	bHideEStop 		: BOOL ;
 	bHideBorders	: BOOL ;
 	sEstopText		: STRING ;
-	sOperatorMessage: STRING ;
 END_VAR
 VAR // HMI
 END_VAR
@@ -22,12 +20,15 @@ VAR
 	ePreviousScreen		: E_BaseVisu ; // previous screen
 	
 	bDisableSettings	: BOOL ; // disable settings button
+	
+	fbLogView			: FB_LogView;
 END_VAR
 ]]></Declaration>
     <Implementation>
       <ST><![CDATA[SetScreen();
 SetPopups();
-ButtonEnable();]]></ST>
+ButtonEnable();
+fbLogView();]]></ST>
     </Implementation>
     <Method Name="ButtonEnable" Id="{397e13f1-f0f5-428f-b754-eeb0f6285e52}">
       <Declaration><![CDATA[METHOD PRIVATE ButtonEnable : BOOL
@@ -47,8 +48,6 @@ END_VAR
       <Implementation>
         <ST><![CDATA[// Set popup screens 
 bHideEStop 			:= NOT GVL_HMI.bEstopActive ;
-bHideMessage 		:= GVL_Message.bHideFaults ;
-sOperatorMessage 	:= GVL_Message.sOPeratorMessage ;
 
 GVL_HMI.bEstopActive := FALSE ;]]></ST>
       </Implementation>

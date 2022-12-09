@@ -5,7 +5,13 @@
     <CycleTime>10000</CycleTime>
     <Priority>6</Priority>
     <PouCall>
+      <Name>PRG_TEST_GLOBAL</Name>
+    </PouCall>
+    <PouCall>
       <Name>PRG_TEST</Name>
+    </PouCall>
+    <PouCall>
+      <Name>PRG_TEST_LOGVIEW</Name>
     </PouCall>
     <TaskFBGuid>{58ad7d38-a6fb-49da-bf9a-dceb48f374a8}</TaskFBGuid>
     <Fb_init>{347fdd55-ec0a-4a40-8d30-9017aa6deddf}</Fb_init>

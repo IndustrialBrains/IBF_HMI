@@ -96,6 +96,10 @@
     <Compile Include="Screens\EventsAndMessage\FB_LogView.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Screens\EventsAndMessage\LogButton.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
+    </Compile>
     <Compile Include="Screens\EventsAndMessage\LogView.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>VisualizationManager.TcVMO</DependentUpon>

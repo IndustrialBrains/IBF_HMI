@@ -67,29 +67,53 @@ IF reToSettings.Q  THEN
 	ePreviousScreen := GVL_HMI.eShownScreen ;
 END_IF	
 	
-// Hide border control 
+// Show borders 
 bHideBorders := FALSE ;
 
 // Check active screen	
-IF GVL_HMI.bCmdLog THEN 
-	GVL_HMI.eShownScreen 	:= E_BaseVisu.LogView;
-ELSIF GVL_HMI.bCmdParameter THEN 
-	GVL_HMI.eShownScreen 	:= E_BaseVisu.Parameter ;
-ELSIF GVL_HMI.bCmdManual THEN 
-	GVL_HMI.eShownScreen 	:= E_BaseVisu.Manual;
-ELSIF GVL_HMI.bCmdSettings THEN 
-	GVL_HMI.eShownScreen 	:= E_BaseVisu.Settings ;
-ELSIF NOT GVL_HMI.bCmdSettings AND GVL_HMI.eShownScreen = E_BaseVisu.Settings THEN 
-	GVL_HMI.eShownScreen	:= ePreviousScreen ;
-ELSIF GVL_HMI.bCmdSemiAuto THEN 
-	GVL_HMI.eShownScreen 	:= E_BaseVisu.SemiAutomatic;
-	GVL_HMI.bCmdSemiAuto	:= FALSE ; 
-ELSIF GVL_HMI.bCmdAutomatic THEN 
-	GVL_HMI.eShownScreen := E_BaseVisu.Automatic ;
-	GVL_HMI.bCmdAutomatic	:= FALSE ;
-ELSE 
-	GVL_HMI.eShownScreen := E_BaseVisu.Idle;
-	bHideBorders := TRUE  ;	
+IF (GVL_HMI.eShownScreen = E_BaseVisu.Settings) THEN
+	IF NOT GVL_HMI.bCmdSettings THEN // Button on bottom of screen 
+		GVL_HMI.eShownScreen := E_BaseVisu.Idle ;
+	ELSIF GVL_HMI.bCmdLog THEN 
+		GVL_HMI.bCmdSettings := FALSE ; 
+		GVL_HMI.bCmdLog	:= FALSE ; 
+		GVL_HMI.eShownScreen 	:= E_BaseVisu.LogView;
+	ELSIF GVL_HMI.bCmdParameter THEN 
+		GVL_HMI.bCmdSettings := FALSE ; 
+		GVL_HMI.bCmdParameter	:= FALSE ; 
+		GVL_HMI.eShownScreen 	:= E_BaseVisu.Parameter ;
+	ELSIF GVL_HMI.bCmdManual THEN 
+		GVL_HMI.bCmdSettings := FALSE ; 
+		GVL_HMI.bCmdManual	:= FALSE ; 
+		GVL_HMI.eShownScreen 	:= E_BaseVisu.Manual;
+	ELSIF GVL_HMI.bCmdSemiAuto THEN 
+		GVL_HMI.bCmdSettings := FALSE ; 
+		GVL_HMI.bCmdSemiAuto	:= FALSE ; 
+		GVL_HMI.eShownScreen 	:= E_BaseVisu.SemiAutomatic;
+	ELSIF GVL_HMI.bCmdAutomatic THEN 
+		GVL_HMI.bCmdSettings := FALSE ; 
+		GVL_HMI.bCmdAutomatic	:= FALSE ;
+		GVL_HMI.eShownScreen := E_BaseVisu.Automatic ;
+	END_IF
+ELSE
+	IF GVL_HMI.bCmdSettings THEN // Button on bottom of screen 
+		GVL_HMI.eShownScreen := E_BaseVisu.Settings ;
+	ELSIF GVL_HMI.bCmdLog THEN 
+		GVL_HMI.bCmdLog	:= FALSE ; 
+		GVL_HMI.eShownScreen 	:= E_BaseVisu.LogView;
+	ELSIF GVL_HMI.bCmdParameter THEN 
+		GVL_HMI.bCmdParameter	:= FALSE ; 
+		GVL_HMI.eShownScreen 	:= E_BaseVisu.Parameter ;
+	ELSIF GVL_HMI.bCmdManual THEN 
+		GVL_HMI.bCmdManual	:= FALSE ; 
+		GVL_HMI.eShownScreen 	:= E_BaseVisu.Manual;
+	ELSIF GVL_HMI.bCmdSemiAuto THEN 
+		GVL_HMI.bCmdSemiAuto	:= FALSE ; 
+		GVL_HMI.eShownScreen 	:= E_BaseVisu.SemiAutomatic;
+	ELSIF GVL_HMI.bCmdAutomatic THEN 
+		GVL_HMI.bCmdAutomatic	:= FALSE ;
+		GVL_HMI.eShownScreen := E_BaseVisu.Automatic ;
+	END_IF
 END_IF
 
 // Write parameters to file

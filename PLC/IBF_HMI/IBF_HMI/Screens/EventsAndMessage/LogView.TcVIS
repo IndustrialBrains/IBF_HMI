@@ -392,7 +392,7 @@
                     </o>
                     <o>
                       <v n="Id">72808681L</v>
-                      <v n="Value">"arLog"</v>
+                      <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.arLog "</v>
                     </o>
                     <o>
                       <v n="Id">2597686782L</v>
@@ -405,7 +405,7 @@
                     <o>
                       <v n="Id">3234392039L</v>
                       <o n="Value" t="DataVariableInformation">
-                        <v n="DataArrayType">"ARRAY [1..10] OF UDT_LogItem"</v>
+                        <v n="DataArrayType">"ARRAY [1..NUMBER_OF_ITEMS_IN_TABLE] OF UDT_LogItem"</v>
                         <v n="ColumnCount">5</v>
                         <v n="RowCount">10</v>
                         <v n="FirstColumnIndex">0</v>
@@ -418,20 +418,25 @@
                           <v>String</v>
                         </a>
                         <a n="ColumnNames" cet="String">
-                          <v>arLog[INDEX].bAlarmState</v>
-                          <v>arLog[INDEX].sID</v>
-                          <v>arLog[INDEX].sDescription</v>
-                          <v>arLog[INDEX].sStartTime</v>
-                          <v>arLog[INDEX].sEndTime</v>
+                          <v>GVL_HMI.fbHMIControl.fbLogView.arLog [INDEX].bAlarmState</v>
+                          <v>GVL_HMI.fbHMIControl.fbLogView.arLog [INDEX].sID</v>
+                          <v>GVL_HMI.fbHMIControl.fbLogView.arLog [INDEX].sDescription</v>
+                          <v>GVL_HMI.fbHMIControl.fbLogView.arLog [INDEX].sStartTime</v>
+                          <v>GVL_HMI.fbHMIControl.fbLogView.arLog [INDEX].sEndTime</v>
                         </a>
                         <v n="BaseType">false</v>
-                        <n n="Bounds" />
+                        <a n="Bounds" cet="ArrayBound">
+                          <o>
+                            <v n="Identifier">"GVL_HMI.fbHMIControl.fbLogView.NUMBER_OF_ITEMS_IN_TABLE"</v>
+                            <v n="Value">10</v>
+                          </o>
+                        </a>
                         <v n="ArrayType" t="EArrayType">ArrayOfStruct</v>
                       </o>
                     </o>
                     <o>
                       <v n="Id">1636817830L</v>
-                      <v n="Value">""</v>
+                      <v n="Value">"%s"</v>
                     </o>
                     <o>
                       <v n="Id">1467829077L</v>
@@ -455,19 +460,99 @@
                     </o>
                     <o>
                       <v n="Id">1892666644L</v>
-                      <v n="Value">"arLog[INDEX].sID"</v>
+                      <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.arLog[INDEX].sID"</v>
                     </o>
                     <o>
                       <v n="Id">338671338L</v>
-                      <v n="Value">"arLog[INDEX].sDescription"</v>
+                      <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.arLog [INDEX].sDescription"</v>
                     </o>
                     <o>
                       <v n="Id">2170511999L</v>
-                      <v n="Value">"arLog[INDEX].sStartTime"</v>
+                      <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.arLog [INDEX].sStartTime"</v>
                     </o>
                     <o>
                       <v n="Id">3723444502L</v>
-                      <v n="Value">"arLog[INDEX].sEndTime"</v>
+                      <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.arLog [INDEX].sEndTime"</v>
+                    </o>
+                    <o>
+                      <v n="Id">2232123230L</v>
+                      <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.arLog [INDEX].bAlarmState"</v>
+                    </o>
+                    <o>
+                      <v n="Id">511219082L</v>
+                      <v n="Value">"ID"</v>
+                    </o>
+                    <o>
+                      <v n="Id">1755163831L</v>
+                      <v n="Value">"Description"</v>
+                    </o>
+                    <o>
+                      <v n="Id">4092479075L</v>
+                      <v n="Value">"Start"</v>
+                    </o>
+                    <o>
+                      <v n="Id">2237128397L</v>
+                      <v n="Value">"End"</v>
+                    </o>
+                    <o>
+                      <v n="Id">2685023577L</v>
+                      <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.arLog [INDEX].bAlarmState"</v>
+                    </o>
+                    <o>
+                      <v n="Id">3312258591L</v>
+                      <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.arLog [INDEX].sID"</v>
+                    </o>
+                    <o>
+                      <v n="Id">1791247317L</v>
+                      <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.arLog [INDEX].sDescription"</v>
+                    </o>
+                    <o>
+                      <v n="Id">262371475L</v>
+                      <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.arLog [INDEX].sStartTime"</v>
+                    </o>
+                    <o>
+                      <v n="Id">4008173056L</v>
+                      <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.arLog [INDEX].sEndTime"</v>
+                    </o>
+                    <o>
+                      <v n="Id">4036189354L</v>
+                      <v n="Value">40</v>
+                    </o>
+                    <o>
+                      <v n="Id">1010392116L</v>
+                      <v n="Value" t="Int16">200</v>
+                    </o>
+                    <o>
+                      <v n="Id">2998295511L</v>
+                      <v n="Value" t="Int16">278</v>
+                    </o>
+                    <o>
+                      <v n="Id">2115787593L</v>
+                      <v n="Value" t="Int16">150</v>
+                    </o>
+                    <o>
+                      <v n="Id">1960399440L</v>
+                      <v n="Value" t="Int16">150</v>
+                    </o>
+                    <o>
+                      <v n="Id">3669839856L</v>
+                      <v n="Value">"HCENTER"</v>
+                    </o>
+                    <o>
+                      <v n="Id">1960173153L</v>
+                      <v n="Value">"LEFT"</v>
+                    </o>
+                    <o>
+                      <v n="Id">1562208915L</v>
+                      <v n="Value">"LEFT"</v>
+                    </o>
+                    <o>
+                      <v n="Id">4084595458L</v>
+                      <v n="Value">"HCENTER"</v>
+                    </o>
+                    <o>
+                      <v n="Id">244056951L</v>
+                      <v n="Value">"HCENTER"</v>
                     </o>
                     <o>
                       <v n="Id">2318311169L</v>
@@ -530,104 +615,44 @@
                       <v n="Value">true</v>
                     </o>
                     <o>
-                      <v n="Id">2232123230L</v>
-                      <v n="Value">"arLog[INDEX].bAlarmState"</v>
-                    </o>
-                    <o>
-                      <v n="Id">2685023577L</v>
-                      <v n="Value">"arLog[INDEX].bAlarmState"</v>
-                    </o>
-                    <o>
                       <v n="Id">175837068L</v>
                       <v n="Value">true</v>
-                    </o>
-                    <o>
-                      <v n="Id">4036189354L</v>
-                      <v n="Value">40</v>
-                    </o>
-                    <o>
-                      <v n="Id">3669839856L</v>
-                      <v n="Value">"HCENTER"</v>
-                    </o>
-                    <o>
-                      <v n="Id">511219082L</v>
-                      <v n="Value">"ID"</v>
-                    </o>
-                    <o>
-                      <v n="Id">3312258591L</v>
-                      <v n="Value">"arLog[INDEX].sID"</v>
                     </o>
                     <o>
                       <v n="Id">2541022970L</v>
                       <v n="Value">true</v>
                     </o>
                     <o>
-                      <v n="Id">1010392116L</v>
-                      <v n="Value" t="Int16">100</v>
-                    </o>
-                    <o>
-                      <v n="Id">1960173153L</v>
-                      <v n="Value">"LEFT"</v>
-                    </o>
-                    <o>
-                      <v n="Id">1755163831L</v>
-                      <v n="Value">"Description"</v>
-                    </o>
-                    <o>
-                      <v n="Id">1791247317L</v>
-                      <v n="Value">"arLog[INDEX].sDescription"</v>
-                    </o>
-                    <o>
                       <v n="Id">3944074017L</v>
                       <v n="Value">true</v>
-                    </o>
-                    <o>
-                      <v n="Id">2998295511L</v>
-                      <v n="Value" t="Int16">378</v>
-                    </o>
-                    <o>
-                      <v n="Id">1562208915L</v>
-                      <v n="Value">"LEFT"</v>
-                    </o>
-                    <o>
-                      <v n="Id">4092479075L</v>
-                      <v n="Value">"Start"</v>
-                    </o>
-                    <o>
-                      <v n="Id">262371475L</v>
-                      <v n="Value">"arLog[INDEX].sStartTime"</v>
                     </o>
                     <o>
                       <v n="Id">1981426263L</v>
                       <v n="Value">true</v>
                     </o>
                     <o>
-                      <v n="Id">2115787593L</v>
-                      <v n="Value" t="Int16">150</v>
-                    </o>
-                    <o>
-                      <v n="Id">4084595458L</v>
-                      <v n="Value">"HCENTER"</v>
-                    </o>
-                    <o>
-                      <v n="Id">2237128397L</v>
-                      <v n="Value">"End"</v>
-                    </o>
-                    <o>
-                      <v n="Id">4008173056L</v>
-                      <v n="Value">"arLog[INDEX].sEndTime"</v>
-                    </o>
-                    <o>
                       <v n="Id">332890263L</v>
                       <v n="Value">true</v>
                     </o>
                     <o>
-                      <v n="Id">1960399440L</v>
-                      <v n="Value" t="Int16">150</v>
+                      <v n="Id">3597700437L</v>
+                      <v n="Value">false</v>
                     </o>
                     <o>
-                      <v n="Id">244056951L</v>
-                      <v n="Value">"HCENTER"</v>
+                      <v n="Id">1893244285L</v>
+                      <v n="Value">"901"</v>
+                    </o>
+                    <o>
+                      <v n="Id">1494231439L</v>
+                      <v n="Value">"364"</v>
+                    </o>
+                    <o>
+                      <v n="Id">4151883806L</v>
+                      <v n="Value">"922"</v>
+                    </o>
+                    <o>
+                      <v n="Id">176242795L</v>
+                      <v n="Value">"456"</v>
                     </o>
                   </l>
                 </o>
@@ -645,7 +670,7 @@
                   <v>0e812d89-9c9b-4250-9799-9ebce1db6ae4</v>
                 </a>
                 <d n="SubElements" t="Hashtable" ckt="String" cvt="GenericVisualElem">
-                  <v>Columns.Column.[3].Template</v>
+                  <v>Columns.Column.[2].Template</v>
                   <o>
                     <a n="ConfiguredComplexInputs" et="ComplexInput" />
                     <l n="Elements" t="ArrayList" />
@@ -653,45 +678,91 @@
                     <o n="VisualElemMemberList" t="VisualElemMemberList">
                       <l n="VisualElemMemberList" t="VisualElemMemberCollection" cet="VisualElemMember">
                         <o>
-                          <v n="Id">1226623408L</v>
+                          <v n="Id">494569607L</v>
+                          <v n="Value">4278190080U</v>
+                        </o>
+                        <o>
+                          <v n="Id">2812299069L</v>
+                          <v n="Value">4294967295U</v>
+                        </o>
+                        <o>
+                          <v n="Id">135947015L</v>
+                          <v n="Value">4278190080U</v>
+                        </o>
+                        <o>
+                          <v n="Id">493260384L</v>
+                          <v n="Value">4294967295U</v>
+                        </o>
+                        <o>
+                          <v n="Id">2340015797L</v>
+                          <v n="Value">"HCENTER"</v>
+                        </o>
+                        <o>
+                          <v n="Id">2565699834L</v>
+                          <v n="Value">"VCENTER"</v>
+                        </o>
+                        <o>
+                          <v n="Id">4134387352L</v>
+                          <v n="Value">"NONE"</v>
+                        </o>
+                        <o>
+                          <v n="Id">1603690730L</v>
+                          <v n="Value">"Arial"</v>
+                        </o>
+                        <o>
+                          <v n="Id">4253639993L</v>
+                          <v n="Value" t="Int16">12</v>
+                        </o>
+                        <o>
+                          <v n="Id">2729990903L</v>
+                          <v n="Value">0U</v>
+                        </o>
+                        <o>
+                          <v n="Id">1213979116L</v>
+                          <v n="Value">0U</v>
+                        </o>
+                        <o>
+                          <v n="Id">3488306084L</v>
+                          <v n="Value">4278190080U</v>
+                        </o>
+                        <o>
+                          <v n="Id">1999528970L</v>
+                          <v n="Value">"&lt;toggle/tap variable&gt;"</v>
+                        </o>
+                        <o>
+                          <v n="Id">2200058403L</v>
                           <l n="Value" t="ArrayList" cet="UInt32">
                             <v>4294967295</v>
                           </l>
                         </o>
                         <o>
-                          <v n="Id">2633017417L</v>
-                          <v n="Value">1U</v>
-                        </o>
-                        <o>
-                          <v n="Id">383236773L</v>
-                          <v n="Value">"VCENTER"</v>
-                        </o>
-                        <o>
-                          <v n="Id">3274744456L</v>
-                          <v n="Value">"HCENTER"</v>
-                        </o>
-                        <o>
-                          <v n="Id">983067315L</v>
-                          <v n="Value">"%s"</v>
-                        </o>
-                        <o>
-                          <v n="Id">820392192L</v>
-                          <v n="Value">""</v>
-                        </o>
-                        <o>
-                          <v n="Id">2392705940L</v>
+                          <v n="Id">3880859545L</v>
                           <l n="Value" t="ArrayList" cet="UInt32">
                             <v>4278190080</v>
                           </l>
                         </o>
                         <o>
-                          <v n="Id">3869699466L</v>
-                          <l n="Value" t="ArrayList" cet="UInt32">
-                            <v>4294901760</v>
-                          </l>
+                          <v n="Id">2015484154L</v>
+                          <v n="Value">0</v>
                         </o>
                         <o>
-                          <v n="Id">1023961783L</v>
+                          <v n="Id">1410625495L</v>
+                          <v n="Value">0</v>
+                        </o>
+                        <o>
+                          <v n="Id">588472129L</v>
+                          <v n="Value">0</v>
+                        </o>
+                        <o>
+                          <v n="Id">410945957L</v>
+                          <v n="Value">150</v>
+                        </o>
+                        <o>
+                          <v n="Id">4172606461L</v>
+                          <v n="Value">30</v>
+                        </o>
+                        <o>
+                          <v n="Id">3575642646L</v>
                           <l n="Value" t="ArrayList" cet="NamedStyleFont">
                             <o>
                               <v n="FontStyle">0</v>
@@ -707,30 +778,56 @@
                           </l>
                         </o>
                         <o>
-                          <v n="Id">1954275014L</v>
-                          <v n="Value">"arLog[INDEX].bAlarmState"</v>
-                        </o>
-                        <o>
-                          <v n="Id">2945003362L</v>
+                          <v n="Id">733492883L</v>
                           <l n="Value" t="ArrayList" cet="UInt32">
                             <v>4294954959</v>
                           </l>
                         </o>
                         <o>
-                          <v n="Id">1305620611L</v>
+                          <v n="Id">748166681L</v>
+                          <l n="Value" t="ArrayList" cet="UInt32">
+                            <v>4294901760</v>
+                          </l>
+                        </o>
+                        <o>
+                          <v n="Id">133432149L</v>
+                          <v n="Value">75</v>
+                        </o>
+                        <o>
+                          <v n="Id">1894986691L</v>
+                          <v n="Value">15</v>
+                        </o>
+                        <o>
+                          <v n="Id">1036594343L</v>
+                          <v n="Value">1U</v>
+                        </o>
+                        <o>
+                          <v n="Id">3735400799L</v>
+                          <v n="Value">"LEFT"</v>
+                        </o>
+                        <o>
+                          <v n="Id">393351955L</v>
+                          <v n="Value">"VCENTER"</v>
+                        </o>
+                        <o>
+                          <v n="Id">3438761380L</v>
                           <v n="Value">"VISU_ST_RECTANGLE"</v>
                         </o>
                         <o>
+                          <v n="Id">208337472L</v>
+                          <v n="Value">""</v>
+                        </o>
+                        <o>
+                          <v n="Id">2778129813L</v>
+                          <v n="Value">""</v>
+                        </o>
+                        <o>
                           <v n="Id">2477733581L</v>
-                          <v n="Value">"arLog[INDEX].sStartTime"</v>
+                          <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.arLog [INDEX].sDescription"</v>
                         </o>
                         <o>
-                          <v n="Id">2812299069L</v>
-                          <v n="Value">4294967295U</v>
-                        </o>
-                        <o>
-                          <v n="Id">494569607L</v>
-                          <v n="Value">4278190080U</v>
+                          <v n="Id">3577895464L</v>
+                          <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.arLog[INDEX].bAlarmState"</v>
                         </o>
                         <o>
                           <v n="Id">3719097617L</v>
@@ -773,15 +870,15 @@
                     <v n="VisualElementName">"Rectangle"</v>
                     <v n="VisualElementTypeName">"VisuFbElemSimple"</v>
                     <v n="VisualElementIsRectangle">true</v>
-                    <v n="VisualElementIdentifier">"Columns.Column.[3].Template"</v>
+                    <v n="VisualElementIdentifier">"Columns.Column.[2].Template"</v>
                     <n n="VisualElementOfflinePaintCommands" />
                     <n n="VisualElementFrameInformation" />
                     <d n="VisualElementInputActions" t="Hashtable" />
-                    <v n="VisualElementIdentification">{2760f228-5938-4e11-b021-aa3ec45fba20}</v>
+                    <v n="VisualElementIdentification">{005a885b-585b-4533-bf59-1e49566cd436}</v>
                     <v n="VisualElementOwningObjectGuid">{07ec0c4a-ff40-487e-8918-11af5123365d}</v>
                     <a n="LMGuids" et="Guid" />
                     <d n="SubElements" t="Hashtable" />
-                    <v n="VisualElementId">3</v>
+                    <v n="VisualElementId">2</v>
                     <l n="UserManagementAccessRights" t="ArrayList" />
                   </o>
                   <v>Columns.Column.[4].Template</v>
@@ -847,7 +944,7 @@
                         </o>
                         <o>
                           <v n="Id">2771733710L</v>
-                          <v n="Value">"arLog[INDEX].bAlarmState"</v>
+                          <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.arLog[INDEX].bAlarmState"</v>
                         </o>
                         <o>
                           <v n="Id">2247913015L</v>
@@ -861,7 +958,7 @@
                         </o>
                         <o>
                           <v n="Id">2477733581L</v>
-                          <v n="Value">"arLog[INDEX].sEndTime"</v>
+                          <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.arLog [INDEX].sEndTime"</v>
                         </o>
                         <o>
                           <v n="Id">2812299069L</v>
@@ -923,7 +1020,7 @@
                     <v n="VisualElementId">4</v>
                     <l n="UserManagementAccessRights" t="ArrayList" />
                   </o>
-                  <v>Columns.Column.[2].Template</v>
+                  <v>Columns.Column.[1].Template</v>
                   <o>
                     <a n="ConfiguredComplexInputs" et="ComplexInput" />
                     <l n="Elements" t="ArrayList" />
@@ -931,45 +1028,47 @@
                     <o n="VisualElemMemberList" t="VisualElemMemberList">
                       <l n="VisualElemMemberList" t="VisualElemMemberCollection" cet="VisualElemMember">
                         <o>
-                          <v n="Id">2200058403L</v>
+                          <v n="Id">2498362508L</v>
+                          <v n="Value">"VISU_ST_RECTANGLE"</v>
+                        </o>
+                        <o>
+                          <v n="Id">101722327L</v>
                           <l n="Value" t="ArrayList" cet="UInt32">
                             <v>4294967295</v>
                           </l>
                         </o>
                         <o>
-                          <v n="Id">1036594343L</v>
+                          <v n="Id">99788756L</v>
                           <v n="Value">1U</v>
                         </o>
                         <o>
-                          <v n="Id">393351955L</v>
+                          <v n="Id">362605001L</v>
                           <v n="Value">"VCENTER"</v>
                         </o>
                         <o>
-                          <v n="Id">3735400799L</v>
-                          <v n="Value">"LEFT"</v>
-                        </o>
-                        <o>
-                          <v n="Id">208337472L</v>
-                          <v n="Value">"%s"</v>
-                        </o>
-                        <o>
-                          <v n="Id">2778129813L</v>
-                          <v n="Value">""</v>
-                        </o>
-                        <o>
-                          <v n="Id">3880859545L</v>
-                          <l n="Value" t="ArrayList" cet="UInt32">
-                            <v>4278190080</v>
-                          </l>
-                        </o>
-                        <o>
-                          <v n="Id">748166681L</v>
+                          <v n="Id">2846493933L</v>
                           <l n="Value" t="ArrayList" cet="UInt32">
                             <v>4294901760</v>
                           </l>
                         </o>
                         <o>
-                          <v n="Id">3575642646L</v>
+                          <v n="Id">1467829077L</v>
+                          <v n="Value">"%s"</v>
+                        </o>
+                        <o>
+                          <v n="Id">3245776491L</v>
+                          <v n="Value">""</v>
+                        </o>
+                        <o>
+                          <v n="Id">3984183643L</v>
+                          <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.arLog[INDEX].bAlarmState"</v>
+                        </o>
+                        <o>
+                          <v n="Id">1892666644L</v>
+                          <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.arLog[INDEX].sID"</v>
+                        </o>
+                        <o>
+                          <v n="Id">911625652L</v>
                           <l n="Value" t="ArrayList" cet="NamedStyleFont">
                             <o>
                               <v n="FontStyle">0</v>
@@ -985,22 +1084,24 @@
                           </l>
                         </o>
                         <o>
-                          <v n="Id">3577895464L</v>
-                          <v n="Value">"arLog[INDEX].bAlarmState"</v>
+                          <v n="Id">1560556430L</v>
+                          <l n="Value" t="ArrayList" cet="UInt32">
+                            <v>4278190080</v>
+                          </l>
                         </o>
                         <o>
-                          <v n="Id">733492883L</v>
+                          <v n="Id">4162487590L</v>
+                          <v n="Value">"LEFT"</v>
+                        </o>
+                        <o>
+                          <v n="Id">2090474177L</v>
                           <l n="Value" t="ArrayList" cet="UInt32">
                             <v>4294954959</v>
                           </l>
                         </o>
                         <o>
-                          <v n="Id">3438761380L</v>
-                          <v n="Value">"VISU_ST_RECTANGLE"</v>
-                        </o>
-                        <o>
                           <v n="Id">2477733581L</v>
-                          <v n="Value">"arLog[INDEX].sDescription"</v>
+                          <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.arLog[INDEX].sID"</v>
                         </o>
                         <o>
                           <v n="Id">2812299069L</v>
@@ -1051,15 +1152,15 @@
                     <v n="VisualElementName">"Rectangle"</v>
                     <v n="VisualElementTypeName">"VisuFbElemSimple"</v>
                     <v n="VisualElementIsRectangle">true</v>
-                    <v n="VisualElementIdentifier">"Columns.Column.[2].Template"</v>
+                    <v n="VisualElementIdentifier">"Columns.Column.[1].Template"</v>
                     <n n="VisualElementOfflinePaintCommands" />
                     <n n="VisualElementFrameInformation" />
                     <d n="VisualElementInputActions" t="Hashtable" />
-                    <v n="VisualElementIdentification">{3bc23adf-139c-4872-8b8a-b1b6e7b98dd1}</v>
+                    <v n="VisualElementIdentification">{a585646a-88e7-437a-b0cb-ee119ed4b118}</v>
                     <v n="VisualElementOwningObjectGuid">{07ec0c4a-ff40-487e-8918-11af5123365d}</v>
                     <a n="LMGuids" et="Guid" />
                     <d n="SubElements" t="Hashtable" />
-                    <v n="VisualElementId">2</v>
+                    <v n="VisualElementId">1</v>
                     <l n="UserManagementAccessRights" t="ArrayList" />
                   </o>
                   <v>Columns.Column.[0].Template</v>
@@ -1099,7 +1200,7 @@
                         </o>
                         <o>
                           <v n="Id">1636817830L</v>
-                          <v n="Value">""</v>
+                          <v n="Value">"%s"</v>
                         </o>
                         <o>
                           <v n="Id">1409698558L</v>
@@ -1209,7 +1310,7 @@
                     <v n="VisualElementId">1</v>
                     <l n="UserManagementAccessRights" t="ArrayList" />
                   </o>
-                  <v>Columns.Column.[1].Template</v>
+                  <v>Columns.Column.[3].Template</v>
                   <o>
                     <a n="ConfiguredComplexInputs" et="ComplexInput" />
                     <l n="Elements" t="ArrayList" />
@@ -1217,47 +1318,45 @@
                     <o n="VisualElemMemberList" t="VisualElemMemberList">
                       <l n="VisualElemMemberList" t="VisualElemMemberCollection" cet="VisualElemMember">
                         <o>
-                          <v n="Id">2498362508L</v>
-                          <v n="Value">"VISU_ST_RECTANGLE"</v>
-                        </o>
-                        <o>
-                          <v n="Id">101722327L</v>
+                          <v n="Id">1226623408L</v>
                           <l n="Value" t="ArrayList" cet="UInt32">
                             <v>4294967295</v>
                           </l>
                         </o>
                         <o>
-                          <v n="Id">99788756L</v>
+                          <v n="Id">2633017417L</v>
                           <v n="Value">1U</v>
                         </o>
                         <o>
-                          <v n="Id">362605001L</v>
+                          <v n="Id">383236773L</v>
                           <v n="Value">"VCENTER"</v>
                         </o>
                         <o>
-                          <v n="Id">2846493933L</v>
+                          <v n="Id">3274744456L</v>
+                          <v n="Value">"HCENTER"</v>
+                        </o>
+                        <o>
+                          <v n="Id">983067315L</v>
+                          <v n="Value">"%s"</v>
+                        </o>
+                        <o>
+                          <v n="Id">820392192L</v>
+                          <v n="Value">""</v>
+                        </o>
+                        <o>
+                          <v n="Id">2392705940L</v>
+                          <l n="Value" t="ArrayList" cet="UInt32">
+                            <v>4278190080</v>
+                          </l>
+                        </o>
+                        <o>
+                          <v n="Id">3869699466L</v>
                           <l n="Value" t="ArrayList" cet="UInt32">
                             <v>4294901760</v>
                           </l>
                         </o>
                         <o>
-                          <v n="Id">1467829077L</v>
-                          <v n="Value">"%s"</v>
-                        </o>
-                        <o>
-                          <v n="Id">3245776491L</v>
-                          <v n="Value">""</v>
-                        </o>
-                        <o>
-                          <v n="Id">3984183643L</v>
-                          <v n="Value">"arLog[INDEX].bAlarmState"</v>
-                        </o>
-                        <o>
-                          <v n="Id">1892666644L</v>
-                          <v n="Value">"arLog[INDEX].sID"</v>
-                        </o>
-                        <o>
-                          <v n="Id">911625652L</v>
+                          <v n="Id">1023961783L</v>
                           <l n="Value" t="ArrayList" cet="NamedStyleFont">
                             <o>
                               <v n="FontStyle">0</v>
@@ -1273,24 +1372,22 @@
                           </l>
                         </o>
                         <o>
-                          <v n="Id">1560556430L</v>
-                          <l n="Value" t="ArrayList" cet="UInt32">
-                            <v>4278190080</v>
-                          </l>
+                          <v n="Id">1954275014L</v>
+                          <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.arLog[INDEX].bAlarmState"</v>
                         </o>
                         <o>
-                          <v n="Id">4162487590L</v>
-                          <v n="Value">"LEFT"</v>
-                        </o>
-                        <o>
-                          <v n="Id">2090474177L</v>
+                          <v n="Id">2945003362L</v>
                           <l n="Value" t="ArrayList" cet="UInt32">
                             <v>4294954959</v>
                           </l>
                         </o>
                         <o>
+                          <v n="Id">1305620611L</v>
+                          <v n="Value">"VISU_ST_RECTANGLE"</v>
+                        </o>
+                        <o>
                           <v n="Id">2477733581L</v>
-                          <v n="Value">"arLog[INDEX].sID"</v>
+                          <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.arLog [INDEX].sStartTime"</v>
                         </o>
                         <o>
                           <v n="Id">2812299069L</v>
@@ -1341,15 +1438,15 @@
                     <v n="VisualElementName">"Rectangle"</v>
                     <v n="VisualElementTypeName">"VisuFbElemSimple"</v>
                     <v n="VisualElementIsRectangle">true</v>
-                    <v n="VisualElementIdentifier">"Columns.Column.[1].Template"</v>
+                    <v n="VisualElementIdentifier">"Columns.Column.[3].Template"</v>
                     <n n="VisualElementOfflinePaintCommands" />
                     <n n="VisualElementFrameInformation" />
                     <d n="VisualElementInputActions" t="Hashtable" />
-                    <v n="VisualElementIdentification">{a585646a-88e7-437a-b0cb-ee119ed4b118}</v>
+                    <v n="VisualElementIdentification">{2760f228-5938-4e11-b021-aa3ec45fba20}</v>
                     <v n="VisualElementOwningObjectGuid">{07ec0c4a-ff40-487e-8918-11af5123365d}</v>
                     <a n="LMGuids" et="Guid" />
                     <d n="SubElements" t="Hashtable" />
-                    <v n="VisualElementId">1</v>
+                    <v n="VisualElementId">3</v>
                     <l n="UserManagementAccessRights" t="ArrayList" />
                   </o>
                 </d>
@@ -1364,7 +1461,7 @@
                       <l n="VisualElemMemberList" t="VisualElemMemberCollection" cet="VisualElemMember">
                         <o>
                           <v n="Id">1186196937L</v>
-                          <v n="Value">"bAcknowledge"</v>
+                          <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.bAcknowledge"</v>
                         </o>
                       </l>
                     </o>
@@ -1546,7 +1643,7 @@
                       <l n="VisualElemMemberList" t="VisualElemMemberCollection" cet="VisualElemMember">
                         <o>
                           <v n="Id">1186196937L</v>
-                          <v n="Value">"bReset"</v>
+                          <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.bReset"</v>
                         </o>
                       </l>
                     </o>
@@ -1821,10 +1918,10 @@
               <d n="FbMethods" t="CaseInsensitiveHashtable_1" ckt="String" cvt="Guid">
                 <v>FB_Init</v>
                 <v>cdfe430a-3b41-465c-82d9-9ac2383f5591</v>
-                <v>FB_Exit</v>
-                <v>69c94116-1d1f-45ce-822c-8aa575bb20c4</v>
                 <v>FB_Reinit</v>
                 <v>88ab2294-f25c-4ebc-8a6c-014052921559</v>
+                <v>FB_Exit</v>
+                <v>69c94116-1d1f-45ce-822c-8aa575bb20c4</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{ce7af2f9-f017-4044-b1af-65a3b8f8b31b}</v>
@@ -1877,21 +1974,6 @@
                 <v n="Text">"VAR_IN_OUT"</v>
               </o>
               <o>
-                <v n="Id">8L</v>
-                <n n="Tag" />
-                <v n="Text">"	arLog : ARRAY[1..10] OF UDT_LogItem; // Array size must match declaration in FB_LogView!"</v>
-              </o>
-              <o>
-                <v n="Id">10L</v>
-                <n n="Tag" />
-                <v n="Text">"	bAcknowledge : BOOL; // Clear inactive faults from the log"</v>
-              </o>
-              <o>
-                <v n="Id">12L</v>
-                <n n="Tag" />
-                <v n="Text">"	bReset : BOOL; // Triggers a reset "</v>
-              </o>
-              <o>
                 <v n="Id">1L</v>
                 <n n="Tag" />
                 <v n="Text">"END_VAR"</v>
@@ -1929,6 +2011,7 @@
         </o>
       </Data>
       <TypeList>
+        <Type n="ArrayBound">{ef0fabca-c7d4-4f23-8350-10fa7b208ac1}</Type>
         <Type n="ArrayList">System.Collections.ArrayList</Type>
         <Type n="BackgroundSettings">{1038f12c-dd4b-4f96-87a3-a350fe8f3552}</Type>
         <Type n="BasicTypeNode">{f7e1e748-ea0f-4fcb-b563-94837ee17e8d}</Type>

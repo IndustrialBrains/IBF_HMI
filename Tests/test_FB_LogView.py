@@ -1,5 +1,5 @@
 """Tests for visu LogView
-NOTE: This is a convenience script for manual tests, no asserts are done."""
+NOTE: This is a convenience script for manual tests."""
 # pylint: disable=missing-function-docstring, missing-class-docstring, invalid-name
 import sys
 import unittest
@@ -48,12 +48,16 @@ class Tests(unittest.TestCase):
         active: bool = True,
     ):
         """(De)activate a fault by writing data to stFault"""
+        # Pause execution to make sure the whole FaultType struct is written before it gets handled.
+        # TODO: use conn.write_structure_by_name
+        conn.write_by_name(f"{self.PREFIX}.bEnableTests", False)
         conn.write_by_name(
             f"{self.PREFIX}.fbBase.stFault.FaultType", faulttype, pyads.PLCTYPE_UINT
         )
         if description:
             conn.write_by_name(f"{self.PREFIX}.fbBase.stFault.description", description)
         conn.write_by_name(f"{self.PREFIX}.fbBase.stFault.Active", active)
+        conn.write_by_name(f"{self.PREFIX}.bEnableTests", True)
 
     def _trigger_reset(self):
         """Trigger CmdReset"""
@@ -71,8 +75,7 @@ class Tests(unittest.TestCase):
         """Add a fault of each type, and reset the last one added"""
         # active_faults = 0
         for faulttype in E_FaultTypes:
-            with self.subTest(faulttype.name):
-                self._update_fault(faulttype, str(faulttype))
+            self._update_fault(faulttype, str(faulttype))
 
         conn.write_by_name(f"{self.PREFIX}.fbBase.stFault.Active", False)
         self._trigger_reset()

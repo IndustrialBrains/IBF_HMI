@@ -22,6 +22,7 @@ END_VAR
 	IF bCmdReset THEN
 		bCmdReset R= GVL_Utilities.fbFaultHandler.CmdReset();
 	END_IF
+	
 END_IF
 ]]></ST>
     </Implementation>

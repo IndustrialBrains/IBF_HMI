@@ -11,6 +11,10 @@ VAR_INPUT
 END_VAR
 VAR_OUTPUT
 	arLog : ARRAY[1..NUMBER_OF_ITEMS_IN_TABLE] OF UDT_LogItem;
+	
+	// Log button properties
+	dLogButtonColor 	: DWORD;
+	nLogButtonNumber 	: UINT;
 END_VAR
 VAR_TEMP
 	i : UINT; // Iterator
@@ -34,6 +38,23 @@ FOR i := 1 TO NUMBER_OF_ITEMS_IN_TABLE DO
 	END_IF
 END_FOR
 
+// Set log button properties
+nLogButtonNumber := GVL_Utilities.fbFaultHandler.nFaultsInLog;
+// Set color, in order of priority
+IF GVL_Utilities.fbFaultHandler.arActiveFaultTypes[E_FaultTypes.FF] THEN
+	dLogButtonColor := 16#FF0000; // Red
+ELSIF GVL_Utilities.fbFaultHandler.arActiveFaultTypes[E_FaultTypes.CF] THEN
+	dLogButtonColor := 16#FF0000; // Red
+ELSIF GVL_Utilities.fbFaultHandler.arActiveFaultTypes[E_FaultTypes.MC] THEN
+	dLogButtonColor := 16#FFFF00; // Yellow
+ELSIF GVL_Utilities.fbFaultHandler.arActiveFaultTypes[E_FaultTypes.OW] THEN
+	dLogButtonColor := 16#FFFF00; // Yellow
+ELSIF GVL_Utilities.fbFaultHandler.arActiveFaultTypes[E_FaultTypes.OM] THEN
+	dLogButtonColor := 16#00FF00; // Green
+ELSE
+	dLogButtonColor := 16#FFFFFF; // White
+END_IF 
+
 IF bAcknowledge THEN
 	bAcknowledge R= GVL_Utilities.fbFaultHandler.CmdClearInactive();
 END_IF
@@ -41,6 +62,7 @@ END_IF
 IF bReset THEN
 	bReset R= GVL_Utilities.fbFaultHandler.CmdReset();
 END_IF
+
 ]]></ST>
     </Implementation>
   </POU>

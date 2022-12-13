@@ -35,6 +35,7 @@
     <AutoUpdateVisuProfile>true</AutoUpdateVisuProfile>
   </PropertyGroup>
   <ItemGroup>
+    <Folder Include="HMIControl\DataTypes" />
     <Folder Include="IconsAndPictures" />
     <Folder Include="IconsAndPictures\Backgrounds" />
     <Folder Include="IconsAndPictures\Backgrounds\SVG" />
@@ -63,7 +64,13 @@
     <Folder Include="TextLists" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GVL\E_BaseVisu.TcTLEO">
+    <Compile Include="HMIControl\DataTypes\E_BaseVisu.TcTLEO">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HMIControl\DataTypes\UDT_LogItem.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HMIControl\FB_LogView.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="PlcTask.TcTTO">
@@ -93,9 +100,6 @@
       <SubType>Code</SubType>
       <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
     </Compile>
-    <Compile Include="Screens\EventsAndMessage\FB_LogView.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Screens\EventsAndMessage\LogButton.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
@@ -103,9 +107,6 @@
     <Compile Include="Screens\EventsAndMessage\LogView.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
-    </Compile>
-    <Compile Include="Screens\EventsAndMessage\UDT_LogItem.TcDUT">
-      <SubType>Code</SubType>
     </Compile>
     <Compile Include="Screens\Parameter\ParameterControl.TcVIS">
       <SubType>Code</SubType>
@@ -119,7 +120,11 @@
       <SubType>Code</SubType>
       <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
     </Compile>
-    <Compile Include="Screens\State\ParameterScreen.TcVIS">
+    <Compile Include="Screens\State\Parameters.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\State\Faults.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
     </Compile>
@@ -145,13 +150,18 @@
     <Compile Include="_TESTS\PRG_TEST_LOGVIEW.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="_TESTS\VISU_TEST.TcVIS">
+    <Compile Include="_TESTS\VISU_DummyState.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="_TESTS\VISU_TEST_BASE.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
     </Compile>
     <Compile Include="_TESTS\VISU_TEST_LOGVIEW.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
+      <ExcludeFromBuild>false</ExcludeFromBuild>
     </Compile>
   </ItemGroup>
   <ItemGroup>

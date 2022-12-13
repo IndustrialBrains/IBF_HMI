@@ -71,7 +71,9 @@ END_IF
 bHideBorders := FALSE ;
 
 // Check active screen	
-IF GVL_HMI.bCmdParameter THEN 
+IF GVL_HMI.bCmdLog THEN 
+	GVL_HMI.eShownScreen 	:= E_BaseVisu.LogView;
+ELSIF GVL_HMI.bCmdParameter THEN 
 	GVL_HMI.eShownScreen 	:= E_BaseVisu.Parameter ;
 ELSIF GVL_HMI.bCmdManual THEN 
 	GVL_HMI.eShownScreen 	:= E_BaseVisu.Manual;

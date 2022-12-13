@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.5">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.11">
   <EnumerationTextList Name="E_BaseVisu" Id="{f72244d6-971b-4c1b-8ca1-7c82c03cdf0f}">
     <Declaration><![CDATA[{attribute 'qualified_only'}
 {attribute 'strict'}
@@ -10,7 +10,8 @@ TYPE E_BaseVisu :
 	Parameter,
 	Manual,
 	SemiAutomatic,
-	Automatic
+	Automatic,
+	LogView
 )INT;
 END_TYPE
 ]]></Declaration>
@@ -45,6 +46,11 @@ END_TYPE
             </o>
             <o>
               <v n="TextID">"Automatic"</v>
+              <v n="TextDefault">""</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"LogView"</v>
               <v n="TextDefault">""</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>

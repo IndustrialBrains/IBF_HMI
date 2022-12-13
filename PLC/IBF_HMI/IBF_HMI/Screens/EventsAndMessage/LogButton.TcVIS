@@ -5,11 +5,26 @@
       <Data>
         <o xml:space="preserve" t="VisualObject">
           <n n="LastVisuLanguageModelEntry" />
-          <v n="UniqueIdGenerator">"3"</v>
+          <v n="UniqueIdGenerator">"5"</v>
           <o n="VisualElemList" t="VisualElemList">
             <l n="VisualElementList" t="VisualElemCollection" cet="GenericVisualElem">
               <o>
-                <a n="ConfiguredComplexInputs" et="ComplexInput" />
+                <a n="ConfiguredComplexInputs" cet="ComplexInput">
+                  <o>
+                    <n n="DescriptionTree" />
+                    <o n="VisualElemMemberList" t="VisualElemMemberList">
+                      <l n="VisualElemMemberList" t="VisualElemMemberCollection" cet="VisualElemMember">
+                        <o>
+                          <v n="Id">1186196937L</v>
+                          <v n="Value">"bTap"</v>
+                        </o>
+                      </l>
+                    </o>
+                    <v n="SignatureName">"Visu_TapInput"</v>
+                    <v n="Name">"Tap"</v>
+                    <v n="Description">"Configure the tapping of a Boolean variable"</v>
+                  </o>
+                </a>
                 <l n="Elements" t="ArrayList" />
                 <n n="VisualElementDescription" />
                 <o n="VisualElemMemberList" t="VisualElemMemberList">
@@ -23,7 +38,7 @@
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
                           <v n="Color">-1</v>
-                          <v n="CanonicalName">"BasicElement-Fill-Color"</v>
+                          <v n="CanonicalName">"White"</v>
                         </o>
                       </l>
                     </o>
@@ -32,7 +47,7 @@
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
                           <v n="Color">-1</v>
-                          <v n="CanonicalName">"BasicElement-Fill-Color"</v>
+                          <v n="CanonicalName">"White"</v>
                         </o>
                       </l>
                     </o>
@@ -139,7 +154,7 @@
                     </o>
                     <o>
                       <v n="Id">2678395525L</v>
-                      <v n="Value">1U</v>
+                      <v n="Value" t="Int16">4</v>
                     </o>
                     <o>
                       <v n="Id">564465120L</v>
@@ -151,7 +166,15 @@
                     </o>
                     <o>
                       <v n="Id">2597686782L</v>
-                      <v n="Value">true</v>
+                      <v n="Value">false</v>
+                    </o>
+                    <o>
+                      <v n="Id">3450524324L</v>
+                      <v n="Value">""</v>
+                    </o>
+                    <o>
+                      <v n="Id">401380312L</v>
+                      <v n="Value">"dColor"</v>
                     </o>
                   </l>
                 </o>
@@ -479,12 +502,8 @@
                       <v n="Value">"BS_HOLLOW"</v>
                     </o>
                     <o>
-                      <v n="Id">823443203L</v>
-                      <v n="Value">"689"</v>
-                    </o>
-                    <o>
                       <v n="Id">2477733581L</v>
-                      <v n="Value">"nFaultsInLog"</v>
+                      <v n="Value">"nNumber"</v>
                     </o>
                     <o>
                       <v n="Id">2827249010L</v>
@@ -493,6 +512,10 @@
                     <o>
                       <v n="Id">2597686782L</v>
                       <v n="Value">false</v>
+                    </o>
+                    <o>
+                      <v n="Id">823443203L</v>
+                      <v n="Value">"689"</v>
                     </o>
                   </l>
                 </o>
@@ -612,10 +635,10 @@
               <d n="FbMethods" t="CaseInsensitiveHashtable" ckt="String" cvt="Guid">
                 <v>FB_Init</v>
                 <v>af3a775b-4567-4429-8185-ffc9cb19c394</v>
-                <v>FB_Reinit</v>
-                <v>74c7eef8-7097-4291-b4ca-9e454a559d3a</v>
                 <v>FB_Exit</v>
                 <v>e708efc4-403b-4bcd-9756-860b316b5e8b</v>
+                <v>FB_Reinit</v>
+                <v>74c7eef8-7097-4291-b4ca-9e454a559d3a</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{b8a85498-0d4e-4200-9a7a-8e1c2f2cb288}</v>
@@ -668,9 +691,19 @@
                 <v n="Text">"VAR_IN_OUT"</v>
               </o>
               <o>
+                <v n="Id">5L</v>
+                <n n="Tag" />
+                <v n="Text">"	bTap : BOOL;"</v>
+              </o>
+              <o>
                 <v n="Id">3L</v>
                 <n n="Tag" />
-                <v n="Text">"	nFaultsInLog : UINT;"</v>
+                <v n="Text">"	nNumber : UINT;"</v>
+              </o>
+              <o>
+                <v n="Id">4L</v>
+                <n n="Tag" />
+                <v n="Text">"	dColor : DWORD;"</v>
               </o>
               <o>
                 <v n="Id">1L</v>
@@ -701,8 +734,8 @@
               </o>
               <v>1</v>
               <o>
-                <v n="Width">101</v>
-                <v n="Height">101</v>
+                <v n="Width">104</v>
+                <v n="Height">104</v>
               </o>
             </d2>
             <v n="Version">1</v>

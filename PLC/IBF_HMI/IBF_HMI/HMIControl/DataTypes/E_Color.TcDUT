@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.11">
+  <DUT Name="E_Color" Id="{07da20dc-a8c6-467b-b0a4-21af0a73b900}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+{attribute 'strict'}
+TYPE E_Color :
+(
+	Bg_Light	:= 16#19A9E1, // Theme background color (light blue)
+	Bg_Dark		:= 16#122941, // Theme background color (dark blue)
+	Red			:= 16#FF0000,
+	Yellow 		:= 16#FFFF00,
+	Green 		:= 16#00FF00
+) DWORD;
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

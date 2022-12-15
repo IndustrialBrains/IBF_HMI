@@ -43,10 +43,7 @@
     <Folder Include="IconsAndPictures\Buttons" />
     <Folder Include="IconsAndPictures\Buttons\Control Buttons\SVG" />
     <Folder Include="IconsAndPictures\Buttons\Control Buttons\PNG" />
-    <Folder Include="IconsAndPictures\Buttons\Home Button" />
     <Folder Include="IconsAndPictures\Buttons\Control Buttons" />
-    <Folder Include="IconsAndPictures\Buttons\Home Button\PNG" />
-    <Folder Include="IconsAndPictures\Buttons\Home Button\SVG" />
     <Folder Include="IconsAndPictures\Buttons\Screen Buttons" />
     <Folder Include="IconsAndPictures\Buttons\Screen Buttons\SVG" />
     <Folder Include="IconsAndPictures\Buttons\Screen Buttons\PNG" />
@@ -57,8 +54,8 @@
     <Folder Include="Screens" />
     <Folder Include="Screens\Backgrounds" />
     <Folder Include="Screens\Base" />
-    <Folder Include="Screens\EventsAndMessage" />
-    <Folder Include="Screens\User management" />
+    <Folder Include="Screens\Log" />
+    <Folder Include="Screens\Buttons" />
     <Folder Include="Screens\Parameter" />
     <Folder Include="Screens\State" />
     <Folder Include="TextLists" />
@@ -67,32 +64,33 @@
     <Compile Include="HMIControl\DataTypes\E_BaseVisu.TcTLEO">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="HMIControl\DataTypes\E_Color.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="HMIControl\DataTypes\UDT_LogItem.TcDUT">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="HMIControl\FB_LogView.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="IconsAndPictures\Backgrounds\BackgroundImagePool_PNG.TcIPO">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IconsAndPictures\Backgrounds\BackGroundImagePool_SVG.TcIPO">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="PlcTask.TcTTO">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Screens\Backgrounds\BackgroundNoButton.TcVIS">
+    <Compile Include="Screens\Backgrounds\BG_Borders.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
     </Compile>
-    <Compile Include="Screens\Backgrounds\BackgroundWithBorder.TcVIS">
+    <Compile Include="Screens\Backgrounds\BG_Emergency.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
     </Compile>
-    <Compile Include="Screens\Backgrounds\Background_SafetyAndSettings_SVG.TcVIS">
-      <SubType>Code</SubType>
-      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
-    </Compile>
-    <Compile Include="Screens\Backgrounds\BackgroundLogoIB.TcVIS">
-      <SubType>Code</SubType>
-      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
-    </Compile>
-    <Compile Include="Screens\Backgrounds\UnitsProduced.TcVIS">
+    <Compile Include="Screens\Backgrounds\BG_Logo_IndustrialBrains.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
     </Compile>
@@ -100,15 +98,35 @@
       <SubType>Code</SubType>
       <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
     </Compile>
-    <Compile Include="Screens\EventsAndMessage\Estop.TcVIS">
+    <Compile Include="Screens\Buttons\ButtonHome.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
     </Compile>
-    <Compile Include="Screens\EventsAndMessage\LogButton.TcVIS">
+    <Compile Include="Screens\Buttons\ButtonLogin.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
     </Compile>
-    <Compile Include="Screens\EventsAndMessage\LogView.TcVIS">
+    <Compile Include="Screens\Buttons\ButtonManual.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Buttons\ButtonSettings.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Buttons\ButtonParameters.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Buttons\ButtonLog.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Buttons\ButtonTemplate.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Log\LogView.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
     </Compile>
@@ -128,11 +146,7 @@
       <SubType>Code</SubType>
       <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
     </Compile>
-    <Compile Include="Screens\State\Faults.TcVIS">
-      <SubType>Code</SubType>
-      <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
-    </Compile>
-    <Compile Include="Screens\User management\LoginButton.TcVIS">
+    <Compile Include="Screens\State\Log_.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
     </Compile>
@@ -175,12 +189,6 @@
       <LinkAlways>true</LinkAlways>
     </Compile>
     <Compile Include="HMIControl\FB_HMIControl.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="IconsAndPictures\Backgrounds\PNG\BackgroundImagePool_PNG.TcIPO">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="IconsAndPictures\Backgrounds\SVG\BackGroundImagePool_SVG.TcIPO">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="IconsAndPictures\Buttons\Buttons_SVG.TcIPO">
@@ -311,9 +319,6 @@
     <Content Include="IconsAndPictures\Backgrounds\PNG\Emergency Stop Active.png">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Backgrounds\SVG\Background.svg">
-      <SubType>Content</SubType>
-    </Content>
     <Content Include="IconsAndPictures\Backgrounds\SVG\Background_Bottom.svg">
       <SubType>Content</SubType>
     </Content>
@@ -324,9 +329,6 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="IconsAndPictures\Backgrounds\SVG\Emergency Stop Active 1280 x 800 Red Filled.svg">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="IconsAndPictures\Backgrounds\SVG\Emergency Stop Active 1280 x 800 Red Transparent.svg">
       <SubType>Content</SubType>
     </Content>
     <Content Include="IconsAndPictures\Buttons\Control Buttons\PNG\Continue Sewing Pushed.png">
@@ -404,24 +406,6 @@
     <Content Include="IconsAndPictures\Buttons\Control Buttons\SVG\Start Sewing Pressed.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Home Button\PNG\Home Settings switch.png">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="IconsAndPictures\Buttons\Home Button\PNG\Home-Settings Switch Pushed.png">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="IconsAndPictures\Buttons\Home Button\PNG\Manual mode Idle.png">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="IconsAndPictures\Buttons\Home Button\PNG\Manual Mode Pressed.png">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="IconsAndPictures\Buttons\Home Button\SVG\Home-Settings Switch Pushed.svg">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="IconsAndPictures\Buttons\Home Button\SVG\Home_Settings switch.svg">
-      <SubType>Content</SubType>
-    </Content>
     <Content Include="IconsAndPictures\Buttons\Screen Buttons\PNG\Power Off Pressed.png">
       <SubType>Content</SubType>
     </Content>
@@ -434,19 +418,25 @@
     <Content Include="IconsAndPictures\Buttons\Screen Buttons\PNG\To Parameter Screen.png">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Screen Buttons\SVG\Home Settings switch.svg">
+    <Content Include="IconsAndPictures\Buttons\Screen Buttons\SVG\IconHome.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Screen Buttons\SVG\Home-Settings Switch Pushed.svg">
+    <Content Include="IconsAndPictures\Buttons\Screen Buttons\SVG\IconLog.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Screen Buttons\SVG\Parameter Screen.svg">
+    <Content Include="IconsAndPictures\Buttons\Screen Buttons\SVG\IconLogin.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Screen Buttons\SVG\To Parameter Screen Pressed.svg">
+    <Content Include="IconsAndPictures\Buttons\Screen Buttons\SVG\IconLogout.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="IconsAndPictures\Buttons\Screen Buttons\SVG\To Parameter Screen.svg">
+    <Content Include="IconsAndPictures\Buttons\Screen Buttons\SVG\IconManual.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Screen Buttons\SVG\IconParameters.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IconsAndPictures\Buttons\Screen Buttons\SVG\IconSettings.svg">
       <SubType>Content</SubType>
     </Content>
     <Content Include="IconsAndPictures\Logos\IndustrialBrains-kleur-licht_liggend.png">
@@ -461,8 +451,8 @@
   <ProjectExtensions>
     <PlcProjectOptions>
       <XmlArchive>
-        <Data>
-          <o xml:space="preserve" t="OptionKey">
+  <Data>
+    <o xml:space="preserve" t="OptionKey">
       <v n="Name">"&lt;ProjectRoot&gt;"</v>
       <d n="SubKeys" t="Hashtable" ckt="String" cvt="OptionKey">
         <v>{192FAD59-8248-4824-A8DE-9177C94C195A}</v>
@@ -520,7 +510,7 @@
                   <d n="SubKeys" t="Hashtable" />
                   <d n="Values" t="Hashtable" ckt="String" cvt="Boolean">
                     <v>bActive</v>
-                    <v>False</v>
+                    <v>True</v>
                   </d>
                 </o>
                 <v>6</v>
@@ -574,14 +564,14 @@
       </d>
       <d n="Values" t="Hashtable" />
     </o>
-        </Data>
-        <TypeList>
-          <Type n="Boolean">System.Boolean</Type>
-          <Type n="Hashtable">System.Collections.Hashtable</Type>
-          <Type n="OptionKey">{54dd0eac-a6d8-46f2-8c27-2f43c7e49861}</Type>
-          <Type n="String">System.String</Type>
-        </TypeList>
-      </XmlArchive>
+  </Data>
+  <TypeList>
+    <Type n="Boolean">System.Boolean</Type>
+    <Type n="Hashtable">System.Collections.Hashtable</Type>
+    <Type n="OptionKey">{54dd0eac-a6d8-46f2-8c27-2f43c7e49861}</Type>
+    <Type n="String">System.String</Type>
+  </TypeList>
+</XmlArchive>
     </PlcProjectOptions>
   </ProjectExtensions>
 </Project>

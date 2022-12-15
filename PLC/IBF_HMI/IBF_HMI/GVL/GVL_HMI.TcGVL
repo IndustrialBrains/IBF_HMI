@@ -4,17 +4,6 @@
     <Declaration><![CDATA[{attribute 'qualified_only'}
 VAR_GLOBAL
 	fbHMIControl	: FB_HMIControl ; // HMI control function
-	bCmdSemiAuto	: BOOL ; // Show semi automatic screen
-	bCmdAutomatic 	: BOOL ; // Show automatic screen
-	eShownScreen 	: E_BaseVisu := E_BaseVisu.Idle ;
-	bCmdSettings	: BOOL := FALSE ; // Show settings screen
-	bCmdParameter	: BOOL := FALSE ; // Show parameter screen
-	bCmdManual		: BOOL := FALSE ; // Show manual screen
-	bCmdLog			: BOOL := FALSE ; // Show log screen
-	bEstopActive	: BOOL ; // emergency stop is active
-	sCmdEstopText	: STRING := 'SAFETY FAULT' ; // Emergency stop screen text 
-	nStartVisu		: E_BaseVisu := E_BaseVisu.Idle ;
-	nSelectedMessage : INT; 
 END_VAR]]></Declaration>
   </GVL>
 </TcPlcObject>

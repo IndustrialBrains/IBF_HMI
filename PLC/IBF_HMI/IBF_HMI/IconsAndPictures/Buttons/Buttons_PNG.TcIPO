@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.5">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.11">
   <ImagePool Name="Buttons_PNG" Id="{05f60d37-7759-400f-9f11-801db48069f4}">
     <XmlArchive>
       <Data>
@@ -25,16 +25,6 @@
               <v n="BitmapID">"To Parameter Screen"</v>
               <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Buttons\Screen Buttons\PNG\To Parameter Screen.png"</v>
               <v n="ItemID">23</v>
-            </o>
-            <o>
-              <v n="BitmapID">"Home-Settings Switch"</v>
-              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Buttons\Home Button\PNG\Home Settings switch.png"</v>
-              <v n="ItemID">9</v>
-            </o>
-            <o>
-              <v n="BitmapID">"Home-Settings Switch Pushed"</v>
-              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Buttons\Home Button\PNG\Home-Settings Switch Pushed.png"</v>
-              <v n="ItemID">28</v>
             </o>
             <o>
               <v n="BitmapID">"Continue Sewing Pushed"</v>
@@ -87,16 +77,6 @@
               <v n="ItemID">41</v>
             </o>
             <o>
-              <v n="BitmapID">"Manual mode Idle"</v>
-              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Buttons\Home Button\PNG\Manual mode Idle.png"</v>
-              <v n="ItemID">31</v>
-            </o>
-            <o>
-              <v n="BitmapID">"Manual Mode Pressed"</v>
-              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Buttons\Home Button\PNG\Manual Mode Pressed.png"</v>
-              <v n="ItemID">42</v>
-            </o>
-            <o>
               <v n="BitmapID">""</v>
               <v n="FileID">""</v>
               <v n="ItemID">44</v>
@@ -118,5 +98,20 @@
         <Type n="String">System.String</Type>
       </TypeList>
     </XmlArchive>
+    <ObjectProperties>
+      <XmlArchive>
+        <Data>
+          <o xml:space="preserve" t="ImagePoolPropertiesObject">
+            <v n="DownloadOnlyUsedImages">true</v>
+            <v n="Internal">false</v>
+            <n n="SymbolTextList" />
+          </o>
+        </Data>
+        <TypeList>
+          <Type n="Boolean">System.Boolean</Type>
+          <Type n="ImagePoolPropertiesObject">{a67e96c6-3fd3-4d25-a9ff-723c6b2f78cb}</Type>
+        </TypeList>
+      </XmlArchive>
+    </ObjectProperties>
   </ImagePool>
 </TcPlcObject>

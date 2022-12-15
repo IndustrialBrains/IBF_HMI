@@ -18,15 +18,17 @@ However, a test visualization is available (see `VISU_TEST`), with which you can
 1. Create separate PNG based screens for Windows CE (first, check https://infosys.beckhoff.com/content/1033/tc3_plc_intro/136113291.html section about SVG files)
 
 ### Should have
+1. `FB_LogView`:
+	- change color in table row based on level
+	- do not show zero in alarm icon, only if > 0
 
+### Nice to have
 1. Resize parameter/manual screens (make fixed size)
 
 ### Improvements
 
 1. Add Github action (build)
-1. Fix errors generated when static analysis rule "Unused variables" is enabled
-1. Remove customer logos, should reside in customer projects
-1. Clean up dependencies: Move screens for manual control, parameter control etc. to their respective libraries
+1. Remove customer icons, should reside in customer projects
 
 
 

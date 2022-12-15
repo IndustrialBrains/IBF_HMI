@@ -2,18 +2,16 @@
 <svg
    id="Layer_1"
    data-name="Layer 1"
-   viewBox="0 0 1280 90"
+   viewBox="0 0 120 120"
    version="1.1"
-   sodipodi:docname="Background_Bottom.svg"
+   sodipodi:docname="IconLogout.svg"
    inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
-  <defs
-     id="defs1640" />
   <sodipodi:namedview
-     id="namedview1638"
+     id="namedview15"
      pagecolor="#505050"
      bordercolor="#eeeeee"
      borderopacity="1"
@@ -22,33 +20,36 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
      showgrid="false"
-     inkscape:zoom="2.6737475"
-     inkscape:cx="484.52593"
-     inkscape:cy="109.58402"
+     inkscape:zoom="7.1833333"
+     inkscape:cx="35.707657"
+     inkscape:cy="60"
      inkscape:window-width="2560"
      inkscape:window-height="1377"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="Layer_1" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">.cls-1{fill:#00abe7;}.cls-2{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:6px;}.cls-3{fill:#fff;}</style>
+  </defs>
+  <circle
+     class="cls-2"
+     cx="60"
+     cy="60"
+     r="32.5"
+     id="circle8" />
   <rect
-     y="75"
-     width="1280"
-     height="15"
-     fill="#122941"
-     id="rect1633"
-     inkscape:label="rect1633" />
+     class="cls-1"
+     x="59.709999"
+     y="42.5"
+     width="49.29232"
+     height="35"
+     id="rect10"
+     style="stroke-width:0;fill:#00abe7;fill-opacity:1;stroke:none;stroke-dasharray:none" />
   <path
-     d="M752.5,40V30a30,30,0,0,0-30-30h-165a30,30,0,0,0-30,30V40a35,35,0,0,1-35,35h-15V90h325V75h-15A35,35,0,0,1,752.5,40Z"
-     fill="#122941"
-     id="path1635" />
-  <rect
-     style="fill:#1aa9e1;stroke:none;stroke-width:0.983143;fill-opacity:1"
-     id="rect1891"
-     width="179.01686"
-     height="59.016857"
-     x="550.49158"
-     y="15.491571"
-     rx="29.836145"
-     ry="29.508429" />
+     class="cls-3"
+     d="M108.18,59.12,90.52,48.92A1,1,0,0,0,89,49.8V56a1,1,0,0,1-1,1H60.74a1,1,0,0,0-1,1v4a1,1,0,0,0,1,1H88a1,1,0,0,1,1,1V70.2a1,1,0,0,0,1.53.88l17.66-10.19A1,1,0,0,0,108.18,59.12Z"
+     id="path12" />
 </svg>

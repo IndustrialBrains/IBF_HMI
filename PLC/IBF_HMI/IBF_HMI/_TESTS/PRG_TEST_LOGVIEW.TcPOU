@@ -8,9 +8,6 @@ VAR
 	fbBase : FB_Base_Test;
 	bCmdReset : BOOL;
 END_VAR
-VAR_TEMP
-	i : UDINT; // Iterator
-END_VAR
 ]]></Declaration>
     <Implementation>
       <ST><![CDATA[IF bEnableTests THEN

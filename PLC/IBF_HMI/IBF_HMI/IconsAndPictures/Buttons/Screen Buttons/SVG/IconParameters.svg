@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="Layer_1"
+   data-name="Layer 1"
+   viewBox="0 0 100 100"
+   version="1.1"
+   sodipodi:docname="IconSettings.svg"
+   width="100"
+   height="100"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview8658"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     showgrid="false"
+     inkscape:zoom="6.7222222"
+     inkscape:cx="76.983471"
+     inkscape:cy="30.049587"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="2552"
+     inkscape:window-y="341"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1" />
+  <defs
+     id="defs8639">
+    <style
+       id="style8637">.cls-1{fill:#1aa9e1;}.cls-2{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px;}.cls-3{fill:#fff;}.cls-4{fill:#f1f1f1;}</style>
+  </defs>
+  <title
+     id="title8641">Home Settings switch</title>
+  <path
+     class="cls-4"
+     d="m 25.312067,53.518006 -5.298197,5.540166 2.399445,5.747922 7.683772,0.180056 v 0 a 24.646325,24.612188 0 0 0 4.923717,4.903047 v 0 l 0.208045,7.67313 L 41.040222,80 l 5.54785,-5.304709 v 0 a 24.81276,24.778393 0 0 0 6.934813,0 v 0 L 59.070735,80 l 5.769764,-2.396122 0.180305,-7.67313 v 0 a 24.965326,24.930748 0 0 0 4.909848,-4.916898 v 0 L 77.614424,64.806094 80,59.044321 74.687933,53.504155 v 0 a 24.81276,24.778393 0 0 0 0,-6.925208 v 0 l 5.298197,-5.540166 -2.399445,-5.761773 -7.683772,-0.180055 v 0 a 24.576976,24.542936 0 0 0 -4.895978,-4.958449 v 0 L 64.81276,22.465374 59.070735,20 l -5.54785,5.304709 v 0 a 24.81276,24.778393 0 0 0 -6.934813,0 v 0 l -5.54785,-5.290859 -5.755895,2.396122 -0.305131,7.728532 v 0 a 24.576976,24.542936 0 0 0 -4.909848,4.903047 v 0 L 22.385576,35.235457 20,40.99723 l 5.312067,5.540166 v 0 a 24.81276,24.778393 0 0 0 0,6.925208 z M 46.823856,42.32687 A 8.3217753,8.3102493 0 1 1 42.343967,53.199446 8.3217753,8.3102493 0 0 1 46.823856,42.32687 Z"
+     id="path8653"
+     style="stroke-width:1.386" />
+  <metadata
+     id="metadata8777">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Home Settings switch</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

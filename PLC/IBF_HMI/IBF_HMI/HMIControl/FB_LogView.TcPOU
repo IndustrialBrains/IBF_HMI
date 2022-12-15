@@ -8,6 +8,7 @@ END_VAR
 VAR_INPUT
 	bAcknowledge : BOOL; // Clear inactive items from the log
 	bReset : BOOL; // Reset faults
+	bBlinkButton : BOOL; // Blink the button to alert operator
 END_VAR
 VAR_OUTPUT
 	arLog : ARRAY[1..NUMBER_OF_ITEMS_IN_TABLE] OF UDT_LogItem;
@@ -15,6 +16,9 @@ VAR_OUTPUT
 	// Log button properties
 	dLogButtonColor 	: DWORD;
 	nLogButtonNumber 	: UINT;
+		
+	reNewLogMessages : BOOL; // TRUE when new log messages arrive (for one cycle)
+	nPrevFaultsInLog : UINT;
 END_VAR
 VAR_TEMP
 	i : UINT; // Iterator
@@ -23,7 +27,11 @@ VAR_TEMP
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[// Update array
+      <ST><![CDATA[// Report new log messages
+reNewLogMessages := (GVL_Utilities.fbFaultHandler.nFaultsInLog > nPrevFaultsInLog);
+nPrevFaultsInLog := GVL_Utilities.fbFaultHandler.nFaultsInLog;
+
+// Update array
 stFaultLogItem := GVL_Utilities.fbFaultHandler.Head;
 FOR i := 1 TO NUMBER_OF_ITEMS_IN_TABLE DO
 	IF i <= GVL_Utilities.fbFaultHandler.nFaultsInLog THEN
@@ -41,18 +49,20 @@ END_FOR
 // Set log button properties
 nLogButtonNumber := GVL_Utilities.fbFaultHandler.nFaultsInLog;
 // Set color, in order of priority
-IF GVL_Utilities.fbFaultHandler.arActiveFaultTypes[E_FaultTypes.FF] THEN
-	dLogButtonColor := 16#FF0000; // Red
+IF bBlinkButton AND Sys_Variables.BlinkFast THEN
+	dLogButtonColor := E_Color.Bg_Dark;
+ELSIF GVL_Utilities.fbFaultHandler.arActiveFaultTypes[E_FaultTypes.FF] THEN
+	dLogButtonColor := E_Color.Red;
 ELSIF GVL_Utilities.fbFaultHandler.arActiveFaultTypes[E_FaultTypes.CF] THEN
-	dLogButtonColor := 16#FF0000; // Red
+	dLogButtonColor := E_Color.Red;
 ELSIF GVL_Utilities.fbFaultHandler.arActiveFaultTypes[E_FaultTypes.MC] THEN
-	dLogButtonColor := 16#FFFF00; // Yellow
+	dLogButtonColor := E_Color.Yellow;
 ELSIF GVL_Utilities.fbFaultHandler.arActiveFaultTypes[E_FaultTypes.OW] THEN
-	dLogButtonColor := 16#FFFF00; // Yellow
+	dLogButtonColor := E_Color.Yellow;
 ELSIF GVL_Utilities.fbFaultHandler.arActiveFaultTypes[E_FaultTypes.OM] THEN
-	dLogButtonColor := 16#00FF00; // Green
+	dLogButtonColor := E_Color.Green;
 ELSE
-	dLogButtonColor := 16#FFFFFF; // White
+	dLogButtonColor := E_Color.Bg_Light;
 END_IF 
 
 IF bAcknowledge THEN

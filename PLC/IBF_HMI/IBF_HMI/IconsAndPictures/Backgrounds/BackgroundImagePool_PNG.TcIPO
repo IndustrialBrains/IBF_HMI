@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.5">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.11">
   <ImagePool Name="BackgroundImagePool_PNG" Id="{81bec4d9-4653-41a8-880f-85af569c505e}">
     <XmlArchive>
       <Data>
@@ -48,5 +48,20 @@
         <Type n="String">System.String</Type>
       </TypeList>
     </XmlArchive>
+    <ObjectProperties>
+      <XmlArchive>
+        <Data>
+          <o xml:space="preserve" t="ImagePoolPropertiesObject">
+            <v n="DownloadOnlyUsedImages">true</v>
+            <v n="Internal">false</v>
+            <n n="SymbolTextList" />
+          </o>
+        </Data>
+        <TypeList>
+          <Type n="Boolean">System.Boolean</Type>
+          <Type n="ImagePoolPropertiesObject">{a67e96c6-3fd3-4d25-a9ff-723c6b2f78cb}</Type>
+        </TypeList>
+      </XmlArchive>
+    </ObjectProperties>
   </ImagePool>
 </TcPlcObject>

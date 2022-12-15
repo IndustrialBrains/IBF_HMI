@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.5">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.11">
   <ImagePool Name="Buttons_SVG" Id="{91e4e950-98b9-4d79-b996-e0649e5fcc0c}">
     <XmlArchive>
       <Data>
         <o xml:space="preserve" t="ImagePoolObject">
-          <v n="UniqueIdGenerator">"48"</v>
+          <v n="UniqueIdGenerator">"63"</v>
           <l n="BitmapPool" t="ArrayList" cet="ImagePoolItem">
             <o>
               <v n="BitmapID">"Continue Sewing"</v>
@@ -52,16 +52,6 @@
               <v n="ItemID">32</v>
             </o>
             <o>
-              <v n="BitmapID">"Manual mode Idle"</v>
-              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Buttons\Control Buttons\SVG\Manual mode Idle.svg"</v>
-              <v n="ItemID">33</v>
-            </o>
-            <o>
-              <v n="BitmapID">"Manual Mode Pressed"</v>
-              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Buttons\Control Buttons\SVG\Manual Mode Pressed.svg"</v>
-              <v n="ItemID">34</v>
-            </o>
-            <o>
               <v n="BitmapID">"Pause Pushed"</v>
               <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Buttons\Control Buttons\SVG\Pause Pushed.svg"</v>
               <v n="ItemID">35</v>
@@ -82,34 +72,44 @@
               <v n="ItemID">38</v>
             </o>
             <o>
-              <v n="BitmapID">"Home Settings switch"</v>
-              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Buttons\Screen Buttons\SVG\Home Settings switch.svg"</v>
-              <v n="ItemID">39</v>
+              <v n="BitmapID">"IconHome"</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Buttons\Screen Buttons\SVG\IconHome.svg"</v>
+              <v n="ItemID">44</v>
             </o>
             <o>
-              <v n="BitmapID">"Home-Settings Switch Pushed"</v>
-              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Buttons\Screen Buttons\SVG\Home-Settings Switch Pushed.svg"</v>
-              <v n="ItemID">40</v>
+              <v n="BitmapID">"IconManual"</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Buttons\Screen Buttons\SVG\IconManual.svg"</v>
+              <v n="ItemID">49</v>
             </o>
             <o>
-              <v n="BitmapID">"Parameter Screen"</v>
-              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Buttons\Screen Buttons\SVG\Parameter Screen.svg"</v>
-              <v n="ItemID">41</v>
+              <v n="BitmapID">"IconParameters"</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Buttons\Screen Buttons\SVG\IconParameters.svg"</v>
+              <v n="ItemID">53</v>
             </o>
             <o>
-              <v n="BitmapID">"To Parameter Screen Pressed"</v>
-              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Buttons\Screen Buttons\SVG\To Parameter Screen Pressed.svg"</v>
-              <v n="ItemID">42</v>
+              <v n="BitmapID">"IconLog"</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Buttons\Screen Buttons\SVG\IconLog.svg"</v>
+              <v n="ItemID">55</v>
             </o>
             <o>
-              <v n="BitmapID">"To Parameter Screen"</v>
-              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Buttons\Screen Buttons\SVG\To Parameter Screen.svg"</v>
-              <v n="ItemID">43</v>
+              <v n="BitmapID">"IconSettings"</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Buttons\Screen Buttons\SVG\IconSettings.svg"</v>
+              <v n="ItemID">57</v>
+            </o>
+            <o>
+              <v n="BitmapID">"IconLogin"</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Buttons\Screen Buttons\SVG\IconLogin.svg"</v>
+              <v n="ItemID">59</v>
+            </o>
+            <o>
+              <v n="BitmapID">"IconLogout"</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Buttons\Screen Buttons\SVG\IconLogout.svg"</v>
+              <v n="ItemID">63</v>
             </o>
             <o>
               <v n="BitmapID">""</v>
               <v n="FileID">""</v>
-              <v n="ItemID">44</v>
+              <v n="ItemID">61</v>
             </o>
           </l>
           <v n="GuidInit">{6c1da754-2912-49b3-8a4f-1eeda82f1442}</v>
@@ -128,5 +128,20 @@
         <Type n="String">System.String</Type>
       </TypeList>
     </XmlArchive>
+    <ObjectProperties>
+      <XmlArchive>
+        <Data>
+          <o xml:space="preserve" t="ImagePoolPropertiesObject">
+            <v n="DownloadOnlyUsedImages">true</v>
+            <v n="Internal">false</v>
+            <n n="SymbolTextList" />
+          </o>
+        </Data>
+        <TypeList>
+          <Type n="Boolean">System.Boolean</Type>
+          <Type n="ImagePoolPropertiesObject">{a67e96c6-3fd3-4d25-a9ff-723c6b2f78cb}</Type>
+        </TypeList>
+      </XmlArchive>
+    </ObjectProperties>
   </ImagePool>
 </TcPlcObject>

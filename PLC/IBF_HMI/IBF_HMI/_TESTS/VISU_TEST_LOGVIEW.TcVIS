@@ -98,11 +98,11 @@
                     </o>
                     <o>
                       <v n="Id">2422045748L</v>
-                      <v n="Value" t="Int16">780</v>
+                      <v n="Value" t="Int16">980</v>
                     </o>
                     <o>
                       <v n="Id">2134141914L</v>
-                      <v n="Value" t="Int16">230</v>
+                      <v n="Value" t="Int16">365</v>
                     </o>
                     <o>
                       <v n="Id">394923068L</v>
@@ -550,10 +550,10 @@
               <d n="FbMethods" t="CaseInsensitiveHashtable_1" ckt="String" cvt="Guid">
                 <v>FB_Init</v>
                 <v>2b50ac85-dadd-40f0-b836-25ced5f641fe</v>
-                <v>FB_Exit</v>
-                <v>b32f82e2-e5d8-469a-8e90-7e5c9766b268</v>
                 <v>FB_Reinit</v>
                 <v>376a6791-851c-43a2-8f67-50248b9fea8a</v>
+                <v>FB_Exit</v>
+                <v>b32f82e2-e5d8-469a-8e90-7e5c9766b268</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{9834d649-342d-491e-8519-327d5c8d3b0f}</v>
@@ -634,13 +634,13 @@
             <d2 n="Size" ckt="Int32" cvt="VisualObjectSize">
               <v>0</v>
               <o>
-                <v n="Width">780</v>
-                <v n="Height">230</v>
+                <v n="Width">980</v>
+                <v n="Height">365</v>
               </o>
               <v>1</v>
               <o>
-                <v n="Width">780</v>
-                <v n="Height">230</v>
+                <v n="Width">980</v>
+                <v n="Height">365</v>
               </o>
             </d2>
             <v n="Version">1</v>

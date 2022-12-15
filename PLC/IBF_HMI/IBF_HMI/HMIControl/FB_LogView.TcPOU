@@ -3,7 +3,7 @@
   <POU Name="FB_LogView" Id="{2102c28f-b493-401d-bc1b-a6b7383fb28c}" SpecialFunc="None">
     <Declaration><![CDATA[FUNCTION_BLOCK INTERNAL FB_LogView
 VAR CONSTANT
-	NUMBER_OF_ITEMS_IN_TABLE : UINT := 10;
+	NUMBER_OF_ITEMS_IN_TABLE : UINT := 16;
 END_VAR
 VAR_INPUT
 	bAcknowledge : BOOL; // Clear inactive items from the log
@@ -22,7 +22,7 @@ VAR_OUTPUT
 END_VAR
 VAR_TEMP
 	i : UINT; // Iterator
-	stFaultLogItem : UDT_FaultLogItem;
+	stFaultLogItem : UDT_FaultLogItem();
 	stEmptyLogItem : UDT_LogItem;
 END_VAR
 ]]></Declaration>
@@ -35,11 +35,11 @@ nPrevFaultsInLog := GVL_Utilities.fbFaultHandler.nFaultsInLog;
 stFaultLogItem := GVL_Utilities.fbFaultHandler.Head;
 FOR i := 1 TO NUMBER_OF_ITEMS_IN_TABLE DO
 	IF i <= GVL_Utilities.fbFaultHandler.nFaultsInLog THEN
-		arLog[i].bAlarmState := stFaultLogItem.stFault.Active;
 		arLog[i].sID := stFaultLogItem.Id;
 		arLog[i].sDescription := stFaultLogItem.stFault.Description;
 		arLog[i].sStartTime := DT_To_Str(stFaultLogItem.StartTime);
 		arLog[i].sEndTime := DT_To_Str(stFaultLogItem.EndTime);
+		arLog[i].dColor_Bg := GetFaultTypeColorBG(stFaultLogItem.stFault.FaultType);
 		stFaultLogItem := GVL_Utilities.fbFaultHandler.Next;
 	ELSE
 		arLog[i] := stEmptyLogItem;
@@ -52,15 +52,15 @@ nLogButtonNumber := GVL_Utilities.fbFaultHandler.nFaultsInLog;
 IF bBlinkButton AND Sys_Variables.BlinkFast THEN
 	dLogButtonColor := E_Color.Bg_Dark;
 ELSIF GVL_Utilities.fbFaultHandler.arActiveFaultTypes[E_FaultTypes.FF] THEN
-	dLogButtonColor := E_Color.Red;
+	dLogButtonColor := GetFaultTypeColorBG(E_FaultTypes.FF);
 ELSIF GVL_Utilities.fbFaultHandler.arActiveFaultTypes[E_FaultTypes.CF] THEN
-	dLogButtonColor := E_Color.Red;
+	dLogButtonColor := GetFaultTypeColorBG(E_FaultTypes.CF);
 ELSIF GVL_Utilities.fbFaultHandler.arActiveFaultTypes[E_FaultTypes.MC] THEN
-	dLogButtonColor := E_Color.Yellow;
+	dLogButtonColor := GetFaultTypeColorBG(E_FaultTypes.MC);
 ELSIF GVL_Utilities.fbFaultHandler.arActiveFaultTypes[E_FaultTypes.OW] THEN
-	dLogButtonColor := E_Color.Yellow;
+	dLogButtonColor := GetFaultTypeColorBG(E_FaultTypes.OW);
 ELSIF GVL_Utilities.fbFaultHandler.arActiveFaultTypes[E_FaultTypes.OM] THEN
-	dLogButtonColor := E_Color.Green;
+	dLogButtonColor := GetFaultTypeColorBG(E_FaultTypes.OM);
 ELSE
 	dLogButtonColor := E_Color.Bg_Light;
 END_IF 
@@ -75,5 +75,27 @@ END_IF
 
 ]]></ST>
     </Implementation>
+    <Method Name="GetFaultTypeColorBG" Id="{2d81764f-570f-4723-b755-981481238787}">
+      <Declaration><![CDATA[METHOD PRIVATE GetFaultTypeColorBG : DWORD
+VAR_INPUT
+	eFaultType : E_FaultTypes;
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[CASE eFaultType OF
+	E_FaultTypes.FF:
+		GetFaultTypeColorBG := E_Color.LightRed;
+	E_FaultTypes.CF:
+		GetFaultTypeColorBG := E_Color.LightRed;
+	E_FaultTypes.MC:
+		GetFaultTypeColorBG := E_Color.LightYellow;
+	E_FaultTypes.OW:
+		GetFaultTypeColorBG := E_Color.LightYellow;
+	E_FaultTypes.OM:
+		GetFaultTypeColorBG := E_Color.LightGreen;
+END_CASE
+]]></ST>
+      </Implementation>
+    </Method>
   </POU>
 </TcPlcObject>

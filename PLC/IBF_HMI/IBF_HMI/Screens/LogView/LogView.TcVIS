@@ -5,7 +5,7 @@
       <Data>
         <o xml:space="preserve" t="VisualObject">
           <n n="LastVisuLanguageModelEntry" />
-          <v n="UniqueIdGenerator">"12"</v>
+          <v n="UniqueIdGenerator">"13"</v>
           <o n="VisualElemList" t="VisualElemList">
             <l n="VisualElementList" t="VisualElemCollection" cet="GenericVisualElem">
               <o>
@@ -392,7 +392,7 @@
                     </o>
                     <o>
                       <v n="Id">72808681L</v>
-                      <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.arLog "</v>
+                      <v n="Value">"fbLogView.arLog"</v>
                     </o>
                     <o>
                       <v n="Id">2597686782L</v>
@@ -418,16 +418,16 @@
                           <v>DWord</v>
                         </a>
                         <a n="ColumnNames" cet="String">
-                          <v>GVL_HMI.fbHMIControl.fbLogView.arLog [INDEX].sID</v>
-                          <v>GVL_HMI.fbHMIControl.fbLogView.arLog [INDEX].sDescription</v>
-                          <v>GVL_HMI.fbHMIControl.fbLogView.arLog [INDEX].sStartTime</v>
-                          <v>GVL_HMI.fbHMIControl.fbLogView.arLog [INDEX].sEndTime</v>
-                          <v>GVL_HMI.fbHMIControl.fbLogView.arLog [INDEX].dColor_Bg</v>
+                          <v>fbLogView.arLog [INDEX].sID</v>
+                          <v>fbLogView.arLog [INDEX].sDescription</v>
+                          <v>fbLogView.arLog [INDEX].sStartTime</v>
+                          <v>fbLogView.arLog [INDEX].sEndTime</v>
+                          <v>fbLogView.arLog [INDEX].dColor_Bg</v>
                         </a>
                         <v n="BaseType">false</v>
                         <a n="Bounds" cet="ArrayBound">
                           <o>
-                            <v n="Identifier">"GVL_HMI.fbHMIControl.fbLogView.NUMBER_OF_ITEMS_IN_TABLE"</v>
+                            <v n="Identifier">"fbLogView.NUMBER_OF_ITEMS_IN_TABLE"</v>
                             <v n="Value">16</v>
                           </o>
                         </a>
@@ -456,23 +456,23 @@
                     </o>
                     <o>
                       <v n="Id">3854506369L</v>
-                      <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.arLog[INDEX].sID"</v>
+                      <v n="Value">"fbLogView.arLog[INDEX].sID"</v>
                     </o>
                     <o>
                       <v n="Id">1892666644L</v>
-                      <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.arLog [INDEX].sDescription"</v>
+                      <v n="Value">"fbLogView.arLog [INDEX].sDescription"</v>
                     </o>
                     <o>
                       <v n="Id">338671338L</v>
-                      <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.arLog [INDEX].sStartTime"</v>
+                      <v n="Value">"fbLogView.arLog [INDEX].sStartTime"</v>
                     </o>
                     <o>
                       <v n="Id">2170511999L</v>
-                      <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.arLog [INDEX].sEndTime"</v>
+                      <v n="Value">"fbLogView.arLog [INDEX].sEndTime"</v>
                     </o>
                     <o>
                       <v n="Id">3723444502L</v>
-                      <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.arLog [INDEX].dColor_Bg"</v>
+                      <v n="Value">"fbLogView.arLog [INDEX].dColor_Bg"</v>
                     </o>
                     <o>
                       <v n="Id">2232123230L</v>
@@ -492,27 +492,27 @@
                     </o>
                     <o>
                       <v n="Id">2237128397L</v>
-                      <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.arLog [INDEX].dColor_Bg"</v>
+                      <v n="Value">"fbLogView.arLog [INDEX].dColor_Bg"</v>
                     </o>
                     <o>
                       <v n="Id">2685023577L</v>
-                      <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.arLog [INDEX].sID"</v>
+                      <v n="Value">"fbLogView.arLog [INDEX].sID"</v>
                     </o>
                     <o>
                       <v n="Id">3312258591L</v>
-                      <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.arLog [INDEX].sDescription"</v>
+                      <v n="Value">"fbLogView.arLog [INDEX].sDescription"</v>
                     </o>
                     <o>
                       <v n="Id">1791247317L</v>
-                      <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.arLog [INDEX].sStartTime"</v>
+                      <v n="Value">"fbLogView.arLog [INDEX].sStartTime"</v>
                     </o>
                     <o>
                       <v n="Id">262371475L</v>
-                      <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.arLog [INDEX].sEndTime"</v>
+                      <v n="Value">"fbLogView.arLog [INDEX].sEndTime"</v>
                     </o>
                     <o>
                       <v n="Id">4008173056L</v>
-                      <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.arLog [INDEX].dColor_Bg"</v>
+                      <v n="Value">"fbLogView.arLog [INDEX].dColor_Bg"</v>
                     </o>
                     <o>
                       <v n="Id">4036189354L</v>
@@ -663,7 +663,7 @@
                         </o>
                         <o>
                           <v n="Id">4255443940L</v>
-                          <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.arLog[INDEX].dColor_Bg"</v>
+                          <v n="Value">"fbLogView.arLog[INDEX].dColor_Bg"</v>
                         </o>
                         <o>
                           <v n="Id">1036594343L</v>
@@ -731,7 +731,7 @@
                         </o>
                         <o>
                           <v n="Id">2477733581L</v>
-                          <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.arLog [INDEX].sStartTime"</v>
+                          <v n="Value">"fbLogView.arLog [INDEX].sStartTime"</v>
                         </o>
                         <o>
                           <v n="Id">2812299069L</v>
@@ -793,6 +793,161 @@
                     <v n="VisualElementId">3</v>
                     <l n="UserManagementAccessRights" t="ArrayList" />
                   </o>
+                  <v>Columns.Column.[0].Template</v>
+                  <o>
+                    <a n="ConfiguredComplexInputs" et="ComplexInput" />
+                    <l n="Elements" t="ArrayList" />
+                    <n n="VisualElementDescription" />
+                    <o n="VisualElemMemberList" t="VisualElemMemberList">
+                      <l n="VisualElemMemberList" t="VisualElemMemberCollection" cet="VisualElemMember">
+                        <o>
+                          <v n="Id">719565424L</v>
+                          <v n="Value">""</v>
+                        </o>
+                        <o>
+                          <v n="Id">654395497L</v>
+                          <v n="Value">"fbLogView.arLog[INDEX].dColor_Bg"</v>
+                        </o>
+                        <o>
+                          <v n="Id">365730219L</v>
+                          <v n="Value">"VISU_ST_RECTANGLE"</v>
+                        </o>
+                        <o>
+                          <v n="Id">3425622852L</v>
+                          <l n="Value" t="ArrayList" cet="UInt32">
+                            <v>4294967295</v>
+                          </l>
+                        </o>
+                        <o>
+                          <v n="Id">2764776250L</v>
+                          <v n="Value">1U</v>
+                        </o>
+                        <o>
+                          <v n="Id">339296383L</v>
+                          <v n="Value">"VCENTER"</v>
+                        </o>
+                        <o>
+                          <v n="Id">1912388709L</v>
+                          <v n="Value">""</v>
+                        </o>
+                        <o>
+                          <v n="Id">1670709118L</v>
+                          <l n="Value" t="ArrayList" cet="UInt32">
+                            <v>4294901760</v>
+                          </l>
+                        </o>
+                        <o>
+                          <v n="Id">1636817830L</v>
+                          <v n="Value">"%s"</v>
+                        </o>
+                        <o>
+                          <v n="Id">1409698558L</v>
+                          <v n="Value">""</v>
+                        </o>
+                        <o>
+                          <v n="Id">1279284661L</v>
+                          <v n="Value">""</v>
+                        </o>
+                        <o>
+                          <v n="Id">3854506369L</v>
+                          <v n="Value">"fbLogView.arLog[INDEX].sID"</v>
+                        </o>
+                        <o>
+                          <v n="Id">3728858389L</v>
+                          <l n="Value" t="ArrayList" cet="NamedStyleFont">
+                            <o>
+                              <v n="FontStyle">0</v>
+                              <v n="AdditionalFontStyle" t="UInt16">0</v>
+                              <v n="ExplicitColor">-16777216</v>
+                              <v n="CanonicalName">"Font-Standard"</v>
+                              <v n="FontName">"Arial"</v>
+                              <v n="FontSize">12</v>
+                              <v n="ScriptIdentification">0</v>
+                              <v n="DoubleFontSize" t="Double">0</v>
+                              <n n="NamedColor" />
+                            </o>
+                          </l>
+                        </o>
+                        <o>
+                          <v n="Id">885575555L</v>
+                          <l n="Value" t="ArrayList" cet="UInt32">
+                            <v>4278190080</v>
+                          </l>
+                        </o>
+                        <o>
+                          <v n="Id">3851392753L</v>
+                          <v n="Value">"LEFT"</v>
+                        </o>
+                        <o>
+                          <v n="Id">4171957040L</v>
+                          <l n="Value" t="ArrayList" cet="UInt32">
+                            <v>4294954959</v>
+                          </l>
+                        </o>
+                        <o>
+                          <v n="Id">2477733581L</v>
+                          <v n="Value">"fbLogView.arLog[INDEX].sID"</v>
+                        </o>
+                        <o>
+                          <v n="Id">2812299069L</v>
+                          <v n="Value">4294967295U</v>
+                        </o>
+                        <o>
+                          <v n="Id">494569607L</v>
+                          <v n="Value">4278190080U</v>
+                        </o>
+                        <o>
+                          <v n="Id">3719097617L</v>
+                          <v n="Value">0</v>
+                        </o>
+                        <o>
+                          <v n="Id">1649127785L</v>
+                          <v n="Value">10</v>
+                        </o>
+                        <o>
+                          <v n="Id">357335551L</v>
+                          <v n="Value">10</v>
+                        </o>
+                        <o>
+                          <v n="Id">2422045748L</v>
+                          <v n="Value">150</v>
+                        </o>
+                        <o>
+                          <v n="Id">2134141914L</v>
+                          <v n="Value">30</v>
+                        </o>
+                        <o>
+                          <v n="Id">390574330L</v>
+                          <v n="Value">""</v>
+                        </o>
+                        <o>
+                          <v n="Id">571893170L</v>
+                          <v n="Value">""</v>
+                        </o>
+                        <o>
+                          <v n="Id">550940142L</v>
+                          <v n="Value">0</v>
+                        </o>
+                        <o>
+                          <v n="Id">1473355128L</v>
+                          <v n="Value">0</v>
+                        </o>
+                      </l>
+                    </o>
+                    <v n="VisualElementName">"Rectangle"</v>
+                    <v n="VisualElementTypeName">"VisuFbElemSimple"</v>
+                    <v n="VisualElementIsRectangle">true</v>
+                    <v n="VisualElementIdentifier">"Columns.Column.[0].Template"</v>
+                    <n n="VisualElementOfflinePaintCommands" />
+                    <n n="VisualElementFrameInformation" />
+                    <d n="VisualElementInputActions" t="Hashtable" />
+                    <v n="VisualElementIdentification">{a585646a-88e7-437a-b0cb-ee119ed4b118}</v>
+                    <v n="VisualElementOwningObjectGuid">{07ec0c4a-ff40-487e-8918-11af5123365d}</v>
+                    <a n="LMGuids" et="Guid" />
+                    <d n="SubElements" t="Hashtable" />
+                    <v n="VisualElementId">1</v>
+                    <l n="UserManagementAccessRights" t="ArrayList" />
+                  </o>
                   <v>Columns.Column.[1].Template</v>
                   <o>
                     <a n="ConfiguredComplexInputs" et="ComplexInput" />
@@ -806,7 +961,7 @@
                         </o>
                         <o>
                           <v n="Id">2817202831L</v>
-                          <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.arLog[INDEX].dColor_Bg"</v>
+                          <v n="Value">"fbLogView.arLog[INDEX].dColor_Bg"</v>
                         </o>
                         <o>
                           <v n="Id">99788756L</v>
@@ -874,7 +1029,7 @@
                         </o>
                         <o>
                           <v n="Id">2477733581L</v>
-                          <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.arLog [INDEX].sDescription"</v>
+                          <v n="Value">"fbLogView.arLog [INDEX].sDescription"</v>
                         </o>
                         <o>
                           <v n="Id">2812299069L</v>
@@ -936,161 +1091,6 @@
                     <v n="VisualElementId">2</v>
                     <l n="UserManagementAccessRights" t="ArrayList" />
                   </o>
-                  <v>Columns.Column.[0].Template</v>
-                  <o>
-                    <a n="ConfiguredComplexInputs" et="ComplexInput" />
-                    <l n="Elements" t="ArrayList" />
-                    <n n="VisualElementDescription" />
-                    <o n="VisualElemMemberList" t="VisualElemMemberList">
-                      <l n="VisualElemMemberList" t="VisualElemMemberCollection" cet="VisualElemMember">
-                        <o>
-                          <v n="Id">719565424L</v>
-                          <v n="Value">""</v>
-                        </o>
-                        <o>
-                          <v n="Id">654395497L</v>
-                          <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.arLog[INDEX].dColor_Bg"</v>
-                        </o>
-                        <o>
-                          <v n="Id">365730219L</v>
-                          <v n="Value">"VISU_ST_RECTANGLE"</v>
-                        </o>
-                        <o>
-                          <v n="Id">3425622852L</v>
-                          <l n="Value" t="ArrayList" cet="UInt32">
-                            <v>4294967295</v>
-                          </l>
-                        </o>
-                        <o>
-                          <v n="Id">2764776250L</v>
-                          <v n="Value">1U</v>
-                        </o>
-                        <o>
-                          <v n="Id">339296383L</v>
-                          <v n="Value">"VCENTER"</v>
-                        </o>
-                        <o>
-                          <v n="Id">1912388709L</v>
-                          <v n="Value">""</v>
-                        </o>
-                        <o>
-                          <v n="Id">1670709118L</v>
-                          <l n="Value" t="ArrayList" cet="UInt32">
-                            <v>4294901760</v>
-                          </l>
-                        </o>
-                        <o>
-                          <v n="Id">1636817830L</v>
-                          <v n="Value">"%s"</v>
-                        </o>
-                        <o>
-                          <v n="Id">1409698558L</v>
-                          <v n="Value">""</v>
-                        </o>
-                        <o>
-                          <v n="Id">1279284661L</v>
-                          <v n="Value">""</v>
-                        </o>
-                        <o>
-                          <v n="Id">3854506369L</v>
-                          <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.arLog[INDEX].sID"</v>
-                        </o>
-                        <o>
-                          <v n="Id">3728858389L</v>
-                          <l n="Value" t="ArrayList" cet="NamedStyleFont">
-                            <o>
-                              <v n="FontStyle">0</v>
-                              <v n="AdditionalFontStyle" t="UInt16">0</v>
-                              <v n="ExplicitColor">-16777216</v>
-                              <v n="CanonicalName">"Font-Standard"</v>
-                              <v n="FontName">"Arial"</v>
-                              <v n="FontSize">12</v>
-                              <v n="ScriptIdentification">0</v>
-                              <v n="DoubleFontSize" t="Double">0</v>
-                              <n n="NamedColor" />
-                            </o>
-                          </l>
-                        </o>
-                        <o>
-                          <v n="Id">885575555L</v>
-                          <l n="Value" t="ArrayList" cet="UInt32">
-                            <v>4278190080</v>
-                          </l>
-                        </o>
-                        <o>
-                          <v n="Id">3851392753L</v>
-                          <v n="Value">"LEFT"</v>
-                        </o>
-                        <o>
-                          <v n="Id">4171957040L</v>
-                          <l n="Value" t="ArrayList" cet="UInt32">
-                            <v>4294954959</v>
-                          </l>
-                        </o>
-                        <o>
-                          <v n="Id">2477733581L</v>
-                          <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.arLog[INDEX].sID"</v>
-                        </o>
-                        <o>
-                          <v n="Id">2812299069L</v>
-                          <v n="Value">4294967295U</v>
-                        </o>
-                        <o>
-                          <v n="Id">494569607L</v>
-                          <v n="Value">4278190080U</v>
-                        </o>
-                        <o>
-                          <v n="Id">3719097617L</v>
-                          <v n="Value">0</v>
-                        </o>
-                        <o>
-                          <v n="Id">1649127785L</v>
-                          <v n="Value">10</v>
-                        </o>
-                        <o>
-                          <v n="Id">357335551L</v>
-                          <v n="Value">10</v>
-                        </o>
-                        <o>
-                          <v n="Id">2422045748L</v>
-                          <v n="Value">150</v>
-                        </o>
-                        <o>
-                          <v n="Id">2134141914L</v>
-                          <v n="Value">30</v>
-                        </o>
-                        <o>
-                          <v n="Id">390574330L</v>
-                          <v n="Value">""</v>
-                        </o>
-                        <o>
-                          <v n="Id">571893170L</v>
-                          <v n="Value">""</v>
-                        </o>
-                        <o>
-                          <v n="Id">550940142L</v>
-                          <v n="Value">0</v>
-                        </o>
-                        <o>
-                          <v n="Id">1473355128L</v>
-                          <v n="Value">0</v>
-                        </o>
-                      </l>
-                    </o>
-                    <v n="VisualElementName">"Rectangle"</v>
-                    <v n="VisualElementTypeName">"VisuFbElemSimple"</v>
-                    <v n="VisualElementIsRectangle">true</v>
-                    <v n="VisualElementIdentifier">"Columns.Column.[0].Template"</v>
-                    <n n="VisualElementOfflinePaintCommands" />
-                    <n n="VisualElementFrameInformation" />
-                    <d n="VisualElementInputActions" t="Hashtable" />
-                    <v n="VisualElementIdentification">{a585646a-88e7-437a-b0cb-ee119ed4b118}</v>
-                    <v n="VisualElementOwningObjectGuid">{07ec0c4a-ff40-487e-8918-11af5123365d}</v>
-                    <a n="LMGuids" et="Guid" />
-                    <d n="SubElements" t="Hashtable" />
-                    <v n="VisualElementId">1</v>
-                    <l n="UserManagementAccessRights" t="ArrayList" />
-                  </o>
                   <v>Columns.Column.[3].Template</v>
                   <o>
                     <a n="ConfiguredComplexInputs" et="ComplexInput" />
@@ -1104,7 +1104,7 @@
                         </o>
                         <o>
                           <v n="Id">2102311170L</v>
-                          <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.arLog[INDEX].dColor_Bg"</v>
+                          <v n="Value">"fbLogView.arLog[INDEX].dColor_Bg"</v>
                         </o>
                         <o>
                           <v n="Id">2633017417L</v>
@@ -1176,7 +1176,7 @@
                         </o>
                         <o>
                           <v n="Id">2477733581L</v>
-                          <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.arLog [INDEX].sEndTime"</v>
+                          <v n="Value">"fbLogView.arLog [INDEX].sEndTime"</v>
                         </o>
                         <o>
                           <v n="Id">2812299069L</v>
@@ -1250,7 +1250,7 @@
                       <l n="VisualElemMemberList" t="VisualElemMemberCollection" cet="VisualElemMember">
                         <o>
                           <v n="Id">1186196937L</v>
-                          <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.bAcknowledge"</v>
+                          <v n="Value">"fbLogView.bAcknowledge"</v>
                         </o>
                       </l>
                     </o>
@@ -1405,12 +1405,12 @@
                       <v n="Value">false</v>
                     </o>
                     <o>
-                      <v n="Id">823443203L</v>
-                      <v n="Value">"352"</v>
+                      <v n="Id">2880254039L</v>
+                      <v n="Value">""</v>
                     </o>
                     <o>
-                      <v n="Id">2880254039L</v>
-                      <v n="Value">"TRUE"</v>
+                      <v n="Id">823443203L</v>
+                      <v n="Value">"352"</v>
                     </o>
                   </l>
                 </o>
@@ -1426,188 +1426,6 @@
                 <a n="LMGuids" et="Guid" />
                 <d n="SubElements" t="Hashtable" />
                 <v n="VisualElementId">5</v>
-                <l n="UserManagementAccessRights" t="ArrayList" />
-              </o>
-              <o>
-                <a n="ConfiguredComplexInputs" cet="ComplexInput">
-                  <o>
-                    <n n="DescriptionTree" />
-                    <o n="VisualElemMemberList" t="VisualElemMemberList">
-                      <l n="VisualElemMemberList" t="VisualElemMemberCollection" cet="VisualElemMember">
-                        <o>
-                          <v n="Id">1186196937L</v>
-                          <v n="Value">"GVL_HMI.fbHMIControl.fbLogView.bReset"</v>
-                        </o>
-                      </l>
-                    </o>
-                    <v n="SignatureName">"Visu_TapInput"</v>
-                    <v n="Name">"Tap"</v>
-                    <v n="Description">"Configure the tapping of a Boolean variable"</v>
-                  </o>
-                </a>
-                <l n="Elements" t="ArrayList" />
-                <n n="VisualElementDescription" />
-                <o n="VisualElemMemberList" t="VisualElemMemberList">
-                  <l n="VisualElemMemberList" t="VisualElemMemberCollection" cet="VisualElemMember">
-                    <o>
-                      <v n="Id">571893170L</v>
-                      <v n="Value">""</v>
-                    </o>
-                    <o>
-                      <v n="Id">2340015797L</v>
-                      <v n="Value">"HCENTER"</v>
-                    </o>
-                    <o>
-                      <v n="Id">2565699834L</v>
-                      <v n="Value">"VCENTER"</v>
-                    </o>
-                    <o>
-                      <v n="Id">4134387352L</v>
-                      <v n="Value">"NONE"</v>
-                    </o>
-                    <o>
-                      <v n="Id">1603690730L</v>
-                      <v n="Value">"Arial"</v>
-                    </o>
-                    <o>
-                      <v n="Id">4253639993L</v>
-                      <v n="Value" t="Int16">12</v>
-                    </o>
-                    <o>
-                      <v n="Id">2729990903L</v>
-                      <v n="Value">0U</v>
-                    </o>
-                    <o>
-                      <v n="Id">1213979116L</v>
-                      <v n="Value">0U</v>
-                    </o>
-                    <o>
-                      <v n="Id">3488306084L</v>
-                      <v n="Value">4278190080U</v>
-                    </o>
-                    <o>
-                      <v n="Id">1647042231L</v>
-                      <v n="Value">"&lt;toggle/tap variable&gt;"</v>
-                    </o>
-                    <o>
-                      <v n="Id">2812299069L</v>
-                      <v n="Value">4294967295U</v>
-                    </o>
-                    <o>
-                      <v n="Id">494569607L</v>
-                      <v n="Value">4278190080U</v>
-                    </o>
-                    <o>
-                      <v n="Id">3719097617L</v>
-                      <v n="Value">0</v>
-                    </o>
-                    <o>
-                      <v n="Id">1649127785L</v>
-                      <v n="Value" t="Int16">0</v>
-                    </o>
-                    <o>
-                      <v n="Id">357335551L</v>
-                      <v n="Value" t="Int16">525</v>
-                    </o>
-                    <o>
-                      <v n="Id">2422045748L</v>
-                      <v n="Value">250</v>
-                    </o>
-                    <o>
-                      <v n="Id">2134141914L</v>
-                      <v n="Value">50</v>
-                    </o>
-                    <o>
-                      <v n="Id">1651471674L</v>
-                      <v n="Value">true</v>
-                    </o>
-                    <o>
-                      <v n="Id">2341735680L</v>
-                      <l n="Value" t="ArrayList" cet="NamedStyleColor">
-                        <o>
-                          <v n="Color">-2830136</v>
-                          <v n="CanonicalName">"Element-Control-Color"</v>
-                        </o>
-                      </l>
-                    </o>
-                    <o>
-                      <v n="Id">438423234L</v>
-                      <l n="Value" t="ArrayList" cet="NamedStyleColor">
-                        <o>
-                          <v n="Color">-2830136</v>
-                          <v n="CanonicalName">"Element-Alarm-Fill-Color"</v>
-                        </o>
-                      </l>
-                    </o>
-                    <o>
-                      <v n="Id">3729828405L</v>
-                      <l n="Value" t="ArrayList" cet="NamedStyleFont">
-                        <o>
-                          <v n="FontStyle">0</v>
-                          <v n="AdditionalFontStyle" t="UInt16">0</v>
-                          <v n="ExplicitColor">-16777216</v>
-                          <v n="CanonicalName">"Font-Heading"</v>
-                          <v n="FontName">"Arial"</v>
-                          <v n="FontSize">20</v>
-                          <v n="ScriptIdentification">0</v>
-                          <v n="DoubleFontSize" t="Double">0</v>
-                          <o n="NamedColor" t="NamedStyleColor">
-                            <v n="Color">-16777216</v>
-                            <v n="CanonicalName">"Element-Button-FontColor"</v>
-                          </o>
-                        </o>
-                      </l>
-                    </o>
-                    <o>
-                      <v n="Id">550940142L</v>
-                      <v n="Value">75</v>
-                    </o>
-                    <o>
-                      <v n="Id">1473355128L</v>
-                      <v n="Value">540</v>
-                    </o>
-                    <o>
-                      <v n="Id">493260384L</v>
-                      <v n="Value">4294967295U</v>
-                    </o>
-                    <o>
-                      <v n="Id">135947015L</v>
-                      <v n="Value">4278190080U</v>
-                    </o>
-                    <o>
-                      <v n="Id">2678395525L</v>
-                      <v n="Value">1U</v>
-                    </o>
-                    <o>
-                      <v n="Id">2478807622L</v>
-                      <v n="Value">""</v>
-                    </o>
-                    <o>
-                      <v n="Id">390574330L</v>
-                      <v n="Value">"Reset"</v>
-                    </o>
-                    <o>
-                      <v n="Id">2597686782L</v>
-                      <v n="Value">false</v>
-                    </o>
-                    <o>
-                      <v n="Id">823443203L</v>
-                      <v n="Value">"174"</v>
-                    </o>
-                  </l>
-                </o>
-                <v n="VisualElementName">"Button"</v>
-                <v n="VisualElementTypeName">"VisuFbElemButton"</v>
-                <v n="VisualElementIsRectangle">true</v>
-                <v n="VisualElementIdentifier">"btnReset"</v>
-                <n n="VisualElementOfflinePaintCommands" />
-                <n n="VisualElementFrameInformation" />
-                <d n="VisualElementInputActions" t="Hashtable" />
-                <v n="VisualElementIdentification">{58f97c0d-ecf3-4849-aa7b-80b46d8e2534}</v>
-                <v n="VisualElementOwningObjectGuid">{07ec0c4a-ff40-487e-8918-11af5123365d}</v>
-                <a n="LMGuids" et="Guid" />
-                <d n="SubElements" t="Hashtable" />
-                <v n="VisualElementId">8</v>
                 <l n="UserManagementAccessRights" t="ArrayList" />
               </o>
             </l>
@@ -1766,6 +1584,11 @@
                 <v n="Id">5L</v>
                 <n n="Tag" />
                 <v n="Text">"VAR_IN_OUT"</v>
+              </o>
+              <o>
+                <v n="Id">13L</v>
+                <n n="Tag" />
+                <v n="Text">"	fbLogView : FB_LogView;"</v>
               </o>
               <o>
                 <v n="Id">1L</v>

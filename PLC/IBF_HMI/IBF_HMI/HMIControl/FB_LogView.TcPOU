@@ -39,7 +39,11 @@ FOR i := 1 TO NUMBER_OF_ITEMS_IN_TABLE DO
 		arLog[i].sDescription := stFaultLogItem.stFault.Description;
 		arLog[i].sStartTime := DT_To_Str(stFaultLogItem.StartTime);
 		arLog[i].sEndTime := DT_To_Str(stFaultLogItem.EndTime);
-		arLog[i].dColor_Bg := GetFaultTypeColorBG(stFaultLogItem.stFault.FaultType);
+		IF stFaultLogItem.stFault.Active THEN
+			arLog[i].dColor_Bg := GetFaultTypeColorBG(stFaultLogItem.stFault.FaultType);
+		ELSE
+			arLog[i].dColor_Bg := E_Color.White;
+		END_IF
 		stFaultLogItem := GVL_Utilities.fbFaultHandler.Next;
 	ELSE
 		arLog[i] := stEmptyLogItem;
@@ -92,7 +96,7 @@ END_VAR
 	E_FaultTypes.OW:
 		GetFaultTypeColorBG := E_Color.LightYellow;
 	E_FaultTypes.OM:
-		GetFaultTypeColorBG := E_Color.LightGreen;
+		GetFaultTypeColorBG := E_Color.Bg_Light;
 END_CASE
 ]]></ST>
       </Implementation>

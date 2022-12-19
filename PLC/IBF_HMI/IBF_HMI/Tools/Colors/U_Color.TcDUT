@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.11">
+  <DUT Name="U_Color" Id="{4f0b6c1c-6133-44c0-9dcf-29cf0b8910f5}">
+    <Declaration><![CDATA[TYPE U_Color :
+UNION
+	rgba : ARRAY[0..3] OF BYTE;
+	dw : DWORD;
+END_UNION
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

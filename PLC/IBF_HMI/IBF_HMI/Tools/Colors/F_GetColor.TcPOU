@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.11">
+  <POU Name="F_GetColor" Id="{d7df149f-d6ac-4a56-9418-435c6968b23b}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION F_GetColor : DWORD // Return an opaque color in DWORD format for use in visualisation
+VAR_INPUT
+	Red : BYTE;
+	Green : BYTE;
+	Blue : BYTE;
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[F_GetColor := F_GetTransparantColor(Red, Green, Blue, 16#FF);]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

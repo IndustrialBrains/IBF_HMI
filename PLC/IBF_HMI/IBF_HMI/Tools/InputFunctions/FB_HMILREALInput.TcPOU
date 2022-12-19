@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.4">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.11">
   <POU Name="FB_HMILREALInput" Id="{2bf5a88c-d408-48c1-94f3-d9cc241d3a0f}" SpecialFunc="None">
     <Declaration><![CDATA[FUNCTION_BLOCK PUBLIC FB_HMILREALInput EXTENDS FB_HMIInputBase // Analog value input from HMI
 VAR_INPUT
@@ -29,15 +29,5 @@ END_VAR
 END_IF]]></ST>
       </Implementation>
     </Method>
-    <LineIds Name="FB_HMILREALInput">
-      <LineId Id="9" Count="0" />
-      <LineId Id="37" Count="0" />
-      <LineId Id="39" Count="0" />
-      <LineId Id="38" Count="0" />
-      <LineId Id="40" Count="0" />
-    </LineIds>
-    <LineIds Name="FB_HMILREALInput.SetOutputToPLC">
-      <LineId Id="5" Count="2" />
-    </LineIds>
   </POU>
 </TcPlcObject>

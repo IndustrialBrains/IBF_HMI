@@ -16,14 +16,17 @@ However, a test visualization is available (see `VISU_TEST`), with which you can
 ### Must have
 
 1. Create separate PNG based screens for Windows CE (first, check https://infosys.beckhoff.com/content/1033/tc3_plc_intro/136113291.html section about SVG files)
+1. `FB_LogView`:
+	- test flooding it with faults
 
 ### Should have
-1. `FB_LogView`:
-	- change color in table row based on level
-	- do not show zero in alarm icon, only if > 0
+
 
 ### Nice to have
 1. Resize parameter/manual screens (make fixed size)
+1. `FB_LogView`:
+	- do not show zero in alarm icon, only if > 0
+	- do not blink button when no fault is active
 
 ### Improvements
 

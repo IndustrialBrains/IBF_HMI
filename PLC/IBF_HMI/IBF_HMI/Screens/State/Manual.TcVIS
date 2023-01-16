@@ -437,7 +437,7 @@
                         <l n="TypeNodeChildren" t="ArrayList" cet="BasicTypeNode">
                           <o>
                             <v n="Flags">2L</v>
-                            <v n="BasicTypeNodeValue">"GVL_DevManual.fbManualControler.stHMI"</v>
+                            <v n="BasicTypeNodeValue">"GVL_Devices.fbManualController.stHMI"</v>
                             <v n="BasicTypeNodeAcceptsExpression">true</v>
                             <n n="BasicTypeNodeFastAccess" />
                             <a n="BasicTypeNodeEnumValues" et="String" />
@@ -466,7 +466,7 @@
                           </o>
                           <o>
                             <v n="Flags">2L</v>
-                            <v n="BasicTypeNodeValue">"GVL_DevManual.fbManualControler"</v>
+                            <v n="BasicTypeNodeValue">"GVL_Devices.fbManualController"</v>
                             <v n="BasicTypeNodeAcceptsExpression">true</v>
                             <n n="BasicTypeNodeFastAccess" />
                             <a n="BasicTypeNodeEnumValues" et="String" />
@@ -522,11 +522,11 @@
                     </o>
                     <o>
                       <v n="Id">3317865782L</v>
-                      <v n="Value">"GVL_DevManual.fbManualControler.stHMI"</v>
+                      <v n="Value">"GVL_Devices.fbManualController.stHMI"</v>
                     </o>
                     <o>
                       <v n="Id">4142975515L</v>
-                      <v n="Value">"GVL_DevManual.fbManualControler"</v>
+                      <v n="Value">"GVL_Devices.fbManualController"</v>
                     </o>
                   </l>
                 </o>
@@ -566,18 +566,16 @@
           <o n="GeneratedLMMDescriptions" t="GeneratedLanguageModelEntriesData">
             <o n="GeneratedVisuFbDescription" t="GenericFbDescription">
               <d n="FbMethods" t="CaseInsensitiveHashtable_1" ckt="String" cvt="Guid">
-                <v>HasVisibilityAccess</v>
-                <v>031a0d70-ffd0-48cd-b284-3af87e7e3c6a</v>
+                <v>GetUpdateRects</v>
+                <v>a2bece57-de6e-4a92-ab6e-3732b50be597</v>
                 <v>ContainsPoint</v>
                 <v>e55cdb47-c0f2-4319-92a0-a33ee8f04d30</v>
-                <v>HasInputAccess</v>
-                <v>b956a11e-e7c7-4e3c-88af-4f4eca96f0b3</v>
+                <v>SetStaticState</v>
+                <v>bc682f40-1953-4ad7-a981-a1ef0e84b005</v>
                 <v>HasInputAccessIntern</v>
                 <v>b0f70305-b8d9-5004-897e-e8831693484f</v>
                 <v>GetTooltip</v>
                 <v>917aa7d7-eb1b-4536-b97b-36873a2940c4</v>
-                <v>GetUpdateRects</v>
-                <v>a2bece57-de6e-4a92-ab6e-3732b50be597</v>
                 <v>GetNamespace</v>
                 <v>2561c79c-ff2e-4977-9e27-1b571d695cd7</v>
                 <v>GetTranslator</v>
@@ -590,6 +588,8 @@
                 <v>bd586f0c-aecd-4e1a-a2a5-75a577007548</v>
                 <v>Paint</v>
                 <v>660284fd-0e4a-413f-860c-52cb37d46468</v>
+                <v>HasVisibilityAccess</v>
+                <v>031a0d70-ffd0-48cd-b284-3af87e7e3c6a</v>
                 <v>GetElementArray</v>
                 <v>29f899f6-b80d-4d9b-bb86-5de0ce319999</v>
                 <v>SetVisuFlagsInternal</v>
@@ -602,14 +602,14 @@
                 <v>803cc5e8-b85b-4d70-b56d-6c8a5be697f3</v>
                 <v>Initialize</v>
                 <v>32418b18-5e6b-45c3-a77e-148589771ffa</v>
+                <v>HasInputAccess</v>
+                <v>b956a11e-e7c7-4e3c-88af-4f4eca96f0b3</v>
                 <v>HasVisibilityAccessIntern</v>
                 <v>e3d4c231-ddc7-5147-ae11-ced4076bdfb8</v>
                 <v>GetSurroundingRect</v>
                 <v>428819f2-143e-41f2-a83c-1f36c838cd94</v>
                 <v>ElementInfo</v>
                 <v>f052f637-c87c-49f1-80a8-c6a061be8298</v>
-                <v>SetStaticState</v>
-                <v>bc682f40-1953-4ad7-a981-a1ef0e84b005</v>
                 <v>GetLocalUsergroup</v>
                 <v>428182cd-9d83-4d21-a57f-3ead79e5f664</v>
                 <v>GetName</v>
@@ -640,10 +640,10 @@
               <d n="FbMethods" t="CaseInsensitiveHashtable_1" ckt="String" cvt="Guid">
                 <v>FB_Init</v>
                 <v>2b48ca06-67b6-4c85-ac84-2512551057cd</v>
-                <v>FB_Reinit</v>
-                <v>8127c0a6-fe03-43db-bba5-7b2ac8dffe1e</v>
                 <v>FB_Exit</v>
                 <v>5dc2503c-17bd-4c99-98fe-932124fc5bfa</v>
+                <v>FB_Reinit</v>
+                <v>8127c0a6-fe03-43db-bba5-7b2ac8dffe1e</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{34205c78-c3cf-430b-8859-d2ee39a72a44}</v>

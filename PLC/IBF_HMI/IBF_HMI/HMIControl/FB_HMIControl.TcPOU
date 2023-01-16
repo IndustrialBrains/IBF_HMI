@@ -58,9 +58,6 @@ bInScreenManual 	:= (eShownScreen = E_BaseVisu.Manual);
 bInScreenLog 		:= (eShownScreen = E_BaseVisu.LogView);
 bInScreenParameters := (eShownScreen = E_BaseVisu.Parameter);
 
-// Allow manual control
-IBF_Devices.GVL_DevManual.bAllowManualMode := bInScreenManual;
-
 // Log alert (blinking button)
 bLogAlert S= fbLogView.reNewLogMessages;
 bLogAlert R= bInScreenLog;

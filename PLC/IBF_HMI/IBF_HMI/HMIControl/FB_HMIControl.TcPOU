@@ -28,8 +28,6 @@ VAR
 
 	feWriteParameter 	: F_TRIG ; // Falling edge trigger on leaving parameter or manual screen
 	bWritePar  			: BOOL ; // Busy writing parameters
-
-	bLogAlert : BOOL; // If TRUE, log button blinks to alert operator 
 END_VAR
 ]]></Declaration>
     <Implementation>
@@ -57,11 +55,6 @@ bInScreenSettings 	:= (eShownScreen = E_BaseVisu.Settings);
 bInScreenManual 	:= (eShownScreen = E_BaseVisu.Manual);
 bInScreenLog 		:= (eShownScreen = E_BaseVisu.LogView);
 bInScreenParameters := (eShownScreen = E_BaseVisu.Parameter);
-
-// Log alert (blinking button)
-bLogAlert S= fbLogView.reNewLogMessages;
-bLogAlert R= bInScreenLog;
-fbLogView.bBlinkButton := bLogAlert;
 
 // Save parameters after leaving parameter of manual screen
 // Note: in manual operation one can change parameters as well ("learn" function)

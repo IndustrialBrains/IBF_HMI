@@ -387,6 +387,9 @@
     <Content Include="IconsAndPictures\Buttons\Control Buttons\SVG\Gearing Pushed.svg">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="IconsAndPictures\Buttons\Control Buttons\SVG\IconZero.svg">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="IconsAndPictures\Buttons\Control Buttons\SVG\Log In.svg">
       <SubType>Content</SubType>
     </Content>

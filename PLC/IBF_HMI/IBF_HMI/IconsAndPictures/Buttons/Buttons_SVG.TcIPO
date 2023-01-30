@@ -4,7 +4,7 @@
     <XmlArchive>
       <Data>
         <o xml:space="preserve" t="ImagePoolObject">
-          <v n="UniqueIdGenerator">"63"</v>
+          <v n="UniqueIdGenerator">"65"</v>
           <l n="BitmapPool" t="ArrayList" cet="ImagePoolItem">
             <o>
               <v n="BitmapID">"Continue Sewing"</v>
@@ -107,9 +107,14 @@
               <v n="ItemID">63</v>
             </o>
             <o>
+              <v n="BitmapID">"IconZero"</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|IconsAndPictures\Buttons\Control Buttons\SVG\IconZero.svg"</v>
+              <v n="ItemID">61</v>
+            </o>
+            <o>
               <v n="BitmapID">""</v>
               <v n="FileID">""</v>
-              <v n="ItemID">61</v>
+              <v n="ItemID">64</v>
             </o>
           </l>
           <v n="GuidInit">{6c1da754-2912-49b3-8a4f-1eeda82f1442}</v>

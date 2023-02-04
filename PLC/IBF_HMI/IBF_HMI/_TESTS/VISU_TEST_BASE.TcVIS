@@ -783,7 +783,7 @@
                               <o>
                                 <v n="VisuNodeReferenceGuid">{00000000-0000-0000-0000-000000000000}</v>
                                 <n n="VisuNodeReference" />
-                                <v n="VisNodeRefs33">"Log_"</v>
+                                <v n="VisNodeRefs33">"FaultLog"</v>
                                 <l n="TypeNodeChildren" t="ArrayList" />
                                 <o n="TypeNodeType" t="TypeNodeType">
                                   <v n="TypeClass" t="TypeClass">Userdef</v>
@@ -1188,8 +1188,38 @@
                       <o n="Value" t="VisualizationNode">
                         <v n="VisuNodeReferenceGuid">{00000000-0000-0000-0000-000000000000}</v>
                         <n n="VisuNodeReference" />
-                        <v n="VisNodeRefs33">"Log_"</v>
-                        <l n="TypeNodeChildren" t="ArrayList" />
+                        <v n="VisNodeRefs33">"FaultLog"</v>
+                        <l n="TypeNodeChildren" t="ArrayList" cet="BasicTypeNode">
+                          <o>
+                            <v n="Flags">2L</v>
+                            <v n="BasicTypeNodeValue">"PRG_TEST_LOGVIEW.fbLogger"</v>
+                            <v n="BasicTypeNodeAcceptsExpression">true</v>
+                            <n n="BasicTypeNodeFastAccess" />
+                            <a n="BasicTypeNodeEnumValues" et="String" />
+                            <n n="EnumValueDisplayTextIds" />
+                            <n n="EnumValueVisibilityAttributeValues" />
+                            <n n="EnumValueLibraryId" />
+                            <n n="DynamicEnumMemberVisibilityCheckerTypeGuid" />
+                            <l n="TypeNodeChildren" t="ArrayList" />
+                            <o n="TypeNodeType" t="TypeNodeType">
+                              <v n="TypeClass" t="TypeClass">Reference</v>
+                              <v n="QualifiedName">"FB_Logger"</v>
+                              <v n="Name">"FB_Logger"</v>
+                            </o>
+                            <v n="TypeNodeName">"fbLogger"</v>
+                            <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
+                              <v n="AttrFlags">0UL</v>
+                              <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" />
+                              <v n="ConvDone">true</v>
+                            </o>
+                            <v n="TypeNodeId" t="Int16">255</v>
+                            <v n="TypeNodeIdLong">1034354670L</v>
+                            <n n="LibraryId" />
+                            <n n="DisplayTextId" />
+                            <n n="DescriptionTextID" />
+                            <v n="DescriptionUseParent">false</v>
+                          </o>
+                        </l>
                         <o n="TypeNodeType" t="TypeNodeType">
                           <v n="TypeClass" t="TypeClass">Userdef</v>
                           <v n="QualifiedName">"IVisualisation"</v>
@@ -1216,6 +1246,10 @@
                         <v n="DescriptionUseParent">false</v>
                       </o>
                     </o>
+                    <o>
+                      <v n="Id">1034354670L</v>
+                      <v n="Value">"PRG_TEST_LOGVIEW.fbLogger"</v>
+                    </o>
                   </l>
                 </o>
                 <v n="VisualElementName">"Frame"</v>
@@ -1233,7 +1267,7 @@
                     <v>Manual</v>
                     <v>VISU_DummyState</v>
                     <v>VISU_DummyState</v>
-                    <v>Log_</v>
+                    <v>FaultLog</v>
                   </a>
                 </o>
                 <d n="VisualElementInputActions" t="Hashtable" />
@@ -1882,11 +1916,6 @@
                 <v n="Id">6L</v>
                 <n n="Tag" />
                 <v n="Text">"VAR_IN_OUT"</v>
-              </o>
-              <o>
-                <v n="Id">7L</v>
-                <n n="Tag" />
-                <v n="Text">"	"</v>
               </o>
               <o>
                 <v n="Id">1L</v>

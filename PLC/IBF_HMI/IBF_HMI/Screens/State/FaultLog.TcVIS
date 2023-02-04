@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.11">
-  <Visu Name="Log_" Id="{9d1d492b-4ead-40bc-8482-c9349fd92015}">
+  <Visu Name="FaultLog" Id="{9d1d492b-4ead-40bc-8482-c9349fd92015}">
     <XmlArchive>
       <Data>
         <o xml:space="preserve" t="VisualObject">
           <n n="LastVisuLanguageModelEntry" />
-          <v n="UniqueIdGenerator">"10"</v>
+          <v n="UniqueIdGenerator">"12"</v>
           <o n="VisualElemList" t="VisualElemList">
             <l n="VisualElementList" t="VisualElemCollection" cet="GenericVisualElem">
               <o>
@@ -431,7 +431,7 @@
                           </o>
                           <o>
                             <v n="Flags">2L</v>
-                            <v n="BasicTypeNodeValue">"GVL_Utilities.fbLogger"</v>
+                            <v n="BasicTypeNodeValue">"fbLogger"</v>
                             <v n="BasicTypeNodeAcceptsExpression">true</v>
                             <n n="BasicTypeNodeFastAccess" />
                             <a n="BasicTypeNodeEnumValues" et="String" />
@@ -442,17 +442,17 @@
                             <l n="TypeNodeChildren" t="ArrayList" />
                             <o n="TypeNodeType" t="TypeNodeType">
                               <v n="TypeClass" t="TypeClass">Reference</v>
-                              <v n="QualifiedName">"FB_LogToDisk"</v>
-                              <v n="Name">"FB_LogToDisk"</v>
+                              <v n="QualifiedName">"FB_Logger"</v>
+                              <v n="Name">"FB_Logger"</v>
                             </o>
-                            <v n="TypeNodeName">"fbLogToDisk"</v>
+                            <v n="TypeNodeName">"fbLogger"</v>
                             <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
                               <v n="AttrFlags">0UL</v>
                               <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" />
                               <v n="ConvDone">true</v>
                             </o>
                             <v n="TypeNodeId" t="Int16">256</v>
-                            <v n="TypeNodeIdLong">2349087753L</v>
+                            <v n="TypeNodeIdLong">3574805933L</v>
                             <n n="LibraryId" />
                             <n n="DisplayTextId" />
                             <n n="DescriptionTextID" />
@@ -553,8 +553,8 @@
                       <v n="Value">"GVL_HMI.fbHMIControl.fbLogView"</v>
                     </o>
                     <o>
-                      <v n="Id">2349087753L</v>
-                      <v n="Value">"GVL_Utilities.fbLogger"</v>
+                      <v n="Id">3574805933L</v>
+                      <v n="Value">"fbLogger"</v>
                     </o>
                   </l>
                 </o>
@@ -731,14 +731,14 @@
           <o n="TextDocument" t="TextDocument">
             <a n="TextLines" cet="TextLine">
               <o>
-                <v n="Id">9L</v>
+                <v n="Id">11L</v>
                 <n n="Tag" />
                 <v n="Text">"VAR_IN_OUT"</v>
               </o>
               <o>
-                <v n="Id">10L</v>
+                <v n="Id">12L</v>
                 <n n="Tag" />
-                <v n="Text">"	"</v>
+                <v n="Text">"	fbLogger : FB_Logger;"</v>
               </o>
               <o>
                 <v n="Id">1L</v>

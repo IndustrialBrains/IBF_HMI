@@ -11,7 +11,7 @@ VAR_INPUT
 	bBlinkButton : BOOL; // Blink the button to alert operator (optional, not used thusfar)
 END_VAR
 VAR_OUTPUT
-	arLog : ARRAY[1..NUMBER_OF_ITEMS_IN_TABLE] OF UDT_LogItem;
+	arLog : ARRAY[1..NUMBER_OF_ITEMS_IN_TABLE] OF UDT_HMI_FaultLogItem;
 	
 	// Log button properties
 	dLogButtonColor 	: DWORD;
@@ -23,7 +23,7 @@ END_VAR
 VAR_TEMP
 	i : UINT; // Iterator
 	stFaultLogItem : UDT_FaultLogItem();
-	stEmptyLogItem : UDT_LogItem;
+	stEmptyLogItem : UDT_HMI_FaultLogItem;
 END_VAR
 ]]></Declaration>
     <Implementation>

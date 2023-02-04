@@ -5,6 +5,7 @@
 VAR
 	bEnableTests : BOOL;
 	fbLogView : FB_LogView;
+	fbLogger : FB_Logger;
 	fbBase : FB_Base_Test;
 	bCmdReset : BOOL;
 END_VAR

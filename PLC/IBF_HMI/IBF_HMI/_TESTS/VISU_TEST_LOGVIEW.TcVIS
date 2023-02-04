@@ -287,12 +287,12 @@
                               <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" ckt="String" cvt="String">
                                 <v>Visible</v>
                                 <v>False</v>
-                                <v>ieccodeconversion_array</v>
-                                <v></v>
-                                <v>VisibleChildren</v>
-                                <v>True</v>
                                 <v>DefaultArraySize</v>
                                 <v>5</v>
+                                <v>VisibleChildren</v>
+                                <v>True</v>
+                                <v>ieccodeconversion_array</v>
+                                <v></v>
                                 <v>''NORMAL__COMMENT</v>
                                 <v> We hide this node to prevent having two References nodes
  Nevertheless we want to make sure that the children are displayed</v>
@@ -348,8 +348,8 @@
                         <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
                           <v n="AttrFlags">81920UL</v>
                           <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" ckt="String" cvt="String">
-                            <v>conditionalshow</v>
-                            <v>visu_elemdev</v>
+                            <v>DisplayFrameReferencesConfiguration</v>
+                            <v></v>
                             <v>DescriptionTextId</v>
                             <v>TL_ElementProperties.Desc_ReferencedVisus</v>
                             <v>SortFlag</v>
@@ -360,14 +360,14 @@
                             <v>Simple|Standard</v>
                             <v>DynamicArray</v>
                             <v></v>
-                            <v>DisplayFrameReferencesConfiguration</v>
-                            <v></v>
+                            <v>conditionalshow</v>
+                            <v>visu_elemdev</v>
                             <v>FrameReferences</v>
                             <v></v>
-                            <v>Storable</v>
-                            <v>True</v>
                             <v>DisplayTextId</v>
                             <v>TL_ElementProperties.References</v>
+                            <v>Storable</v>
+                            <v>True</v>
                           </d>
                           <v n="ConvDone">true</v>
                         </o>
@@ -460,7 +460,7 @@
                           </o>
                           <o>
                             <v n="Flags">2L</v>
-                            <v n="BasicTypeNodeValue">"GVL_Utilities.fbLogger"</v>
+                            <v n="BasicTypeNodeValue">"PRG_TEST_LOGVIEW.fbLogger"</v>
                             <v n="BasicTypeNodeAcceptsExpression">true</v>
                             <n n="BasicTypeNodeFastAccess" />
                             <a n="BasicTypeNodeEnumValues" et="String" />
@@ -471,17 +471,17 @@
                             <l n="TypeNodeChildren" t="ArrayList" />
                             <o n="TypeNodeType" t="TypeNodeType">
                               <v n="TypeClass" t="TypeClass">Reference</v>
-                              <v n="QualifiedName">"FB_LogToDisk"</v>
-                              <v n="Name">"FB_LogToDisk"</v>
+                              <v n="QualifiedName">"FB_Logger"</v>
+                              <v n="Name">"FB_Logger"</v>
                             </o>
-                            <v n="TypeNodeName">"fbLogToDisk"</v>
+                            <v n="TypeNodeName">"fbLogger"</v>
                             <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
                               <v n="AttrFlags">0UL</v>
                               <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" />
                               <v n="ConvDone">true</v>
                             </o>
                             <v n="TypeNodeId" t="Int16">256</v>
-                            <v n="TypeNodeIdLong">2349087753L</v>
+                            <v n="TypeNodeIdLong">3574805933L</v>
                             <n n="LibraryId" />
                             <n n="DisplayTextId" />
                             <n n="DescriptionTextID" />
@@ -519,8 +519,8 @@
                       <v n="Value">"PRG_TEST_LOGVIEW.fbLogView"</v>
                     </o>
                     <o>
-                      <v n="Id">2349087753L</v>
-                      <v n="Value">"GVL_Utilities.fbLogger"</v>
+                      <v n="Id">3574805933L</v>
+                      <v n="Value">"PRG_TEST_LOGVIEW.fbLogger"</v>
                     </o>
                   </l>
                 </o>

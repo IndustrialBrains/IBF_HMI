@@ -64,7 +64,7 @@
     <Compile Include="HMIControl\DataTypes\E_BaseVisu.TcTLEO">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="HMIControl\DataTypes\UDT_LogItem.TcDUT">
+    <Compile Include="HMIControl\DataTypes\UDT_HMI_FaultLogItem.TcDUT">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="HMIControl\FB_LogView.TcPOU">
@@ -143,7 +143,7 @@
       <SubType>Code</SubType>
       <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
     </Compile>
-    <Compile Include="Screens\State\Log_.TcVIS">
+    <Compile Include="Screens\State\FaultLog.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>VisualizationManager.TcVMO</DependentUpon>
     </Compile>

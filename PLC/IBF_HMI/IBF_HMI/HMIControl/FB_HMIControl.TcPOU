@@ -9,6 +9,8 @@ VAR_INPUT
 	bShowEmergencyOverlay 	: BOOL;
 	sEmergencyText 			: STRING; // Visible when emergency overlay is shown
 	sStatusText 			: STRING; // Text in the bottom border of the screen 
+
+	fbLogHandler_RetainableList : REFERENCE TO FB_LogHandler_RetainableList; // Optional reference to a FB_LogHandler_RetainableList instance
 END_VAR
 VAR_OUTPUT
 	eShownScreen : E_BaseVisu := E_BaseVisu.Idle;
@@ -32,7 +34,7 @@ END_VAR
 ]]></Declaration>
     <Implementation>
       <ST><![CDATA[// Run log view handler
-fbLogView();
+fbLogView(fbLogHandler_RetainableList := fbLogHandler_RetainableList);
 
 // Check user level
 bHideSecureButtons := NOT (VisuElems.CurrentUserGroupName = "Admin" OR VisuElems.CurrentUserGroupName = "Service");

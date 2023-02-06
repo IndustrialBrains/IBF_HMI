@@ -51,6 +51,16 @@
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
+              <v n="TextID">"344"</v>
+              <v n="TextDefault">"History"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"291"</v>
+              <v n="TextDefault">"Level"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
               <v n="TextID">"154"</v>
               <v n="TextDefault">"Load factory"</v>
               <l n="LanguageTexts" t="ArrayList" />
@@ -68,6 +78,11 @@
             <o>
               <v n="TextID">"278"</v>
               <v n="TextDefault">"Max : %5.1f"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"269"</v>
+              <v n="TextDefault">"Message"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
@@ -108,6 +123,11 @@
             <o>
               <v n="TextID">"229"</v>
               <v n="TextDefault">"Teach Value"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"10"</v>
+              <v n="TextDefault">"Timestamp"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
           </l>

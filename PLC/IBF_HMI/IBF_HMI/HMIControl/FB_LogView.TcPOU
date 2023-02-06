@@ -9,9 +9,11 @@ VAR_INPUT
 	bAcknowledge : BOOL; // Clear inactive items from the log
 	bReset : BOOL; // Reset faults
 	bBlinkButton : BOOL; // Blink the button to alert operator (optional, not used thusfar)
+	fbLogHandler_RetainableList : REFERENCE TO FB_LogHandler_RetainableList; // Optional reference to a FB_LogHandler_RetainableList instance
 END_VAR
 VAR_OUTPUT
 	arLog : ARRAY[1..NUMBER_OF_ITEMS_IN_TABLE] OF UDT_HMI_FaultLogItem;
+	arHistory : ARRAY[1..GVL_Utilities.RETAINABLE_LOG_HISTORY_SIZE] OF UDT_HMI_LogItem;
 	
 	// Log button properties
 	dLogButtonColor 	: DWORD;
@@ -20,14 +22,28 @@ VAR_OUTPUT
 	reNewLogMessages : BOOL; // TRUE when new log messages arrive (for one cycle)
 	nPrevFaultsInLog : UINT;
 END_VAR
+VAR
+	fbFormatString : FB_FormatString;
+END_VAR
 VAR_TEMP
 	i : UINT; // Iterator
-	stFaultLogItem : UDT_FaultLogItem();
-	stEmptyLogItem : UDT_HMI_FaultLogItem;
+	nArHistoryIndex : UINT; // arHistory array index
+	
+	stLogItem : UDT_LogItem;
+	stFaultLogItem : UDT_FaultLogItem;
+	stEmptyFaultLogItem : UDT_HMI_FaultLogItem;
+	
+	fMonth : REAL;
+	fDay : REAL;
+	fHour : REAL;
+	fMinute : REAL;
+	fSecond : REAL;
+	fMilliseconds : REAL;	
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[// Report new log messages
+      <ST><![CDATA[{region 'FAULT LOG / ALARM BELL ICON'}
+// Report new log messages
 reNewLogMessages := (GVL_Utilities.fbFaultHandler.nFaultsInLog > nPrevFaultsInLog);
 nPrevFaultsInLog := GVL_Utilities.fbFaultHandler.nFaultsInLog;
 
@@ -46,7 +62,7 @@ FOR i := 1 TO NUMBER_OF_ITEMS_IN_TABLE DO
 		END_IF
 		stFaultLogItem := GVL_Utilities.fbFaultHandler.Next;
 	ELSE
-		arLog[i] := stEmptyLogItem;
+		arLog[i] := stEmptyFaultLogItem;
 	END_IF
 END_FOR
 
@@ -76,7 +92,40 @@ END_IF
 IF bReset THEN
 	bReset R= GVL_Utilities.fbFaultHandler.CmdReset();
 END_IF
+{endregion}
 
+{region 'Log history'}
+IF __ISVALIDREF(fbLogHandler_RetainableList) THEN
+	// Add items from retainable list in reversed order, starting with the last added item
+	nArHistoryIndex := 0;
+	FOR i := (fbLogHandler_RetainableList.nIndex + GVL_Utilities.RETAINABLE_LOG_HISTORY_SIZE - 1) TO fbLogHandler_RetainableList.nIndex BY -1 DO
+		nArHistoryIndex := nArHistoryIndex + 1;
+		stLogItem := fbLogHandler_RetainableList.aLogItems[(i MOD GVL_Utilities.RETAINABLE_LOG_HISTORY_SIZE) + 1];
+		arHistory[nArHistoryIndex].sMsg := TO_STRING(stLogItem.sMsg);
+		arHistory[nArHistoryIndex].sLevel := TO_STRING(stLogItem.eLevel);
+		arHistory[nArHistoryIndex].dColor_Bg := GetLevelColorBG(stLogItem.eLevel);
+
+		// Build timestamp string
+		fMonth := WORD_TO_REAL(stLogItem.stTimestamp.wMonth); 
+		fDay := WORD_TO_REAL(stLogItem.stTimestamp.wDay); 
+		fHour := WORD_TO_REAL(stLogItem.stTimestamp.wHour); 
+		fMinute := WORD_TO_REAL(stLogItem.stTimestamp.wMinute); 
+		fSecond := WORD_TO_REAL(stLogItem.stTimestamp.wSecond); 
+		fMilliseconds := WORD_TO_REAL(stLogItem.stTimestamp.wMilliseconds);
+		fbFormatString(
+			sFormat := '%u-%02.0f-%02.0f %02.0f:%02.0f:%02.0f.%03.0f',
+			arg1 := F_WORD(stLogItem.stTimestamp.wYear),
+			arg2 := F_REAL(fMonth),
+			arg3 := F_REAL(fDay),
+			arg4 := F_REAL(fHour),
+			arg5 := F_REAL(fMinute),
+			arg6 := F_REAL(fSecond),
+			arg7 := F_REAL(fMilliseconds),
+			sOut => arHistory[nArHistoryIndex].sTimestamp
+		);
+	END_FOR
+END_IF
+{endregion}
 ]]></ST>
     </Implementation>
     <Method Name="GetFaultTypeColorBG" Id="{2d81764f-570f-4723-b755-981481238787}">
@@ -97,6 +146,30 @@ END_VAR
 		GetFaultTypeColorBG := E_Color.LightYellow;
 	E_FaultTypes.OM:
 		GetFaultTypeColorBG := E_Color.Bg_Light;
+END_CASE
+]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="GetLevelColorBG" Id="{5bdf4ec2-b99f-4f59-86af-796d45dd6efc}">
+      <Declaration><![CDATA[METHOD PRIVATE GetLevelColorBG : DWORD
+VAR_INPUT
+	eLogLevel : E_LogLevel;
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[CASE eLogLevel OF
+	E_LogLevel.TRACE:
+		GetLevelColorBG := E_Color.White;
+	E_LogLevel.DEBUG:
+		GetLevelColorBG := E_Color.White;
+	E_LogLevel.INFO:
+		GetLevelColorBG := E_Color.LightGreen;
+	E_LogLevel.WARN:
+		GetLevelColorBG := E_Color.LightYellow;
+	E_LogLevel.ERROR:
+		GetLevelColorBG := E_Color.LightRed;
+	E_LogLevel.FATAL:
+		GetLevelColorBG := E_Color.LightRed;
 END_CASE
 ]]></ST>
       </Implementation>

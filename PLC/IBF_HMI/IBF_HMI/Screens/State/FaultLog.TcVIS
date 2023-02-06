@@ -429,35 +429,6 @@
                             <n n="DescriptionTextID" />
                             <v n="DescriptionUseParent">false</v>
                           </o>
-                          <o>
-                            <v n="Flags">2L</v>
-                            <v n="BasicTypeNodeValue">"fbLogger"</v>
-                            <v n="BasicTypeNodeAcceptsExpression">true</v>
-                            <n n="BasicTypeNodeFastAccess" />
-                            <a n="BasicTypeNodeEnumValues" et="String" />
-                            <n n="EnumValueDisplayTextIds" />
-                            <n n="EnumValueVisibilityAttributeValues" />
-                            <n n="EnumValueLibraryId" />
-                            <n n="DynamicEnumMemberVisibilityCheckerTypeGuid" />
-                            <l n="TypeNodeChildren" t="ArrayList" />
-                            <o n="TypeNodeType" t="TypeNodeType">
-                              <v n="TypeClass" t="TypeClass">Reference</v>
-                              <v n="QualifiedName">"FB_Logger"</v>
-                              <v n="Name">"FB_Logger"</v>
-                            </o>
-                            <v n="TypeNodeName">"fbLogger"</v>
-                            <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
-                              <v n="AttrFlags">0UL</v>
-                              <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" />
-                              <v n="ConvDone">true</v>
-                            </o>
-                            <v n="TypeNodeId" t="Int16">256</v>
-                            <v n="TypeNodeIdLong">3574805933L</v>
-                            <n n="LibraryId" />
-                            <n n="DisplayTextId" />
-                            <n n="DescriptionTextID" />
-                            <v n="DescriptionUseParent">false</v>
-                          </o>
                         </l>
                         <o n="TypeNodeType" t="TypeNodeType">
                           <v n="TypeClass" t="TypeClass">Userdef</v>
@@ -551,10 +522,6 @@
                     <o>
                       <v n="Id">4041155908L</v>
                       <v n="Value">"GVL_HMI.fbHMIControl.fbLogView"</v>
-                    </o>
-                    <o>
-                      <v n="Id">3574805933L</v>
-                      <v n="Value">"fbLogger"</v>
                     </o>
                   </l>
                 </o>
@@ -680,10 +647,10 @@
               <d n="FbMethods" t="CaseInsensitiveHashtable_1" ckt="String" cvt="Guid">
                 <v>FB_Init</v>
                 <v>d54e7c30-d2da-49a4-b5bb-6e3c8b5fd21a</v>
-                <v>FB_Reinit</v>
-                <v>b3f4a3cc-3b4f-43fe-bca4-adcc2bd41191</v>
                 <v>FB_Exit</v>
                 <v>d7975987-9e75-4e4b-82b3-ae924b34ecad</v>
+                <v>FB_Reinit</v>
+                <v>b3f4a3cc-3b4f-43fe-bca4-adcc2bd41191</v>
               </d>
               <v n="FbName">"NotImportant"</v>
               <v n="FbGuid">{e5ff90fa-bf94-4ab8-87f2-851bdd423ed5}</v>

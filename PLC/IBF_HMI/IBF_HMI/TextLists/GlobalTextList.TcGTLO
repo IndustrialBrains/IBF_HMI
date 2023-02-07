@@ -26,11 +26,6 @@
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
-              <v n="TextID">"352"</v>
-              <v n="TextDefault">"Acknowledge"</v>
-              <l n="LanguageTexts" t="ArrayList" />
-            </o>
-            <o>
               <v n="TextID">"638"</v>
               <v n="TextDefault">"Active value [%s]"</v>
               <l n="LanguageTexts" t="ArrayList" />
@@ -46,21 +41,6 @@
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
-              <v n="TextID">"1228"</v>
-              <v n="TextDefault">"Faults"</v>
-              <l n="LanguageTexts" t="ArrayList" />
-            </o>
-            <o>
-              <v n="TextID">"344"</v>
-              <v n="TextDefault">"History"</v>
-              <l n="LanguageTexts" t="ArrayList" />
-            </o>
-            <o>
-              <v n="TextID">"291"</v>
-              <v n="TextDefault">"Level"</v>
-              <l n="LanguageTexts" t="ArrayList" />
-            </o>
-            <o>
               <v n="TextID">"154"</v>
               <v n="TextDefault">"Load factory"</v>
               <l n="LanguageTexts" t="ArrayList" />
@@ -71,18 +51,8 @@
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
-              <v n="TextID">"133"</v>
-              <v n="TextDefault">"Log"</v>
-              <l n="LanguageTexts" t="ArrayList" />
-            </o>
-            <o>
               <v n="TextID">"278"</v>
               <v n="TextDefault">"Max : %5.1f"</v>
-              <l n="LanguageTexts" t="ArrayList" />
-            </o>
-            <o>
-              <v n="TextID">"269"</v>
-              <v n="TextDefault">"Message"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
@@ -126,8 +96,8 @@
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
-              <v n="TextID">"10"</v>
-              <v n="TextDefault">"Timestamp"</v>
+              <v n="TextID">"926"</v>
+              <v n="TextDefault">"Time"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
           </l>

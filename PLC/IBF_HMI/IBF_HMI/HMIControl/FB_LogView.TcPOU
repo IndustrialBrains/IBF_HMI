@@ -13,6 +13,8 @@ VAR_INPUT
 END_VAR
 VAR_OUTPUT
 	arLog : ARRAY[1..NUMBER_OF_ITEMS_IN_TABLE] OF UDT_HMI_FaultLogItem;
+
+	bShowLogHistory : BOOL; // Show the log history instead of the fault list
 	arHistory : ARRAY[1..GVL_Utilities.RETAINABLE_LOG_HISTORY_SIZE] OF UDT_HMI_LogItem;
 	
 	// Log button properties
@@ -45,6 +47,7 @@ END_VAR
       <ST><![CDATA[{region 'FAULT LOG / ALARM BELL ICON'}
 // Report new log messages
 reNewLogMessages := (GVL_Utilities.fbFaultHandler.nFaultsInLog > nPrevFaultsInLog);
+bShowLogHistory R= reNewLogMessages;
 nPrevFaultsInLog := GVL_Utilities.fbFaultHandler.nFaultsInLog;
 
 // Update array

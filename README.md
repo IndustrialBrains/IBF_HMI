@@ -16,8 +16,6 @@ However, a test visualization is available (see `VISU_TEST`), with which you can
 ### Must have
 
 1. Create separate PNG based screens for Windows CE (first, check https://infosys.beckhoff.com/content/1033/tc3_plc_intro/136113291.html section about SVG files)
-1. `FB_LogView`:
-	- test flooding it with faults
 
 ### Should have
 
@@ -27,6 +25,7 @@ However, a test visualization is available (see `VISU_TEST`), with which you can
 1. `FB_LogView`:
 	- do not show zero in alarm icon, only if > 0
 	- do not blink button when no fault is active
+	- Increase string length of history log Message column
 
 ### Improvements
 

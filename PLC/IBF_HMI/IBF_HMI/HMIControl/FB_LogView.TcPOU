@@ -24,9 +24,6 @@ VAR_OUTPUT
 	reNewLogMessages : BOOL; // TRUE when new log messages arrive (for one cycle)
 	nPrevFaultsInLog : UINT;
 END_VAR
-VAR
-	fbFormatString : FB_FormatString;
-END_VAR
 VAR_TEMP
 	i : UINT; // Iterator
 	nArHistoryIndex : UINT; // arHistory array index
@@ -34,13 +31,6 @@ VAR_TEMP
 	stLogItem : UDT_LogItem;
 	stFaultLogItem : UDT_FaultLogItem;
 	stEmptyFaultLogItem : UDT_HMI_FaultLogItem;
-	
-	fMonth : REAL;
-	fDay : REAL;
-	fHour : REAL;
-	fMinute : REAL;
-	fSecond : REAL;
-	fMilliseconds : REAL;	
 END_VAR
 ]]></Declaration>
     <Implementation>
@@ -104,28 +94,10 @@ IF __ISVALIDREF(fbLogHandler_PersistentArray) THEN
 	FOR i := (fbLogHandler_PersistentArray.nIndex + GVL_Utilities.RETAINABLE_LOG_HISTORY_SIZE - 1) TO fbLogHandler_PersistentArray.nIndex BY -1 DO
 		nArHistoryIndex := nArHistoryIndex + 1;
 		stLogItem := fbLogHandler_PersistentArray.aLogItems[(i MOD GVL_Utilities.RETAINABLE_LOG_HISTORY_SIZE) + 1];
-		arHistory[nArHistoryIndex].sMsg := TO_STRING(stLogItem.sMsg);
+		arHistory[nArHistoryIndex].sTimestamp := SYSTEMTIME_TO_STRING(stLogItem.stTimestamp);
 		arHistory[nArHistoryIndex].sLevel := TO_STRING(stLogItem.eLevel);
+		arHistory[nArHistoryIndex].sMsg := TO_STRING(stLogItem.sMsg);
 		arHistory[nArHistoryIndex].dColor_Bg := GetLevelColorBG(stLogItem.eLevel);
-
-		// Build timestamp string
-		fMonth := WORD_TO_REAL(stLogItem.stTimestamp.wMonth); 
-		fDay := WORD_TO_REAL(stLogItem.stTimestamp.wDay); 
-		fHour := WORD_TO_REAL(stLogItem.stTimestamp.wHour); 
-		fMinute := WORD_TO_REAL(stLogItem.stTimestamp.wMinute); 
-		fSecond := WORD_TO_REAL(stLogItem.stTimestamp.wSecond); 
-		fMilliseconds := WORD_TO_REAL(stLogItem.stTimestamp.wMilliseconds);
-		fbFormatString(
-			sFormat := '%u-%02.0f-%02.0f %02.0f:%02.0f:%02.0f.%03.0f',
-			arg1 := F_WORD(stLogItem.stTimestamp.wYear),
-			arg2 := F_REAL(fMonth),
-			arg3 := F_REAL(fDay),
-			arg4 := F_REAL(fHour),
-			arg5 := F_REAL(fMinute),
-			arg6 := F_REAL(fSecond),
-			arg7 := F_REAL(fMilliseconds),
-			sOut => arHistory[nArHistoryIndex].sTimestamp
-		);
 	END_FOR
 END_IF
 {endregion}

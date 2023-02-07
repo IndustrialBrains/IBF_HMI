@@ -3,7 +3,7 @@
   <DUT Name="UDT_HMI_LogItem" Id="{2d3e2c64-0033-40ec-a575-247769317aab}">
     <Declaration><![CDATA[TYPE UDT_HMI_LogItem :
 STRUCT
-	sTimestamp : STRING[23];
+	sTimestamp : STRING[24];
 	sLevel : STRING;
 	sMsg : T_MaxString;
 	dColor_Bg : DWORD := E_Color.White; // Table row background color

@@ -9,7 +9,7 @@ VAR_INPUT
 	bAcknowledge : BOOL; // Clear inactive items from the log
 	bReset : BOOL; // Reset faults
 	bBlinkButton : BOOL; // Blink the button to alert operator (optional, not used thusfar)
-	fbLogHandler_RetainableList : REFERENCE TO FB_LogHandler_RetainableList; // Optional reference to a FB_LogHandler_RetainableList instance
+	fbLogHandler_PersistentArray : REFERENCE TO FB_LogHandler_PersistentArray; // Optional reference to a FB_LogHandler_RetainableList instance
 END_VAR
 VAR_OUTPUT
 	arLog : ARRAY[1..NUMBER_OF_ITEMS_IN_TABLE] OF UDT_HMI_FaultLogItem;
@@ -98,12 +98,12 @@ END_IF
 {endregion}
 
 {region 'Log history'}
-IF __ISVALIDREF(fbLogHandler_RetainableList) THEN
+IF __ISVALIDREF(fbLogHandler_PersistentArray) THEN
 	// Add items from retainable list in reversed order, starting with the last added item
 	nArHistoryIndex := 0;
-	FOR i := (fbLogHandler_RetainableList.nIndex + GVL_Utilities.RETAINABLE_LOG_HISTORY_SIZE - 1) TO fbLogHandler_RetainableList.nIndex BY -1 DO
+	FOR i := (fbLogHandler_PersistentArray.nIndex + GVL_Utilities.RETAINABLE_LOG_HISTORY_SIZE - 1) TO fbLogHandler_PersistentArray.nIndex BY -1 DO
 		nArHistoryIndex := nArHistoryIndex + 1;
-		stLogItem := fbLogHandler_RetainableList.aLogItems[(i MOD GVL_Utilities.RETAINABLE_LOG_HISTORY_SIZE) + 1];
+		stLogItem := fbLogHandler_PersistentArray.aLogItems[(i MOD GVL_Utilities.RETAINABLE_LOG_HISTORY_SIZE) + 1];
 		arHistory[nArHistoryIndex].sMsg := TO_STRING(stLogItem.sMsg);
 		arHistory[nArHistoryIndex].sLevel := TO_STRING(stLogItem.eLevel);
 		arHistory[nArHistoryIndex].dColor_Bg := GetLevelColorBG(stLogItem.eLevel);

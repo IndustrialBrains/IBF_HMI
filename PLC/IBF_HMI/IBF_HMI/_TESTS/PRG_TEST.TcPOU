@@ -3,6 +3,7 @@
   <POU Name="PRG_TEST" Id="{b132eb66-7e41-469d-9de4-883897ec1165}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM INTERNAL PRG_TEST
 VAR
+	fbLogHandler_PersistentArray : FB_LogHandler_PersistentArray;
 	bInitDone 	: BOOL;
 	fbDevValve 	: FB_DevValve;
 END_VAR
@@ -24,7 +25,7 @@ fbDevValve();
 
 GVL_Parameters.fbParameterHandler();
 
-GVL_HMI.fbHMIControl();
+GVL_HMI.fbHMIControl(fbLogHandler_PersistentArray := fbLogHandler_PersistentArray);
 ]]></ST>
     </Implementation>
   </POU>

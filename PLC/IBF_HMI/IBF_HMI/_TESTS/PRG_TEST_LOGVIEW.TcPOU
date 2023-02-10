@@ -3,6 +3,7 @@
   <POU Name="PRG_TEST_LOGVIEW" Id="{5804c99e-7e2e-4244-a5e9-ac8bb77d9b4b}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM INTERNAL PRG_TEST_LOGVIEW
 VAR
+	fbLogHandler_PersistentArray : FB_LogHandler_PersistentArray;
 	bEnableTests : BOOL;
 	fbLogView : FB_LogView;
 	fbLogger : FB_Logger;
@@ -13,7 +14,7 @@ END_VAR
     <Implementation>
       <ST><![CDATA[IF bEnableTests THEN
 
-	fbLogView();
+	fbLogView(fbLogHandler_PersistentArray := fbLogHandler_PersistentArray);
 
 	fbBase();
 

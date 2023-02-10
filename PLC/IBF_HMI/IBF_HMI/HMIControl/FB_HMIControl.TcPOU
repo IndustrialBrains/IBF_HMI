@@ -2,6 +2,9 @@
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.11">
   <POU Name="FB_HMIControl" Id="{062d2a70-ec77-4a9b-a458-d823fff51efb}" SpecialFunc="None">
     <Declaration><![CDATA[FUNCTION_BLOCK FB_HMIControl
+VAR_IN_OUT
+	fbLogHandler_PersistentArray : FB_LogHandler_PersistentArray;
+END_VAR
 VAR_INPUT
 	eScreenRequest 			: E_BaseVisu;
 	eHomeScreen   			: E_BaseVisu := E_BaseVisu.Idle; // Home screen is based on system state, e.g., Idle, Automatic, etc.
@@ -9,8 +12,6 @@ VAR_INPUT
 	bShowEmergencyOverlay 	: BOOL;
 	sEmergencyText 			: STRING; // Visible when emergency overlay is shown
 	sStatusText 			: STRING; // Text in the bottom border of the screen 
-
-	fbLogHandler_RetainableList : REFERENCE TO FB_LogHandler_PersistentArray; // Optional reference to a FB_LogHandler_RetainableList instance
 END_VAR
 VAR_OUTPUT
 	eShownScreen : E_BaseVisu := E_BaseVisu.Idle;
@@ -34,7 +35,7 @@ END_VAR
 ]]></Declaration>
     <Implementation>
       <ST><![CDATA[// Run log view handler
-fbLogView(fbLogHandler_PersistentArray := fbLogHandler_RetainableList);
+fbLogView(fbLogHandler_PersistentArray := fbLogHandler_PersistentArray);
 
 // Check user level
 bHideSecureButtons := NOT (VisuElems.CurrentUserGroupName = "Admin" OR VisuElems.CurrentUserGroupName = "Service");

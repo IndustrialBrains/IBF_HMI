@@ -5,11 +5,13 @@
 VAR CONSTANT
 	NUMBER_OF_ITEMS_IN_TABLE : UINT := 16;
 END_VAR
+VAR_IN_OUT
+	fbLogHandler_PersistentArray : FB_LogHandler_PersistentArray;
+END_VAR
 VAR_INPUT
 	bAcknowledge : BOOL; // Clear inactive items from the log
 	bReset : BOOL; // Reset faults
 	bBlinkButton : BOOL; // Blink the button to alert operator (optional, not used thusfar)
-	fbLogHandler_PersistentArray : REFERENCE TO FB_LogHandler_PersistentArray; // Optional reference to a FB_LogHandler_RetainableList instance
 END_VAR
 VAR_OUTPUT
 	arLog : ARRAY[1..NUMBER_OF_ITEMS_IN_TABLE] OF UDT_HMI_FaultLogItem;
@@ -26,8 +28,6 @@ VAR_OUTPUT
 END_VAR
 VAR_TEMP
 	i : UINT; // Iterator
-	nArHistoryIndex : UINT; // arHistory array index
-	
 	stLogItem : UDT_LogItem;
 	stFaultLogItem : UDT_FaultLogItem;
 	stEmptyFaultLogItem : UDT_HMI_FaultLogItem;
@@ -88,18 +88,15 @@ END_IF
 {endregion}
 
 {region 'Log history'}
-IF __ISVALIDREF(fbLogHandler_PersistentArray) THEN
-	// Add items from retainable list in reversed order, starting with the last added item
-	nArHistoryIndex := 0;
-	FOR i := (fbLogHandler_PersistentArray.nIndex + GVL_Utilities.RETAINABLE_LOG_HISTORY_SIZE - 1) TO fbLogHandler_PersistentArray.nIndex BY -1 DO
-		nArHistoryIndex := nArHistoryIndex + 1;
-		stLogItem := fbLogHandler_PersistentArray.aLogItems[(i MOD GVL_Utilities.RETAINABLE_LOG_HISTORY_SIZE) + 1];
-		arHistory[nArHistoryIndex].sTimestamp := SYSTEMTIME_TO_STRING(stLogItem.stTimestamp);
-		arHistory[nArHistoryIndex].sLevel := TO_STRING(stLogItem.eLevel);
-		arHistory[nArHistoryIndex].sMsg := TO_STRING(stLogItem.sMsg);
-		arHistory[nArHistoryIndex].dColor_Bg := GetLevelColorBG(stLogItem.eLevel);
-	END_FOR
-END_IF
+// Add items from retainable list in reversed order, starting with the last added item
+stLogItem := fbLogHandler_PersistentArray.Last();
+FOR i := 1 TO GVL_Utilities.RETAINABLE_LOG_HISTORY_SIZE DO
+	arHistory[i].sTimestamp := SYSTEMTIME_TO_STRING(stLogItem.stTimestamp);
+	arHistory[i].sLevel := TO_STRING(stLogItem.eLevel);
+	arHistory[i].sMsg := TO_STRING(stLogItem.sMsg);
+	arHistory[i].dColor_Bg := GetLevelColorBG(stLogItem.eLevel);
+	stLogItem := fbLogHandler_PersistentArray.Previous();
+END_FOR
 {endregion}
 ]]></ST>
     </Implementation>
